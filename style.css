@@ -213,7 +213,7 @@ body {
   border-radius: 6px;
   background-color: #1a1a1a; /* Optional: matches dark themes */
   scrollbar-width: thin;     /* Firefox support */
-  width: 338px; /* fixed width for playlist */
+  /*width: 338px; fixed width for playlist */
 }
 
 /* Optional scroll styling for WebKit (Chrome, Edge, etc.) */
