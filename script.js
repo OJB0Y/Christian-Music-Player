@@ -504,7 +504,7 @@ function updateActiveSong() {
   items.forEach((item, i) => {
     item.classList.toggle('active', i === currentSong);
     if (i === currentSong) {
-      item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      //item.scrollIntoView({ behavior: 'smooth', block: 'center' });//
     }
   });
 }
