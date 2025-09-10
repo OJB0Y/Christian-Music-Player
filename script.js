@@ -612,6 +612,7 @@ function setPlayIcon(isNowPlaying) {
 }
 
 // --- init ---
+currentSong = 0;
 loadSong(currentSong);
 updateActiveSong();
 setPlayIcon(false);
