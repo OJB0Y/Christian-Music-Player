@@ -391,7 +391,6 @@ const playBtn = document.getElementById('play');
 const playIcon = document.getElementById('play-icon');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
-const volumeSlider = document.getElementById('volume');
 
 const shuffleBtn = document.getElementById('shuffle');
 const repeatBtn = document.getElementById('repeat');
@@ -576,9 +575,6 @@ prevBtn.addEventListener('click', () => {
   playSong(currentSong);
 });
 
-volumeSlider.addEventListener('input', () => {
-  audio.volume = volumeSlider.value;
-});
 
 // --- repeat & shuffle toggles ---
 function setToggleButtonState(button, enabled) {
