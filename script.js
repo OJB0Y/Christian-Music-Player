@@ -119,6 +119,18 @@ const playlist = [
     src: "songs/Un Grano De Arena.mp3",
     cover: "images/Un Grano De Arena.png"
   },
+  { 
+    title: "Oh Juventud",
+    artist: "Zulmy Mejia",
+    src: "songs/Zulmy.mp3",
+    cover: "images/zulmy.jpg"
+  },
+  {
+    title: "Cristo por su Iglesia viene",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Cristo.mp3",
+    cover: "images/Cristo.jpg"
+  },
   {
     title: "Todos Deben de Saber/Conocer",
     artist: "Los Hermanos Reyes/Manuel Bonilla",
@@ -202,6 +214,12 @@ const playlist = [
     artist: "Evan Craft",
     src: "songs/Desesperado.mp3",
     cover: "images/evan.png"
+  },
+  {
+    title: "Empezar de Nuevo",
+    artist: "Kike Pavón/Funky",
+    src: "songs/Empezar.mp3",
+    cover: "images/kiki.png"
   },
   {
     title: "Vida Encontré",
