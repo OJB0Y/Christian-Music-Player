@@ -48,6 +48,18 @@ const playlist = [
     cover: "images/manuel.png"
   },
   {
+    title: "Buscale",
+    artist: "Óscar Medina",
+    src: "songs/Buscale.mp3",
+    cover: "images/Buscale.jpg"
+  },
+  {
+    title: "Te Estoy Esperando",
+    artist: "Leonel Tuchez",
+    src: "songs/Esperando.mp3",
+    cover: "images/Esperando.jpg"
+  },
+  {
     title: "Todo el Mundo Busca",
     artist: "Wilson Camey",
     src: "songs/Todo el Mundo Busca - Wilson Camey.mp3",
@@ -130,6 +142,12 @@ const playlist = [
     artist: "Los Voceros de Cristo",
     src: "songs/Cristo.mp3",
     cover: "images/Cristo.jpg"
+  },
+  {
+    title: "Loor a ti mi Dios",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Loor.mp3",
+    cover: "images/Loor.jpg"
   },
   {
     title: "Todos Deben de Saber/Conocer",
@@ -274,6 +292,12 @@ const playlist = [
     artist: "Los Hermanos Reyes de Guatemala",
     src: "songs/Reyes.mp3",
     cover: "images/Hay una ciudad.png"
+  },
+  {
+    title: "Has Cambiado mi lamento",
+    artist: "Los Hermanos Reyes de Guatemala",
+    src: "songs/lamento.mp3",
+    cover: "images/lamento.jpg"
   },
   {
     title: "Te Doy Gracias",
