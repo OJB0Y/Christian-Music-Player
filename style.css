@@ -22,7 +22,7 @@ body {
 
 /* === MAIN CONTAINER === */
 .music-container {
-  margin-top: 20px; /* adjust value as needed */
+  /*margin-top: 20px;  adjust value as needed */
   display: flex;
   flex-direction: column; /* stacks elements for mobile */
   justify-content: center;
