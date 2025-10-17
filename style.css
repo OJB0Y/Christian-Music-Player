@@ -152,7 +152,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 25vh; /* dynamically limits playlist height */
+  max-height: 28vh; /* dynamically limits playlist height */
   overflow-y: auto;
   border: 2px solid #343d3f;
   border-radius: 8px;
