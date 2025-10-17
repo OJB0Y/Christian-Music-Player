@@ -1,10 +1,21 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   background-image: linear-gradient(to bottom, #e87c04, #681c04);
   color: #fff;
+
   display: flex;
   justify-content: center;
-  padding: 38.5px; /* size of the entire screen */
+  align-items: center; /* centers content vertically too */
+
+  min-height: 100vh; /* ensures it always fills viewport height */
+  box-sizing: border-box;
 }
 
 .music-container {
