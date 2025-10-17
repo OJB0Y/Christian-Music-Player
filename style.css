@@ -103,7 +103,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* === CONTROLS === */
+/* === CONTROLS SECTION === */
 .controls {
   display: flex;
   justify-content: center;
@@ -111,31 +111,56 @@ body {
   margin: 10px 0 16px;
 }
 
+/* Base button style for all controls */
 .controls button,
 .icon-btn {
-  background: transparent;   /* no solid background */
+  background: transparent;       /* transparent by default */
   border: none;
-  color: white;              /* icons/text stay visible */
+  color: white;                  /* icons/text visible */
   cursor: pointer;
-  transition: transform 0.08s;  /* optional hover/press effect */
   padding: 10px;
   border-radius: 10px;
+  transition: background 0.15s, color 0.15s, transform 0.08s;
+  width: 44px;                   /* clickable area */
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Make SVG icons bigger without changing button size */
 .icon-btn svg {
-  width: 28px;   /* bigger than default */
+  width: 28px;
   height: 28px;
   display: block;
 }
 
-.icon-btn:hover { transform: translateY(-2px); background: #666; }
-.icon-btn:active { transform: translateY(0); }
+/* Hover + press effects for non-active buttons */
+.icon-btn:hover:not(.mode-active),
+.controls button:hover:not(.mode-active) {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);  /* subtle highlight */
+}
 
-.mode-active {
-  background: #49f566;
+.icon-btn:active:not(.mode-active),
+.controls button:active:not(.mode-active) {
+  transform: translateY(0);
+}
+
+/* Active mode (shuffle/repeat) buttons */
+.icon-btn.mode-active,
+.controls button.mode-active {
+  background: #49f566;           /* green when active */
   color: black;
   font-weight: bold;
 }
+
+/* Optional: maintain press transform for active buttons */
+.icon-btn.mode-active:active,
+.controls button.mode-active:active {
+  transform: translateY(0);
+}
+
 
 /* === SEARCH BAR & PLAYLIST === */
 #search-bar {
