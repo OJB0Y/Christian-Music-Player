@@ -1,4 +1,4 @@
-/* === FULL SCREEN RESET === */
+f/* === FULL SCREEN RESET === */
 /* === i hope this works... === */
 html, body {
   height: 100%;
@@ -132,8 +132,8 @@ body {
 .icon-btn:active { transform: translateY(0); }
 
 .mode-active {
-  background: #49f56600;
-  color: #49f566;
+  background: #49f566;
+  color: black;
   font-weight: bold;
 }
 
