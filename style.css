@@ -4,7 +4,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
-  padding: 38.5px; /* size of the entire screen */
+  padding: 100%; /* size of the entire screen */
 }
 
 .music-container {
