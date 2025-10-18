@@ -408,6 +408,12 @@ const playlist = [
     cover: "images/song24.png"
   },
   {
+    title: "Si Puedes Creer",
+    artist: "Musiko/Majo y Dan",
+    src: "songs/Si Puedes Creer.mp3",
+    cover: "images/Si Puedes Creer.png"
+  },
+  {
     title: "Laberintos",
     artist: "La Feria Oficial/Majo y Dan",
     src: "songs/song25.mp3",
