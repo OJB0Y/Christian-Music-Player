@@ -432,6 +432,12 @@ const playlist = [
     cover: "images/He peleado la batalla.png"
   },
   {
+    title: "Loor a ti mi Dios v2",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Loor2.mp3",
+    cover: "images/a5.png"
+  },
+  {
     title: "Jesús es mi Refugio",
     artist: "Los Voceros de Cristo",
     src: "songs/Refugio.mp3",
