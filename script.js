@@ -19,7 +19,7 @@ const playlist = [
   },
   {
     title: "Que lindo es mi Cristo",
-    artist: "Hermanos Osorio, Los Hermanos Reyes de Guatemala",
+    artist: "Wilson Camey, Los Hermanos Reyes de Guatemala",
     src: "songs/Que lindo es mi Cristo.mp3",
     cover: "images/Que lindo es mi Cristo.png"
   },
@@ -424,6 +424,84 @@ const playlist = [
     artist: "Majo y Dan",
     src: "songs/song26.mp3",
     cover: "images/song26.png"
+  },
+  {
+    title: "Soy Feliz",
+    artist: "Los Hermanos Reyes de Guatemala",
+    src: "songs/Soy feliz.mp3",
+    cover: "images/He peleado la batalla.png"
+  },
+  {
+    title: "Jesús es mi Refugio",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Refugio.mp3",
+    cover: "images/new3.png"
+  },
+  {
+    title: "Mi cántaro vacío",
+    artist: "Los Voceros de Cristo",
+    src: "songs/cántaro.mp3",
+    cover: "images/a5.png"
+  },
+  {
+    title: "El volverá",
+    artist: "Los Voceros de Cristo/Aníbal Marroquín",
+    src: "songs/volverá.mp3",
+    cover: "images/new4.png"
+  },
+  {
+    title: "Amartesolo a ti Señor",
+    artist: "Los Hermanos Reyes de Guatemala",
+    src: "songs/Amarte.mp3",
+    cover: "images/Hay un Dios.png"
+  },
+  {
+    title: "Los Que Esperan En Jehová",
+    artist: "Manuel Bonilla",
+    src: "songs/Esperan.mp3",
+    cover: "images/new5.png"
+  },
+  {
+    title: "Montaña",
+    artist: "Evan Craft/GAWVI/Sam Rivera",
+    src: "songs/Montaña.mp3",
+    cover: "images/new6.png"
+  },
+  {
+    title: "Praise",
+    artist: "Elevation Worship/Brandon Lake/Chris Brown/Chandler Moore",
+    src: "songs/Praise.mp3",
+    cover: "images/new7.png"
+  },
+  {
+    title: "He Peleado la Batalla",
+    artist: "Luismi Acosta y Gloria de Dios",
+    src: "songs/Luismi.mp3",
+    cover: "images/new1.png"
+  },
+  {
+    title: "Nicodemo",
+    artist: "Leonel Tuchez",
+    src: "songs/Nicodemo.mp3",
+    cover: "images/Esperando.jpg"
+  },
+  {
+    title: "Imagínate",
+    artist: "Aroddy/Leonel Tuchez/Victor Hugo V.",
+    src: "songs/Imagínate.mp3",
+    cover: "images/new2.png"
+  },
+  {
+    title: "Necesito De Ti",
+    artist: "Francisco Orantes",
+    src: "songs/Necesito De Ti.mp3",
+    cover: "images/song10.png"
+  },
+  {
+    title: "Te Necesito",
+    artist: "Los Hermanos Reyes de Guatemala",
+    src: "songs/Te Necesito.mp3",
+    cover: "images/Hay una ciudad.png"
   }
 ];
 
