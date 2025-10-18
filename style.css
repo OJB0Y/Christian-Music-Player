@@ -89,7 +89,7 @@ body {
   -webkit-appearance: none;
   width: 14px;
   height: 14px;
-  background: rgb(76, 76, 245);
+  background: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
 }
