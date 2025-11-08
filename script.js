@@ -508,6 +508,18 @@ const playlist = [
     artist: "Los Hermanos Reyes de Guatemala",
     src: "songs/Te necesito.mp3",
     cover: "images/Hay una ciudad.png"
+  },
+  {
+    title: "Mi Nuevo Amor",
+    artist: "Roberto Orellana",
+    src: "songs/Nuevo.mp3",
+    cover: "images/image.png"
+  },
+  {
+    title: "La Niña de tus Ojos",
+    artist: "Daniel Calveti",
+    src: "songs/Ojos.mp3",
+    cover: "images/image (1).png"
   }
 ];
 
