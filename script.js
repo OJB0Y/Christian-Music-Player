@@ -468,18 +468,6 @@ const playlist = [
     cover: "images/new5.png"
   },
   {
-    title: "Montaña",
-    artist: "Evan Craft/GAWVI/Sam Rivera",
-    src: "songs/Montaña.mp3",
-    cover: "images/new6.png"
-  },
-  {
-    title: "Praise",
-    artist: "Elevation Worship/Brandon Lake/Chris Brown/Chandler Moore",
-    src: "songs/Praise.mp3",
-    cover: "images/new7.png"
-  },
-  {
     title: "He Peleado la Batalla",
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/Luismi.mp3",
