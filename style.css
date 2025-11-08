@@ -121,8 +121,6 @@ body {
   padding: 10px;
   border-radius: 10px;
   transition: background 0.15s, color 0.15s, transform 0.08s;
-  width: 44px;                   /* clickable area */
-  height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
