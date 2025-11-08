@@ -130,10 +130,46 @@ body {
 
 /* Make SVG icons bigger without changing button size */
 .icon-btn svg {
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
   display: block;
 }
+
+#shuffle svg {
+  width: 29px;
+  height: 29px;
+}
+
+
+#repeat svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Make the Play/Pause button bigger */
+#play svg {
+  width: 70px;
+  height: 70px;
+}
+
+#play {
+  padding: 15px; /* a bit more space around the bigger icon */
+}
+#play {
+  /*background: #3b6842;*/
+  border-radius: 50%;
+  transition: transform 0.15s ease, background 0.2s;
+}
+
+#play:hover {
+  /*background: #4caf50;*/
+  transform: scale(1.1);
+}
+
+#play:active {
+  transform: scale(1.05);
+}
+
 
 /* Hover + press effects for non-active buttons */
 .icon-btn:hover:not(.mode-active),
