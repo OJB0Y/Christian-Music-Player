@@ -111,20 +111,31 @@ body {
   margin: 10px 0 16px;
 }
 
-/* Base button style for all controls */
 .controls button,
 .icon-btn {
-  background: transparent;       /* transparent by default */
+  background: transparent;   /* no solid background */
   border: none;
-  color: white;                  /* icons/text visible */
+  color: white;              /* icons/text stay visible */
   cursor: pointer;
+  transition: transform 0.08s;  /* optional hover/press effect */
+  padding: 10px;
+  border-radius: 100px;
+}
+
+/* Base button style for all controls */
+/*.controls button,
+.icon-btn {
+  background: transparent;       /* transparent by default */
+ /* border: none;
+  color: white;                  /* icons/text visible */
+ /* cursor: pointer;
   padding: 10px;
   border-radius: 10px;
   transition: background 0.15s, color 0.15s, transform 0.08s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 /* Make SVG icons bigger without changing button size */
 .icon-btn svg {
