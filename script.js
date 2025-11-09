@@ -508,6 +508,96 @@ const playlist = [
     artist: "Daniel Calveti",
     src: "songs/Ojos.mp3",
     cover: "images/image (1).png"
+  },
+  {
+    title: "Jesús Pt. 2",
+    artist: "Lead/Musiko",
+    src: "songs/Pt 2.mp3",
+    cover: "images/image (2).png"
+  },
+  {
+    title: "Lo Que Quieras Tú",
+    artist: "La Feria Oficial/Redimi2",
+    src: "songs/Quieras.mp3",
+    cover: "images/song25.png"
+  },
+  {
+    title: "Siguiéndote Los Pasos",
+    artist: "Rojo",
+    src: "songs/Pasos.mp3",
+    cover: "images/song17.png"
+  },
+  {
+    title: "Solo tú",
+    artist: "Un Corazón/Lead/Kim Richards/Louie Abrego",
+    src: "songs/Solo tú.mp3",
+    cover: "images/image (3).png"
+  },
+  {
+    title: "Fiesta",
+    artist: "Un Corazón/Louie Abrego/Kim Richards/Alex Zurdo",
+    src: "songs/Fiesta.mp3",
+    cover: "images/song14.png"
+  },
+  {
+    title: "Que lo sepa la calle",
+    artist: "Un Corazón/Lead/Kim Richards",
+    src: "songs/la calle.mp3",
+    cover: "images/image (3).png"
+  },
+  {
+    title: "está bien no estar bien :):",
+    artist: "PRISMA Más Vida/Un Corazón",
+    src: "songs/bien.mp3",
+    cover: "images/image (4).png"
+  },
+  {
+    title: "REAL",
+    artist: "PRISMA Más Vida/Samu Robles",
+    src: "songs/REAL.mp3",
+    cover: "images/image (4).png"
+  },
+  {
+    title: "El Nombre De Jesús",
+    artist: "Redimi2/Christine D'Clario",
+    src: "songs/Nombre.mp3",
+    cover: "images/image (5).png"
+  },
+  {
+    title: "Espíritu Santo",
+    artist: "Redimi2/Barak",
+    src: "songs/Espíritu.mp3",
+    cover: "images/image (5).png"
+  },
+  {
+    title: "Viviré",
+    artist: "Redimi2/Evan Craft",
+    src: "songs/Viviré.mp3",
+    cover: "images/image (6).png"
+  },
+  { 
+    title: "Que Pase El Mundo",
+    artist: "Majo y Dan",
+    src: "songs/song6 (1).mp3",
+    cover: "images/song6 (1).png"
+  },
+  {
+    title: "Gracias",
+    artist: "Majo y Dan/Musiko",
+    src: "songs/song7 (1).mp3",
+    cover: "images/song7 (1).png"
+  },
+  {
+    title: "Juró Volver",
+    artist: "Majo y Dan",
+    src: "songs/song10 (1).mp3",
+    cover: "images/song10 (1).png"
+  },
+  {
+    title: "no te vas",
+    artist: "PRISMA Más Vida/Majo y Dan",
+    src: "songs/song9 (1).mp3",
+    cover: "images/song9 (1).png"
   }
 ];
 
