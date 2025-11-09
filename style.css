@@ -199,8 +199,8 @@ body {
 /* Active mode (shuffle/repeat) buttons */
 .icon-btn.mode-active,
 .controls button.mode-active {
-  background: #49f566;           /* green when active */
-  color: black;
+  background: #49f56600;           
+  color: #49f566;               /*color of the button changes but not the bakcground*/
   font-weight: bold;
 }
 
