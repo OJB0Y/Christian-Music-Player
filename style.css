@@ -192,7 +192,6 @@ body {
 .icon-btn:hover:not(.mode-active),
 .controls button:hover:not(.mode-active) {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.1);  /* subtle highlight */
 }
 
 .icon-btn:active:not(.mode-active),
