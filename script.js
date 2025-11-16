@@ -540,6 +540,18 @@ const playlist = [
     cover: "images/Penta.jpg"
   },
   {
+    title: "Todo Lo Has Cambiado",
+    artist: "Danilo Montero/Su Presencia/Thalles Roberto/Victoria Montero",
+    src: "songs/Cambiado.mp3",
+    cover: "images/Cambiado.jpg"
+  },
+  {
+    title: "Cuando Yo Te Conocí",
+    artist: "Alex Zurdo",
+    src: "songs/Cuando.mp3",
+    cover: "images/Penta.jpg"
+  },
+  {
     title: "Tú Me Llamas (feat. Musiko)",
     artist: "Deluz/Musiko",
     src: "songs/llamas.mp3",
