@@ -519,13 +519,25 @@ const playlist = [
     title: "Lo Que Quieras Tú",
     artist: "La Feria Oficial/Redimi2",
     src: "songs/Quieras.mp3",
-    cover: "images/song25.png"
+    cover: "images/Lo.jpg"
   },
   {
     title: "GOZO",
     artist: "Miel San Marcos/Redimi2",
     src: "songs/GOZO.mp3",
     cover: "images/gozo.jpg"
+  },
+  {
+    title: "Todo Va a Estar Bien",
+    artist: "Redimi2/Evan Craft",
+    src: "songs/Bienn.mp3",
+    cover: "images/Bien.jpg"
+  },
+  {
+    title: "Pentagrama",
+    artist: "Alex Zurdo",
+    src: "songs/Penta.mp3",
+    cover: "images/Penta.jpg"
   },
   {
     title: "Tú Me Llamas (feat. Musiko)",
