@@ -522,6 +522,18 @@ const playlist = [
     cover: "images/song25.png"
   },
   {
+    title: "GOZO",
+    artist: "Miel San Marcos/Redimi2",
+    src: "songs/GOZO.mp3",
+    cover: "images/gozo.jpg"
+  },
+  {
+    title: "Tú Me Llamas (feat. Musiko)",
+    artist: "Deluz/Musiko",
+    src: "songs/llamas.mp3",
+    cover: "images/llamas.jpg"
+  },
+  {
     title: "Siguiéndote Los Pasos",
     artist: "Rojo",
     src: "songs/Pasos.mp3",
