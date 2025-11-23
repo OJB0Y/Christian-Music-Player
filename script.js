@@ -234,6 +234,12 @@ const playlist = [
     cover: "images/kiki.png"
   },
   {
+    title: "Soy Soldado",
+    artist: "Alex Campos/Redimi2",
+    src: "songs/soldado.mp3",
+    cover: "images/soldado.jpg"
+  },
+  {
     title: "Vida Encontré",
     artist: "Majo y Dan",
     src: "songs/song13.mp3",
