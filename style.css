@@ -245,10 +245,6 @@ body {
   cursor: pointer;
 }
 
-#playlist li:hover {
-  background: #3b6842;
-}
-
 #playlist li.active {
   background-color: #2ecc71;
   font-weight: bold;
