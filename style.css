@@ -61,7 +61,7 @@ body {
 
 .now-playing img {
   width: 100%;
-  max-width: 240px;
+  max-width: 250px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
@@ -154,24 +154,24 @@ body {
 }
 
 #shuffle svg {
-  width: 29px;
-  height: 29px;
+  width: 27px;
+  height: 27px;
 }
 
 
 #repeat svg {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 /* Make the Play/Pause button bigger */
 #play svg {
-  width: 70px;
-  height: 70px;
+  width: 72px;
+  height: 72px;
 }
 
 #play {
-  padding: 15px; /* a bit more space around the bigger icon */
+  padding: 13px; /* a bit more space around the bigger icon */
 }
 #play {
   /*background: #3b6842;*/
