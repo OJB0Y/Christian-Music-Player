@@ -6,12 +6,6 @@ const playlist = [
     cover: "images/song5.jpg"
   },
   {
-    title: "Medley De Boleros - Elías Arriaza.mp3",
-    artist: "Elías Arriaza",
-    src: "songs/Medley De Boleros - Elías Arriaza.mp3",
-    cover: "images/elias.png"
-  },
-  {
     title: "Como Una Flor (Versión Los Hermanos Reyes)",
     artist: "Hermanos Osorio, Los Hermanos Reyes de Guatemala",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
