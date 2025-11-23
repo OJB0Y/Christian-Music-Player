@@ -13,7 +13,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, #e87c04, #e87c04);
+  background-image: linear-gradient(to bottom, #232e4f, #202534);
   color: #fff;
 
   display: flex;
@@ -26,15 +26,16 @@ body {
 
 /* === MAIN CONTAINER === */
 .music-container {
-  /*margin-top: 20px;  adjust value as needed */
+  display: none;
+  /*margin-top: 20px;  adjust value as needed
   display: flex;
-  flex-direction: column; /* stacks elements for mobile */
+  flex-direction: column; stacks elements for mobile
   justify-content: center;
   align-items: center;
   width: 95%;
   max-width: 450px;
   padding: 1rem;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 /* === PLAYER CARD === */
