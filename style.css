@@ -26,26 +26,22 @@ body {
 
 /* === MAIN CONTAINER === */
 .music-container {
-  display: none;
-  /*margin-top: 20px;  adjust value as needed
+  margin-top: 20px;  /*adjust value as needed*/
   display: flex;
-  flex-direction: column; stacks elements for mobile
+  flex-direction: column; /*stacks elements for mobile*/
   justify-content: center;
   align-items: center;
   width: 95%;
   max-width: 450px;
   padding: 1rem;
-  box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 /* === PLAYER CARD === */
 .player {
   width: 100%;
-  background: rgba(34, 34, 34, 0.9);
+  background: #232e4f00;
   padding: 1.5rem;
-  border-radius: 16px;
-  border: 6px solid #444;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
   backdrop-filter: blur(6px);
   overflow: hidden;
