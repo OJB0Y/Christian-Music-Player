@@ -7,13 +7,13 @@ const playlist = [
   },
   {
     title: "Como Una Flor (Versión Los Hermanos Reyes)",
-    artist: "Hermanos Osorio, Los Hermanos Reyes de Guatemala",
+    artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
     cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png"
   },
   {
     title: "Que lindo es mi Cristo",
-    artist: "Wilson Camey, Los Hermanos Reyes de Guatemala",
+    artist: "Wilson Camey, Los Hermanos Reyes",
     src: "songs/Que lindo es mi Cristo.mp3",
     cover: "images/Que lindo es mi Cristo.png"
   },
@@ -85,7 +85,7 @@ const playlist = [
   },
   {
     title: "Quien me podrá separar",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/a3.mp3",
     cover: "images/a3.png"
   },
@@ -109,7 +109,7 @@ const playlist = [
   },
   {
     title: "Ahora Soy Feliz",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/song1.mp3",
     cover: "images/song1.jpg"
   },
@@ -283,91 +283,91 @@ const playlist = [
   },
   {
     title: "Yo Te Esperare",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Reyes.mp3",
     cover: "images/Hay una ciudad.png"
   },
   {
     title: "Has Cambiado mi lamento",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/lamento.mp3",
     cover: "images/lamento.jpg"
   },
   {
     title: "Te Doy Gracias",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/song27.mp3",
     cover: "images/song27.png"
   },
   {
     title: "Que Bueno es El Señor",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Que Bueno es El Señor.mp3",
     cover: "images/Que Bueno es El Señor.png"
   },
   {
     title: "He peleado la batalla",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/He peleado la batalla.mp3",
     cover: "images/He peleado la batalla.png"
   },
   {
     title: "Tengo un Dios",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Tengo un Dios.mp3",
     cover: "images/Tengo un Dios.png"
   },
   {
     title: "Hay un Dios",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Hay un Dios.mp3",
     cover: "images/Hay un Dios.png"
   },
   {
     title: "Hay una Ciudad",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Hay una ciudad.mp3",
     cover: "images/Hay una ciudad.png",
   },
   {
     title: "Alla en los Olivos",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Alla en los olivos.mp3",
     cover: "images/Hay una ciudad.png"
   },
   {
     title: "Como una Flor",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/song19.mp3",
     cover: "images/song19.png"
   },
   {
     title: "Como Una Flor - (EN VIVO)",
-    artist: "Wilson Camey/Los Hermanos Reyes de Guatemala",
+    artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Como Una Flor - En vivo - Wilson Camey.mp3",
     cover: "images/wilson.png"
   },
   {
     title: "Alto Precio - (EN VIVO)",
-    artist: "Wilson Camey/Los Hermanos Reyes de Guatemala",
+    artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Alto Precio - En vivo - Wilson Camey.mp3",
     cover: "images/wilson.png"
   },
   {
     title: "Alto Precio",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Alto Precio.mp3",
     cover: "images/song27.png"
   },
   {
     title: "Que Contento Estoy - (EN VIVO)",
-    artist: "Wilson Camey/Los Hermanos Reyes de Guatemala",
+    artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Que Contento Estoy - En vivo - Wilson Camey.mp3",
     cover: "images/wilson.png"
   },
   {
     title: "Contento Estoy",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Contento Estoy.mp3",
     cover: "images/song27.png"
   },
@@ -421,7 +421,7 @@ const playlist = [
   },
   {
     title: "Soy Feliz",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Soy feliz.mp3",
     cover: "images/He peleado la batalla.png"
   },
@@ -451,7 +451,7 @@ const playlist = [
   },
   {
     title: "Amartesolo a ti Señor",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Amarte.mp3",
     cover: "images/Hay un Dios.png"
   },
@@ -487,7 +487,7 @@ const playlist = [
   },
   {
     title: "Te Necesito",
-    artist: "Los Hermanos Reyes de Guatemala",
+    artist: "Los Hermanos Reyes",
     src: "songs/Te necesito.mp3",
     cover: "images/Hay una ciudad.png"
   },
