@@ -57,7 +57,7 @@ body {
 
 .now-playing img {
   width: 100%;
-  max-width: 270px;
+  max-width: 250px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
