@@ -13,7 +13,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, #282a33, #212328); /*gradient stuff*/
+  background-image: linear-gradient(to bottom, #313548, #181a1e); /*gradient stuff*/
   color: #fff;
 
   display: flex;
