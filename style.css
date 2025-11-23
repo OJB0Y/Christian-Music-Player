@@ -40,7 +40,7 @@ body {
 /* === PLAYER CARD === */
 .player {
   width: 100%;
-  background: #232e4f00;
+  background: #232e4f00; /*go invisible*/
   padding: 1.5rem;
   text-align: center;
   backdrop-filter: blur(6px);
