@@ -6,7 +6,7 @@ const playlist = [
     cover: "images/song5.jpg"
   },
   {
-    title: "Como Una Flor (Ft Los Hermanos Reyes)",
+    title: "Como Una Flor Ft. Los Hermanos Reyes",
     artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
     cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png"
@@ -258,7 +258,7 @@ const playlist = [
     cover: "images/song15.png"
   },
   {
-    title: "Más Que Nunca feat. Danilo Montero (Versión Acústica)",
+    title: "Más Que Nunca Ft. Danilo Montero",
     artist: "Un Corazón",
     src: "songs/song16.mp3",
     cover: "images/song16.png"
