@@ -1,7 +1,7 @@
 /* === FULL SCREEN RESET === */
 /* === i hope this works... === */
 html, body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -19,9 +19,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*height: 100vh;  fills the full screen height */
+  height: 100vh; /*fills the full screen height */
   box-sizing: border-box;
-  padding-top: env(safe-area-inset-top); /* fixes iPhone notch + top crop */
+  padding-top: env(safe-area-inset-top); /*fixes iPhone notch + top crop */
 }
 
 /* === MAIN CONTAINER === */
