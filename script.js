@@ -6,7 +6,7 @@ const playlist = [
     cover: "images/song5.jpg"
   },
   {
-    title: "Como Una Flor (Versión Los Hermanos Reyes)",
+    title: "Como Una Flor (Ft Los Hermanos Reyes)",
     artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
     cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png"
