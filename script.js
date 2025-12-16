@@ -18,10 +18,16 @@ const playlist = [
     cover: "images/Que lindo es mi Cristo.png"
   },
   {
-    title: "Confía en el Señor (ft Francisco Orantes)",
+    title: "Confía en el Señor Ft Francisco Orantes",
     artist: "Hermanos Osorio, Francisco Orantes",
     src: "songs/Confía en el Señor - Hermanos Osorio.mp3",
     cover: "images/orantes.png"
+  },
+  {
+      title: "Cuando Muera Yo Ft. Los Hermanos Reyes",
+      artist: "Los Voceros de Cristo/Los Hermanos Reyes",
+      src: "songs/Cuando Muera Yo.mp3",
+      cover: "images/Cuando Muera Yo.png",
   },
   {
     title: "A donde quiera que me lleves señor",
