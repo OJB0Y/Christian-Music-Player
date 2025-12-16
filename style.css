@@ -13,10 +13,10 @@ html, body {
 
 body {
   font-family: sans-serif;
-  /*background-image: linear-gradient(to bottom, #313548, #181a1e); /*gradient stuff*/
-  background-image: url('images/gradient.png');
+  background-image: linear-gradient(to bottom, #313548, #181a1e); /*gradient stuff*/
+  /*background-image: url('images/gradient.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100%;*/
   color: #fff;
 
   display: flex;
