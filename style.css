@@ -9,10 +9,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to bottom, #313548, #181a1e); /*gradient stuff*/
-  /*background-image: url('images/gradient.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;*/
+  background-image: linear-gradient(to bottom, #434863, #181a1e); /*gradient stuff*/
   color: #fff;
 
   display: flex;
@@ -38,8 +35,6 @@ body {
 /* === PLAYER CARD === */
 .player {
   width: 100%;
-  /*min-height: 100dvh;*/
-  background: #232e4f00; /*go invisible*/
   padding: 1.5rem;
   text-align: center;
   backdrop-filter: blur(6px);
@@ -74,6 +69,12 @@ body {
   color: #bbb;
 }
 
+.search-head {
+  display: flex;
+  justify-content: center;
+  gap: 1vh;
+}
+
 /*shown state*/
 /*placeholder*/
 .toggle-playlist-btn {
@@ -82,7 +83,6 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-right: 95vh;
 
   background: transparent;
   border: none;
@@ -95,6 +95,11 @@ body {
 .playlist-hidden #search-bar,
 .playlist-hidden #playlist {
   display: none;
+}
+
+
+.playlist-hidden #toggle-playlist{
+  margin-right: 100vh;
 }
 
 #toggle-playlist svg {
@@ -157,7 +162,7 @@ body {
   color: white;              /* icons/text stay visible */
   cursor: pointer;
   transition: transform 0.08s;  /* optional hover/press effect */
-  padding: 2.5px;
+  padding: 20.5px;
   border-radius: 100px;
 }
 
@@ -190,11 +195,10 @@ body {
 }
 
 #play {
-  padding: 7px; /* a bit more space around the bigger icon */
+  padding: 0px; /* a bit more space around the bigger icon */
 }
 #play {
   /*background: #3b6842;*/
-  border-radius: 50%;
   transition: transform 0.15s ease, background 0.2s;
 }
 
