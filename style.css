@@ -17,7 +17,7 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   height: 100vh; /*fills the full screen height */
   box-sizing: border-box;
   /*padding-top: env(safe-area-inset-top); /*fixes iPhone notch + top crop */
@@ -25,7 +25,6 @@ body {
 
 /* === MAIN CONTAINER === */
 .music-container {
-  margin-top: 20px;  /*adjust value as needed*/
   display: flex;
   flex-direction: column; /*stacks elements for mobile*/
   justify-content: center;
