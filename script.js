@@ -792,10 +792,7 @@ togglePlaylistBtn.addEventListener('click', () => {
   autoScrollEnabled = playlistVisible;
 
   playlistWrapper.classList.toggle('playlist-hidden', !playlistVisible);
-
-  togglePlaylistBtn.textContent = playlistVisible
-    ? 'Hide Playlist'
-    : 'Show Playlist';
+  togglePlaylistBtn.classList.toggle('mode-active', !playlistVisible);
 });
 
 

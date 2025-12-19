@@ -99,6 +99,17 @@ body {
   height: 15px;
 }
 
+/* default (white) */
+#toggle-playlist {
+  color: white;
+}
+
+/* active (green, like shuffle/repeat) */
+#toggle-playlist.mode-active {
+  color: #49f566;
+}
+
+
 /* === SEEK BAR === */
 #seek-bar {
   width: 100%;
