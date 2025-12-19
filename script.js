@@ -31,6 +31,12 @@ const playlist = [
       cover: "images/Cuando Muera Yo.png",
   },
   {
+    title: "Oh Alma Mía",
+    artist: "Los Voceros de Cristo",
+    src: "songs/a5.mp3",
+    cover: "images/a5.png"
+  },
+  {
     title: "A donde quiera que me lleves señor",
     artist: "Julio Elias",
     src: "songs/Julio Elias.mp3",
@@ -71,12 +77,6 @@ const playlist = [
     artist: "Marcos Witt/Alex Campos",
     src: "songs/a6.mp3",
     cover: "images/a6.png"
-  },
-  {
-    title: "Oh Alma Mía",
-    artist: "Los Voceros de Cristo",
-    src: "songs/a5.mp3",
-    cover: "images/a5.png"
   },
   {
     title: "Me Dicen Que Me Aman",
