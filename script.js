@@ -55,12 +55,6 @@ const playlist = [
     cover: "images/a5.png"
   },
   {
-    title: "Jesús es mi Refugio",
-    artist: "Los Voceros de Cristo",
-    src: "songs/Refugio.mp3",
-    cover: "images/new3.png"
-  },
-  {
     title: "Mi cántaro vacío",
     artist: "Los Voceros de Cristo",
     src: "songs/cántaro.mp3",
@@ -83,6 +77,12 @@ const playlist = [
     artist: "Leonel Tuchez",
     src: "songs/Nicodemo.mp3",
     cover: "images/Esperando.jpg"
+  },
+  {
+    title: "Jesús es mi Refugio",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Refugio.mp3",
+    cover: "images/new3.png"
   },
   {
     title: "A donde quiera que me lleves señor",
