@@ -7,10 +7,6 @@ html, body {
   padding: 0;
 }
 
-.title-cover {
-  margin-top: 30px; /* creates space above the whole cover section */
-}
-
 body {
   font-family: sans-serif;
   background-image: linear-gradient(to bottom, #313548, #181a1e); /*gradient stuff*/
@@ -21,7 +17,7 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   height: 100vh; /*fills the full screen height */
   box-sizing: border-box;
   /*padding-top: env(safe-area-inset-top); /*fixes iPhone notch + top crop */
@@ -34,7 +30,7 @@ body {
   flex-direction: column; /*stacks elements for mobile*/
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
   max-width: 450px;
   padding: 2rem; /*was 1*/
   box-sizing: border-box;
