@@ -51,7 +51,7 @@ body {
 
 .now-playing img {
   width: 100%;
-  max-width: 400px;
+  max-width: 415px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
@@ -80,8 +80,8 @@ body {
 .toggle-playlist-btn {
   margin-bottom: 8px;
   padding: 1px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 
   background: transparent;
@@ -99,12 +99,12 @@ body {
 
 
 .playlist-hidden #toggle-playlist{
-  margin-right: 100vh;
+  margin-right: 35vh;
 }
 
 #toggle-playlist svg {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 /* default (white) */
@@ -162,7 +162,7 @@ body {
   color: white;              /* icons/text stay visible */
   cursor: pointer;
   transition: transform 0.08s;  /* optional hover/press effect */
-  padding: 20.5px;
+  padding: 12px;
   border-radius: 100px;
 }
 
@@ -255,7 +255,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 8vh; /* dynamically limits playlist height */
+  max-height: 15vh; /* dynamically limits playlist height */
   overflow-y: auto;
   border: 2px solid #343d3f;
   border-radius: 8px;

@@ -79,6 +79,84 @@ const playlist = [
     cover: "images/Esperando.jpg"
   },
   {
+    title: "Te Doy Gracias",
+    artist: "Los Hermanos Reyes/Leonel Tuchez",
+    src: "songs/song27.mp3",
+    cover: "images/song27.png"
+  },
+  {
+    title: "Que Bueno es El Señor",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Que Bueno es El Señor.mp3",
+    cover: "images/Que Bueno es El Señor.png"
+  },
+  {
+    title: "He peleado la batalla",
+    artist: "Los Hermanos Reyes",
+    src: "songs/He peleado la batalla.mp3",
+    cover: "images/He peleado la batalla.png"
+  },
+  {
+    title: "Tengo un Dios",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Tengo un Dios.mp3",
+    cover: "images/Tengo un Dios.png"
+  },
+  {
+    title: "Hay un Dios",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Hay un Dios.mp3",
+    cover: "images/Hay un Dios.png"
+  },
+  {
+    title: "Hay una Ciudad",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Hay una ciudad.mp3",
+    cover: "images/Hay una ciudad.png",
+  },
+  {
+    title: "Alla en los Olivos",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Alla en los olivos.mp3",
+    cover: "images/Hay una ciudad.png"
+  },
+  {
+    title: "Como una Flor",
+    artist: "Los Hermanos Reyes",
+    src: "songs/song19.mp3",
+    cover: "images/song19.png"
+  },
+  {
+    title: "Como Una Flor - (EN VIVO)",
+    artist: "Wilson Camey/Los Hermanos Reyes",
+    src: "songs/Como Una Flor - En vivo - Wilson Camey.mp3",
+    cover: "images/wilson.png"
+  },
+  {
+    title: "Alto Precio - (EN VIVO)",
+    artist: "Wilson Camey/Los Hermanos Reyes",
+    src: "songs/Alto Precio - En vivo - Wilson Camey.mp3",
+    cover: "images/wilson.png"
+  },
+  {
+    title: "Alto Precio",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Alto Precio.mp3",
+    cover: "images/song27.png"
+  },
+  {
+    title: "Que Contento Estoy - (EN VIVO)",
+    artist: "Wilson Camey/Los Hermanos Reyes",
+    src: "songs/Que Contento Estoy - En vivo - Wilson Camey.mp3",
+    cover: "images/wilson.png"
+  },
+  {
+    title: "Contento Estoy",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Contento Estoy.mp3",
+    cover: "images/song27.png"
+  },
+  {
     title: "Jesús es mi Refugio",
     artist: "Los Voceros de Cristo",
     src: "songs/Refugio.mp3",
@@ -335,84 +413,6 @@ const playlist = [
     artist: "Los Hermanos Reyes",
     src: "songs/lamento.mp3",
     cover: "images/lamento.jpg"
-  },
-  {
-    title: "Te Doy Gracias",
-    artist: "Los Hermanos Reyes",
-    src: "songs/song27.mp3",
-    cover: "images/song27.png"
-  },
-  {
-    title: "Que Bueno es El Señor",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Que Bueno es El Señor.mp3",
-    cover: "images/Que Bueno es El Señor.png"
-  },
-  {
-    title: "He peleado la batalla",
-    artist: "Los Hermanos Reyes",
-    src: "songs/He peleado la batalla.mp3",
-    cover: "images/He peleado la batalla.png"
-  },
-  {
-    title: "Tengo un Dios",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Tengo un Dios.mp3",
-    cover: "images/Tengo un Dios.png"
-  },
-  {
-    title: "Hay un Dios",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Hay un Dios.mp3",
-    cover: "images/Hay un Dios.png"
-  },
-  {
-    title: "Hay una Ciudad",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Hay una ciudad.mp3",
-    cover: "images/Hay una ciudad.png",
-  },
-  {
-    title: "Alla en los Olivos",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Alla en los olivos.mp3",
-    cover: "images/Hay una ciudad.png"
-  },
-  {
-    title: "Como una Flor",
-    artist: "Los Hermanos Reyes",
-    src: "songs/song19.mp3",
-    cover: "images/song19.png"
-  },
-  {
-    title: "Como Una Flor - (EN VIVO)",
-    artist: "Wilson Camey/Los Hermanos Reyes",
-    src: "songs/Como Una Flor - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png"
-  },
-  {
-    title: "Alto Precio - (EN VIVO)",
-    artist: "Wilson Camey/Los Hermanos Reyes",
-    src: "songs/Alto Precio - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png"
-  },
-  {
-    title: "Alto Precio",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Alto Precio.mp3",
-    cover: "images/song27.png"
-  },
-  {
-    title: "Que Contento Estoy - (EN VIVO)",
-    artist: "Wilson Camey/Los Hermanos Reyes",
-    src: "songs/Que Contento Estoy - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png"
-  },
-  {
-    title: "Contento Estoy",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Contento Estoy.mp3",
-    cover: "images/song27.png"
   },
 /*  {
     title: "Todo Cambiará",
