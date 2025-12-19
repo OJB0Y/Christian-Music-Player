@@ -87,7 +87,13 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-right: 50px;
+  margin-right: 95vh;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 /*hidden state*/ 
