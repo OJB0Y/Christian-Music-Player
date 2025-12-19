@@ -37,22 +37,58 @@ const playlist = [
     cover: "images/a5.png"
   },
   {
+    title: "Yo Te Esperare",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Reyes.mp3",
+    cover: "images/Hay una ciudad.png"
+  },
+  {
+    title: "Soy Feliz",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Soy feliz.mp3",
+    cover: "images/He peleado la batalla.png"
+  },
+  {
+    title: "Loor a ti mi Dios v2",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Loor2.mp3",
+    cover: "images/a5.png"
+  },
+  {
+    title: "Jesús es mi Refugio",
+    artist: "Los Voceros de Cristo",
+    src: "songs/Refugio.mp3",
+    cover: "images/new3.png"
+  },
+  {
+    title: "Mi cántaro vacío",
+    artist: "Los Voceros de Cristo",
+    src: "songs/cántaro.mp3",
+    cover: "images/a5.png"
+  },
+  {
+    title: "El volverá",
+    artist: "Los Voceros de Cristo/Aníbal Marroquín",
+    src: "songs/volverá.mp3",
+    cover: "images/new4.png"
+  },
+  {
+    title: "Amartesolo a ti Señor",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Amarte.mp3",
+    cover: "images/Hay un Dios.png"
+  },
+  {
+    title: "Nicodemo",
+    artist: "Leonel Tuchez",
+    src: "songs/Nicodemo.mp3",
+    cover: "images/Esperando.jpg"
+  },
+  {
     title: "A donde quiera que me lleves señor",
     artist: "Julio Elias",
     src: "songs/Julio Elias.mp3",
     cover: "images/Julio Elias.png"
-  },
-  {
-    title: "Tengo Un Dios - Julio Elías",
-    artist: "Julio Elias",
-    src: "songs/Tengo Un Dios - Julio Elías.mp3",
-    cover: "images/cover1.jpg"
-  },
-  {
-    title: "Agradecimiento",
-    artist: "Manuel Bonilla",
-    src: "songs/Agradecimiento - Manuel Bonilla.mp3",
-    cover: "images/manuel.png"
   },
   {
     title: "Buscale",
@@ -65,6 +101,18 @@ const playlist = [
     artist: "Leonel Tuchez",
     src: "songs/Esperando.mp3",
     cover: "images/Esperando.jpg"
+  },
+  {
+    title: "Tengo Un Dios - Julio Elías",
+    artist: "Julio Elias",
+    src: "songs/Tengo Un Dios - Julio Elías.mp3",
+    cover: "images/cover1.jpg"
+  },
+  {
+    title: "Agradecimiento",
+    artist: "Manuel Bonilla",
+    src: "songs/Agradecimiento - Manuel Bonilla.mp3",
+    cover: "images/manuel.png"
   },
   {
     title: "Todo el Mundo Busca",
@@ -235,18 +283,6 @@ const playlist = [
     cover: "images/evan.png"
   },
   {
-    title: "Empezar de Nuevo",
-    artist: "Kike Pavón/Funky",
-    src: "songs/Empezar.mp3",
-    cover: "images/kiki.png"
-  },
-  {
-    title: "Soy Soldado",
-    artist: "Alex Campos/Redimi2",
-    src: "songs/soldado.mp3",
-    cover: "images/soldado.jpg"
-  },
-  {
     title: "Vida Encontré",
     artist: "Majo y Dan",
     src: "songs/song13.mp3",
@@ -293,12 +329,6 @@ const playlist = [
     artist: "Rojo",
     src: "songs/Si No Fuera Por Ti.mp3",
     cover: "images/Si No Fuera Por Ti.png"
-  },
-  {
-    title: "Yo Te Esperare",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Reyes.mp3",
-    cover: "images/Hay una ciudad.png"
   },
   {
     title: "Has Cambiado mi lamento",
@@ -433,42 +463,6 @@ const playlist = [
     cover: "images/song26.png"
   },
   {
-    title: "Soy Feliz",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Soy feliz.mp3",
-    cover: "images/He peleado la batalla.png"
-  },
-  {
-    title: "Loor a ti mi Dios v2",
-    artist: "Los Voceros de Cristo",
-    src: "songs/Loor2.mp3",
-    cover: "images/a5.png"
-  },
-  {
-    title: "Jesús es mi Refugio",
-    artist: "Los Voceros de Cristo",
-    src: "songs/Refugio.mp3",
-    cover: "images/new3.png"
-  },
-  {
-    title: "Mi cántaro vacío",
-    artist: "Los Voceros de Cristo",
-    src: "songs/cántaro.mp3",
-    cover: "images/a5.png"
-  },
-  {
-    title: "El volverá",
-    artist: "Los Voceros de Cristo/Aníbal Marroquín",
-    src: "songs/volverá.mp3",
-    cover: "images/new4.png"
-  },
-  {
-    title: "Amartesolo a ti Señor",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Amarte.mp3",
-    cover: "images/Hay un Dios.png"
-  },
-  {
     title: "Los Que Esperan En Jehová",
     artist: "Manuel Bonilla",
     src: "songs/Esperan.mp3",
@@ -479,12 +473,6 @@ const playlist = [
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/Luismi.mp3",
     cover: "images/new1.png"
-  },
-  {
-    title: "Nicodemo",
-    artist: "Leonel Tuchez",
-    src: "songs/Nicodemo.mp3",
-    cover: "images/Esperando.jpg"
   },
   {
     title: "Imagínate",
@@ -545,6 +533,18 @@ const playlist = [
     artist: "Alex Zurdo",
     src: "songs/Penta.mp3",
     cover: "images/Penta.jpg"
+  },
+  {
+    title: "Empezar de Nuevo",
+    artist: "Kike Pavón/Funky",
+    src: "songs/Empezar.mp3",
+    cover: "images/kiki.png"
+  },
+  {
+    title: "Soy Soldado",
+    artist: "Alex Campos/Redimi2",
+    src: "songs/soldado.mp3",
+    cover: "images/soldado.jpg"
   },
   {
     title: "Todo Lo Has Cambiado",
