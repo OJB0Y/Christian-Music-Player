@@ -384,7 +384,7 @@ const playlist = [
     src: "songs/Contento Estoy.mp3",
     cover: "images/song27.png"
   },
-  {
+/*  {
     title: "Todo Cambiará",
     artist: "Aníbal Marroquín",
     src: "songs/song20.mp3",
@@ -395,7 +395,7 @@ const playlist = [
     artist: "Aníbal Marroquín",
     src: "songs/song21.mp3",
     cover: "images/song21.png"
-  },
+  },*/
   {
     title: "Deja las Drogas",
     artist: "Aníbal Marroquín",
