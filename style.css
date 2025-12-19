@@ -83,7 +83,8 @@ body {
 .toggle-playlist-btn {
   margin-bottom: 8px;
   padding: 6px;
-  color: white;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
 }
 
@@ -94,8 +95,8 @@ body {
 }
 
 #toggle-playlist svg {
-  width: 27px;
-  height: 27px;
+  width: 10px;
+  height: 10px;
 }
 
 /* === SEEK BAR === */
