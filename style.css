@@ -43,6 +43,7 @@ body {
 /* === PLAYER CARD === */
 .player {
   width: 100%;
+  min-height: 100dvh;
   background: #232e4f00; /*go invisible*/
   padding: 1.5rem;
   text-align: center;
@@ -76,6 +77,25 @@ body {
   margin: 0;
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   color: #bbb;
+}
+
+/*shown state*/
+.toggle-playlist-btn {
+  margin-bottom: 8px;
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/*hidden state*/
+.playlist-hidden #search-bar,
+.playlist-hidden #playlist {
+  display: none;
+}
+
+#toggle-playlist svg {
+  width: 27px;
+  height: 27px;
 }
 
 /* === SEEK BAR === */

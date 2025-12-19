@@ -503,12 +503,12 @@ const playlist = [
     src: "songs/Te necesito.mp3",
     cover: "images/Hay una ciudad.png"
   },
-  {
+/*  {
     title: "Mi Nuevo Amor",
     artist: "Roberto Orellana",
     src: "songs/Nuevo.mp3",
     cover: "images/image.png"
-  },
+  },*/
   {
     title: "La Niña de tus Ojos",
     artist: "Daniel Calveti",
@@ -663,12 +663,18 @@ const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('total-duration');
 const searchBar = document.getElementById('search-bar');
 
+const playlistWrapper = document.querySelector('.playlist-wrapper');
+const togglePlaylistBtn = document.getElementById('toggle-playlist');
+
 
 // --- state ---
 let currentSong = 0;
 let isPlaying = false;
 let repeat = false;
 let shuffle = false;
+let playlistVisible = true;
+let autoScrollEnabled = true;
+
 
 // shuffle queue + position
 let shuffleQueue = [];
@@ -766,7 +772,7 @@ function updateActiveSong() {
   const items = document.querySelectorAll('#playlist li');
   items.forEach((item, i) => {
     item.classList.toggle('active', i === currentSong);
-    if (i === currentSong) {
+    if (i === currentSong && autoScrollEnabled) {
       item.scrollIntoView({ behavior: 'smooth', block: 'center' });//
     }
   });
@@ -781,6 +787,18 @@ function formatTime(seconds) {
 }
 
 // --- audio events ---
+togglePlaylistBtn.addEventListener('click', () => {
+  playlistVisible = !playlistVisible;
+  autoScrollEnabled = playlistVisible;
+
+  playlistWrapper.classList.toggle('playlist-hidden', !playlistVisible);
+
+  togglePlaylistBtn.textContent = playlistVisible
+    ? 'Hide Playlist'
+    : 'Show Playlist';
+});
+
+
 audio.addEventListener('timeupdate', () => {
   seekBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
   currentTimeEl.textContent = formatTime(audio.currentTime);
