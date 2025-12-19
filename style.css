@@ -83,8 +83,8 @@ body {
 .toggle-playlist-btn {
   margin-bottom: 8px;
   padding: 6px;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -95,8 +95,8 @@ body {
 }
 
 #toggle-playlist svg {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 /* default (white) */
