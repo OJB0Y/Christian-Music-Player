@@ -125,7 +125,7 @@ const playlist = [
     artist: "Los Hermanos Reyes",
     src: "songs/pueblo.mp3",
     cover: "images/Hay un Dios.png"
-  },
+  }, 
   {
     title: "Tengo un Dios",
     artist: "Los Hermanos Reyes",
