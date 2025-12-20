@@ -34,7 +34,6 @@ body {
 
 /* === PLAYER CARD === */
 .player {
-  margin-bottom:50px;
   width: 100%;
   padding: 1.5rem;
   text-align: center;
@@ -256,7 +255,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 15vh; /* dynamically limits playlist height */
+  max-height: 12vh; /* dynamically limits playlist height */
   overflow-y: auto;
   border: 2px solid #343d3f;
   border-radius: 8px;
