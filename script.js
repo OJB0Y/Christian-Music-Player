@@ -67,10 +67,34 @@ const playlist = [
     cover: "images/new4.png"
   },
   {
-    title: "Amartesolo a ti Señor",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Amarte.mp3",
-    cover: "images/Hay un Dios.png"
+    title: "Por Herencia",
+    artist: "Francisco Orantes/Marilú Orantes",
+    src: "songs/Por Herencia.mp3",
+    cover: "images/Por Herencia.jpg"
+  },
+  {
+    title: "Jesús",
+    artist: "Francisco Orantes",
+    src: "songs/Jesús.mp3",
+    cover: "images/Jesús.jpg"
+  },
+  {
+    title: "Su amor siempre es su amor",
+    artist: "Los Voceros de Cristo//Ruth E. Gomez",
+    src: "songs/su amor.mp3",
+    cover: "images/su amor.jpg"
+  },
+  {
+    title: "La Perdida Oveja",
+    artist: "Los Voceros de Cristo/Leonel Tuchez",
+    src: "songs/La perdida oveja.mp3",
+    cover: "images/a5.png"
+  },
+  {
+    title: "Te Doy Gracias",
+    artist: "Los Hermanos Reyes/Leonel Tuchez",
+    src: "songs/song27.mp3",
+    cover: "images/song27.png"
   },
   {
     title: "Nicodemo",
@@ -79,10 +103,10 @@ const playlist = [
     cover: "images/Esperando.jpg"
   },
   {
-    title: "Te Doy Gracias",
-    artist: "Los Hermanos Reyes/Leonel Tuchez",
-    src: "songs/song27.mp3",
-    cover: "images/song27.png"
+    title: "Amartesolo a ti Señor",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Amarte.mp3",
+    cover: "images/Hay un Dios.png"
   },
   {
     title: "Que Bueno es El Señor",
@@ -361,12 +385,6 @@ const playlist = [
     cover: "images/evan.png"
   },
   {
-    title: "Vida Encontré",
-    artist: "Majo y Dan",
-    src: "songs/song13.mp3",
-    cover: "images/song13.png"
-  },
-  {
     title: "Sueños",
     artist: "Un Corazón",
     src: "songs/song14.mp3",
@@ -383,6 +401,12 @@ const playlist = [
     artist: "Un Corazón",
     src: "songs/song16.mp3",
     cover: "images/song16.png"
+  },
+  {
+    title: "Cuando Te Encontré",
+    artist: "Rojo/Strings & Heart",
+    src: "songs/Cuando (1).mp3",
+    cover: "images/Cuando.jpg"
   },
   {
     title: "Eres Todopoderoso",
@@ -407,6 +431,12 @@ const playlist = [
     artist: "Rojo",
     src: "songs/Si No Fuera Por Ti.mp3",
     cover: "images/Si No Fuera Por Ti.png"
+  },
+  {
+    title: "Siguiéndote Los Pasos",
+    artist: "Rojo",
+    src: "songs/Pasos.mp3",
+    cover: "images/song17.png"
   },
   {
     title: "Has Cambiado mi lamento",
@@ -443,24 +473,6 @@ const playlist = [
     artist: "Leonel Tuchez",
     src: "songs/song24.mp3",
     cover: "images/song24.png"
-  },
-  {
-    title: "Si Puedes Creer",
-    artist: "Musiko/Majo y Dan",
-    src: "songs/Si Puedes Creer.mp3",
-    cover: "images/Si Puedes Creer.png"
-  },
-  {
-    title: "Laberintos",
-    artist: "La Feria Oficial/Majo y Dan",
-    src: "songs/song25.mp3",
-    cover: "images/song25.png"
-  },
-  {
-    title: "El Secreto",
-    artist: "Majo y Dan",
-    src: "songs/song26.mp3",
-    cover: "images/song26.png"
   },
   {
     title: "Los Que Esperan En Jehová",
@@ -523,6 +535,48 @@ const playlist = [
     cover: "images/gozo.jpg"
   },
   {
+    title: "El Nombre De Jesús",
+    artist: "Redimi2/Christine D'Clario",
+    src: "songs/Nombre.mp3",
+    cover: "images/image (5).png"
+  },
+  {
+    title: "Espíritu Santo",
+    artist: "Redimi2/Barak",
+    src: "songs/Espíritu.mp3",
+    cover: "images/image (5).png"
+  },
+  {
+    title: "Viviré",
+    artist: "Redimi2/Evan Craft",
+    src: "songs/Viviré.mp3",
+    cover: "images/image (6).png"
+  },
+  {
+    title: "NO HAY NADA IMPOSIBLE",
+    artist: "Redimi2/Danny Gokey",
+    src: "songs/Gokey.mp3",
+    cover: "images/Gokey.jpg"
+  },
+  {
+    title: "La Casa De Jehová",
+    artist: "Redimi2/Barak",
+    src: "songs/Barak.mp3",
+    cover: "images/Barak.jpg"
+  },
+  {
+    title: "Mi Dios Puede",
+    artist: "Redimi2/Sarai Rivera",
+    src: "songs/puede.mp3",
+    cover: "images/puede.jpg",
+  },
+  {
+    title: "Arde En Mi",
+    artist: "Evan Craft/Redimi2",
+    src: "songs/Arde.mp3",
+    cover: "images/Arde.jpg",
+  },
+  {
     title: "Todo Va a Estar Bien",
     artist: "Redimi2/Evan Craft",
     src: "songs/Bienn.mp3",
@@ -565,12 +619,6 @@ const playlist = [
     cover: "images/llamas.jpg"
   },
   {
-    title: "Siguiéndote Los Pasos",
-    artist: "Rojo",
-    src: "songs/Pasos.mp3",
-    cover: "images/song17.png"
-  },
-  {
     title: "Solo tú",
     artist: "Un Corazón/Lead/Kim Richards/Louie Abrego",
     src: "songs/Solo tú.mp3",
@@ -601,22 +649,10 @@ const playlist = [
     cover: "images/image (4).png"
   },
   {
-    title: "El Nombre De Jesús",
-    artist: "Redimi2/Christine D'Clario",
-    src: "songs/Nombre.mp3",
-    cover: "images/image (5).png"
-  },
-  {
-    title: "Espíritu Santo",
-    artist: "Redimi2/Barak",
-    src: "songs/Espíritu.mp3",
-    cover: "images/image (5).png"
-  },
-  {
-    title: "Viviré",
-    artist: "Redimi2/Evan Craft",
-    src: "songs/Viviré.mp3",
-    cover: "images/image (6).png"
+    title: "Gracias (Remix)",
+    artist: "Majo y Dan/Musiko",
+    src: "songs/G_Remix.mp3",
+    cover: "images/G_Remix.jpg"
   },
   { 
     title: "Que Pase El Mundo",
@@ -629,6 +665,30 @@ const playlist = [
     artist: "Majo y Dan/Musiko",
     src: "songs/song7 (1).mp3",
     cover: "images/song7 (1).png"
+  },
+  {
+    title: "Si Puedes Creer",
+    artist: "Musiko/Majo y Dan",
+    src: "songs/Si Puedes Creer.mp3",
+    cover: "images/Si Puedes Creer.png"
+  },
+  {
+    title: "Laberintos",
+    artist: "La Feria Oficial/Majo y Dan",
+    src: "songs/song25.mp3",
+    cover: "images/song25.png"
+  },
+  {
+    title: "El Secreto",
+    artist: "Majo y Dan",
+    src: "songs/song26.mp3",
+    cover: "images/song26.png"
+  },
+  {
+    title: "Vida Encontré",
+    artist: "Majo y Dan",
+    src: "songs/song13.mp3",
+    cover: "images/song13.png"
   },
   {
     title: "Juró Volver",
