@@ -80,8 +80,6 @@ body {
 .toggle-playlist-btn {
   margin-bottom: 8px;
   padding: 1px;
-  width: 35px;
-  height: 35px;
   cursor: pointer;
 
   background: transparent;
@@ -103,8 +101,8 @@ body {
 }
 
 #toggle-playlist svg {
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
 }
 
 /* default (white) */
@@ -242,7 +240,7 @@ body {
 #search-bar {
   width: 100%;
   padding: 4px;
-  margin: 0 0 8px;
+  margin: 0 0 16px;
   border: 2px solid #343d3f;
   border-radius: 8px;
   font-size: 14px;
@@ -255,7 +253,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 12vh; /* dynamically limits playlist height */
+  max-height: 18vh; /* dynamically limits playlist height */
   overflow-y: auto;
   border: 2px solid #343d3f;
   border-radius: 8px;
