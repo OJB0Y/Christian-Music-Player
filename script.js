@@ -707,6 +707,18 @@ const playlist = [
     artist: "PRISMA Más Vida/Majo y Dan",
     src: "songs/song9 (1).mp3",
     cover: "images/song9 (1).png"
+  },
+  {
+    title: "Ha Nacido (Venid y Adoremos)",
+    artist: "Un Corazón",
+    src: "songs/nacido.mp3",
+    cover: "images/nacido.jpg"
+  },
+  {
+    title: "Gloria en las Alturas",
+    artist: "Jonathan & Sarah Jerez",
+    src: "songs/gloria.mp3",
+    cover: "images/gloria.jpg"
   }
 ];
 
