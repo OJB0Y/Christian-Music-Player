@@ -774,7 +774,16 @@ function updateActiveSong() {
   items.forEach((item, i) => {
     item.classList.toggle('active', i === currentSong);
     if (i === currentSong && autoScrollEnabled) {
-      item.scrollIntoView({ behavior: 'smooth', block: 'center' });//
+      const container = playlistEl; // the scrolling element
+      const offset = 650;            // px from top (adjust freely)
+
+      const itemTop = item.offsetTop;
+      const containerHeight = container.clientHeight;
+
+      container.scrollTo({
+        top: itemTop - offset,
+        behavior: 'smooth'
+      });
     }
   });
 }
