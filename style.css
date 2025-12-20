@@ -97,7 +97,8 @@ body {
 
 
 .playlist-hidden #toggle-playlist{
-  margin-right: 35vh;
+  margin-right: 33vh;
+  margin-bottom:21vh;
 }
 
 #toggle-playlist svg {
