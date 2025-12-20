@@ -121,6 +121,12 @@ const playlist = [
     cover: "images/He peleado la batalla.png"
   },
   {
+    title: "Si Mi Pueblo Se Humillare",
+    artist: "Los Hermanos Reyes",
+    src: "songs/pueblo.mp3",
+    cover: "images/Hay un Dios.png"
+  },
+  {
     title: "Tengo un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Tengo un Dios.mp3",
