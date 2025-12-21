@@ -853,7 +853,7 @@ function updateActiveSong() {
     item.classList.toggle('active', i === currentSong);
     if (i === currentSong && autoScrollEnabled) {
       const container = playlistEl; // the scrolling element
-      const offset = 650;            // px from top (adjust freely)
+      const offset = 680;            // px from top (adjust freely)
 
       const itemTop = item.offsetTop;
       const containerHeight = container.clientHeight;
