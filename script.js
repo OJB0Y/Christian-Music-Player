@@ -719,7 +719,13 @@ const playlist = [
     artist: "Jonathan & Sarah Jerez",
     src: "songs/gloria.mp3",
     cover: "images/gloria.jpg"
-  }
+  },
+  {
+    title: "Medley Navideño",
+    artist: "Los Hermanos Osorio, Evelyn Edith GT",
+    src: "songs/medley.mp3",
+    cover: "images/medley.png"
+  },
 ];
 
 // --- element refs ---
