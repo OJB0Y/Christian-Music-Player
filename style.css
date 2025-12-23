@@ -49,7 +49,7 @@ body {
 
 .now-playing img {
   width: 100%;
-  max-width: 420px;
+  max-width: 450px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 11px;
@@ -95,8 +95,8 @@ body {
 
 
 .playlist-hidden #toggle-playlist{
-  margin-right: 34vh;
-  margin-bottom:20vh;
+  margin-right: 36.5vh;
+  margin-bottom:18vh;
 }
 
 #toggle-playlist svg {
