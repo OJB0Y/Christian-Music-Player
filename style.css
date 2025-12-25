@@ -257,17 +257,57 @@ body {
   background-color: #1a1a1a;
 }
 
+/* === PLAYLIST ITEMS WITH COVERS === */
 #playlist li {
-  padding: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
   border-bottom: 1px solid #6d6d6d;
   cursor: pointer;
 }
 
+/* small album cover */
+.playlist-cover {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+/* text container */
+.playlist-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.playlist-title {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlist-artist {
+  font-size: 12px;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* active row */
 #playlist li.active {
   background-color: #2ecc71;
-  font-weight: bold;
   color: black;
 }
+
+#playlist li.active .playlist-artist {
+  opacity: 0.85;
+}
+
 
 /* === SCROLLBAR STYLING === */
 #playlist::-webkit-scrollbar {

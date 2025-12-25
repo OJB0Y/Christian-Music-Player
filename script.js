@@ -830,13 +830,24 @@ function buildPlaylistUI(filterText = "") {
 
   playlist.forEach((song, index) => {
     if (song.title.toLowerCase().includes(lowerFilter) || 
-        song.artist.toLowerCase().includes(lowerFilter)) {
+        song.artist.toLowerCase().includes(lowerFilter)) 
+      {
       const li = document.createElement('li');
-      li.textContent = `${song.title} - ${song.artist}`;
+       li.classList.add('playlist-item');
+
+      li.innerHTML = `
+        <img src="${song.cover}" class="playlist-cover" loading="lazy">
+        <div class="playlist-text">
+          <div class="playlist-title">${song.title}</div>
+          <div class="playlist-artist">${song.artist}</div>
+        </div>
+      `;
+
       li.addEventListener('click', () => {
         playSong(index);
         if (shuffle) createShuffleQueue(index);
       });
+
       playlistEl.appendChild(li);
     }
   });
