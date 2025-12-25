@@ -250,7 +250,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 18.5vh; /* dynamically limits playlist height */
+  max-height: 19vh; /* dynamically limits playlist height */
   overflow-y: auto;
   border: 2px solid #343d3f;
   border-radius: 8px;
@@ -275,7 +275,7 @@ body {
   object-fit: cover;
   border-radius: 5px;
   flex-shrink: 0;
-  filter: blur(0.24px) brightness(0.95) contrast(0.9);
+  filter: blur(0.2px) brightness(0.95) contrast(0.9);
   /*low qualitysmall image just like Spotify!*/
 }
 
@@ -309,9 +309,10 @@ body {
 }
 
 /* active row */
-#playlist li.active {
-  background-color: #2ecc71;
-  color: black;
+#playlist li.active .playlist-title{
+  /*background-color: #2ecc71;*/
+  color: #2ecc71;
+  font-weight:700;
 }
 
 #playlist li.active .playlist-artist {

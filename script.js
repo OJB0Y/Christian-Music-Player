@@ -708,6 +708,7 @@ const playlist = [
     src: "songs/song9 (1).mp3",
     cover: "images/song9 (1).png"
   },
+  /*CHRISTMAS SONGS*/
   {
     title: "Ha Nacido (Venid y Adoremos)",
     artist: "Un Corazón",
