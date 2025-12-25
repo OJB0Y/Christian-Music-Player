@@ -250,7 +250,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 16.5vh; /* dynamically limits playlist height */
+  max-height: 17.5vh; /* dynamically limits playlist height */
   overflow-y: auto;
   border: 2px solid #343d3f;
   border-radius: 8px;
@@ -275,7 +275,7 @@ body {
   object-fit: cover;
   border-radius: 5px;
   flex-shrink: 0;
-  filter: blur(0.3px) brightness(0.95) contrast(0.9);
+  filter: blur(0.24px) brightness(0.95) contrast(0.9);
   /*low qualitysmall image just like Spotify!*/
 }
 
