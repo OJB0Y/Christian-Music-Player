@@ -752,6 +752,38 @@ const searchBar = document.getElementById('search-bar');
 const playlistWrapper = document.querySelector('.playlist-wrapper');
 const togglePlaylistBtn = document.getElementById('toggle-playlist');
 
+const miniCover = document.getElementById('mini-cover');
+const miniTitle = document.getElementById('mini-title');
+const miniArtist = document.getElementById('mini-artist');
+const miniPlay = document.getElementById('mini-play');
+const miniPause = document.getElementById('mini-pause');
+
+
+// umm
+
+miniPlay.addEventListener('click', e => {
+  e.stopPropagation();
+  audio.play();
+});
+
+miniPause.addEventListener('click', e => {
+  e.stopPropagation();
+  audio.pause();
+});
+
+audio.addEventListener('play', () => {
+  miniPlay.style.display = 'none';
+  miniPause.style.display = 'block';
+});
+
+audio.addEventListener('pause', () => {
+  miniPlay.style.display = 'block';
+  miniPause.style.display = 'none';
+});
+
+
+
+
 
 // --- state ---
 let currentSong = 0;
@@ -807,6 +839,11 @@ function loadSong(index) {
   title.textContent = song.title;
   artist.textContent = song.artist;
   cover.src = song.cover;
+
+  miniCover.src = cover.src;
+  miniTitle.textContent = title.textContent;
+  miniArtist.textContent = artist.textContent;
+
   updateActiveSong();
 }
 

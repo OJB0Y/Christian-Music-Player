@@ -30,9 +30,28 @@
         <!-- Songs will be added here dynamically -->
   </ul>
 
-  <button id="open-playlist">Show Playlist
+  <button id="open-playlist" class="mini-player">
+  <img id="mini-cover" src="" alt="cover" />
+
+  <div class="mini-text">
+    <span id="mini-title">Song Title</span>
+    <span id="mini-artist">Artist</span>
+  </div>
+
+  <div class="mini-controls">
+    <!-- Play -->
+    <svg id="mini-play" viewBox="0 0 24 24" aria-hidden="true"> 
+      <path d="M8 5v14l11-7z"></path> 
+    </svg>
+
+  <!-- Pause -->
+  <svg id="mini-pause" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M6 5h4v14H6zm8 0h4v14h-4z"></path>
+  </svg>
+</div>
 
 </button>
+
 </div>
 
 <!-- PLAYLIST SHEET -->
