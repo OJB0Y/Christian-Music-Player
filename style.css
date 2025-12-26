@@ -288,14 +288,15 @@ body {
 
 /* === SEARCH BAR & PLAYLIST === */
 #search-bar {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 4px;
-  margin: 0px 0 15px;
-  border: 2px solid #343d3f;
-  border-radius: 8px;
+  height: 36px;
+  margin: 0 0 10px 10px;
+  border: 2px solid #ffffff00;
+  border-radius: 4px;
   font-size: 14px;
   color: white;
-  background-color: #1a1a1a;
+  background-color: #ffffff1d;
   box-sizing: border-box;
 }
 
@@ -304,9 +305,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: auto;
-  border: 2px solid #343d3f;
+  border: 2px solid #09c7fc00;
   border-radius: 8px;
-  background-color: #1a1a1a;
+  background-color: #111;
 }
 
 /* === PLAYLIST ITEMS WITH COVERS === */
@@ -316,7 +317,7 @@ body {
   gap: 10px;
   padding: 5px;
   justify-content: flex-start;
-  border-bottom: 1px solid #6d6d6d;
+  border-bottom: 1px solid #6d6d6d00;
   cursor: pointer;
 }
 
@@ -327,7 +328,7 @@ body {
   object-fit: cover;
   border-radius: 5px;
   flex-shrink: 0;
-  filter: blur(0.2px) brightness(0.95) contrast(0.9);
+  filter: blur(0.1px) brightness(0.95) contrast(0.9);
   /*low qualitysmall image just like Spotify!*/
 }
 
