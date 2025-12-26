@@ -869,7 +869,7 @@ function updateActiveSong() {
   const items = document.querySelectorAll('#playlist li');
   items.forEach((item, i) => {
     item.classList.toggle('active', i === currentSong);
-    if (i === currentSong && autoScrollEnabled) {
+    if (i === currentSong) {
       const container = playlistEl; // the scrolling element
       const offset = 320;   //less is higher & more is lower
 
