@@ -75,7 +75,7 @@ body {
   margin: 0;
   padding: 10px 0;
   overflow-y: auto;
-  height: calc(100% - 16vh);
+  height: calc(100% - 17.5vh);
 }
 
 
