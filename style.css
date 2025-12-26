@@ -7,7 +7,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background: #111;
+  background: linear-gradient(to bottom, #4b4363, #000000);
   color: #fff;
 
   display: flex;
@@ -203,11 +203,11 @@ body {
 
 .controls button,
 .icon-btn {
-  background: transparent;   /* no solid background */
+  background: transparent;  
   border: none;
-  color: white;              /* icons/text stay visible */
+  color: white;            
   cursor: pointer;
-  transition: transform 0.08s;  /* optional hover/press effect */
+  transition: transform 0.08s; 
   padding: 1vh;
   border-radius: 100px;
 }
@@ -289,7 +289,6 @@ body {
   width: calc(100% - 20px);
   padding: 4px;
   height: 36px;
-  margin: 0 0 10px 10px;
   border: 2px solid #ffffff00;
   border-radius: 4px;
   font-size: 14px;
@@ -306,7 +305,7 @@ body {
   overflow-y: auto;
   border: 2px solid #09c7fc00;
   border-radius: 8px;
-  background-color: #111;
+  background-color: #11111100;
 }
 
 /* === PLAYLIST ITEMS WITH COVERS === */
@@ -316,7 +315,6 @@ body {
   gap: 10px;
   padding: 5px;
   justify-content: flex-start;
-  border-bottom: 1px solid #6d6d6d00;
   cursor: pointer;
 }
 
@@ -327,7 +325,7 @@ body {
   object-fit: cover;
   border-radius: 5px;
   flex-shrink: 0;
-  filter: blur(0.1px) brightness(0.95) contrast(0.9);
+  filter: blur(0.0px) brightness(0.95) contrast(0.9);
   /*low qualitysmall image just like Spotify!*/
 }
 
