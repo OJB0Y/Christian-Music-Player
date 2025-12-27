@@ -21,14 +21,13 @@ body {
 /* === OPEN PLAYLIST BUTTON === */
 #open-playlist {
   width: 100%;
-  max-width: 450px;
 
-  height:52px;
+  height:53px;
   border-radius: 11px;
 
   text-align: left;
 
-  background: linear-gradient(to bottom, #434863, rgb(32, 37, 49));
+  background: #424661; /*#434863*/
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.7);
 
