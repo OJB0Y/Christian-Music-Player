@@ -4,451 +4,525 @@ const playlist = [
     title: "Cordero",
     artist: "Manuel Bonilla",
     src: "songs/Cordero.mp3",
-    cover: "images/song5.jpg"
+    cover: "images/song5.jpg",
+    hex: "#003D03"
   },
   {
     title: "Como Una Flor Ft. Los Hermanos Reyes",
     artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
-    cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png"
+    cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png",
+    hex: "#939B84"
   },
   {
     title: "Que lindo es mi Cristo",
     artist: "Wilson Camey, Los Hermanos Reyes",
     src: "songs/Que lindo es mi Cristo.mp3",
-    cover: "images/Que lindo es mi Cristo.png"
+    cover: "images/Que lindo es mi Cristo.png",
+    hex: "#501008"
   },
   {
-    title: "Confía en el Señor Ft Francisco Orantes",
+    title: "Confía En El Señor Ft Francisco Orantes",
     artist: "Hermanos Osorio, Francisco Orantes",
     src: "songs/Confía en el Señor - Hermanos Osorio.mp3",
-    cover: "images/orantes.png"
+    cover: "images/orantes.png",
+    hex: "#1d3145ff"
   },
   {
       title: "Cuando Muera Yo Ft. Los Hermanos Reyes",
       artist: "Los Voceros de Cristo/Los Hermanos Reyes",
       src: "songs/Cuando Muera Yo.mp3",
       cover: "images/Cuando Muera Yo.png",
+      hex: "#3A3436"
   },
   {
     title: "Oh Alma Mía",
     artist: "Los Voceros de Cristo",
     src: "songs/a5.mp3",
-    cover: "images/a5.png"
+    cover: "images/a5.png",
+    hex: "#3A3436"
   },
   {
     title: "Yo Te Esperare",
     artist: "Los Hermanos Reyes",
     src: "songs/Reyes.mp3",
-    cover: "images/Hay una ciudad.png"
+    cover: "images/Hay una ciudad.png",
+    hex: "#b09539ff"
   },
   {
     title: "Soy Feliz",
     artist: "Los Hermanos Reyes",
     src: "songs/Soy feliz.mp3",
-    cover: "images/He peleado la batalla.png"
+    cover: "images/He peleado la batalla.png",
+    hex: "#787053ff"
   },
   {
     title: "Loor a ti mi Dios v2",
     artist: "Los Voceros de Cristo",
     src: "songs/Loor2.mp3",
-    cover: "images/a5.png"
+    cover: "images/a5.png",
+    hex: "#3A3436"
   },
   {
     title: "Mi cántaro vacío",
     artist: "Los Voceros de Cristo",
     src: "songs/cántaro.mp3",
-    cover: "images/a5.png"
+    cover: "images/a5.png",
+    hex: "#3A3436"
   },
   {
     title: "El volverá",
     artist: "Los Voceros de Cristo/Aníbal Marroquín",
     src: "songs/volverá.mp3",
-    cover: "images/new4.png"
+    cover: "images/new4.png",
+    hex: "#313831"
   },
   {
     title: "Por Herencia",
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/Por Herencia.mp3",
-    cover: "images/Por Herencia.jpg"
+    cover: "images/Por Herencia.jpg",
+    hex: "#5a240cff"
   },
   {
     title: "Jesús",
     artist: "Francisco Orantes",
     src: "songs/Jesús.mp3",
-    cover: "images/Jesús.jpg"
+    cover: "images/Jesús.jpg",
+    hex: "#08186C"
   },
   {
     title: "Su amor siempre es su amor",
-    artist: "Los Voceros de Cristo//Ruth E. Gomez",
+    artist: "Los Voceros de Cristo/Ruth E. Gomez",
     src: "songs/su amor.mp3",
-    cover: "images/su amor.jpg"
+    cover: "images/su amor.jpg",
+    hex: "#313831"
   },
   {
     title: "La Perdida Oveja",
     artist: "Los Voceros de Cristo/Leonel Tuchez",
     src: "songs/La perdida oveja.mp3",
-    cover: "images/a5.png"
+    cover: "images/a5.png",
+    hex: "#3A3436"
   },
   {
     title: "Te Doy Gracias",
     artist: "Los Hermanos Reyes/Leonel Tuchez",
     src: "songs/song27.mp3",
-    cover: "images/song27.png"
+    cover: "images/song27.png",
+    hex: "#383838"
   },
   {
     title: "Nicodemo",
     artist: "Leonel Tuchez",
     src: "songs/Nicodemo.mp3",
-    cover: "images/Esperando.jpg"
+    cover: "images/Esperando.jpg",
+    hex: "#854b6fff"
   },
   {
     title: "Amartesolo a ti Señor",
     artist: "Los Hermanos Reyes",
     src: "songs/Amarte.mp3",
-    cover: "images/Hay un Dios.png"
+    cover: "images/Hay un Dios.png",
+    hex: "#0b2f43ff"
   },
   {
     title: "Que Bueno es El Señor",
     artist: "Los Hermanos Reyes",
     src: "songs/Que Bueno es El Señor.mp3",
-    cover: "images/Que Bueno es El Señor.png"
+    cover: "images/Que Bueno es El Señor.png",
+    hex: "#411B37"
   },
   {
     title: "He peleado la batalla",
     artist: "Los Hermanos Reyes",
     src: "songs/He peleado la batalla.mp3",
-    cover: "images/He peleado la batalla.png"
+    cover: "images/He peleado la batalla.png",
+    hex: "#787053ff"
   },
   {
     title: "Si Mi Pueblo Se Humillare",
     artist: "Los Hermanos Reyes",
     src: "songs/pueblo.mp3",
-    cover: "images/Hay un Dios.png"
+    cover: "images/Hay un Dios.png",
+    hex: "#0b2f43ff"
   },
   {
     title: "Tengo un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Tengo un Dios.mp3",
-    cover: "images/Tengo un Dios.png"
+    cover: "images/Tengo un Dios.png",
+    hex: "#787053ff"
   },
   {
     title: "Hay un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Hay un Dios.mp3",
-    cover: "images/Hay un Dios.png"
+    cover: "images/Hay un Dios.png",
+    hex: "#0b2f43ff"
   },
   {
     title: "Hay una Ciudad",
     artist: "Los Hermanos Reyes",
     src: "songs/Hay una ciudad.mp3",
     cover: "images/Hay una ciudad.png",
+    hex: "#b09539ff"
   },
   {
     title: "Alla en los Olivos",
     artist: "Los Hermanos Reyes",
     src: "songs/Alla en los olivos.mp3",
-    cover: "images/Hay una ciudad.png"
+    cover: "images/Hay una ciudad.png",
+    hex: "#b19433ff"
   },
   {
     title: "Como una Flor",
     artist: "Los Hermanos Reyes",
     src: "songs/song19.mp3",
-    cover: "images/song19.png"
+    cover: "images/song19.png",
+    hex: "#383838"
   },
   {
     title: "Como Una Flor - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Como Una Flor - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png"
+    cover: "images/wilson.png",
+    hex: "#2F5F87"
   },
   {
     title: "Alto Precio - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Alto Precio - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png"
+    cover: "images/wilson.png",
+    hex: "#2F5F87"
   },
   {
     title: "Alto Precio",
     artist: "Los Hermanos Reyes",
     src: "songs/Alto Precio.mp3",
-    cover: "images/song27.png"
+    cover: "images/song27.png",
+    hex: "#383838"
   },
   {
     title: "Que Contento Estoy - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Que Contento Estoy - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png"
+    cover: "images/wilson.png",
+    hex: "#2F5F87"
   },
   {
     title: "Contento Estoy",
     artist: "Los Hermanos Reyes",
     src: "songs/Contento Estoy.mp3",
-    cover: "images/song27.png"
+    cover: "images/song27.png",
+    hex: "#383838"
   },
   {
     title: "Jesús es mi Refugio",
     artist: "Los Voceros de Cristo",
     src: "songs/Refugio.mp3",
-    cover: "images/new3.png"
+    cover: "images/new3.png",
+    hex: "#582820"
   },
   {
     title: "A donde quiera que me lleves señor",
     artist: "Julio Elias",
     src: "songs/Julio Elias.mp3",
-    cover: "images/Julio Elias.png"
+    cover: "images/Julio Elias.png",
+    hex: "#8c3d2fff"
   },
   {
     title: "Buscale",
     artist: "Óscar Medina",
     src: "songs/Buscale.mp3",
-    cover: "images/Buscale.jpg"
+    cover: "images/Buscale.jpg",
+    hex: "#836531"
   },
   {
     title: "Te Estoy Esperando",
     artist: "Leonel Tuchez",
     src: "songs/Esperando.mp3",
-    cover: "images/Esperando.jpg"
+    cover: "images/Esperando.jpg",
+    hex: "#854b6fff"
   },
   {
     title: "Tengo Un Dios - Julio Elías",
     artist: "Julio Elias",
     src: "songs/Tengo Un Dios - Julio Elías.mp3",
-    cover: "images/cover1.jpg"
+    cover: "images/cover1.jpg",
+    hex: "#4d3939ff"
   },
   {
     title: "Agradecimiento",
     artist: "Manuel Bonilla",
     src: "songs/Agradecimiento - Manuel Bonilla.mp3",
-    cover: "images/manuel.png"
+    cover: "images/manuel.png",
+    hex: "#726952ff"
   },
   {
     title: "Todo el Mundo Busca",
     artist: "Wilson Camey",
     src: "songs/Todo el Mundo Busca - Wilson Camey.mp3",
-    cover: "images/wc.png"
+    cover: "images/wc.png",
+    hex: "#371737"
   },
   {
     title: "Tu Fidelidad",
     artist: "Marcos Witt/Alex Campos",
     src: "songs/a6.mp3",
-    cover: "images/a6.png"
+    cover: "images/a6.png",
+    hex: "#323c49ff"
   },
   {
     title: "Me Dicen Que Me Aman",
     artist: "Jesús Adrián Romero",
     src: "songs/a4.mp3",
-    cover: "images/a4.png"
+    cover: "images/a4.png",
+    hex: "#353933"
   },
   {
     title: "Renuévame",
     artist: "Marcos Witt",
     src: "songs/a2.mp3",
-    cover: "images/a2.png"
+    cover: "images/a2.png",
+    hex: "#0E434A"
   },
   {
     title: "Quien me podrá separar",
     artist: "Los Hermanos Reyes",
     src: "songs/a3.mp3",
-    cover: "images/a3.png"
+    cover: "images/a3.png",
+    hex: "#17494eff"
   },
   {
     title: "En Paz",
     artist: "Daniel Calveti",
     src: "songs/a1.mp3",
-    cover: "images/a1.png"
+    cover: "images/a1.png",
+    hex: "#616060ff"
   },
-  {
+/*  {
     title: "Prometí aceptar tu palabra",
     artist: "Julio Elias",
     src: "songs/Prometí aceptar tu palabra.mp3",
     cover: "images/cover2.jpg"
-  },
+  },*/
   {
     title: "Primero Dios, Vol. 5",
     artist: "Agustin Amador",
     src: "songs/Primero Dios, Vol. 5.mp3",
-    cover: "images/cover3.jpg"   
+    cover: "images/cover3.jpg",
+    hex: "#846122"   
   },
   {
     title: "Ahora Soy Feliz",
     artist: "Los Hermanos Reyes",
     src: "songs/song1.mp3",
-    cover: "images/song1.jpg"
+    cover: "images/song1.jpg",
+    hex: "#383838"
   },
   {
     title: "La Biblia",
     artist: "Manuel Bonilla",
     src: "songs/song2.mp3",
-    cover: "images/song2.jpg"
+    cover: "images/song2.jpg",
+    hex: "#942409"
   },
   {
     title: "Un Grano de Arena",
     artist: "Manuel Bonilla",
     src: "songs/Un Grano De Arena.mp3",
-    cover: "images/Un Grano De Arena.png"
+    cover: "images/Un Grano De Arena.png",
+    hex: "#3D445C"
   },
   { 
     title: "Oh Juventud",
     artist: "Zulmy Mejia",
     src: "songs/Zulmy.mp3",
-    cover: "images/zulmy.jpg"
+    cover: "images/zulmy.jpg",
+    hex: "#294579ff"
   },
   {
     title: "Cristo por su Iglesia viene",
     artist: "Los Voceros de Cristo",
     src: "songs/Cristo.mp3",
-    cover: "images/Cristo.jpg"
+    cover: "images/Cristo.jpg",
+    hex: "#2E3F3F"
   },
   {
     title: "Loor a ti mi Dios",
     artist: "Los Voceros de Cristo",
     src: "songs/Loor.mp3",
-    cover: "images/Loor.jpg"
+    cover: "images/Loor.jpg",
+    hex: "#783800"
   },
   {
     title: "Todos Deben de Saber/Conocer",
     artist: "Los Hermanos Reyes/Manuel Bonilla",
     src: "songs/song28.mp3",
-    cover: "images/song28.png"
+    cover: "images/song28.png",
+    hex: "#968E90"
   },
   {
     title: "Esa Roca",
     artist: "Francisco Orantes",
     src: "songs/song3.mp3",
-    cover: "images/song3.jpg"
+    cover: "images/song3.jpg",
+    hex: "#236394ff"
   },
   {
     title: "El Amor de Dios",
     artist: "Manuel Bonilla",
     src: "songs/song4.mp3",
-    cover: "images/song4.jpg"
+    cover: "images/song4.jpg",
+    hex: "#2F4617"
   },
   {
     title: "En El Monte Cavalrio",
     artist: "Manuel Bonilla",
     src: "songs/song5.mp3",
-    cover: "images/song5.jpg"
+    cover: "images/song5.jpg",
+    hex: "#003D03"
   },
   {
     title: "No Te Voy A Dejar",
     artist: "Leonel Tuchez",
     src: "songs/song6.mp3",
-    cover: "images/song6.png"
+    cover: "images/song6.png",
+    hex: "#854b6fff"
   },
   {
     title: "Supe Que Me Amabas",
     artist: "Marcela Gandera",
     src: "songs/song7.mp3",
-    cover: "images/song7.png"
+    cover: "images/song7.png",
+    hex: "#9B4A3C"
   },
   {
     title: "A Quien Iremos",
     artist: "Los Hermanos Reyes",
     src: "songs/song8.mp3",
-    cover: "images/song8.png"
+    cover: "images/song8.png",
+    hex: "#383838"
   },
   {
     title: "Llegó el Amor",
     artist: "Aníbal Marroquin",
     src: "songs/song9.mp3",
-    cover: "images/song9.png"
+    cover: "images/song9.png",
+    hex: "#7D2708"
   },
   {
     title: "Confía En El Señor",
     artist: "Francisco Orantes",
     src: "songs/song10.mp3",
-    cover: "images/song10.png"
+    cover: "images/song10.png",
+    hex: "#94625bff"
   },
   {
     title: "Escogido fui de Dios",
     artist: "Los Voceros de Cristo",
     src: "songs/song11.mp3",
-    cover: "images/song11.png"
+    cover: "images/song11.png",
+    hex: "#91190A"
   },
   {
-    title: "Be Alright",
+    title: "Be Alright", /*has a different cover*/
     artist: "Evan Craft",
     src: "songs/Be Alright.mp3",
-    cover: "images/evan.png"
+    cover: "images/evan.png",
+    hex: "#186B5D"
   },
   {
     title: "Más Rico Del Mundo",
     artist: "Evan Craft",
     src: "songs/Más_Rico_Del_Mundo.mp3",
-    cover: "images/Más_Rico_Del_Mundo.png"
+    cover: "images/Más_Rico_Del_Mundo.png",
+    hex: "#0083A5"
   },
   {
     title: "La Milla Extra",
     artist: "Evan Craft",
     src: "songs/La Milla Extra.mp3",
-    cover: "images/La Milla Extra.png"
+    cover: "images/La Milla Extra.png",
+    hex: "#7E393C"
   },
   {
     title: "Desesperado",
     artist: "Evan Craft",
     src: "songs/Desesperado.mp3",
-    cover: "images/evan.png"
+    cover: "images/evan.png",
+    hex: "#186B5D"
   },
   {
-    title: "Sueños",
+    title: "Sueños", /*has a different cover*/
     artist: "Un Corazón",
     src: "songs/song14.mp3",
-    cover: "images/song14.png"
+    cover: "images/song14.png",
+    hex: "#801C31"
   },
   {
     title: "¿Cómo Podré Pagarte?",
     artist: "Leonel Tuchez",
     src: "songs/song15.mp3",
-    cover: "images/song15.png"
+    cover: "images/song15.png",
+    hex: "#632D07"
   },
   {
     title: "Más Que Nunca Ft. Danilo Montero",
     artist: "Un Corazón",
     src: "songs/song16.mp3",
-    cover: "images/song16.png"
+    cover: "images/song16.png",
+    hex: "#464D2E"
   },
   {
     title: "Cuando Te Encontré",
     artist: "Rojo/Strings & Heart",
     src: "songs/Cuando (1).mp3",
-    cover: "images/Cuando.jpg"
+    cover: "images/Cuando.jpg",
+    hex: "#949494"
   },
   {
     title: "Eres Todopoderoso",
     artist: "Rojo",
     src: "songs/song12.mp3",
-    cover: "images/song12.png"
+    cover: "images/song12.png",
+    hex: "#680519"
   },
   {
     title: "Tu Amor Hace Eco En Todo Mi Universo",
     artist: "Rojo",
     src: "songs/song17.mp3",
-    cover: "images/song17.png"
+    cover: "images/song17.png",
+    hex: "#727272"
   },
   {
     title: "Es Lo Que Quiero",
     artist: "Emmanuel y Linda",
     src: "songs/Es Lo Que Quiero.mp3",
-    cover: "images/Es Lo Que Quiero.png"
+    cover: "images/Es Lo Que Quiero.png",
+    hex: "#882E68"
   },
   {
     title: "Si No Fuera Por Ti",
     artist: "Rojo",
     src: "songs/Si No Fuera Por Ti.mp3",
-    cover: "images/Si No Fuera Por Ti.png"
+    cover: "images/Si No Fuera Por Ti.png",
+    hex: "#959595"
   },
   {
     title: "Siguiéndote Los Pasos",
     artist: "Rojo",
     src: "songs/Pasos.mp3",
-    cover: "images/song17.png"
+    cover: "images/song17.png",
+    hex: "#727272"
   },
   {
     title: "Has Cambiado mi lamento",
     artist: "Los Hermanos Reyes",
     src: "songs/lamento.mp3",
-    cover: "images/lamento.jpg"
+    cover: "images/lamento.jpg",
+    hex: "#007693"
   },
 /*  {
     title: "Todo Cambiará",
@@ -466,49 +540,57 @@ const playlist = [
     title: "Deja las Drogas",
     artist: "Aníbal Marroquín",
     src: "songs/song22.mp3",
-    cover: "images/song22.png"
+    cover: "images/song22.png",
+    hex: "#740800"
   },
   {
     title: "A Luchar Hermano",
     artist: "Aníbal Marroquín",
     src: "songs/song23.mp3",
-    cover: "images/song23.png"
+    cover: "images/song23.png",
+    hex: "#7D2708"
   },
   {
     title: "Josué 1: 8 Y 9",
     artist: "Leonel Tuchez",
     src: "songs/song24.mp3",
-    cover: "images/song24.png"
+    cover: "images/song24.png",
+    hex: "#662F08"
   },
   {
     title: "Los Que Esperan En Jehová",
     artist: "Manuel Bonilla",
     src: "songs/Esperan.mp3",
-    cover: "images/new5.png"
+    cover: "images/new5.png",
+    hex: "#961410"
   },
   {
     title: "He Peleado la Batalla",
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/Luismi.mp3",
-    cover: "images/new1.png"
+    cover: "images/new1.png",
+    hex: "#AC6F00"
   },
   {
     title: "Imagínate",
     artist: "Aroddy/Leonel Tuchez/Victor Hugo V.",
     src: "songs/Imagínate.mp3",
-    cover: "images/new2.png"
+    cover: "images/new2.png",
+    hex: "#5D0808"
   },
   {
     title: "Necesito De Ti",
     artist: "Francisco Orantes",
     src: "songs/Necesito De Ti.mp3",
-    cover: "images/song10.png"
+    cover: "images/song10.png",
+    hex: "#A16962"
   },
   {
     title: "Te Necesito",
     artist: "Los Hermanos Reyes",
     src: "songs/Te necesito.mp3",
-    cover: "images/Hay una ciudad.png"
+    cover: "images/Hay una ciudad.png",
+    hex: "#bb9b31ff"
   },
 /*  {
     title: "Mi Nuevo Amor",
@@ -526,206 +608,240 @@ const playlist = [
     title: "Jesús Pt. 2",
     artist: "Lead/Musiko",
     src: "songs/Pt 2.mp3",
-    cover: "images/image (2).png"
+    cover: "images/image (2).png",
+    hex: "#84233fff"
   },
   {
     title: "Lo Que Quieras Tú",
     artist: "La Feria Oficial/Redimi2",
     src: "songs/Quieras.mp3",
-    cover: "images/Lo.jpg"
+    cover: "images/Lo.jpg",
+    hex: "#58827C"
   },
   {
     title: "GOZO",
     artist: "Miel San Marcos/Redimi2",
     src: "songs/GOZO.mp3",
-    cover: "images/gozo.jpg"
+    cover: "images/gozo.jpg",
+    hex: "#b74823ff"
   },
   {
     title: "El Nombre De Jesús",
     artist: "Redimi2/Christine D'Clario",
     src: "songs/Nombre.mp3",
-    cover: "images/image (5).png"
+    cover: "images/image (5).png",
+    hex: "#8E8E8E"
   },
   {
     title: "Espíritu Santo",
     artist: "Redimi2/Barak",
     src: "songs/Espíritu.mp3",
-    cover: "images/image (5).png"
+    cover: "images/image (5).png",
+    hex: "#8E8E8E"
   },
   {
     title: "Viviré",
     artist: "Redimi2/Evan Craft",
     src: "songs/Viviré.mp3",
-    cover: "images/image (6).png"
+    cover: "images/image (6).png",
+    hex: "#70776A"
   },
   {
     title: "NO HAY NADA IMPOSIBLE",
     artist: "Redimi2/Danny Gokey",
     src: "songs/Gokey.mp3",
-    cover: "images/Gokey.jpg"
+    cover: "images/Gokey.jpg",
+    hex: "#4d372cff"
   },
   {
     title: "La Casa De Jehová",
     artist: "Redimi2/Barak",
     src: "songs/Barak.mp3",
-    cover: "images/Barak.jpg"
+    cover: "images/Barak.jpg",
+    hex: "#08373E"
   },
   {
     title: "Mi Dios Puede",
     artist: "Redimi2/Sarai Rivera",
     src: "songs/puede.mp3",
     cover: "images/puede.jpg",
+    hex: "#6B8681"
   },
   {
     title: "Arde En Mi",
     artist: "Evan Craft/Redimi2",
     src: "songs/Arde.mp3",
     cover: "images/Arde.jpg",
+    hex: "#16706A"
   },
   {
     title: "Todo Va a Estar Bien",
     artist: "Redimi2/Evan Craft",
     src: "songs/Bienn.mp3",
-    cover: "images/Bien.jpg"
+    cover: "images/Bien.jpg",
+    hex: "#747474"
   },
   {
     title: "Pentagrama",
     artist: "Alex Zurdo",
     src: "songs/Penta.mp3",
-    cover: "images/Penta.jpg"
+    cover: "images/Penta.jpg",
+    hex: "#A81A77"
   },
   {
     title: "Empezar de Nuevo",
     artist: "Kike Pavón/Funky",
     src: "songs/Empezar.mp3",
-    cover: "images/kiki.png"
+    cover: "images/kiki.png",
+    hex: "#37353A"
   },
   {
     title: "Soy Soldado",
     artist: "Alex Campos/Redimi2",
     src: "songs/soldado.mp3",
-    cover: "images/soldado.jpg"
+    cover: "images/soldado.jpg",
+    hex: "#525252"
   },
   {
     title: "Todo Lo Has Cambiado",
     artist: "Danilo Montero/Su Presencia/Thalles Roberto/Victoria Montero",
     src: "songs/Cambiado.mp3",
-    cover: "images/Cambiado.jpg"
+    cover: "images/Cambiado.jpg",
+    hex: "#9E1F10"
   },
   {
     title: "Cuando Yo Te Conocí",
     artist: "Alex Zurdo",
     src: "songs/Cuando.mp3",
-    cover: "images/Penta.jpg"
+    cover: "images/Penta.jpg",
+    hex: "#A81A77"
   },
   {
     title: "Tú Me Llamas (feat. Musiko)",
     artist: "Deluz/Musiko",
     src: "songs/llamas.mp3",
-    cover: "images/llamas.jpg"
+    cover: "images/llamas.jpg",
+    hex: "#64362E"
   },
   {
     title: "Solo tú",
     artist: "Un Corazón/Lead/Kim Richards/Louie Abrego",
     src: "songs/Solo tú.mp3",
-    cover: "images/image (3).png"
+    cover: "images/image (3).png",
+    hex: "#DB3A1D"
   },
   {
     title: "Fiesta",
     artist: "Un Corazón/Louie Abrego/Kim Richards/Alex Zurdo",
     src: "songs/Fiesta.mp3",
-    cover: "images/song14.png"
+    cover: "images/song14.png",
+    hex: "#368eb6ff"
   },
   {
     title: "Que lo sepa la calle",
     artist: "Un Corazón/Lead/Kim Richards",
     src: "songs/la calle.mp3",
-    cover: "images/image (3).png"
+    cover: "images/image (3).png",
+    hex: "#DB3A1D"
   },
   {
     title: "está bien no estar bien :):",
     artist: "PRISMA Más Vida/Un Corazón",
     src: "songs/bien.mp3",
-    cover: "images/image (4).png"
+    cover: "images/image (4).png",
+    hex: "#9e8b6cff"
   },
   {
     title: "REAL",
     artist: "PRISMA Más Vida/Samu Robles",
     src: "songs/REAL.mp3",
-    cover: "images/image (4).png"
+    cover: "images/image (4).png",
+    hex: "#9e8b6cff"
   },
   {
     title: "Gracias (Remix)",
     artist: "Majo y Dan/Musiko",
     src: "songs/G_Remix.mp3",
-    cover: "images/G_Remix.jpg"
+    cover: "images/G_Remix.jpg",
+    hex: "#727264"
   },
   { 
     title: "Que Pase El Mundo",
     artist: "Majo y Dan",
     src: "songs/song6 (1).mp3",
-    cover: "images/song6 (1).png"
+    cover: "images/song6 (1).png",
+    hex: "#aa7857ff"
   },
   {
     title: "Gracias",
     artist: "Majo y Dan/Musiko",
     src: "songs/song7 (1).mp3",
-    cover: "images/song7 (1).png"
+    cover: "images/song7 (1).png",
+    hex: "#308090"
   },
   {
     title: "Si Puedes Creer",
     artist: "Musiko/Majo y Dan",
     src: "songs/Si Puedes Creer.mp3",
-    cover: "images/Si Puedes Creer.png"
+    cover: "images/Si Puedes Creer.png",
+    hex: "#C31307"
   },
   {
     title: "Laberintos",
     artist: "La Feria Oficial/Majo y Dan",
     src: "songs/song25.mp3",
-    cover: "images/song25.png"
+    cover: "images/song25.png",
+    hex: "#683037"
   },
   {
     title: "El Secreto",
     artist: "Majo y Dan",
     src: "songs/song26.mp3",
-    cover: "images/song26.png"
+    cover: "images/song26.png",
+    hex: "#473F27"
   },
   {
     title: "Vida Encontré",
     artist: "Majo y Dan",
     src: "songs/song13.mp3",
-    cover: "images/song13.png"
+    cover: "images/song13.png",
+    hex: "#283830"
   },
   {
     title: "Juró Volver",
     artist: "Majo y Dan",
     src: "songs/song10 (1).mp3",
-    cover: "images/song10 (1).png"
+    cover: "images/song10 (1).png",
+    hex: "#1F2D4D"
   },
   {
     title: "no te vas",
     artist: "PRISMA Más Vida/Majo y Dan",
     src: "songs/song9 (1).mp3",
-    cover: "images/song9 (1).png"
+    cover: "images/song9 (1).png",
+    hex: "#36463E"
   },
   /*CHRISTMAS SONGS*/
   {
     title: "Ha Nacido (Venid y Adoremos)",
     artist: "Un Corazón",
     src: "songs/nacido.mp3",
-    cover: "images/nacido.jpg"
+    cover: "images/nacido.jpg",
+    hex: "#367DBA"
   },
   {
     title: "Gloria en las Alturas",
     artist: "Jonathan & Sarah Jerez",
     src: "songs/gloria.mp3",
-    cover: "images/gloria.jpg"
+    cover: "images/gloria.jpg",
+    hex: "#88979F"
   },
   {
     title: "Medley Navideño",
     artist: "Los Hermanos Osorio, Evelyn Edith GT",
     src: "songs/medley.mp3",
-    cover: "images/medley.png"
+    cover: "images/medley.png",
+    hex: "#1a3c14ff"
   },
 ];
 
@@ -832,6 +948,90 @@ function getPrevShuffleSong() {
   return currentSong; // stay if no prev
 }
 
+function darkenHex(hex, {
+  lightness = 200,   // % to darken (higher = darker)
+  saturation = 0   // % to reduce saturation (positive = less colorful)
+} = {}) {
+  let col = hex.replace("#", "");
+
+  if (col.length === 3) {
+    col = col.split("").map(c => c + c).join("");
+  }
+
+  let r = parseInt(col.substring(0, 2), 16) / 255;
+  let g = parseInt(col.substring(2, 4), 16) / 255;
+  let b = parseInt(col.substring(4, 6), 16) / 255;
+
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  let h, s, l = (max + min) / 2;
+
+  if (max === min) {
+    h = s = 0;
+  } else {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+    switch (max) {
+      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+      case g: h = (b - r) / d + 2; break;
+      case b: h = (r - g) / d + 4; break;
+    }
+    h /= 6;
+  }
+
+  // --- artistic controls ---
+  l = Math.max(0, l - lightness / 100);
+  s = Math.max(0, Math.min(1, s - saturation / 100));
+
+  function hue2rgb(p, q, t) {
+    if (t < 0) t += 1;
+    if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  }
+
+  let r2, g2, b2;
+
+  if (s === 0) {
+    r2 = g2 = b2 = l;
+  } else {
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r2 = hue2rgb(p, q, h + 1 / 6);
+    g2 = hue2rgb(p, q, h);
+    b2 = hue2rgb(p, q, h - 1 / 6);
+  }
+
+  return `#${[r2, g2, b2]
+    .map(v => Math.round(v * 255).toString(16).padStart(2, "0"))
+    .join("")}`;
+}
+
+
+
+//changing background color
+function updatePlaylistGradient(hexColor) {
+  const playlistSheet = document.getElementById("playlist-sheet");
+  const openPlaylistBtn = document.getElementById("open-playlist");
+
+  const darker = darkenHex(hexColor, {
+  lightness: 25,
+  saturation: 0
+});
+
+
+  // playlist background gradient
+  playlistSheet.style.background =
+    `linear-gradient(to bottom, ${hexColor}, ${darker})`;
+
+  // open-playlist button solid color
+  openPlaylistBtn.style.backgroundColor = hexColor;
+}
+
+
 // --- load & play ---
 function loadSong(index) {
   const song = playlist[index];
@@ -843,6 +1043,8 @@ function loadSong(index) {
   miniCover.src = cover.src;
   miniTitle.textContent = title.textContent;
   miniArtist.textContent = artist.textContent;
+
+  updatePlaylistGradient(song.hex || "#181a1e");
 
   updateActiveSong();
 }
