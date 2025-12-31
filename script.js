@@ -427,11 +427,11 @@ const playlist = [
     hex: "#91190A"
   },
   {
-    title: "Be Alright", /*has a different cover*/
-    artist: "Evan Craft",
-    src: "songs/Be Alright.mp3",
-    cover: "images/evan.png",
-    hex: "#186B5D"
+    title: "Todo Va a Estar Bien",
+    artist: "Redimi2/Evan Craft",
+    src: "songs/Bienn.mp3",
+    cover: "images/Bien.jpg",
+    hex: "#747474"
   },
   {
     title: "Más Rico Del Mundo",
@@ -458,8 +458,8 @@ const playlist = [
     title: "Sueños", /*has a different cover*/
     artist: "Un Corazón",
     src: "songs/song14.mp3",
-    cover: "images/song14.png",
-    hex: "#801C31"
+    cover: "images/suenos.jpg",
+    hex: "#504878"
   },
   {
     title: "¿Cómo Podré Pagarte?",
@@ -661,13 +661,6 @@ const playlist = [
     hex: "#08373E"
   },
   {
-    title: "Mi Dios Puede",
-    artist: "Redimi2/Sarai Rivera",
-    src: "songs/puede.mp3",
-    cover: "images/puede.jpg",
-    hex: "#6B8681"
-  },
-  {
     title: "Arde En Mi",
     artist: "Evan Craft/Redimi2",
     src: "songs/Arde.mp3",
@@ -675,11 +668,39 @@ const playlist = [
     hex: "#16706A"
   },
   {
-    title: "Todo Va a Estar Bien",
-    artist: "Redimi2/Evan Craft",
-    src: "songs/Bienn.mp3",
-    cover: "images/Bien.jpg",
-    hex: "#747474"
+    title: "Mi Padre",
+    artist: "Redimi2/Samantha Kate/Distrito Royal",
+    src: "songs/padre.mp3",
+    cover: "images/puede.jpg",
+    hex: "#70918b"
+  },
+  {
+    title: "Mi Dios Puede",
+    artist: "Redimi2/Sarai Rivera",
+    src: "songs/puede.mp3",
+    cover: "images/puede.jpg",
+    hex: "#6B8681"
+  },
+  {
+    title: "VUELVO A TI",
+    artist: "Redimi2/Betsy Jo",
+    src: "songs/VUELVO.mp3",
+    cover: "images/Gokey.jpg",
+    hex: "#5c4134"
+  },
+  {
+    title: "Gracias",
+    artist: "Redimi2/Marcos Brunet",
+    src: "songs/GraciasR.mp3",
+    cover: "images/image (6).png",
+    hex: "#6c7565"
+  },
+  {
+    title: "Be Alright", /*has a different cover*/
+    artist: "Evan Craft",
+    src: "songs/Be Alright.mp3",
+    cover: "images/alrighty.jpg",
+    hex: "#803808"
   },
   {
     title: "Pentagrama",
