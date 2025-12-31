@@ -705,7 +705,7 @@ const playlist = [
   },
   {
     title: "Be Alright", /*has a different cover*/
-    artist: "Evan Craft",
+    artist: "Evan Craft/Danny Gokey/Redimi2",
     src: "songs/Be Alright.mp3",
     cover: "images/alrighty.jpg",
     hex: "#803808"
