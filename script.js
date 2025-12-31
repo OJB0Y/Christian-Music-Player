@@ -829,6 +829,13 @@ const playlist = [
     hex: "#283830"
   },
   {
+    title: "Volverás",
+    artist: "Majo y Dan",
+    src: "songs/Volverás.mp3",
+    cover: "images/G_Remix.jpg",
+    hex: "#727564"
+  },
+  {
     title: "Juró Volver",
     artist: "Majo y Dan",
     src: "songs/song10 (1).mp3",
