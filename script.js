@@ -571,6 +571,14 @@ const playlist = [
     cover: "images/new1.png",
     hex: "#AC6F00"
   },
+  
+  {
+    title: "Que Bueno Es El Señor",
+    artist: "Luismi Acosta y Gloria de Dios",
+    src: "songs/SpotiDownloader.com - Que bueno es el Señor - Luismi Acosta y Gloria de Dios.mp3",
+    cover: "images/new1.png",
+    hex: "#AC6F00"
+  },
   {
     title: "Imagínate",
     artist: "Aroddy/Leonel Tuchez/Victor Hugo V.",
