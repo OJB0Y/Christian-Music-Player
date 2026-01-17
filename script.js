@@ -36,6 +36,13 @@ const playlist = [
       hex: "#3A3436"
   },
   {
+    title: "Exitos de Recuerdos Ft. Los Hermanos Reyes",
+    artist: "Los Milagros de Cristo/Los Hermanos Reyes",
+    src: "songs/Exitos.mp3",
+    cover: "images/Cover of Exitos.jpg",
+    hex: "#102088"
+  },
+  {
     title: "Oh Alma Mía",
     artist: "Los Voceros de Cristo",
     src: "songs/a5.mp3",
