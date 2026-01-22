@@ -43,6 +43,13 @@ const playlist = [
     hex: "#102088"
   },
   {
+    title: "Oh Alma Mia Ft Julio Melgar (2018)",
+    artist: "Los Voceros de Cristo, Julio Melgar",
+    src: "songs/Oh Alma Mia 2018.mp3",
+    cover: "images/new4.png",
+    hex: "#313831"
+  },
+  {
     title: "Oh Alma Mía",
     artist: "Los Voceros de Cristo",
     src: "songs/a5.mp3",
