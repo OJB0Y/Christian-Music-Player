@@ -43,11 +43,18 @@ const playlist = [
     hex: "#102088"
   },
   {
-    title: "Oh Alma Mia Ft Julio Melgar (2018)",
+    title: "Oh Alma Mía Ft Julio Melgar (2018)",
     artist: "Los Voceros de Cristo, Julio Melgar",
     src: "songs/Oh Alma Mia 2018.mp3",
     cover: "images/new4.png",
     hex: "#313831"
+  },
+  {
+    title: "Oh Alma Mía (2024)",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Oh Alma Mía - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
+    hex: "#609FB6"
   },
   {
     title: "Oh Alma Mía",
@@ -83,6 +90,20 @@ const playlist = [
     src: "songs/cántaro.mp3",
     cover: "images/a5.png",
     hex: "#3A3436"
+  },
+  {
+    title: "Loor A Ti Mi Dios(2024)",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Loor A Ti Mi Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
+    hex: "#609FB6"
+  },
+  {
+    title: "Escogido Fui de Dios (2024)",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Escogido Fui de Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
+    hex: "#609FB6"
   },
   {
     title: "El volverá",
