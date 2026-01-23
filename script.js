@@ -1419,7 +1419,7 @@ function animateCoverChange(newCoverSrc, direction = "next", callback) {
       if (callback) callback();
     });
 
-  }, 450); // match CSS slide-out duration
+  }, 550); // match CSS slide-out duration
 }
 
 
