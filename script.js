@@ -43,13 +43,6 @@ const playlist = [
     hex: "#102088"
   },
   {
-    title: "Oh Alma Mía Ft Julio Melgar (2018)",
-    artist: "Los Voceros de Cristo, Julio Melgar",
-    src: "songs/Oh Alma Mia 2018.mp3",
-    cover: "images/new4.png",
-    hex: "#313831"
-  },
-  {
     title: "Oh Alma Mía (2024)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Oh Alma Mía - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
@@ -57,7 +50,14 @@ const playlist = [
     hex: "#609FB6"
   },
   {
-    title: "Oh Alma Mía",
+    title: "Oh Alma Mía Ft Julio Melgar (2018)",
+    artist: "Los Voceros de Cristo, Julio Melgar",
+    src: "songs/Oh Alma Mia 2018.mp3",
+    cover: "images/new4.png",
+    hex: "#313831"
+  },
+  {
+    title: "Oh Alma Mía (2002)",
     artist: "Los Voceros de Cristo",
     src: "songs/a5.mp3",
     cover: "images/a5.png",
@@ -892,7 +892,7 @@ const playlist = [
     cover: "images/song9 (1).png",
     hex: "#36463E"
   },
-  /*CHRISTMAS SONGS*/
+  /*CHRISTMAS SONGS
   {
     title: "Ha Nacido (Venid y Adoremos)",
     artist: "Un Corazón",
@@ -913,7 +913,7 @@ const playlist = [
     src: "songs/medley.mp3",
     cover: "images/medley.png",
     hex: "#1a3c14ff"
-  },
+  },*/
 ];
 
 // --- element refs ---
@@ -1106,19 +1106,57 @@ function updatePlaylistGradient(hexColor) {
 // --- load & play ---
 function loadSong(index) {
   const song = playlist[index];
+
   audio.src = song.src;
   title.textContent = song.title;
   artist.textContent = song.artist;
-  cover.src = song.cover;
 
-  miniCover.src = cover.src;
-  miniTitle.textContent = title.textContent;
-  miniArtist.textContent = artist.textContent;
+  // ❌ DO NOT touch #cover here
+
+  // ✅ Mini player must use song data directly
+  miniCover.src = song.cover;
+  miniTitle.textContent = song.title;
+  miniArtist.textContent = song.artist;
 
   updatePlaylistGradient(song.hex || "#181a1e");
 
   updateActiveSong();
 }
+
+function changeSong(index, { animate = true, direction = "next" } = {}) {
+  currentSong = index;
+  const song = playlist[index];
+
+  if (animate) {
+    // Animate cover change first
+    animateCoverChange(song.cover, direction, () => {
+      // After animation finishes, update mini player and metadata
+      miniCover.src = song.cover;
+      miniTitle.textContent = song.title;
+      miniArtist.textContent = song.artist;
+      title.textContent = song.title;
+      artist.textContent = song.artist;
+      updatePlaylistGradient(song.hex || "#181a1e");
+      updateActiveSong();
+      audio.src = song.src;
+      audio.play().catch(() => {});
+    });
+  } else {
+    cover.src = song.cover;
+    miniCover.src = song.cover;
+    miniTitle.textContent = song.title;
+    miniArtist.textContent = song.artist;
+    title.textContent = song.title;
+    artist.textContent = song.artist;
+    updatePlaylistGradient(song.hex || "#181a1e");
+    updateActiveSong();
+    audio.src = song.src;
+    audio.play().catch(() => {});
+  }
+}
+
+
+
 
 function playSong(index) {
   currentSong = index;
@@ -1155,7 +1193,7 @@ function buildPlaylistUI(filterText = "") {
       `;
 
       li.addEventListener('click', () => {
-        playSong(index);
+        changeSong(index);
         if (shuffle) createShuffleQueue(index);
       });
 
@@ -1240,35 +1278,38 @@ audio.addEventListener('ended', () => {
     audio.play();
     return;
   }
-  if (shuffle) {
-    currentSong = getNextShuffleSong();
-    playSong(currentSong);
-    return;
-  }
-  currentSong = (currentSong + 1) % playlist.length;
-  playSong(currentSong);
+
+  const next = shuffle
+    ? getNextShuffleSong()
+    : (currentSong + 1) % playlist.length;
+
+  changeSong(next);
 });
 
 // --- controls ---
 playBtn.addEventListener('click', togglePlay);
 
 nextBtn.addEventListener('click', () => {
+  let nextIndex;
   if (shuffle) {
-    currentSong = getNextShuffleSong();
+    nextIndex = getNextShuffleSong();
   } else {
-    currentSong = (currentSong + 1) % playlist.length;
+    nextIndex = (currentSong + 1) % playlist.length;
   }
-  playSong(currentSong);
+  changeSong(nextIndex, { animate: true, direction: "next" });
 });
 
 prevBtn.addEventListener('click', () => {
+  let prevIndex;
   if (shuffle) {
-    currentSong = getPrevShuffleSong();
+    prevIndex = getPrevShuffleSong();
   } else {
-    currentSong = (currentSong - 1 + playlist.length) % playlist.length;
+    prevIndex = (currentSong - 1 + playlist.length) % playlist.length;
   }
-  playSong(currentSong);
+  changeSong(prevIndex, { animate: true, direction: "prev" });
 });
+
+
 
 
 // --- repeat & shuffle toggles ---
@@ -1312,6 +1353,11 @@ const openPlaylistBtn = document.getElementById("open-playlist");
 const playlistSheet = document.getElementById("playlist-sheet");
 
 openPlaylistBtn.addEventListener("click", () => {
+  // force browser to register closed state before opening
+  if (!playlistSheet.classList.contains("open")) {
+    playlistSheet.getBoundingClientRect();
+  }
+
   playlistSheet.classList.toggle("open");
 });
 
@@ -1320,10 +1366,50 @@ togglePlaylistBtn.addEventListener("click", () => {
   playlistSheet.classList.remove("open");
 });
 
+// CHANGE SONG COVER ANIMATION THINGYMABOB
+function animateCoverChange(newCoverSrc, direction = "next", callback) {
+  const cover = document.getElementById("cover");
+  const slideOutClass = direction === "next" ? "slide-out-left" : "slide-out-right";
+  const slideInClass = direction === "next" ? "slide-in-right" : "slide-in-left";
+
+  // 1. Slide OLD cover out
+  cover.classList.add(slideOutClass);
+
+  setTimeout(() => {
+    // 2. Freeze transitions and move off-screen opposite side
+    cover.classList.add("no-transition");
+    cover.classList.remove(slideOutClass);
+
+    // 3. Change the image while off-screen
+    cover.src = newCoverSrc;
+
+    // 4. Position new image off-screen on the opposite side
+    cover.classList.add(slideInClass);
+
+    // Force browser to commit layout
+    cover.getBoundingClientRect();
+
+    // 5. Re-enable transition and slide in
+    requestAnimationFrame(() => {
+      cover.classList.remove("no-transition");
+      cover.classList.remove(slideInClass);
+
+      // 6. Call callback after slide-in finishes
+      if (callback) callback();
+    });
+
+  }, 450); // match CSS slide-out duration
+}
+
+
+
+
 
 
 // --- init ---
 currentSong = 0;
 loadSong(currentSong);
 updateActiveSong();
+setPlayIcon(false);
+changeSong(0, { animate: false });
 setPlayIcon(false);

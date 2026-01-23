@@ -41,27 +41,24 @@ body {
 }
 
 /* === PLAYLIST SHEET === */
+/* CLOSED */
 #playlist-sheet {
   position: fixed;
-  left: 0%;
-  bottom: 0%;
-  width: 100%;
-  height: 100%;
-
-  background: linear-gradient(to bottom, #434863, #181a1e);
-
+  inset: 0;
+  background: linear-gradient(to bottom, #181a1e, #000);
   transform: translateY(100%);
-  transition:
-    transform 0.55s cubic-bezier(.22,1,.36,1),
-    background 0.8s cubic-bezier(.4,0,.2,1);
-
-  z-index: 30;
-  overflow: hidden;
+  transition: transform 0.55s cubic-bezier(.22,1,.36,1);
+  will-change: transform;
+  pointer-events: none;
+  z-index: 1000;
+  
 }
 
-/* visible state */
+
+/* OPEN */
 #playlist-sheet.open {
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* === PLAYLIST LIST === */
@@ -156,6 +153,10 @@ body {
   gap: 20px;
   width: 100%;
   /*max-width: 450px;*/
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
@@ -185,7 +186,57 @@ body {
   object-fit: cover;
   border-radius: 11px;
   margin-bottom: 2.5rem;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.cover-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  margin-bottom: 2.5rem;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cover {
+
+  object-fit: cover;
+
+  transform: translateX(0);
+  transition: transform 0.45s cubic-bezier(.22,1,.36,1);
+  will-change: transform;
+}
+
+/* slide states */
+#cover.slide-out-left {
+  transform: translateX(-300%);
+}
+
+#cover.slide-out-right {
+  transform: translateX(300%);
+}
+
+#cover.slide-in-right {
+  transform: translateX(300%);
+}
+
+#cover.slide-in-left {
+  transform: translateX(-300%);
+}
+
+#cover.no-transition {
+  transition: none;
+}
+
+
+
 
 .now-playing h2,
 .now-playing p {
@@ -273,7 +324,7 @@ body {
 .controls {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 2rem;
   margin: 10px 0 16px;
 }
 
@@ -284,7 +335,7 @@ body {
   color: white;            
   cursor: pointer;
   transition: transform 0.08s; 
-  padding: 2vh;
+  padding: 1.5vh;
   border-radius: 100px;
 }
 
@@ -312,8 +363,8 @@ body {
 
 /* Make the Play/Pause button bigger */
 #play svg {
-  width: 65px;
-  height: 65px;
+  width: 77px;
+  height: 77px;
 }
 
 #play {
@@ -365,7 +416,7 @@ body {
   margin-top: 20px;
   width: calc(100% - 25px);
   padding: 4px;
-  max-width: 450px;
+  max-width: 835px;
   height: 36px;
   border: 2px solid #ffffff00;
   border-radius: 4px;
@@ -374,6 +425,12 @@ body {
   background-color: #ffffff1d;
   box-sizing: border-box;
   flex-shrink: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-bottom: 2.5vh;
 }
 
 #playlist {
@@ -385,6 +442,8 @@ body {
   border: 2px solid #09c7fc00;
   border-radius: 8px;
   background-color: #11111100;
+
+  margin-bottom: 2vh;
 }
 
 /* === PLAYLIST ITEMS WITH COVERS === */
