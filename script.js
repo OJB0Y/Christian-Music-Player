@@ -711,6 +711,27 @@ const playlist = [
     hex: "#16706A"
   },
   {
+    title: "Del Salmo 23",
+    artist: "Redimi2/Distrito Royal",
+    src: "songs/SpotiDownloader.com - Del Salmo 23 - Redimi2.mp3",
+    cover: "images/Cover of Del Salmo 23 by Redimi2, Distrito Royal.jpg",
+    hex: "#716942"
+  },
+  {
+    title: "El Mood",
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - El mood - Redimi2.mp3",
+    cover: "images/puede.jpg",
+    hex: "#6B8681"
+  },
+  {
+    title: "Exaltación",
+    artist: "Redimi2/Averly Morillo",
+    src: "songs/SpotiDownloader.com - Exaltación - Redimi2.mp3",
+    cover: "images/Cover of Exaltación by Redimi2, Averly Morillo.jpg",
+    hex: "#383810"
+  },
+  {
     title: "Mi Padre",
     artist: "Redimi2/Samantha Kate/Distrito Royal",
     src: "songs/padre.mp3",
