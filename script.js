@@ -1176,30 +1176,52 @@ function updatePlaylistGradient(hexColor) {
 function loadSong(index) {
   const song = playlist[index];
 
+  // Set audio source IMMEDIATELY (no waiting for animation)
   audio.src = song.src;
+  
+  // Load the audio so it's ready to play
+  audio.load();
+  
   title.textContent = song.title;
   artist.textContent = song.artist;
 
-  // ❌ DO NOT touch #cover here
-
-  // ✅ Mini player must use song data directly
+  // Update cover immediately
+  cover.src = song.cover;
+  
+  // Mini player
   miniCover.src = song.cover;
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
 
   updatePlaylistGradient(song.hex || "#181a1e");
-
   updateActiveSong();
 }
 
-function changeSong(index, { animate = true, direction = "next" } = {}) {
+function changeSong(index, { animate = true, direction = "next", autoPlay = true } = {}) {
   currentSong = index;
   const song = playlist[index];
 
+  // Set audio source IMMEDIATELY (no waiting for animation)
+  audio.src = song.src;
+  audio.load(); // Load the new audio source
+  
+  // Set up audio to play when ready (only if autoPlay is true)
+  if (autoPlay) {
+    const playWhenReady = () => {
+      audio.play().catch(() => {
+        // Auto-play might be blocked (e.g., when tab is backgrounded)
+        // This is normal browser behavior
+      });
+      audio.removeEventListener('canplaythrough', playWhenReady);
+    };
+    
+    audio.addEventListener('canplaythrough', playWhenReady);
+  }
+
   if (animate) {
-    // Animate cover change first
+    // Animate cover change, but audio is already loading/playing
     animateCoverChange(song.cover, direction, () => {
-      // After animation finishes, update mini player and metadata
+      // After animation finishes, update UI
       miniCover.src = song.cover;
       miniTitle.textContent = song.title;
       miniArtist.textContent = song.artist;
@@ -1207,10 +1229,9 @@ function changeSong(index, { animate = true, direction = "next" } = {}) {
       artist.textContent = song.artist;
       updatePlaylistGradient(song.hex || "#181a1e");
       updateActiveSong();
-      audio.src = song.src;
-      audio.play().catch(() => {});
     });
   } else {
+    // No animation, update everything immediately
     cover.src = song.cover;
     miniCover.src = song.cover;
     miniTitle.textContent = song.title;
@@ -1219,18 +1240,20 @@ function changeSong(index, { animate = true, direction = "next" } = {}) {
     artist.textContent = song.artist;
     updatePlaylistGradient(song.hex || "#181a1e");
     updateActiveSong();
-    audio.src = song.src;
-    audio.play().catch(() => {});
   }
 }
-
-
-
 
 function playSong(index) {
   currentSong = index;
   loadSong(index);
-  audio.play().catch(err => console.warn('Play prevented:', err));
+  
+  // Set up audio to play when ready
+  const playWhenReady = () => {
+    audio.play().catch(err => console.warn('Play prevented (tab might be backgrounded):', err.message));
+    audio.removeEventListener('canplaythrough', playWhenReady);
+  };
+  
+  audio.addEventListener('canplaythrough', playWhenReady);
 }
 
 function togglePlay() {
@@ -1477,8 +1500,6 @@ function animateCoverChange(newCoverSrc, direction = "next", callback) {
 
 // --- init ---
 currentSong = 0;
-loadSong(currentSong);
+loadSong(currentSong); // Just load, don't play
 updateActiveSong();
-setPlayIcon(false);
-changeSong(0, { animate: false });
-setPlayIcon(false);
+setPlayIcon(false); // Show play icon (paused state)
