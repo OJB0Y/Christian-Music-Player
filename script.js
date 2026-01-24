@@ -36,6 +36,20 @@ const playlist = [
       hex: "#3A3436"
   },
   {
+    title: "A Tu Lado en el Cielo",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - A Tu Lado en el Cielo - Los Voceros de Cristo.mp3",
+    cover: "images/Alvaro.jpg",
+    hex: "#747474",
+  },
+  {
+    title: "Apocalipsis 15:3",
+    artist: "Los Voceros de Cristo/Armando Trujillo",
+    src : "songs/SpotiDownloader.com - Apocalipsis 15_3 - Los Voceros de Cristo.mp3",
+    cover: "images/su amor.jpg",
+    hex: "#313831"
+  },
+  {
     title: "Exitos de Recuerdos Ft. Los Hermanos Reyes",
     artist: "Los Milagros de Cristo/Los Hermanos Reyes",
     src: "songs/Exitos.mp3",
@@ -50,7 +64,7 @@ const playlist = [
     hex: "#609FB6"
   },
   {
-    title: "Oh Alma Mía Ft Julio Melgar (2018)",
+    title: "Oh Alma Mía Ft Julio Melgar (2016)",
     artist: "Los Voceros de Cristo, Julio Melgar",
     src: "songs/Oh Alma Mia 2018.mp3",
     cover: "images/new4.png",
@@ -62,6 +76,20 @@ const playlist = [
     src: "songs/a5.mp3",
     cover: "images/a5.png",
     hex: "#3A3436"
+  },
+  {
+    title: "Oh Alma Mía (2000)",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Oh alma mía - Los Voceros de Cristo.mp3",
+    cover: "images/Loor.jpg",
+    hex: "#783800",
+  },
+  {
+    title: "Escogido Fui de Dios (2025)",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Escogido fui de Dios (Nuevos Horizontes) - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of Escogido fui de Dios (Nuevos Horizontes) by Los Voceros de Cristo.jpg",
+    hex: "#8F2727"
   },
   {
     title: "Yo Te Esperare",
@@ -78,6 +106,20 @@ const playlist = [
     hex: "#787053ff"
   },
   {
+    title: "La Biblia",
+    artist: "Manuel Bonilla",
+    src: "songs/song2.mp3",
+    cover: "images/song2.jpg",
+    hex: "#942409"
+  },
+  {
+    title: "En Mi Casa Vive Jesús",
+    artist: "Manuel Bonilla",
+    src: "songs/SpotiDownloader.com - En Mi Casa Vive Jesús - Francisco Orantes.mp3",
+    cover: "images/Cover of En Mi Casa Vive Jesús by Francisco Orantes.jpg",
+    hex: "#628ABF"
+  },
+  {
     title: "Loor a ti mi Dios v2",
     artist: "Los Voceros de Cristo",
     src: "songs/Loor2.mp3",
@@ -92,7 +134,7 @@ const playlist = [
     hex: "#3A3436"
   },
   {
-    title: "Loor A Ti Mi Dios(2024)",
+    title: "Loor A Ti Mi Dios (2024)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Loor A Ti Mi Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
     cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
@@ -113,6 +155,13 @@ const playlist = [
     hex: "#313831"
   },
   {
+    title: "Que Feliz Estoy",
+    artist: "Francisco Orantes",
+    src: "songs/SpotiDownloader.com - Que Feliz Estoy - Francisco Orantes.mp3",
+    cover: "images/song10.png",
+    hex: "#A16962",
+  },
+  {
     title: "Por Herencia",
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/Por Herencia.mp3",
@@ -127,6 +176,20 @@ const playlist = [
     hex: "#08186C"
   },
   {
+    title: "Necesito De Ti",
+    artist: "Francisco Orantes",
+    src: "songs/Necesito De Ti.mp3",
+    cover: "images/song10.png",
+    hex: "#A16962"
+  },
+  {
+    title: "Te Necesito",
+    artist: "Los Hermanos Reyes",
+    src: "songs/Te necesito.mp3",
+    cover: "images/Hay una ciudad.png",
+    hex: "#bb9b31ff"
+  },
+  {
     title: "Su amor siempre es su amor",
     artist: "Los Voceros de Cristo/Ruth E. Gomez",
     src: "songs/su amor.mp3",
@@ -139,6 +202,13 @@ const playlist = [
     src: "songs/La perdida oveja.mp3",
     cover: "images/a5.png",
     hex: "#3A3436"
+  },
+  {
+    title: "La Biblia dice que el hombre",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - La Biblia dice que el hombre - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of La Biblia dice que el hombre by Los Voceros de Cristo.jpg",
+    hex: "#9D8627",
   },
   {
     title: "Te Doy Gracias",
@@ -355,13 +425,6 @@ const playlist = [
     src: "songs/song1.mp3",
     cover: "images/song1.jpg",
     hex: "#383838"
-  },
-  {
-    title: "La Biblia",
-    artist: "Manuel Bonilla",
-    src: "songs/song2.mp3",
-    cover: "images/song2.jpg",
-    hex: "#942409"
   },
   {
     title: "Un Grano de Arena",
@@ -614,27 +677,13 @@ const playlist = [
     cover: "images/new1.png",
     hex: "#AC6F00"
   },
-  {
+ /* {
     title: "Imagínate",
     artist: "Aroddy/Leonel Tuchez/Victor Hugo V.",
     src: "songs/Imagínate.mp3",
     cover: "images/new2.png",
     hex: "#5D0808"
-  },
-  {
-    title: "Necesito De Ti",
-    artist: "Francisco Orantes",
-    src: "songs/Necesito De Ti.mp3",
-    cover: "images/song10.png",
-    hex: "#A16962"
-  },
-  {
-    title: "Te Necesito",
-    artist: "Los Hermanos Reyes",
-    src: "songs/Te necesito.mp3",
-    cover: "images/Hay una ciudad.png",
-    hex: "#bb9b31ff"
-  },
+  },*/
 /*  {
     title: "Mi Nuevo Amor",
     artist: "Roberto Orellana",
