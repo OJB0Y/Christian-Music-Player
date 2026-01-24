@@ -1049,10 +1049,6 @@ let shuffle = false;
 let playlistVisible = true;
 let autoScrollEnabled = true;
 
-// --- preload ---
-let nextTrackPreloader = new Audio();
-nextTrackPreloader.preload = "auto";
-
 
 // shuffle queue + position
 let shuffleQueue = [];
@@ -1075,21 +1071,6 @@ function createShuffleQueue(startIndex = currentSong) {
   }
   shuffleIndex = 0;
 }
-
-function getNextIndexForPreload() {
-  if (repeat) return currentSong;
-
-  if (shuffle) {
-    // Peek without advancing shuffleIndex
-    const peek = shuffleIndex + 1 < shuffleQueue.length
-      ? shuffleQueue[shuffleIndex + 1]
-      : shuffleQueue[0];
-    return peek;
-  }
-
-  return (currentSong + 1) % playlist.length;
-}
-
 
 function getNextShuffleSong() {
   if (shuffleIndex + 1 >= shuffleQueue.length) {
@@ -1199,9 +1180,9 @@ function loadSong(index) {
   title.textContent = song.title;
   artist.textContent = song.artist;
 
-  // DO NOT touch #cover here
+  // ❌ DO NOT touch #cover here
 
-  // Mini player must use song data directly
+  // ✅ Mini player must use song data directly
   miniCover.src = song.cover;
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
@@ -1209,11 +1190,6 @@ function loadSong(index) {
   updatePlaylistGradient(song.hex || "#181a1e");
 
   updateActiveSong();
-
-  // --- preload next track ---
-  const nextIndex = getNextIndexForPreload();
-  nextTrackPreloader.src = playlist[nextIndex].src;
-
 }
 
 function changeSong(index, { animate = true, direction = "next" } = {}) {
@@ -1232,11 +1208,6 @@ function changeSong(index, { animate = true, direction = "next" } = {}) {
       updatePlaylistGradient(song.hex || "#181a1e");
       updateActiveSong();
       audio.src = song.src;
-
-      // --- preload next track ---
-      const nextIndex = getNextIndexForPreload();
-      nextTrackPreloader.src = playlist[nextIndex].src;
-
       audio.play().catch(() => {});
     });
   } else {
@@ -1249,11 +1220,6 @@ function changeSong(index, { animate = true, direction = "next" } = {}) {
     updatePlaylistGradient(song.hex || "#181a1e");
     updateActiveSong();
     audio.src = song.src;
-
-    // --- preload next track ---
-    const nextIndex = getNextIndexForPreload();
-    nextTrackPreloader.src = playlist[nextIndex].src;
-
     audio.play().catch(() => {});
   }
 }
