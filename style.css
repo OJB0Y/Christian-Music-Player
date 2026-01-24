@@ -38,7 +38,7 @@ body {
 
 /* When music is playing, fade in */
 .visualizer.active {
-opacity: 0.25;
+opacity: 0.33;
 }
 
 .bar {
@@ -197,11 +197,6 @@ opacity: 0.25;
 
 .player-content {
   position: relative; /* Creates stacking context */
-  flex: 1;
-  overflow-y: auto;
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
   z-index: 2; /* Above visualizer */
 }
 
