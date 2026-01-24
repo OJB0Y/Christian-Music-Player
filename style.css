@@ -38,7 +38,7 @@ body {
 
 /* When music is playing, fade in */
 .visualizer.active {
-  opacity: 0.155;
+opacity: 0.25;
 }
 
 .bar {
