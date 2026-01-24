@@ -1116,6 +1116,13 @@ const miniPause = document.getElementById('mini-pause');
 
 const visualizer = document.querySelector('.visualizer');
 
+// Add this early (like in a click handler for play button):
+document.addEventListener('click', () => {
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+}, { once: true }); // Once is enough
+
 // === AUDIO VISUALIZER SETUP (NEW) ===
 const visualizerBars = document.querySelectorAll('.bar'); 
 let audioCtx;
@@ -1391,6 +1398,9 @@ function updatePlaylistGradient(hexColor) {
 
 // --- load & play ---
 function loadSong(index) {
+
+  //api stuff
+  
   const song = playlist[index];
 
   // Set audio source IMMEDIATELY (no waiting for animation)
@@ -1414,7 +1424,30 @@ function loadSong(index) {
   updateActiveSong();
 
   currentBarColor = song.barColor;
+
+  // Add this to your initialization/loadSong function:
+if ('mediaSession' in navigator) {
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: song.title,
+    artist: song.artist,
+    artwork: [
+      { src: song.cover, sizes: '96x96', type: 'image/jpeg' },
+      { src: song.cover, sizes: '128x128', type: 'image/jpeg' },
+      { src: song.cover, sizes: '192x192', type: 'image/jpeg' },
+      { src: song.cover, sizes: '256x256', type: 'image/jpeg' },
+      { src: song.cover, sizes: '384x384', type: 'image/jpeg' },
+      { src: song.cover, sizes: '512x512', type: 'image/jpeg' }
+    ]
+  });
+
+  // Enable playback controls on lock screen
+  navigator.mediaSession.setActionHandler('play', () => audio.play());
+  navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+  navigator.mediaSession.setActionHandler('previoustrack', () => prevBtn.click());
+  navigator.mediaSession.setActionHandler('nexttrack', () => nextBtn.click());
 }
+}
+
 
 function shadeHex(hex, amount) {
   hex = hex.replace("#", "");
@@ -1466,6 +1499,28 @@ function changeSong(index, { animate = true, direction = "next", autoPlay = true
   } else {
     cover.src = song.cover;
   }
+
+  // Add this to your initialization/loadSong function:
+if ('mediaSession' in navigator) {
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: song.title,
+    artist: song.artist,
+    artwork: [
+      { src: song.cover, sizes: '96x96', type: 'image/jpeg' },
+      { src: song.cover, sizes: '128x128', type: 'image/jpeg' },
+      { src: song.cover, sizes: '192x192', type: 'image/jpeg' },
+      { src: song.cover, sizes: '256x256', type: 'image/jpeg' },
+      { src: song.cover, sizes: '384x384', type: 'image/jpeg' },
+      { src: song.cover, sizes: '512x512', type: 'image/jpeg' }
+    ]
+  });
+
+  // Enable playback controls on lock screen
+  navigator.mediaSession.setActionHandler('play', () => audio.play());
+  navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+  navigator.mediaSession.setActionHandler('previoustrack', () => prevBtn.click());
+  navigator.mediaSession.setActionHandler('nexttrack', () => nextBtn.click());
+}
 
 }
 
@@ -1553,7 +1608,7 @@ function updateActiveSong() {
 // --- time formatting ---
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return '0:00';
-  const minutes = Math.floor(seconds / 60);
+  const minutes = Math.floor(seconds / 50);
   const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
   return `${minutes}:${secs}`;
 }
