@@ -1014,6 +1014,115 @@ const miniArtist = document.getElementById('mini-artist');
 const miniPlay = document.getElementById('mini-play');
 const miniPause = document.getElementById('mini-pause');
 
+const visualizer = document.querySelector('.visualizer');
+
+// === AUDIO VISUALIZER SETUP (NEW) ===
+const visualizerBars = document.querySelectorAll('.bar'); 
+let audioCtx;
+let analyser;
+let analyserData;
+let visualizerRunning = false;
+
+function initVisualizer() {
+  if (audioCtx) return;
+
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  const source = audioCtx.createMediaElementSource(audio);
+
+  analyser = audioCtx.createAnalyser();
+  analyser.fftSize = 64; // Adjust this for more/less bars (must match HTML bars count!)
+  analyser.smoothingTimeConstant = 0.8; // Makes the animation smoother
+
+  analyserData = new Uint8Array(analyser.frequencyBinCount);
+
+  source.connect(analyser);
+  analyser.connect(audioCtx.destination);
+}
+
+function animateVisualizer() {
+  if (!visualizerRunning) return;
+  
+  analyser.getByteFrequencyData(analyserData);
+  
+  // Process each bar
+  visualizerBars.forEach((bar, index) => {
+    // Map the frequency data to bar height
+    // Using modulo to distribute frequencies across bars if there are more bars than data points
+    const dataIndex = Math.floor(index * (analyserData.length / visualizerBars.length));
+    const value = analyserData[dataIndex];
+    
+    // Convert to percentage (0-100%)
+    const heightPercent = (value / 255) * 50;
+    
+    // Apply the height with a minimum value so bars don't completely disappear
+    bar.style.height = Math.max(5, heightPercent) + '%';
+    
+    // Optional: Add color variation based on frequency
+    const hue = (index * 360 / visualizerBars.length + value) % 360;
+    bar.style.backgroundColor = `hsl(${hue}, 80%, 60%)`;
+  });
+  
+  // Continue the animation loop
+  requestAnimationFrame(() => animateVisualizer());
+}
+
+// Update audio event listeners to start/stop visualizer
+audio.addEventListener('play', () => {
+  setPlayIcon(true);
+  isPlaying = true;
+
+  initVisualizer();
+  audioCtx.resume();
+
+  visualizer.classList.add('active');
+
+  if (!visualizerRunning) {
+    visualizerRunning = true;
+    animateVisualizer(); // Start the animation loop
+  }
+});
+
+audio.addEventListener('pause', () => {
+  setPlayIcon(false);
+  isPlaying = false;
+  visualizerRunning = false;
+  
+  visualizer.classList.remove('active');
+
+  // Reset bars to minimum height when paused
+  visualizerBars.forEach(bar => {
+    bar.style.height = '5%';
+    bar.style.backgroundColor = ''; // Reset to CSS default
+  });
+});
+
+// Also reset when song ends
+audio.addEventListener('ended', () => {
+  visualizerRunning = false;
+
+  visualizer.classList.remove('active');
+
+  visualizerBars.forEach(bar => {
+    bar.style.height = '5%';
+    bar.style.backgroundColor = '';
+  });
+  
+  // Your existing ended logic here...
+  if (repeat) {
+    audio.currentTime = 0;
+    audio.play();
+    return;
+  }
+
+  const next = shuffle
+    ? getNextShuffleSong()
+    : (currentSong + 1) % playlist.length;
+
+  changeSong(next);
+});
+
+
+
 
 // umm
 
@@ -1357,12 +1466,23 @@ seekBar.addEventListener('input', () => {
 audio.addEventListener('play', () => {
   setPlayIcon(true);
   isPlaying = true;
+
+  initVisualizer();
+  audioCtx.resume();
+
+  if (!visualizerRunning) {
+    visualizerRunning = true;
+    animateVisualizer();
+  }
 });
+
 
 audio.addEventListener('pause', () => {
   setPlayIcon(false);
   isPlaying = false;
+  visualizerRunning = false;
 });
+
 
 audio.addEventListener('ended', () => {
   if (repeat) {

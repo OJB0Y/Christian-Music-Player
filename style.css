@@ -18,6 +18,39 @@ body {
   box-sizing: border-box;
 }
 
+/* Visualizer as background - hidden initially */
+.visualizer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2px;
+  padding: 0 10px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.4s ease; /* Smooth fade in */
+}
+
+/* When music is playing, fade in */
+.visualizer.active {
+  opacity: 0.155;
+}
+
+.bar {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 4px;
+  transition: height 0.08s linear;
+}
+
+
 /* === OPEN PLAYLIST BUTTON === */
 #open-playlist {
   width: 100%;
@@ -51,7 +84,9 @@ body {
   will-change: transform;
   pointer-events: none;
   z-index: 1000;
-  
+  /*display: flex;*/
+  flex-direction: column;
+  overflow:hidden;
 }
 
 
@@ -158,6 +193,16 @@ body {
   margin-left: auto;
   margin-right: auto;
   
+}
+
+.player-content {
+  position: relative; /* Creates stacking context */
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 2; /* Above visualizer */
 }
 
 /* PLAYER CARD */
