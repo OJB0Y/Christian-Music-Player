@@ -1147,7 +1147,7 @@ function animateVisualizer() {
 
   visualizerBars.forEach((bar, i) => {
     const energy = getEnergy(time, i);
-    const height = 5 + energy * 55;
+    const height = 5 + energy * 40;
 
     bar.style.height = `${height}%`;
 
