@@ -1116,125 +1116,84 @@ const miniPause = document.getElementById('mini-pause');
 
 const visualizer = document.querySelector('.visualizer');
 
-// Add this early (like in a click handler for play button):
-document.addEventListener('click', () => {
-  if (audioCtx && audioCtx.state === 'suspended') {
-    audioCtx.resume();
-  }
-}, { once: true }); // Once is enough
+// ================= VISUALIZER (NO AUDIOCONTEXT) =================
 
-// === AUDIO VISUALIZER SETUP (NEW) ===
-const visualizerBars = document.querySelectorAll('.bar'); 
-let audioCtx;
-let analyser;
-let analyserData;
+let visualizerBars = [];
 let visualizerRunning = false;
 let currentBarColor = "#ffffff";
+let visualizerRAF = null;
 
+// cache bars once
 function initVisualizer() {
-  if (audioCtx) return;
+  if (visualizerBars.length) return;
 
-  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
-  const source = audioCtx.createMediaElementSource(audio);
-  analyser = audioCtx.createAnalyser();
-
-  analyser.fftSize = 64;
-  analyser.smoothingTimeConstant = 0.8;
-  analyserData = new Uint8Array(analyser.frequencyBinCount);
-
-  // IMPORTANT:
-  // ❌ DO NOT connect analyser to destination
-  source.connect(analyser);
+  visualizerBars = Array.from(document.querySelectorAll(".visualizer .bar"));
 }
 
-function initVisualizer() {
-  if (audioCtx) return;
+// fake “energy” generator (smooth + musical)
+function getEnergy(time, index) {
+  const base =
+    Math.sin(time * 2 + index) * 0.5 +
+    Math.sin(time * 0.9 + index * 2) * 0.3 +
+    Math.random() * 0.1;
 
-  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
-  const source = audioCtx.createMediaElementSource(audio);
-  analyser = audioCtx.createAnalyser();
-  const gain = audioCtx.createGain();
-
-  analyser.fftSize = 64;
-  analyser.smoothingTimeConstant = 0.8;
-  analyserData = new Uint8Array(analyser.frequencyBinCount);
-
-  gain.gain.value = 1; // IMPORTANT: must not be 0
-
-  source.connect(analyser);
-  analyser.connect(gain);
-  gain.connect(audioCtx.destination);
+  return Math.max(0, base);
 }
-
 
 function animateVisualizer() {
   if (!visualizerRunning) return;
 
-  analyser.getByteFrequencyData(analyserData);
+  const time = audio.currentTime;
 
-  visualizerBars.forEach((bar, index) => {
-    const dataIndex = Math.floor(
-      index * (analyserData.length / visualizerBars.length)
-    );
+  visualizerBars.forEach((bar, i) => {
+    const energy = getEnergy(time, i);
+    const height = 5 + energy * 55;
 
-    const value = analyserData[dataIndex];
-    const heightPercent = (value / 255) * 60;
+    bar.style.height = `${height}%`;
 
-    bar.style.height = Math.max(5, heightPercent) + "%";
-
-    // subtle motion via brightness, not hue
-    const boost = value / 10;
-
-    const dark  = shadeHex(currentBarColor, -35 + boost * 0.2);
+    const boost = energy * 55;
+    const dark  = shadeHex(currentBarColor, -30 + boost * 0.2);
     const mid   = shadeHex(currentBarColor,   0 + boost * 0.3);
-    const light = shadeHex(currentBarColor,  45 + boost * 0.4);
+    const light = shadeHex(currentBarColor,  40 + boost * 0.4);
 
-    bar.style.background = `
-      linear-gradient(
-        to top,
-        ${dark},
-        ${mid},
-        ${light}
-      )
-    `;
+    bar.style.background =
+      `linear-gradient(to top, ${dark}, ${mid}, ${light})`;
   });
 
-  requestAnimationFrame(animateVisualizer);
+  visualizerRAF = requestAnimationFrame(animateVisualizer);
 }
 
-
-
-// Update audio event listeners to start/stop visualizer
-audio.addEventListener('play', () => {
-  setPlayIcon(true);
-  isPlaying = true;
+function startVisualizer() {
 
   initVisualizer();
-  audioCtx.resume();
+  if (visualizerRunning) return;
 
-  visualizer.classList.add('active');
+  visualizerRunning = true;
+  visualizer.classList.add("active");
 
-  if (!visualizerRunning) {
-    visualizerRunning = true;
-    animateVisualizer(); // Start the animation loop
-  }
-});
-
-audio.addEventListener('pause', () => {
-  setPlayIcon(false);
-  isPlaying = false;
-  visualizerRunning = false;
-  
-  visualizer.classList.remove('active');
-
-  // Reset bars to minimum height when paused
   visualizerBars.forEach(bar => {
-    bar.style.height = '5%';
-    bar.style.backgroundColor = ''; // Reset to CSS default
+    bar.style.height = "5%";
   });
-});
+
+  animateVisualizer();
+}
+
+function stopVisualizer() {
+
+  visualizerRunning = false;
+  visualizer.classList.remove("active");
+
+  if (visualizerRAF) {
+    cancelAnimationFrame(visualizerRAF);
+    visualizerRAF = null;
+  }
+
+  visualizerBars.forEach(bar => {
+    bar.style.height = "5%";
+    bar.style.background = "";
+  });
+}
+
 
 
 
@@ -1399,15 +1358,14 @@ function updatePlaylistGradient(hexColor) {
 // --- load & play ---
 function loadSong(index) {
 
-  //api stuff
+
   
   const song = playlist[index];
 
-  // Set audio source IMMEDIATELY (no waiting for animation)
   audio.src = song.src;
-  
-  // Load the audio so it's ready to play
+
   audio.load();
+
   
   title.textContent = song.title;
   artist.textContent = song.artist;
@@ -1425,7 +1383,6 @@ function loadSong(index) {
 
   currentBarColor = song.barColor;
 
-  // Add this to your initialization/loadSong function:
 if ('mediaSession' in navigator) {
   navigator.mediaSession.metadata = new MediaMetadata({
     title: song.title,
@@ -1528,13 +1485,7 @@ function playSong(index) {
   currentSong = index;
   loadSong(index);
   
-  // Set up audio to play when ready
-  const playWhenReady = () => {
-    audio.play().catch(err => console.warn('Play prevented (tab might be backgrounded):', err.message));
-    audio.removeEventListener('canplaythrough', playWhenReady);
-  };
-  
-  audio.addEventListener('canplaythrough', playWhenReady);
+  const playPromise = audio.play();
 }
 
 function togglePlay() {
@@ -1608,7 +1559,7 @@ function updateActiveSong() {
 // --- time formatting ---
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return '0:00';
-  const minutes = Math.floor(seconds / 50);
+  const minutes = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
   return `${minutes}:${secs}`;
 }
@@ -1629,43 +1580,30 @@ audio.addEventListener('timeupdate', () => {
   durationEl.textContent = `/ ${formatTime(audio.duration || 0)}`;
 });
 
-seekBar.addEventListener('input', () => {
+audio.addEventListener("play", () => {
+  isPlaying = true;
+  setPlayIcon(true);
+  startVisualizer();
+});
+
+
+seekBar.addEventListener("input", () => {
   if (audio.duration) {
     audio.currentTime = (seekBar.value / 100) * audio.duration;
   }
 });
 
-audio.addEventListener('play', () => {
-  setPlayIcon(true);
-  isPlaying = true;
 
-  initVisualizer();
-  audioCtx.resume();
-
-  if (!visualizerRunning) {
-    visualizerRunning = true;
-    animateVisualizer();
-  }
-});
-
-
-audio.addEventListener('pause', () => {
-  setPlayIcon(false);
+audio.addEventListener("pause", () => {
   isPlaying = false;
-  visualizerRunning = false;
+  setPlayIcon(false);
+  stopVisualizer();
 });
 
 
-audio.addEventListener('ended', () => {
-  visualizerRunning = false;
+audio.addEventListener("ended", () => {
+  stopVisualizer();
 
-  visualizer.classList.remove('active');
-
-  visualizerBars.forEach(bar => {
-    bar.style.height = '5%';
-    bar.style.backgroundColor = '';
-  });
-  
   if (repeat) {
     audio.currentTime = 0;
     audio.play();
