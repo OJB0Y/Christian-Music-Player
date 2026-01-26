@@ -44,8 +44,9 @@ const playlist = [
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - A Tu Lado en el Cielo - Los Voceros de Cristo.mp3",
     cover: "images/Alvaro.jpg",
-    hex: "#747474",
-    barColor: "#825959ff"
+    hex: "#4f300cff",
+    barColor: "#825959ca",
+    video: "videos/Voceros1.mp4"
   },
   {
     title: "Apocalipsis 15:3",
@@ -1446,6 +1447,48 @@ function changeSong(index, { animate = true, direction = "next", autoPlay = true
   audio.src = song.src;
   audio.load();
   
+const bgVideo = document.getElementById('bg-video');
+const videoOverlay = document.getElementById('video-overlay');
+const nowPlayingCover = document.getElementById('cover');
+
+if (song.video) {
+  // show video
+  bgVideo.src = song.video;
+  bgVideo.muted = true;   // allow autoplay
+  bgVideo.loop = true;    // optional
+  bgVideo.style.display = 'block';
+  videoOverlay.style.display = 'block'; // show overlay
+
+  bgVideo.load();
+  bgVideo.play().catch(() => {});
+
+  requestAnimationFrame(() => bgVideo.classList.add('show'));
+
+  // fade out cover
+  //nowPlayingCover.style.transition = 'opacity 0.5s ease';
+  nowPlayingCover.style.opacity = '0';
+
+  // stop visualizer
+  visualizer.classList.remove('active');
+  stopVisualizer();
+} else {
+  // hide video
+  bgVideo.classList.remove('show');
+  setTimeout(() => bgVideo.style.display = 'none', 500);
+  videoOverlay.style.display = 'none'; // hide overlay
+
+  // fade cover back in
+  setTimeout(() => nowPlayingCover.style.opacity = '1', 700);
+
+  // animate cover if needed
+  if (animate) animateCoverChange(song.cover, direction);
+  else cover.src = song.cover;
+
+  // start visualizer
+  startVisualizer();
+}
+
+
   // Set up audio to play when ready (only if autoPlay is true)
     if (autoPlay) {
     audio.play().catch(() => {});
@@ -1742,3 +1785,5 @@ currentSong = 0;
 loadSong(currentSong); // Just load, don't play
 updateActiveSong();
 setPlayIcon(false); // Show play icon (paused state)
+const videoOverlay = document.getElementById('video-overlay');
+videoOverlay.style.display = 'none';

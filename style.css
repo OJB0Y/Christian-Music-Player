@@ -73,6 +73,36 @@ opacity: 0.33;
   flex-shrink: 0;
 }
 
+#video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* semi-transparent black */
+  pointer-events: none; /* allows clicks to pass through */
+  z-index: 1; /* sits above video but below controls */
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+#bg-video.show {
+  opacity: 1;
+}
+
+
 /* === PLAYLIST SHEET === */
 /* CLOSED */
 #playlist-sheet {
@@ -302,6 +332,8 @@ opacity: 0.33;
 
 
 .toggle-playlist-btn {
+  position: relative;
+
   margin-bottom: 8px;
   padding: 1px;
   cursor: pointer;
@@ -312,6 +344,8 @@ opacity: 0.33;
   appearance: none;
   -webkit-appearance: none;
   color: white;
+
+  z-index: 1;
 }
 
 
@@ -320,11 +354,15 @@ opacity: 0.33;
   width: 20px;
   height: 20px;
   color: white;
+
+  z-index: 1;
 }
 
 /* default (white) */
 #toggle-playlist {
   color: white;
+
+  z-index: 1;
 }
 
 
