@@ -49,6 +49,14 @@ const playlist = [
     video: "videos/Voceros1.mp4"
   },
   {
+    title: "Es El Amor",
+    artist: "Duo Hermanos Devia",
+    src: "songs/SpotiDownloader.com - Es El Amor - Duo Hermanos Devia.mp3",
+    cover: "images/Cover of Es El Amor by Duo Hermanos Devia.jpg",
+    hex: "#a8893c",
+    barColor: "#d67a24"
+  },
+  {
     title: "Apocalipsis 15:3",
     artist: "Los Voceros de Cristo/Armando Trujillo",
     src : "songs/SpotiDownloader.com - Apocalipsis 15_3 - Los Voceros de Cristo.mp3",
