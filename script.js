@@ -1478,7 +1478,7 @@ if (song.video) {
   videoOverlay.style.display = 'none'; // hide overlay
 
   // fade cover back in
-  setTimeout(() => nowPlayingCover.style.opacity = '1', 700);
+  setTimeout(() => nowPlayingCover.style.opacity = '1', 600);
 
   // animate cover if needed
   if (animate) animateCoverChange(song.cover, direction);
