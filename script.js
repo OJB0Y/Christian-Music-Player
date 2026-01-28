@@ -32,12 +32,13 @@ const playlist = [
     barColor: "#722606ff"
   },
   {
-      title: "Cuando Muera Yo Ft. Los Hermanos Reyes",
-      artist: "Los Voceros de Cristo/Los Hermanos Reyes",
-      src: "songs/Cuando Muera Yo.mp3",
-      cover: "images/Cuando Muera Yo.png",
-      hex: "#3A3436",
-      barColor: "#726065ff"
+    title: "Cuando Muera Yo Ft. Los Hermanos Reyes",
+    artist: "Los Voceros de Cristo/Los Hermanos Reyes",
+    src: "songs/Cuando Muera Yo.mp3",
+    cover: "images/Cuando Muera Yo.png",
+    hex: "#3A3436",
+    barColor: "#726065d0",
+    video: "videos/Voceros2.mp4"
   },
   {
     title: "A Tu Lado en el Cielo",
@@ -45,7 +46,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - A Tu Lado en el Cielo - Los Voceros de Cristo.mp3",
     cover: "images/Alvaro.jpg",
     hex: "#4f300cff",
-    barColor: "#825959ca",
+    barColor: "#825959d5",
     video: "videos/Voceros1.mp4"
   },
   {
