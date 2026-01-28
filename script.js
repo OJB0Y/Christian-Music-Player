@@ -36,8 +36,8 @@ const playlist = [
     artist: "Los Voceros de Cristo/Los Hermanos Reyes",
     src: "songs/Cuando Muera Yo.mp3",
     cover: "images/Cuando Muera Yo.png",
-    hex: "#3A3436",
-    barColor: "#726065d0",
+    hex: "#1c1d3a",
+    barColor: "#726065d5",
     video: "videos/Voceros2.mp4"
   },
   {
