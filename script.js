@@ -902,8 +902,9 @@ const playlist = [
     artist: "Evan Craft/Danny Gokey/Redimi2",
     src: "songs/Be Alright.mp3",
     cover: "images/alrighty.jpg",
-    hex: "#8f4311ff",
-    barColor: "#c59c08ff"
+    hex: "#443124",
+    barColor: "#acc508d9",
+    video: "videos/Redimi3.mp4"
 },
 {
     title: "Pentagrama",
