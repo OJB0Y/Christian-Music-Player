@@ -852,8 +852,9 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - El mood - Redimi2.mp3",
     cover: "images/puede.jpg",
-    hex: "#6B8681",
-    barColor: "#ac9250ff"
+    hex: "#293550",
+    barColor: "#b5783ad8",
+    video: "videos/Redimi1.mp4"
 },
 {
     title: "Exaltación",
