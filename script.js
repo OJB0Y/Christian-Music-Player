@@ -796,8 +796,9 @@ const playlist = [
     artist: "Redimi2/Christine D'Clario",
     src: "songs/Nombre.mp3",
     cover: "images/image (5).png",
-    hex: "#8E8E8E",
-    barColor: "#e4c752ff"
+    hex: "#44563a",
+    barColor: "#e4c75258",
+    video: "videos/Redimi2.mp4"
 },
 {
     title: "Espíritu Santo",
