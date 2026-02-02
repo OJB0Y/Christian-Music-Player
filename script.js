@@ -1143,6 +1143,40 @@ const queueScreen = document.getElementById('queueScreen');
 const queueList = document.getElementById('queueList');
 const closeQueueBtn = document.querySelector('.close-queue');
 
+// Check if device is desktop
+const IS_DESKTOP = window.innerWidth >= 550;
+
+
+//resizing cover width if too wide and not tall enough
+function updateCoverSize() {
+  const nowPlayingImg = document.getElementById('cover');
+  const playerContainer = document.querySelector('.player');
+  
+  if (IS_DESKTOP) {
+    nowPlayingImg.style.maxWidth = '350px';
+    nowPlayingImg.style.marginBottom = '0.8rem';
+    playerContainer.style.marginTop = '0px';
+  } else {
+    nowPlayingImg.style.maxWidth = '400px';
+    nowPlayingImg.style.marginBottom = '0rem';
+    playerContainer.style.marginTop = '20px';
+  }
+}
+
+// Initial call
+updateCoverSize();
+
+// Update on window resize
+window.addEventListener('resize', () => {
+  const wasDesktop = IS_DESKTOP;
+  IS_DESKTOP = window.innerWidth >= 768;
+  
+  // Only update if the state changed
+  if (wasDesktop !== IS_DESKTOP) {
+    updateCoverSize();
+  }
+});
+
 // Open queue screen
 queueBtn.addEventListener('click', (e) => {
   e.stopPropagation();
