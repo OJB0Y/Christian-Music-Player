@@ -486,6 +486,290 @@ opacity: 0.33;
   transform: translateY(0);
 }
 
+.secondControls{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 10px 0 10px;
+}
+
+.setTimer{
+  display: block;
+  margin-left: auto;
+}
+
+#timer{
+  margin-right: 20px;
+  
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  color: white;
+
+  height: 40px;
+  width: 40px;
+}
+
+#timer.active svg {
+  fill: #4CAF50;
+}
+
+#queue{
+  margin-left: 20px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  color: white;
+
+  height: 40px;
+  width: 40px;
+}
+
+.options-btn{
+  display: block;
+  margin-left: auto;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  color: white;
+
+  height: 30px;
+  width: 35px;
+}
+
+
+#timerScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px 20px 0 0;
+  z-index: 1000;
+  flex-direction: column;
+  transform: translateY(2000%);
+  transition: transform 0.55s cubic-bezier(.22,1,.36,1);
+}
+
+#timerScreen.open {
+  display: flex;
+  transform: translateY(150%);
+}
+
+.timerContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.timerContent h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.timer-input-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+#timerMinutes {
+  width: 100%;
+  max-width: 200px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#timerMinutes:focus {
+  outline: none;
+  border-color: #4CAF50;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#timerMinutes::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.timerButtons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.timerButtons button {
+  flex: 1;
+  padding: 14px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#startTimer {
+  background: #4CAF50;
+  color: white;
+}
+
+#startTimer:hover {
+  background: #45a049;
+}
+
+#cancelTimer {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#cancelTimer:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#queueScreen {
+  border-radius: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  flex-direction: column;
+
+  transform: translateY(2000%);
+  transition: transform 0.55s cubic-bezier(.22,1,.36,1);
+}
+
+#queueScreen.open {
+  display: flex;
+  transform: translateY(150%);
+}
+
+#queueScreen.closed {
+  transform: translateY(2000%);
+  transition: transform 0.55s cubic-bezier(.22,1,.36,1);
+}
+
+.queue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.queue-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-queue {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.queue-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.queue-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.queue-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.queue-item.active-queue-song {
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #4CAF50;
+}
+
+.queue-cover {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.queue-text {
+  flex: 1;
+}
+
+.queue-text div:first-child {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.queue-text div:last-child {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.song-options-popup {
+  position: absolute;
+  width: 150px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 8px 0;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.option-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  color: white;
+}
+
+.option-item:hover {
+  background: rgba(255,255,255,0.08);
+}
 
 /* === SEARCH BAR & PLAYLIST === */
 #search-bar {

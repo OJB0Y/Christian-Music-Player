@@ -1129,6 +1129,143 @@ const miniPause = document.getElementById('mini-pause');
 
 const visualizer = document.querySelector('.visualizer');
 
+// music timer 
+const timerBtn = document.getElementById('timer');
+const timerScreen = document.getElementById('timerScreen');
+const timerMinutesInput = document.getElementById('timerMinutes');
+const startTimerBtn = document.getElementById('startTimer');
+const cancelTimerBtn = document.getElementById('cancelTimer');
+
+
+// Queue refs 
+const queueBtn = document.getElementById('queue'); 
+const queueScreen = document.getElementById('queueScreen');
+const queueList = document.getElementById('queueList');
+const closeQueueBtn = document.querySelector('.close-queue');
+
+// Open queue screen
+queueBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  queueScreen.classList.add('open');
+  renderQueueUI();
+});
+
+// Close queue screen
+closeQueueBtn.addEventListener('click', () => {
+  queueScreen.classList.remove('open');
+});
+
+// Close queue screen when clicking outside
+document.addEventListener('click', (e) => {
+  if (queueScreen.classList.contains('open') && 
+      !queueScreen.contains(e.target) && 
+      !queueBtn.contains(e.target)) {
+    queueScreen.classList.remove('open');
+  }
+});
+
+// Render queue UI function
+function renderQueueUI() {
+  queueList.innerHTML = '';
+  
+  // Show current song first
+  const currentItem = document.createElement('div');
+  currentItem.className = 'queue-item active-queue-song';
+  currentItem.innerHTML = `
+    <img src="${playlist[currentSong].cover}" class="queue-cover">
+    <div class="queue-text">
+      <div>${playlist[currentSong].title} (Now Playing)</div>
+      <div>${playlist[currentSong].artist}</div>
+    </div>
+  `;
+  queueList.appendChild(currentItem);
+  
+  // Show queue items
+  queue.forEach((songIndex, i) => {
+    const song = playlist[songIndex];
+    
+    const item = document.createElement('div');
+    item.className = 'queue-item';
+    item.innerHTML = `
+      <img src="${song.cover}" class="queue-cover">
+      <div class="queue-text">
+        <div>${song.title}</div>
+        <div>${song.artist}</div>
+      </div>
+    `;
+    
+    item.addEventListener('click', () => {
+      // Play this song from queue
+      queueIndex = i;
+      changeSong(songIndex);
+      renderQueueUI(); // Refresh to update active state
+    });
+    
+    queueList.appendChild(item);
+  });
+  
+  // If queue is empty, show message
+  if (queue.length === 0) {
+    const emptyMsg = document.createElement('div');
+    emptyMsg.className = 'queue-empty';
+    emptyMsg.textContent = 'Queue is empty. Add songs from the playlist.';
+    emptyMsg.style.textAlign = 'center';
+    emptyMsg.style.opacity = '0.6';
+    emptyMsg.style.padding = '40px 20px';
+    queueList.appendChild(emptyMsg);
+  }
+}
+
+// Update the queue when songs change
+audio.addEventListener('play', renderQueueUI);
+
+
+let sleepTimerId = null;
+let sleepTimerEnd = null;
+
+// queue
+let queue = [];
+let queueIndex = 0; // position inside queue
+
+// music popup
+let currentOptionsPopup = null;
+
+function openSongOptionsPopup(button, songIndex) {
+  // Remove old popup if it exists
+  if (currentOptionsPopup) {
+    currentOptionsPopup.remove();
+    currentOptionsPopup = null;
+  }
+
+  const popup = document.createElement('div');
+  popup.className = 'song-options-popup';
+  popup.innerHTML = `
+    <div class="option-item" onclick="addToQueue(${songIndex})">Add to Queue</div>
+  `;
+
+  document.body.appendChild(popup);
+
+  // Position next to the button
+  const rect = button.getBoundingClientRect();
+  popup.style.top = rect.top + window.scrollY + "px";
+  popup.style.left = rect.left - 150 + "px";
+
+  currentOptionsPopup = popup;
+
+  // Close when clicking elsewhere
+  setTimeout(() => {
+    document.addEventListener('click', closeOptionsPopup, { once: true });
+  }, 0);
+}
+
+function closeOptionsPopup() {
+  if (currentOptionsPopup) {
+    currentOptionsPopup.remove();
+    currentOptionsPopup = null;
+  }
+}
+
+
 // ================= VISUALIZER (NO AUDIOCONTEXT) =================
 
 let visualizerBars = [];
@@ -1233,6 +1370,32 @@ audio.addEventListener('pause', () => {
   miniPause.style.display = 'none';
 });
 
+queue.forEach((songIndex, i) => {
+  const song = playlist[songIndex];
+
+  const item = document.createElement('div');
+  item.className = 'queue-item';
+
+  if (i === queueIndex) {
+    item.classList.add('active-queue-song');
+  }
+
+  item.innerHTML = `
+    <img src="${song.cover}" class="queue-cover">
+    <div class="queue-text">
+      <div>${song.title}</div>
+      <div>${song.artist}</div>
+    </div>
+  `;
+
+  item.addEventListener('click', () => {
+    queueIndex = i;
+    changeSong(songIndex);
+    renderQueueUI();
+  });
+
+  queueContent.appendChild(item);
+});
 
 
 
@@ -1370,8 +1533,6 @@ function updatePlaylistGradient(hexColor) {
 
 // --- load & play ---
 function loadSong(index) {
-
-
   
   const song = playlist[index];
 
@@ -1438,6 +1599,14 @@ function shadeHex(hex, amount) {
 
 
 function changeSong(index, { animate = true, direction = "next", autoPlay = true } = {}) {
+  // Rebuild queue from this song onward (INDEXES)
+//queue = [];
+//for (let i = index + 1; i < playlist.length; i++) {
+  //queue.push(i);
+//}
+//queueIndex = -1;
+
+  
   currentSong = index;
   const song = playlist[index];
 
@@ -1512,7 +1681,6 @@ if (song.video) {
     cover.src = song.cover;
   }
 
-  // Add this to your initialization/loadSong function:
 if ('mediaSession' in navigator) {
   navigator.mediaSession.metadata = new MediaMetadata({
     title: song.title,
@@ -1533,6 +1701,13 @@ if ('mediaSession' in navigator) {
   navigator.mediaSession.setActionHandler('previoustrack', () => prevBtn.click());
   navigator.mediaSession.setActionHandler('nexttrack', () => nextBtn.click());
 }
+
+// Build queue from this point forward
+  //queue = playlist.slice(index);
+  //queueIndex = 0;
+
+  //loadSong(queue[queueIndex]);
+  //audio.play();
 
 }
 
@@ -1564,12 +1739,28 @@ function buildPlaylistUI(filterText = "") {
        li.classList.add('playlist-item');
 
       li.innerHTML = `
-        <img src="${song.cover}" class="playlist-cover" loading="lazy">
-        <div class="playlist-text">
-          <div class="playlist-title">${song.title}</div>
-          <div class="playlist-artist">${song.artist}</div>
-        </div>
+      <img src="${song.cover}" class="playlist-cover" loading="lazy">
+  
+      <div class="playlist-text">
+      <div class="playlist-title">${song.title}</div> 
+      <div class="playlist-artist">${song.artist}</div>
+      </div>
+
+      <button class="options-btn">
+      <svg viewBox="0 0 16 16" fill="#ffffff">
+      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+      </svg>
+      </button>
       `;
+
+      const optionsBtn = li.querySelector('.options-btn');
+
+      optionsBtn.addEventListener('click', (e) => {  
+        e.stopPropagation();          // PREVENT song from playing
+        openSongOptionsPopup(optionsBtn, index);
+      });
+
+
 
       li.addEventListener('click', () => {
         changeSong(index);
@@ -1590,6 +1781,83 @@ buildPlaylistUI();
 searchBar.addEventListener('input', () => {
   buildPlaylistUI(searchBar.value);
 });
+
+timerBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  timerScreen.classList.add('open');
+});
+
+// Add to your startTimerBtn click handler:
+// Update your startTimerBtn click handler:
+startTimerBtn.addEventListener('click', () => {
+  const minutes = parseInt(timerMinutesInput.value, 10);
+
+  if (isNaN(minutes) || minutes < 1) return;
+
+  // Clear existing timer if one exists
+  if (sleepTimerId) clearTimeout(sleepTimerId);
+
+  const ms = minutes * 60 * 1000;
+  sleepTimerEnd = Date.now() + ms;
+
+  sleepTimerId = setTimeout(() => {
+    audio.pause();
+    audio.currentTime = 0;
+    playBtn.click();
+    
+    // Remove active class when timer ends
+    timerBtn.classList.remove('active');
+    sleepTimerId = null;
+    sleepTimerEnd = null;
+  }, ms);
+
+  // Add active class when timer starts
+  timerBtn.classList.add('active');
+  timerScreen.classList.remove('open');
+});
+
+// Update your cancelTimerBtn click handler:
+cancelTimerBtn.addEventListener('click', () => {
+  if (sleepTimerId) {
+    clearTimeout(sleepTimerId);
+    sleepTimerId = null;
+    sleepTimerEnd = null;
+  }
+
+  // Remove active class when timer is cancelled
+  timerBtn.classList.remove('active');
+  timerScreen.classList.remove('open');
+});
+
+// Also remove active class when audio pauses (timer triggered)
+audio.addEventListener('pause', () => {
+  if (sleepTimerId) {
+    clearTimeout(sleepTimerId);
+    sleepTimerId = null;
+    sleepTimerEnd = null;
+    timerBtn.classList.remove('active');
+  }
+});
+
+setInterval(() => {
+  if (!sleepTimerEnd) return;
+
+  const remaining = sleepTimerEnd - Date.now();
+
+  if (remaining <= 0) return;
+
+  const mins = Math.ceil(remaining / 60000);
+  timerBtn.title = `Sleep in ${mins} min`;
+}, 1000);
+
+
+
+document.addEventListener('click', (e) => {
+  if (!timerScreen.contains(e.target) && !timerBtn.contains(e.target)) {
+    timerScreen.classList.remove('open');
+  }
+});
+
 
 // --- update active playlist row ---
 function updateActiveSong() {
@@ -1657,7 +1925,17 @@ audio.addEventListener("pause", () => {
 
 
 audio.addEventListener("ended", () => {
-  stopVisualizer();
+
+  if (repeat) {
+    audio.currentTime = 0;
+    audio.play();
+    return;
+  }
+
+  nextBtn.click(); // ALWAYS use next logic
+});
+
+/*  stopVisualizer();
 
   if (repeat) {
     audio.currentTime = 0;
@@ -1670,19 +1948,31 @@ audio.addEventListener("ended", () => {
     : (currentSong + 1) % playlist.length;
 
   changeSong(next);
-});
+});*/
 
 // --- controls ---
 playBtn.addEventListener('click', togglePlay);
 
 nextBtn.addEventListener('click', () => {
-  let nextIndex;
-  if (shuffle) {
-    nextIndex = getNextShuffleSong();
-  } else {
-    nextIndex = (currentSong + 1) % playlist.length;
+
+  if (queueIndex + 1 < queue.length) {
+    queueIndex++;
+    changeSong(queue[queueIndex]);
+    //renderQueueUI();
+    return;
   }
-  changeSong(nextIndex, { animate: true, direction: "next" });
+
+  // If we reach here, queue is finished or empty
+  // Clear the queue since we're moving to non-queued songs
+  queue = [];
+  queueIndex = -1;
+
+  // fallback to normal behavior when queue empty
+  const nextIndex = shuffle
+    ? getNextShuffleSong()
+    : (currentSong + 1) % playlist.length;
+
+  changeSong(nextIndex);
 });
 
 prevBtn.addEventListener('click', () => {
@@ -1695,6 +1985,15 @@ prevBtn.addEventListener('click', () => {
   changeSong(prevIndex, { animate: true, direction: "prev" });
 });
 
+
+function addToQueue(songIndex) {
+  queue.push(songIndex);
+  renderQueueUI();
+  if (!queue.includes(songIndex)) {
+    queue.push(songIndex);
+    renderQueueUI();
+  }
+}
 
 
 
@@ -1793,6 +2092,7 @@ function animateCoverChange(newCoverSrc, direction = "next", callback) {
 
 
 // --- init ---
+queueIndex = -1;
 currentSong = 0;
 loadSong(currentSong); // Just load, don't play
 updateActiveSong();
