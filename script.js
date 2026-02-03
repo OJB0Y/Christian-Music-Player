@@ -914,6 +914,14 @@ const playlist = [
     barColor: "#fb965fd8",
 },
 {
+    title: "INFINITO",
+    artist: "Madiel Lara",
+    src: "songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3",
+    cover: "images/Cover of INFINITO by Madiel Lara.jpg",
+    hex: "#D28432",
+    barColor: "#ffdf89d8",
+},
+{
     title: "A Pesar de Mí",
     artist: "Alex Zurdo/Funky/Redimi2/Un Corazón/Abby Valdez/Indiomar",
     src: "songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3",
