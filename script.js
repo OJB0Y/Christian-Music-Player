@@ -8,6 +8,14 @@ const playlist = [
     barColor: "#009708ff"
   },
   {
+    title: "Escucharte Hablar / Dios Ha Sido Bueno",
+    artist: "Marcos Witt/Indiomar/Dariana",
+    src: "songs/SpotiDownloader.com - Escucharte Hablar _ Dios Ha Sido Bueno - Marcos Witt.mp3",
+    cover: "images/Cover of Escucharte Hablar _ Dios Ha Sido Bueno by Marcos Witt, Indiomar, Dariana (1).jpg",
+    hex: "#535353",
+    barColor: "#b8b8b8d8",
+  },
+  {
     title: "Como Una Flor Ft. Los Hermanos Reyes",
     artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
@@ -858,6 +866,62 @@ const playlist = [
     video: "videos/Redimi1.mp4"
 },
 {
+    title: "dIOS",
+    artist: "Kim Richards/Indiomar/Redimi2",
+    src: "songs/SpotiDownloader.com - dIOS - Kim Richards.mp3",
+    cover: "images/Cover of dIOS by Kim Richards, Indiomar, Redimi2.jpg",
+    hex: "#DA262E",
+    barColor: "#ffb7bbd8",
+},
+{
+    title: "Flipando",
+    artist: "Redimi2/Natan El Profeta",
+    src: "songs/REDIMI2, NATAN EL PROFETA - FLIPANDO (VIDEO OFICIAL)_1080p.mp3",
+    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    hex: "#2070C0",
+    barColor: "#f7cd24d8",
+},
+{
+    title: "Cumbia de Mi Libertad",
+    artist: "Redimi2",
+    src: "songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3",
+    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    hex: "#2070C0",
+    barColor: "#f7cd24d8",
+},
+{
+    title: "El Culpable",
+    artist: "Alex Zurdo/Funky",
+    src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
+    cover: "images/Cover of El Culpable by Funky, Alex Zurdo, Dariana.jpg",
+    hex: "#D03030",
+    barColor: "#fb965fd8",
+},
+{
+    title: "A Pesar de Mí",
+    artist: "Alex Zurdo/Funky/Redimi2/Un Corazón/Abby Valdez/Indiomar",
+    src: "songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3",
+    cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
+    hex: "#402727",
+    barColor: "#fbf5d7d8",
+},
+{
+    title: "365",
+    artist: "Dariana",
+    src: "songs/SpotiDownloader.com - 365 - Dariana.mp3",
+    cover: "images/Cover of 365 by Dariana.jpg",
+    hex: "#189E76",
+    barColor: "#01f079d8",
+},
+{
+    title: "Polaris",
+    artist: "Dariana",
+    src: "songs/SpotiDownloader.com - Polaris - Dariana.mp3",
+    cover: "images/Cover of Polaris by Dariana.jpg",
+    hex: "#189E76",
+    barColor: "#01f079d8",
+},
+{
     title: "Exaltación",
     artist: "Redimi2/Averly Morillo",
     src: "songs/SpotiDownloader.com - Exaltación - Redimi2.mp3",
@@ -1019,12 +1083,28 @@ const playlist = [
     barColor: "#58c22dff"
 },
 {
+    title: "Es por Fe",
+    artist: "Generación 12/Musiko/Stefy Espinosa",
+    src: "songs/SpotiDownloader.com - Es por Fe - Generación 12.mp3",
+    cover: "images/Cover of Es por Fe by Generación 12, Musiko, Stefy Espinosa.jpg",
+    hex: "#77676F",
+    barColor: "#eecbddd8",
+},
+{
     title: "Si Puedes Creer",
     artist: "Musiko/Majo y Dan",
     src: "songs/Si Puedes Creer.mp3",
     cover: "images/Si Puedes Creer.png",
     hex: "#C31307",
     barColor: "#e7c20cff"
+},
+{
+    title: "Lo Que Pasó Pasó",
+    artist: "Musiko/Pedro Pablo Quintero",
+    src: "songs/SpotiDownloader.com - Lo Que Pasó Pasó - Musiko.mp3",
+    cover: "images/Cover of Lo Que Pasó Pasó by Musiko, Pedro Pablo Quintero.jpg",
+    hex: "#EE3F2F",
+    barColor: "#f6beb9",
 },
 {
     title: "Laberintos",
@@ -1254,8 +1334,7 @@ function renderQueueUI() {
 audio.addEventListener('play', renderQueueUI);
 
 
-let sleepTimerId = null;
-let sleepTimerEnd = null;
+
 
 // queue
 let queue = [];
@@ -1821,68 +1900,56 @@ timerBtn.addEventListener('click', (e) => {
   timerScreen.classList.add('open');
 });
 
-// Add to your startTimerBtn click handler:
-// Update your startTimerBtn click handler:
-startTimerBtn.addEventListener('click', () => {
-  const minutes = parseInt(timerMinutesInput.value, 10);
+function hardPauseMusic() {
+  audio.pause();           // stop playback
+  isPlaying = false;      // sync your state
+}
 
-  if (isNaN(minutes) || minutes < 1) return;
+// ================= SLEEP TIMER (COMPLETELY ISOLATED) =================
 
-  // Clear existing timer if one exists
-  if (sleepTimerId) clearTimeout(sleepTimerId);
+let sleepTimerId = null;
+let sleepTimerEnd = null;
 
+function startSleepTimer(minutes) {
   const ms = minutes * 60 * 1000;
+
   sleepTimerEnd = Date.now() + ms;
 
   sleepTimerId = setTimeout(() => {
-    audio.pause();
-    audio.currentTime = 0;
-    playBtn.click();
-    
-    // Remove active class when timer ends
+    hardPauseMusic();            // ONLY thing it does
     timerBtn.classList.remove('active');
+
     sleepTimerId = null;
     sleepTimerEnd = null;
   }, ms);
 
-  // Add active class when timer starts
   timerBtn.classList.add('active');
-  timerScreen.classList.remove('open');
-});
+}
 
-// Update your cancelTimerBtn click handler:
-cancelTimerBtn.addEventListener('click', () => {
-  if (sleepTimerId) {
-    clearTimeout(sleepTimerId);
-    sleepTimerId = null;
-    sleepTimerEnd = null;
-  }
+function cancelSleepTimer() {
+  if (!sleepTimerId) return;
 
-  // Remove active class when timer is cancelled
+  clearTimeout(sleepTimerId);
+  sleepTimerId = null;
+  sleepTimerEnd = null;
+
   timerBtn.classList.remove('active');
+}
+
+startTimerBtn.addEventListener('click', () => {
+  const minutes = parseInt(timerMinutesInput.value, 10);
+  if (isNaN(minutes) || minutes < 1) return;
+
+  cancelSleepTimer();      // clear any old one
+  startSleepTimer(minutes);
+
   timerScreen.classList.remove('open');
 });
 
-// Also remove active class when audio pauses (timer triggered)
-audio.addEventListener('pause', () => {
-  if (sleepTimerId) {
-    clearTimeout(sleepTimerId);
-    sleepTimerId = null;
-    sleepTimerEnd = null;
-    timerBtn.classList.remove('active');
-  }
+cancelTimerBtn.addEventListener('click', () => {
+  cancelSleepTimer();
+  timerScreen.classList.remove('open');
 });
-
-setInterval(() => {
-  if (!sleepTimerEnd) return;
-
-  const remaining = sleepTimerEnd - Date.now();
-
-  if (remaining <= 0) return;
-
-  const mins = Math.ceil(remaining / 60000);
-  timerBtn.title = `Sleep in ${mins} min`;
-}, 1000);
 
 
 
