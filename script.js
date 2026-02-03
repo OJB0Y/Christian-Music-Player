@@ -878,7 +878,7 @@ const playlist = [
     artist: "Redimi2/Natan El Profeta",
     src: "songs/REDIMI2, NATAN EL PROFETA - FLIPANDO (VIDEO OFICIAL)_1080p.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
-    hex: "#2070C0",
+    hex: "#1b5d9f",
     barColor: "#f7cd24d8",
 },
 {
@@ -886,7 +886,23 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
-    hex: "#2070C0",
+    hex: "#1b5d9f",
+    barColor: "#f7cd24d8",
+},
+{
+    title: "CMR4: El Museo",
+    artist: "Alex Zurdo/Natan El Profeta",
+    src: "songs/SpotiDownloader.com - CMR4_ El Museo - Alex Zurdo.mp3",
+    cover: "images/Cover of CMR4_ El Museo by Alex Zurdo, Natan El Profeta.jpg",
+    hex: "#1F4030",
+    barColor: "#dac341d8",
+},
+{
+    title: "Gracias Gracias Gracias",
+    artist: "Redimi2/Madiel Lara",
+    src: "songs/SpotiDownloader.com - Gracias Gracias Gracias - Redimi2.mp3",
+    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    hex: "#1b5d9f",
     barColor: "#f7cd24d8",
 },
 {
