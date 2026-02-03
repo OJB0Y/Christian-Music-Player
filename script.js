@@ -906,8 +906,8 @@ const playlist = [
     barColor: "#f7cd24d8",
 },
 {
-    title: "El Culpable",
-    artist: "Alex Zurdo/Funky",
+    title: "El Culpable ft Dariana",
+    artist: "Alex Zurdo/Funky/Dariana",
     src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
     cover: "images/Cover of El Culpable by Funky, Alex Zurdo, Dariana.jpg",
     hex: "#D03030",
