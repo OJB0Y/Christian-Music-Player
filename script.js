@@ -792,6 +792,14 @@ const playlist = [
     barColor: "#16b9c1ff"
 },
 {
+    title: "Una Locura",
+    artist: "Musiko/La Feria Oficial",
+    src: "songs/SpotiDownloader.com - Una Locura - Musiko.mp3",
+    cover: "images/Si Puedes Creer.png",
+    hex: "#C31307",
+    barColor: "#e7c20cff"
+},
+{
     title: "GOZO",
     artist: "Miel San Marcos/Redimi2",
     src: "songs/GOZO.mp3",
@@ -1041,6 +1049,14 @@ const playlist = [
     cover: "images/llamas.jpg",
     hex: "#64362E",
     barColor: "#de9444ff"
+},
+{
+    title: "Soñe",
+    artist: "Musiko/Josh Gamez",
+    src: "songs/SpotiDownloader.com - Soñe - Musiko.mp3",
+    cover: "images/Si Puedes Creer.png",
+    hex: "#C31307",
+    barColor: "#e7c20cff"
 },
 {
     title: "Solo tú",
