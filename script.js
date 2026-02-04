@@ -1003,6 +1003,14 @@ const playlist = [
     video: "videos/Redimi3.mp4"
 },
 {
+    title: "Eres Mi Bendicion",
+    artist: "Funky/Alex Zurdo",
+    src: "songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3",
+    cover: "images/Cover of Eres Mi Bendicion (feat. Alex Zurdo) by Funky, Alex Zurdo.jpg",
+    hex: "#484060",
+    barColor: "979ec9d9"
+},
+{
     title: "Pentagrama",
     artist: "Alex Zurdo",
     src: "songs/Penta.mp3",
