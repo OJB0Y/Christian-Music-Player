@@ -19,17 +19,63 @@
 
 <body>
   
-  <div class="music-container">
+  <div class="screen-viewport">
+    <div class="screen-track">
 
-    <input 
+    
+
+
+    <div class="screen music-container">
+
+      <input 
         type="text" 
         id="search-bar" 
         placeholder="Search songs..." 
         autocomplete="off">
-  <ul id="playlist">
-        <!-- Songs will be added here dynamically -->
-  </ul>
+        <ul id="playlist">
+        <!-- Songs will be added here dynamically --> 
+      </ul>
+    </div>
 
+<div class="screen playlists-screen" id="libraryScreen">
+  <h1 class="screen-title">Library (BETA!!!! DO NOT USE!!!!)</h1>
+
+  <div class="library-grid">
+    <button class="library-btn" data-library="favorites">
+      <img src="images/Cover of Es El Amor by Duo Hermanos Devia.jpg">
+      <span>Favorites</span>
+    </button>
+
+    <button class="library-btn" data-library="chill">
+      <img src="images/Cover of Lo Que Pasó Pasó by Musiko, Pedro Pablo Quintero.jpg">
+      <span>Chill</span>
+    </button>
+
+    <button class="library-btn" data-library="instrumental">
+      <img src="images/Cover of Es por Fe by Generación 12, Musiko, Stefy Espinosa.jpg">
+      <span>Instrumental</span>
+    </button>
+
+    <button class="library-btn" data-library="spanish">
+      <img src="images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg">
+      <span>Spanish</span>
+    </button>
+  </div>
+</div>
+
+<div class="screen library-playlist-screen" id="libraryPlaylistScreen">
+  <button id="libraryBackBtn">← Back</button>
+  <h1 class="screen-title" id="libraryTitle"></h1>
+
+  <div id="libraryPlaylist"></div>
+</div>
+
+
+
+</div>
+
+<div class="bottom-nav">
+  
   <button id="open-playlist" class="mini-player">
   <img id="mini-cover" src="" alt="cover" />
 
@@ -51,6 +97,27 @@
 </div>
 
 </button>
+
+<div class="nav-buttons">
+  <button id="nav-all" class="nav-btn">
+    <!-- left -->
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+    <span>All Songs</span>
+  </button>
+
+  <button id="nav-library" class="nav-btn active">
+    <!-- middle -->
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    <span>Library</span>
+  </button>
+
+  <button id="nav-playlist" class="nav-btn active">
+    <!-- middle -->
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    <span>Playlist</span>
+  </button>
+  </div>
+</div>
 
 </div>
 

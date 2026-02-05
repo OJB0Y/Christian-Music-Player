@@ -1194,6 +1194,28 @@ const playlist = [
   },*/
 ];
 
+//playlists
+const libraries = {
+  favorites: {
+    title: "Favorites",
+    songs: [0, 3, 7, 10]
+  },
+  chill: {
+    title: "Chill",
+    songs: [1, 2, 8]
+  },
+  instrumental: {
+    title: "Instrumental",
+    songs: [4, 9]
+  },
+  spanish: {
+    title: "Spanish",
+    songs: [5, 6]
+  }
+};
+
+
+
 // --- element refs ---
 const audio = document.getElementById('audio');
 const seekBar = document.getElementById('seek-bar');
@@ -1238,6 +1260,77 @@ const queueBtn = document.getElementById('queue');
 const queueScreen = document.getElementById('queueScreen');
 const queueList = document.getElementById('queueList');
 const closeQueueBtn = document.querySelector('.close-queue');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.screen-track');
+
+  const navAll = document.getElementById('nav-all');
+  const navLibrary = document.getElementById('nav-library');
+  const navPlaylists = document.getElementById('nav-playlist');
+
+  function goToScreen(index) {
+    track.style.transform = `translateX(-${index * 100}vw)`;
+
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    if (index === 0) navAll.classList.add('active');
+    if (index === 1) navLibrary.classList.add('active');
+    if (index === 2) navPlaylists.classList.add('active');
+  }
+
+  navAll.addEventListener('click', () => goToScreen(0));
+  navLibrary.addEventListener('click', () => goToScreen(1));
+  navPlaylists.addEventListener('click', () => goToScreen(2));
+
+  // Ensure correct initial state
+  goToScreen(1);
+
+
+document.querySelectorAll('.library-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const key = btn.dataset.library;
+    openLibraryPlaylist(key);
+  });
+});
+
+const libraryPlaylistEl = document.getElementById('libraryPlaylist');
+const libraryTitle = document.getElementById('libraryTitle');
+
+function openLibraryPlaylist(key) {
+  const lib = libraries[key];
+
+  libraryTitle.textContent = lib.title;
+  libraryPlaylistEl.innerHTML = '';
+
+  lib.songs.forEach(i => {
+    const song = playlist[i];
+
+    const item = document.createElement('div');
+    item.className = 'library-playlist-item';
+    item.innerHTML = `
+      <img src="${song.cover}">
+      <div>
+        <div>${song.title}</div>
+        <div class="artist">${song.artist}</div>
+      </div>
+    `;
+
+    item.addEventListener('click', () => {
+      loadSong(i);
+      playSong();
+    });
+
+    libraryPlaylistEl.appendChild(item);
+  });
+
+  goToScreen(2);
+}
+
+document.getElementById('libraryBackBtn').addEventListener('click', () => {
+  goToScreen(1);
+});
+
+});
+
 
 // Check if device is desktop
 const IS_DESKTOP = window.innerWidth >= 550;
