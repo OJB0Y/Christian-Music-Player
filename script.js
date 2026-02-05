@@ -792,6 +792,14 @@ const playlist = [
     barColor: "#16b9c1ff"
 },
 {
+    title: "Una Locura",
+    artist: "Musiko/La Feria Oficial",
+    src: "songs/SpotiDownloader.com - Una Locura - Musiko.mp3",
+    cover: "images/Si Puedes Creer.png",
+    hex: "#C31307",
+    barColor: "#e7c20cff"
+},
+{
     title: "GOZO",
     artist: "Miel San Marcos/Redimi2",
     src: "songs/GOZO.mp3",
@@ -906,12 +914,20 @@ const playlist = [
     barColor: "#f7cd24d8",
 },
 {
-    title: "El Culpable",
-    artist: "Alex Zurdo/Funky",
+    title: "El Culpable ft Dariana",
+    artist: "Alex Zurdo/Funky/Dariana",
     src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
     cover: "images/Cover of El Culpable by Funky, Alex Zurdo, Dariana.jpg",
     hex: "#D03030",
     barColor: "#fb965fd8",
+},
+{
+    title: "INFINITO",
+    artist: "Madiel Lara",
+    src: "songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3",
+    cover: "images/Cover of INFINITO by Madiel Lara.jpg",
+    hex: "#D28432",
+    barColor: "#ffdf89d8",
 },
 {
     title: "A Pesar de Mí",
@@ -987,6 +1003,14 @@ const playlist = [
     video: "videos/Redimi3.mp4"
 },
 {
+    title: "Eres Mi Bendicion",
+    artist: "Funky/Alex Zurdo",
+    src: "songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3",
+    cover: "images/Cover of Eres Mi Bendicion (feat. Alex Zurdo) by Funky, Alex Zurdo.jpg",
+    hex: "#484060",
+    barColor: "979ec9d9"
+},
+{
     title: "Pentagrama",
     artist: "Alex Zurdo",
     src: "songs/Penta.mp3",
@@ -1033,6 +1057,14 @@ const playlist = [
     cover: "images/llamas.jpg",
     hex: "#64362E",
     barColor: "#de9444ff"
+},
+{
+    title: "Soñe",
+    artist: "Musiko/Josh Gamez",
+    src: "songs/SpotiDownloader.com - Soñe - Musiko.mp3",
+    cover: "images/Si Puedes Creer.png",
+    hex: "#C31307",
+    barColor: "#e7c20cff"
 },
 {
     title: "Solo tú",
