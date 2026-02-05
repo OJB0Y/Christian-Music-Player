@@ -14,6 +14,7 @@ const playlist = [
     cover: "images/Cover of Escucharte Hablar _ Dios Ha Sido Bueno by Marcos Witt, Indiomar, Dariana (1).jpg",
     hex: "#535353",
     barColor: "#b8b8b8d8",
+    libs: ["favorites", "spanish"]
   },
   {
     title: "Como Una Flor Ft. Los Hermanos Reyes",
@@ -29,7 +30,8 @@ const playlist = [
     src: "songs/Que lindo es mi Cristo.mp3",
     cover: "images/Que lindo es mi Cristo.png",
     hex: "#501008",
-    barColor: "#933506ff"
+    barColor: "#933506ff",
+    libs: ["favorites", "spanish"]
   },
   {
     title: "Confía En El Señor Ft Francisco Orantes",
@@ -46,7 +48,8 @@ const playlist = [
     cover: "images/Cuando Muera Yo.png",
     hex: "#1c1d3a",
     barColor: "#726065d5",
-    video: "videos/Voceros2.mp4"
+    video: "videos/Voceros2.mp4",
+    libs: ["favorites", "spanish"]
   },
   {
     title: "A Tu Lado en el Cielo",
@@ -645,7 +648,8 @@ const playlist = [
     src: "songs/Desesperado.mp3",
     cover: "images/evan.png",
     hex: "#186B5D",
-    barColor: "#01ad91ff"
+    barColor: "#01ad91ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Sueños",
@@ -653,7 +657,8 @@ const playlist = [
     src: "songs/song14.mp3",
     cover: "images/suenos.jpg",
     hex: "#504878",
-    barColor: "#2204b3ff"
+    barColor: "#2204b3ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "¿Cómo Podré Pagarte?",
@@ -661,7 +666,8 @@ const playlist = [
     src: "songs/song15.mp3",
     cover: "images/song15.png",
     hex: "#632D07",
-    barColor: "#ca5501ff"
+    barColor: "#ca5501ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Más Que Nunca Ft. Danilo Montero",
@@ -669,7 +675,8 @@ const playlist = [
     src: "songs/song16.mp3",
     cover: "images/song16.png",
     hex: "#464D2E",
-    barColor: "#6f881bff"
+    barColor: "#6f881bff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Cuando Te Encontré",
@@ -677,7 +684,8 @@ const playlist = [
     src: "songs/Cuando (1).mp3",
     cover: "images/Cuando.jpg",
     hex: "#949494",
-    barColor: "#94a9d3ff"
+    barColor: "#94a9d3ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Eres Todopoderoso",
@@ -685,7 +693,8 @@ const playlist = [
     src: "songs/song12.mp3",
     cover: "images/song12.png",
     hex: "#680519",
-    barColor: "#ad0330ff"
+    barColor: "#ad0330ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Tu Amor Hace Eco En Todo Mi Universo",
@@ -693,7 +702,8 @@ const playlist = [
     src: "songs/song17.mp3",
     cover: "images/song17.png",
     hex: "#727272",
-    barColor: "#dbb8b8ff"
+    barColor: "#dbb8b8ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Es Lo Que Quiero",
@@ -862,7 +872,8 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Del Salmo 23 - Redimi2.mp3",
     cover: "images/Cover of Del Salmo 23 by Redimi2, Distrito Royal.jpg",
     hex: "#716942",
-    barColor: "#6bb791ff"
+    barColor: "#6bb791ff",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "El Mood",
@@ -871,7 +882,8 @@ const playlist = [
     cover: "images/puede.jpg",
     hex: "#293550",
     barColor: "#b5783ad8",
-    video: "videos/Redimi1.mp4"
+    video: "videos/Redimi1.mp4",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "dIOS",
@@ -888,6 +900,7 @@ const playlist = [
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
     hex: "#1b5d9f",
     barColor: "#f7cd24d8",
+    libs: ["favorites", "spanish"]
 },
 {
     title: "Cumbia de Mi Libertad",
@@ -1226,25 +1239,13 @@ const playlist = [
   },*/
 ];
 
-//playlists
-const libraries = {
-  favorites: {
-    title: "Favorites",
-    songs: [0, 3, 7, 10]
-  },
-  chill: {
-    title: "Chill",
-    songs: [1, 2, 8]
-  },
-  instrumental: {
-    title: "Instrumental",
-    songs: [4, 9]
-  },
-  spanish: {
-    title: "Spanish",
-    songs: [5, 6]
-  }
+//playlist order
+const playlistOrder = {
+  Worship: [14, 7, 16, 2, 3, 4, 8, 9, 10, 15, 17, 18, 19, 20,],
+  Voceros: [5, 6, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23],
+  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116],
 };
+
 
 
 
@@ -1279,6 +1280,14 @@ const miniPause = document.getElementById('mini-pause');
 
 const visualizer = document.querySelector('.visualizer');
 
+const libraryPlaylistEl = document.getElementById('libraryPlaylist');
+const libraryTitle = document.getElementById('libraryTitle');
+
+let currentLibraryQueue = [];
+let libraryQueueIndex = 0;
+let usingLibraryQueue = false;
+
+
 // music timer 
 const timerBtn = document.getElementById('timer');
 const timerScreen = document.getElementById('timerScreen');
@@ -1293,6 +1302,7 @@ const queueScreen = document.getElementById('queueScreen');
 const queueList = document.getElementById('queueList');
 const closeQueueBtn = document.querySelector('.close-queue');
 
+// Replace the DOMContentLoaded section with this:
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.querySelector('.screen-track');
 
@@ -1316,51 +1326,82 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ensure correct initial state
   goToScreen(1);
 
+  // Add back button functionality
+  const libraryBackBtn = document.getElementById('libraryBackBtn');
+  if (libraryBackBtn) {
+    libraryBackBtn.addEventListener('click', () => goToScreen(1));
+  }
 
-document.querySelectorAll('.library-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const key = btn.dataset.library;
-    openLibraryPlaylist(key);
-  });
-});
+  function buildLibraryPlaylist(libKey) {
+    libraryPlaylistEl.innerHTML = '';
+    libraryTitle.textContent = libKey.toUpperCase();
 
-const libraryPlaylistEl = document.getElementById('libraryPlaylist');
-const libraryTitle = document.getElementById('libraryTitle');
+    const order = playlistOrder[libKey];
+    
+    if (!order || !Array.isArray(order)) {
+      console.error('Invalid playlist order for key:', libKey);
+      return;
+    }
 
-function openLibraryPlaylist(key) {
-  const lib = libraries[key];
+    currentLibraryQueue = [...order]; // save play order
 
-  libraryTitle.textContent = lib.title;
-  libraryPlaylistEl.innerHTML = '';
+    order.forEach(songIndex => {
+      // Check if songIndex exists in playlist
+      if (songIndex < 0 || songIndex >= playlist.length) {
+        console.warn(`Song index ${songIndex} not found in playlist for ${libKey}`);
+        return;
+      }
+      
+      const song = playlist[songIndex];
 
-  lib.songs.forEach(i => {
-    const song = playlist[i];
+      const li = document.createElement('li');
+      li.className = 'library-playlist-item';
 
-    const item = document.createElement('div');
-    item.className = 'library-playlist-item';
-    item.innerHTML = `
-      <img src="${song.cover}">
-      <div>
-        <div>${song.title}</div>
-        <div class="artist">${song.artist}</div>
-      </div>
-    `;
+      li.innerHTML = `
+        <img src="${song.cover}" class="libraryPlaylist-cover" loading="lazy">
+        <div>
+          <div class="libraryPlaylist-title">${song.title}</div>
+          <div class="libraryPlaylist-artist">${song.artist}</div>
+        </div>
+      `;
 
-    item.addEventListener('click', () => {
-      loadSong(i);
-      playSong();
+      li.addEventListener('click', () => {
+        usingLibraryQueue = true;
+        
+        // Find the index of this song in the current library queue
+        const songPos = currentLibraryQueue.indexOf(songIndex);
+        if (songPos !== -1) {
+          libraryQueueIndex = songPos;
+        } else {
+          libraryQueueIndex = 0;
+        }
+        
+        // Reset shuffle since we're using library order
+        if (shuffle) {
+          shuffle = false;
+          setToggleButtonState(shuffleBtn, false);
+        }
+        
+        changeSong(songIndex);
+      });
+
+      libraryPlaylistEl.appendChild(li);
     });
 
-    libraryPlaylistEl.appendChild(item);
+    goToScreen(2); // Go to library playlist screen
+  }
+
+  // Function to open library playlist
+  function openLibraryPlaylist(key) {
+    buildLibraryPlaylist(key);
+  }
+
+  document.querySelectorAll('.library-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.dataset.library;
+      openLibraryPlaylist(key);
+    });
   });
-
-  goToScreen(2);
-}
-
-document.getElementById('libraryBackBtn').addEventListener('click', () => {
-  goToScreen(1);
-});
-
 });
 
 
@@ -1860,8 +1901,30 @@ function changeSong(index, { animate = true, direction = "next", autoPlay = true
 //}
 //queueIndex = -1;
 
-  
+// If we're in library mode but clicked a song not in the library queue, exit library mode
+  if (usingLibraryQueue && currentLibraryQueue.length > 0) {
+    if (!currentLibraryQueue.includes(index)) {
+      usingLibraryQueue = false;
+      libraryQueueIndex = 0;
+    }
+  }  
+
+
   currentSong = index;
+  
+  // --- keep library queue in sync with the real song ---
+if (usingLibraryQueue && currentLibraryQueue.length) {
+  const pos = currentLibraryQueue.indexOf(index);
+
+  if (pos !== -1) {
+    libraryQueueIndex = pos;
+  } else {
+    // user escaped library by picking a song not in it
+    usingLibraryQueue = false;
+  }
+}
+
+
   const song = playlist[index];
 
   // === IMMEDIATE UI UPDATE (NO DELAYS) ===
@@ -2017,9 +2080,11 @@ function buildPlaylistUI(filterText = "") {
 
 
       li.addEventListener('click', () => {
-        changeSong(index);
-        if (shuffle) createShuffleQueue(index);
-      });
+  usingLibraryQueue = false;
+  changeSong(index);
+  if (shuffle) createShuffleQueue(index);
+});
+
 
       playlistEl.appendChild(li);
     }
@@ -2167,6 +2232,7 @@ audio.addEventListener("pause", () => {
 
 
 audio.addEventListener("ended", () => {
+  stopVisualizer();
 
   if (repeat) {
     audio.currentTime = 0;
@@ -2174,9 +2240,9 @@ audio.addEventListener("ended", () => {
     return;
   }
 
-  nextBtn.click(); // ALWAYS use next logic
+  // Simulate next button click to use the same logic
+  nextBtn.click();
 });
-
 /*  stopVisualizer();
 
   if (repeat) {
@@ -2196,20 +2262,47 @@ audio.addEventListener("ended", () => {
 playBtn.addEventListener('click', togglePlay);
 
 nextBtn.addEventListener('click', () => {
-
+  // 1) Queue always has highest priority
   if (queueIndex + 1 < queue.length) {
     queueIndex++;
     changeSong(queue[queueIndex]);
-    //renderQueueUI();
     return;
   }
 
-  // If we reach here, queue is finished or empty
-  // Clear the queue since we're moving to non-queued songs
   queue = [];
   queueIndex = -1;
 
-  // fallback to normal behavior when queue empty
+  // 2) Library playlist has second priority
+  if (usingLibraryQueue && currentLibraryQueue.length > 0) {
+    // Move to next song in library playlist
+    libraryQueueIndex++;
+    
+    // If we've reached the end of the library playlist
+    if (libraryQueueIndex >= currentLibraryQueue.length) {
+      if (repeat) {
+        // Loop back to start if repeat is enabled
+        libraryQueueIndex = 0;
+      } else {
+        // Exit library mode and use normal behavior
+        usingLibraryQueue = false;
+        libraryQueueIndex = 0;
+        
+        // Use normal navigation
+        const nextIndex = shuffle
+          ? getNextShuffleSong()
+          : (currentSong + 1) % playlist.length;
+        changeSong(nextIndex);
+        return;
+      }
+    }
+    
+    // Get the next song from library playlist
+    const nextIndex = currentLibraryQueue[libraryQueueIndex];
+    changeSong(nextIndex);
+    return;
+  }
+
+  // 3) Normal behavior (all songs)
   const nextIndex = shuffle
     ? getNextShuffleSong()
     : (currentSong + 1) % playlist.length;
@@ -2217,7 +2310,32 @@ nextBtn.addEventListener('click', () => {
   changeSong(nextIndex);
 });
 
+
 prevBtn.addEventListener('click', () => {
+  // 1) Check if we're in library queue mode
+  if (usingLibraryQueue && currentLibraryQueue.length > 0) {
+    // Move to previous song in library playlist
+    if (libraryQueueIndex > 0) {
+      libraryQueueIndex--;
+      const prevIndex = currentLibraryQueue[libraryQueueIndex];
+      changeSong(prevIndex, { animate: true, direction: "prev" });
+      return;
+    } else {
+      // At the beginning of library playlist
+      if (repeat) {
+        // Loop to the end if repeat is enabled
+        libraryQueueIndex = currentLibraryQueue.length - 1;
+        const prevIndex = currentLibraryQueue[libraryQueueIndex];
+        changeSong(prevIndex, { animate: true, direction: "prev" });
+        return;
+      } else {
+        // Exit library mode and use normal behavior
+        usingLibraryQueue = false;
+      }
+    }
+  }
+  
+  // 2) Normal behavior (all songs)
   let prevIndex;
   if (shuffle) {
     prevIndex = getPrevShuffleSong();
@@ -2226,7 +2344,6 @@ prevBtn.addEventListener('click', () => {
   }
   changeSong(prevIndex, { animate: true, direction: "prev" });
 });
-
 
 function addToQueue(songIndex) {
   queue.push(songIndex);

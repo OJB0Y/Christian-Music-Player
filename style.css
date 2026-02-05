@@ -134,6 +134,12 @@ opacity: 0.33;
   max-height: 70vh;
 }
 
+#libraryPlaylist {
+  list-style: none;
+  margin: 0;
+  overflow-y: auto;
+  max-height:60vh;
+}
 
 .mini-player {
   display: flex;
@@ -793,6 +799,8 @@ opacity: 0.33;
   height: 100%;
   flex-shrink: 0;
   overflow-y: auto;
+
+  overflow: hidden;
 }
 
 /* Titles */
@@ -904,6 +912,26 @@ opacity: 0.33;
   border-radius: 8px;
 }
 
+#libraryPlaylist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.library-playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.library-playlist-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
 
 
 /* === SEARCH BAR & PLAYLIST === */
@@ -939,6 +967,89 @@ opacity: 0.33;
   background-color: #11111100;
 
   margin-bottom: 2vh;
+}
+
+#libraryPlaylist {
+  width: calc(99%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  border: 2px solid #09c7fc00;
+  border-radius: 8px;
+  background-color: #ff1f1f00;
+
+  margin-bottom: 2vh;
+}
+
+#libraryPlaylist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+/* small album cover */
+.libraryPlaylist-cover {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 5px;
+  flex-shrink: 0;
+  filter: blur(0.0px) brightness(0.95) contrast(0.9);
+  /*low qualitysmall image just like Spotify!*/
+}
+
+/* text container */
+.libraryPlaylist-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.libraryPlaylist-title,
+.libraryPlaylist-artist {
+  text-align: left;
+}
+
+.libraryPlaylist-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.libraryPlaylist-artist {
+  font-size: 12px;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* active row */
+#libraryPlaylist li.active .libraryPlaylist-title{
+  /*background-color: #2ecc71;*/
+  color: #2ecc71;
+  font-weight:700;
+}
+
+#libraryPlaylist li.active .libraryPlaylist-artist {
+  opacity: 0.85;
+}
+
+
+/* === SCROLLBAR STYLING === */
+#libraryPlaylist::-webkit-scrollbar {
+  width: 6px;
+}
+#libraryPlaylist::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
 }
 
 /* === PLAYLIST ITEMS WITH COVERS === */
