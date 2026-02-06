@@ -189,7 +189,7 @@ const playlist = [
     barColor: "#25b4e8ff"
   },
   {
-    title: "El volverá",
+    title: "El volverá", //23
     artist: "Los Voceros de Cristo/Aníbal Marroquín",
     src: "songs/volverá.mp3",
     cover: "images/new4.png",
@@ -197,7 +197,7 @@ const playlist = [
     barColor: "#527052ff"
   },
   {
-    title: "Que Feliz Estoy",
+    title: "Que Feliz Estoy",//24
     artist: "Francisco Orantes",
     src: "songs/SpotiDownloader.com - Que Feliz Estoy - Francisco Orantes.mp3",
     cover: "images/song10.png",
@@ -205,7 +205,7 @@ const playlist = [
     barColor: "#b84e40ff"
   },
   {
-    title: "Por Herencia",
+    title: "Por Herencia",//25
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/Por Herencia.mp3",
     cover: "images/Por Herencia.jpg",
@@ -213,7 +213,7 @@ const playlist = [
     barColor: "#992e00ff"
   },
   {
-    title: "Jesús",
+    title: "Jesús",//26
     artist: "Francisco Orantes",
     src: "songs/Jesús.mp3",
     cover: "images/Jesús.jpg",
@@ -221,7 +221,7 @@ const playlist = [
     barColor: "#001db0ff"
   },
   {
-    title: "Necesito De Ti",
+    title: "Necesito De Ti",//27
     artist: "Francisco Orantes",
     src: "songs/Necesito De Ti.mp3",
     cover: "images/song10.png",
@@ -229,7 +229,7 @@ const playlist = [
     barColor: "#b84e40ff"
   },
   {
-    title: "Te Necesito",
+    title: "Te Necesito",//28
     artist: "Los Hermanos Reyes",
     src: "songs/Te necesito.mp3",
     cover: "images/Hay una ciudad.png",
@@ -237,7 +237,7 @@ const playlist = [
     barColor: "#d3a50cff"
   },
   {
-    title: "Su amor siempre es su amor",
+    title: "Su amor siempre es su amor",//29
     artist: "Los Voceros de Cristo/Ruth E. Gomez",
     src: "songs/su amor.mp3",
     cover: "images/su amor.jpg",
@@ -245,7 +245,7 @@ const playlist = [
     barColor: "#527052ff"
   },
   {
-    title: "La Perdida Oveja",
+    title: "La Perdida Oveja",//30
     artist: "Los Voceros de Cristo/Leonel Tuchez",
     src: "songs/La perdida oveja.mp3",
     cover: "images/a5.png",
@@ -325,7 +325,7 @@ const playlist = [
     barColor: "#005f92ff"
   },
   {
-    title: "Hay una Ciudad",
+    title: "Hay una Ciudad",//40
     artist: "Los Hermanos Reyes",
     src: "songs/Hay una ciudad.mp3",
     cover: "images/Hay una ciudad.png",
@@ -365,7 +365,7 @@ const playlist = [
     barColor: "#0057c0ff"
   },
   {
-    title: "Alto Precio",
+    title: "Alto Precio",//45
     artist: "Los Hermanos Reyes",
     src: "songs/Alto Precio.mp3",
     cover: "images/song27.png",
@@ -405,7 +405,7 @@ const playlist = [
     barColor: "#a11901ff"
   },
   {
-    title: "Buscale",
+    title: "Buscale",//50
     artist: "Óscar Medina",
     src: "songs/Buscale.mp3",
     cover: "images/Buscale.jpg",
@@ -445,7 +445,7 @@ const playlist = [
     barColor: "#600360ff"
   },
   {
-    title: "Tu Fidelidad",
+    title: "Tu Fidelidad",//55
     artist: "Marcos Witt/Alex Campos",
     src: "songs/a6.mp3",
     cover: "images/a6.png",
@@ -491,7 +491,7 @@ const playlist = [
     cover: "images/cover2.jpg"
   },*/
   {
-    title: "Primero Dios, Vol. 5",
+    title: "Primero Dios, Vol. 5",//60
     artist: "Agustin Amador",
     src: "songs/Primero Dios, Vol. 5.mp3",
     cover: "images/cover3.jpg",
@@ -531,7 +531,7 @@ const playlist = [
     barColor: "#108787ff"
 },
 {
-    title: "Loor a ti mi Dios",
+    title: "Loor a ti mi Dios",//65
     artist: "Los Voceros de Cristo",
     src: "songs/Loor.mp3",
     cover: "images/Loor.jpg",
@@ -547,7 +547,7 @@ const playlist = [
     barColor: "#c5c55aff"
 },
 {
-    title: "Esa Roca",
+    title: "Esa Roca",//67
     artist: "Francisco Orantes",
     src: "songs/song3.mp3",
     cover: "images/song3.jpg",
@@ -571,7 +571,7 @@ const playlist = [
     barColor: "#00a108ff"
 },
 {
-    title: "No Te Voy A Dejar",
+    title: "No Te Voy A Dejar",//70
     artist: "Leonel Tuchez",
     src: "songs/song6.mp3",
     cover: "images/song6.png",
@@ -611,7 +611,7 @@ const playlist = [
     barColor: "#bd4232ff"
 },
 {
-    title: "Escogido fui de Dios",
+    title: "Escogido fui de Dios",//75
     artist: "Los Voceros de Cristo",
     src: "songs/song11.mp3",
     cover: "images/song11.png",
@@ -652,7 +652,7 @@ const playlist = [
     libs: ["favorites", "spanish"]
 },
 {
-    title: "Sueños",
+    title: "Sueños",//80
     artist: "Un Corazón",
     src: "songs/song14.mp3",
     cover: "images/suenos.jpg",
@@ -1242,7 +1242,7 @@ const playlist = [
 //playlist order
 const playlistOrder = {
   Worship: [14, 7, 16, 2, 3, 4, 8, 9, 10, 15, 17, 18, 19, 20,],
-  Voceros: [5, 6, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23],
+  Voceros: [5, 6, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 29, 30, 31, 48, 64, 65, 75],
   Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116],
 };
 
