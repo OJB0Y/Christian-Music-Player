@@ -1410,7 +1410,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const IS_DESKTOP = window.innerWidth >= 550;
 
 
-//resizing cover width if too wide and not tall enough
+//resizing cover width if too wide and not tall enough 
 function updateCoverSize() {
   const nowPlayingImg = document.getElementById('cover');
   const playerContainer = document.querySelector('.player');
