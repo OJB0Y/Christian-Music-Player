@@ -1378,8 +1378,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Reset shuffle since we're using library order
         if (shuffle) {
-          shuffle = false;
-          setToggleButtonState(shuffleBtn, false);
+          createLibraryShuffleQueue(libraryQueueIndex)
         }
         
         changeSong(songIndex);
@@ -1405,6 +1404,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
 // Check if device is desktop
 const IS_DESKTOP = window.innerWidth >= 550;
 
@@ -1413,15 +1414,18 @@ const IS_DESKTOP = window.innerWidth >= 550;
 function updateCoverSize() {
   const nowPlayingImg = document.getElementById('cover');
   const playerContainer = document.querySelector('.player');
+  const libraryPlaylist = document.querySelector('#libraryPlaylist');
   
   if (IS_DESKTOP) {
     nowPlayingImg.style.maxWidth = '350px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
+    libraryPlaylist.style.maxHeight = 'calc(100% - 55%)'
   } else {
     nowPlayingImg.style.maxWidth = '400px';
-    nowPlayingImg.style.marginBottom = '0rem';
+    nowPlayingImg.style.marginBottom = '1.5rem';
     playerContainer.style.marginTop = '20px';
+    libraryPlaylist.style.maxHeight = 'calc(100% - 46%)'
   }
 }
 
@@ -1707,6 +1711,9 @@ let autoScrollEnabled = true;
 // shuffle queue + position
 let shuffleQueue = [];
 let shuffleIndex = -1;
+let libraryShuffleQueue = [];
+let libraryShuffleIndex = -1;
+
 
 // --- shuffle helpers ---
 function createShuffleQueue(startIndex = currentSong) {
@@ -1741,6 +1748,90 @@ function getPrevShuffleSong() {
   }
   return currentSong; // stay if no prev
 }
+
+function createLibraryShuffleQueue(startIndexInLibrary) {
+  libraryShuffleQueue = [...currentLibraryQueue];
+
+  // Fisher–Yates
+  for (let i = libraryShuffleQueue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [libraryShuffleQueue[i], libraryShuffleQueue[j]] =
+      [libraryShuffleQueue[j], libraryShuffleQueue[i]];
+  }
+
+  // Put current song first
+  const currentSongIndex = currentLibraryQueue[startIndexInLibrary];
+  const pos = libraryShuffleQueue.indexOf(currentSongIndex);
+
+  if (pos > -1) {
+    [libraryShuffleQueue[0], libraryShuffleQueue[pos]] =
+      [libraryShuffleQueue[pos], libraryShuffleQueue[0]];
+  }
+
+  libraryShuffleIndex = 0;
+}
+
+function getNextLibraryShuffleSong() {
+  if (libraryShuffleIndex + 1 >= libraryShuffleQueue.length) {
+    createLibraryShuffleQueue(libraryQueueIndex);
+  }
+  libraryShuffleIndex++;
+  return libraryShuffleQueue[libraryShuffleIndex];
+}
+
+function getPrevLibraryShuffleSong() {
+  if (libraryShuffleIndex > 0) {
+    libraryShuffleIndex--;
+    return libraryShuffleQueue[libraryShuffleIndex];
+  }
+  return currentSong;
+}
+
+const libraryBigPlay = document.getElementById('libraryBigPlay');
+const libraryBigShuffle = document.getElementById('libraryBigShuffle');
+
+libraryBigPlay.addEventListener('click', () => {
+  if (!currentLibraryQueue.length) return;
+
+  usingLibraryQueue = true;
+  shuffle = false;
+  setToggleButtonState(shuffleBtn, false);
+
+  libraryQueueIndex = 0;
+  const firstSongIndex = currentLibraryQueue[0];
+
+  changeSong(firstSongIndex);
+});
+
+
+libraryBigShuffle.addEventListener('click', () => {
+  if (!currentLibraryQueue.length) return;
+
+  usingLibraryQueue = true;
+  shuffle = true;
+  setToggleButtonState(shuffleBtn, true);
+
+  // --- create a true random order of the library ---
+  libraryShuffleQueue = [...currentLibraryQueue];
+
+  for (let i = libraryShuffleQueue.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [libraryShuffleQueue[i], libraryShuffleQueue[j]] =
+      [libraryShuffleQueue[j], libraryShuffleQueue[i]];
+  }
+
+  // Start at the first random song
+  libraryShuffleIndex = 0;
+
+  const firstRandomSong = libraryShuffleQueue[0];
+
+  // Sync libraryQueueIndex to the random song
+  libraryQueueIndex = currentLibraryQueue.indexOf(firstRandomSong);
+
+  changeSong(firstRandomSong);
+});
+
+
 
 function darkenHex(hex, {
   lightness = 200,   // % to darken (higher = darker)
@@ -2273,34 +2364,37 @@ nextBtn.addEventListener('click', () => {
   queueIndex = -1;
 
   // 2) Library playlist has second priority
-  if (usingLibraryQueue && currentLibraryQueue.length > 0) {
-    // Move to next song in library playlist
-    libraryQueueIndex++;
-    
-    // If we've reached the end of the library playlist
-    if (libraryQueueIndex >= currentLibraryQueue.length) {
-      if (repeat) {
-        // Loop back to start if repeat is enabled
-        libraryQueueIndex = 0;
-      } else {
-        // Exit library mode and use normal behavior
-        usingLibraryQueue = false;
-        libraryQueueIndex = 0;
-        
-        // Use normal navigation
-        const nextIndex = shuffle
-          ? getNextShuffleSong()
-          : (currentSong + 1) % playlist.length;
-        changeSong(nextIndex);
-        return;
-      }
-    }
-    
-    // Get the next song from library playlist
-    const nextIndex = currentLibraryQueue[libraryQueueIndex];
+  // 2) Library playlist
+if (usingLibraryQueue && currentLibraryQueue.length > 0) {
+
+  // 🔥 LIBRARY SHUFFLE TAKES PRIORITY
+  if (shuffle) {
+    const nextIndex = getNextLibraryShuffleSong();
     changeSong(nextIndex);
     return;
   }
+
+  // Normal library order
+  libraryQueueIndex++;
+
+  if (libraryQueueIndex >= currentLibraryQueue.length) {
+    if (repeat) {
+      libraryQueueIndex = 0;
+    } else {
+      usingLibraryQueue = false;
+      const nextIndex = shuffle
+        ? getNextShuffleSong()
+        : (currentSong + 1) % playlist.length;
+      changeSong(nextIndex);
+      return;
+    }
+  }
+
+  const nextIndex = currentLibraryQueue[libraryQueueIndex];
+  changeSong(nextIndex);
+  return;
+}
+
 
   // 3) Normal behavior (all songs)
   const nextIndex = shuffle
@@ -2313,27 +2407,30 @@ nextBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', () => {
   // 1) Check if we're in library queue mode
-  if (usingLibraryQueue && currentLibraryQueue.length > 0) {
-    // Move to previous song in library playlist
-    if (libraryQueueIndex > 0) {
-      libraryQueueIndex--;
-      const prevIndex = currentLibraryQueue[libraryQueueIndex];
-      changeSong(prevIndex, { animate: true, direction: "prev" });
-      return;
-    } else {
-      // At the beginning of library playlist
-      if (repeat) {
-        // Loop to the end if repeat is enabled
-        libraryQueueIndex = currentLibraryQueue.length - 1;
-        const prevIndex = currentLibraryQueue[libraryQueueIndex];
-        changeSong(prevIndex, { animate: true, direction: "prev" });
-        return;
-      } else {
-        // Exit library mode and use normal behavior
-        usingLibraryQueue = false;
-      }
-    }
+  // 1) Library queue
+if (usingLibraryQueue && currentLibraryQueue.length > 0) {
+
+  if (shuffle) {
+    const prevIndex = getPrevLibraryShuffleSong();
+    changeSong(prevIndex, { direction: "prev" });
+    return;
   }
+
+  if (libraryQueueIndex > 0) {
+    libraryQueueIndex--;
+    const prevIndex = currentLibraryQueue[libraryQueueIndex];
+    changeSong(prevIndex, { direction: "prev" });
+    return;
+  } else if (repeat) {
+    libraryQueueIndex = currentLibraryQueue.length - 1;
+    const prevIndex = currentLibraryQueue[libraryQueueIndex];
+    changeSong(prevIndex, { direction: "prev" });
+    return;
+  } else {
+    usingLibraryQueue = false;
+  }
+}
+
   
   // 2) Normal behavior (all songs)
   let prevIndex;
