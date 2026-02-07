@@ -786,8 +786,8 @@ opacity: 0.33;
 }
 
 .library-big-btn svg {
-  width: 42px;
-  height: 42px;
+  width: 42px; 
+  height: 42px; /*height: 23px;*/
   display: block;
   margin: auto;
   transform: translateX(2px); /* optical centering for ▶ shape */
@@ -796,16 +796,16 @@ opacity: 0.33;
 #libraryBigShuffle svg {
   transform: translateX(0); /* no shift for shuffle icon */
   width: 50px;
-  height: 50px;
+  height: 50px;/*height: 36px;*/
 }
 
 .library-big-btn {
   width: 67px;
-  height: 67px;
+  height: 67px; /*height: 50px;*/
   border-radius: 50%;
   border: none;
   background: #1db954;
-  color: white;
+  color: black;
   font-size: 38px;
   cursor: pointer;
   box-shadow: 0 8px 25px rgba(0,0,0,0.35);

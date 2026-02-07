@@ -1,6 +1,6 @@
 const playlist = [
   {
-    title: "Cordero",
+    title: "Cordero", //0
     artist: "Manuel Bonilla",
     src: "songs/Cordero.mp3",
     cover: "images/song5.jpg",
@@ -42,7 +42,7 @@ const playlist = [
     barColor: "#722606ff"
   },
   {
-    title: "Cuando Muera Yo Ft. Los Hermanos Reyes",
+    title: "Cuando Muera Yo Ft. Los Hermanos Reyes",//5
     artist: "Los Voceros de Cristo/Los Hermanos Reyes",
     src: "songs/Cuando Muera Yo.mp3",
     cover: "images/Cuando Muera Yo.png",
@@ -69,7 +69,7 @@ const playlist = [
     barColor: "#d67a24"
   },
   {
-    title: "Apocalipsis 15:3",
+    title: "Apocalipsis 15:3",//8
     artist: "Los Voceros de Cristo/Armando Trujillo",
     src : "songs/SpotiDownloader.com - Apocalipsis 15_3 - Los Voceros de Cristo.mp3",
     cover: "images/su amor.jpg",
@@ -85,7 +85,7 @@ const playlist = [
     barColor: "#041ec4ff"
   },
   {
-    title: "Oh Alma Mía (2024)",
+    title: "Oh Alma Mía (2024)",//10
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Oh Alma Mía - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
     cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
@@ -165,7 +165,7 @@ const playlist = [
     barColor: "#726065ff"
   },
   {
-    title: "Mi cántaro vacío",
+    title: "Mi cántaro vacío",//20
     artist: "Los Voceros de Cristo",
     src: "songs/cántaro.mp3",
     cover: "images/a5.png",
@@ -285,7 +285,7 @@ const playlist = [
     barColor: "#025988ff"
   },
   {
-    title: "Que Bueno es El Señor",
+    title: "Que Bueno es El Señor",//35
     artist: "Los Hermanos Reyes",
     src: "songs/Que Bueno es El Señor.mp3",
     cover: "images/Que Bueno es El Señor.png",
@@ -697,7 +697,7 @@ const playlist = [
     libs: ["favorites", "spanish"]
 },
 {
-    title: "Tu Amor Hace Eco En Todo Mi Universo",
+    title: "Tu Amor Hace Eco En Todo Mi Universo", //85
     artist: "Rojo",
     src: "songs/song17.mp3",
     cover: "images/song17.png",
@@ -738,7 +738,7 @@ const playlist = [
     barColor: "#00c3eaff"
 },
 {
-    title: "Deja las Drogas",
+    title: "Deja las Drogas",//90
     artist: "Aníbal Marroquín",
     src: "songs/song22.mp3",
     cover: "images/song22.png",
@@ -778,7 +778,7 @@ const playlist = [
     barColor: "#f88400ff"
 },
 {
-    title: "Que Bueno Es El Señor",
+    title: "Que Bueno Es El Señor",//95
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/SpotiDownloader.com - Que bueno es el Señor - Luismi Acosta y Gloria de Dios.mp3",
     cover: "images/new1.png",
@@ -818,7 +818,7 @@ const playlist = [
     barColor: "#efbc12ff"
 },
 {
-    title: "El Nombre De Jesús",
+    title: "El Nombre De Jesús",//100
     artist: "Redimi2/Christine D'Clario",
     src: "songs/Nombre.mp3",
     cover: "images/image (5).png",
@@ -859,7 +859,7 @@ const playlist = [
     barColor: "#91e7f4ff"
 },
 {
-    title: "Arde En Mi",
+    title: "Arde En Mi",//105
     artist: "Evan Craft/Redimi2",
     src: "songs/Arde.mp3",
     cover: "images/Arde.jpg",
@@ -903,7 +903,7 @@ const playlist = [
     libs: ["favorites", "spanish"]
 },
 {
-    title: "Cumbia de Mi Libertad",
+    title: "Cumbia de Mi Libertad",//110
     artist: "Redimi2",
     src: "songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
@@ -943,7 +943,7 @@ const playlist = [
     barColor: "#ffdf89d8",
 },
 {
-    title: "A Pesar de Mí",
+    title: "A Pesar de Mí",//115
     artist: "Alex Zurdo/Funky/Redimi2/Un Corazón/Abby Valdez/Indiomar",
     src: "songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3",
     cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
@@ -983,7 +983,7 @@ const playlist = [
     barColor: "#ac9250ff"
 },
 {
-    title: "Mi Dios Puede",
+    title: "Mi Dios Puede",//120
     artist: "Redimi2/Sarai Rivera",
     src: "songs/puede.mp3",
     cover: "images/puede.jpg",
@@ -1024,7 +1024,7 @@ const playlist = [
     barColor: "979ec9d9"
 },
 {
-    title: "Pentagrama",
+    title: "Pentagrama",//125
     artist: "Alex Zurdo",
     src: "songs/Penta.mp3",
     cover: "images/Penta.jpg",
@@ -1064,7 +1064,7 @@ const playlist = [
     barColor: "#1aa8a6ff"
 },
 {
-    title: "Tú Me Llamas (feat. Musiko)",
+    title: "Tú Me Llamas (feat. Musiko)",//130
     artist: "Deluz/Musiko",
     src: "songs/llamas.mp3",
     cover: "images/llamas.jpg",
@@ -1104,7 +1104,7 @@ const playlist = [
     barColor: "#a236d8ff"
 },
 {
-    title: "está bien no estar bien :):",
+    title: "está bien no estar bien :):",//135
     artist: "PRISMA Más Vida/Un Corazón",
     src: "songs/bien.mp3",
     cover: "images/image (4).png",
@@ -1144,7 +1144,7 @@ const playlist = [
     barColor: "#58c22dff"
 },
 {
-    title: "Es por Fe",
+    title: "Es por Fe",//140
     artist: "Generación 12/Musiko/Stefy Espinosa",
     src: "songs/SpotiDownloader.com - Es por Fe - Generación 12.mp3",
     cover: "images/Cover of Es por Fe by Generación 12, Musiko, Stefy Espinosa.jpg",
@@ -1184,7 +1184,7 @@ const playlist = [
     barColor: "#e7c663ff"
 },
 {
-    title: "Vida Encontré",
+    title: "Vida Encontré",//145
     artist: "Majo y Dan",
     src: "songs/song13.mp3",
     cover: "images/song13.png",
@@ -1241,9 +1241,10 @@ const playlist = [
 
 //playlist order
 const playlistOrder = {
-  Worship: [14, 7, 16, 2, 3, 4, 8, 9, 10, 15, 17, 18, 19, 20,],
+  Worship: [14, 51, 66, 95, 15, 16, 2, 7, 3, 4, 8, 9, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [5, 6, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 29, 30, 31, 48, 64, 65, 75],
-  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 96, 98, 97, 99],
+  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 98, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124],
+  upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6,],
 };
 
 
