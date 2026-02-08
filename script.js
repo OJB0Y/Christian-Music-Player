@@ -1214,7 +1214,7 @@ const playlist = [
     cover: "images/song9 (1).png",
     hex: "#36463E",
     barColor: "#56cb7fff"
-}
+},
   /*CHRISTMAS SONGS
   {
     title: "Ha Nacido (Venid y Adoremos)",
@@ -1237,13 +1237,21 @@ const playlist = [
     cover: "images/medley.png",
     hex: "#1a3c14ff"
   },*/
+{
+    title: "En Las Penas de Mi Alma Ft. Los Voceros de Cristo",//149
+    artist: "Los Milagros de Cristo/Los Voceros de Cristo",
+    src: "songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3",
+    cover: "images/Cover of Exitos.jpg",
+    hex: "#102088",
+    barColor: "#041ec4ff"
+}
 ];
 
 //playlist order
 const playlistOrder = {
   Worship: [14, 51, 66, 95, 15, 16, 2, 7, 3, 4, 8, 9, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
-  Voceros: [5, 6, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 29, 30, 31, 48, 64, 65, 75],
-  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 98, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124],
+  Voceros: [5, 6, 149, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 29, 30, 31, 48, 64, 65, 75],
+  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124],
   upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6,],
 };
 
@@ -1251,6 +1259,8 @@ const playlistOrder = {
 
 
 // --- element refs ---
+const libraryPlaylistCover = document.getElementById('libraryPlaylistCover');
+
 const audio = document.getElementById('audio');
 const seekBar = document.getElementById('seek-bar');
 const title = document.getElementById('title');
@@ -1335,7 +1345,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function buildLibraryPlaylist(libKey) {
     libraryPlaylistEl.innerHTML = '';
-    libraryTitle.textContent = libKey.toUpperCase();
 
     const order = playlistOrder[libKey];
     
@@ -1359,12 +1368,29 @@ document.addEventListener('DOMContentLoaded', () => {
       li.className = 'library-playlist-item';
 
       li.innerHTML = `
-        <img src="${song.cover}" class="libraryPlaylist-cover" loading="lazy">
-        <div>
-          <div class="libraryPlaylist-title">${song.title}</div>
-          <div class="libraryPlaylist-artist">${song.artist}</div>
-        </div>
-      `;
+  <img src="${song.cover}" class="libraryPlaylist-cover" loading="lazy">
+
+  <div class="libraryPlaylist-text">
+    <div class="libraryPlaylist-title">${song.title}</div>
+    <div class="libraryPlaylist-artist">${song.artist}</div>
+  </div>
+
+  <button class="options-btn">
+    <svg viewBox="0 0 16 16" fill="#ffffff">
+      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+    </svg>
+  </button>
+`;
+
+const optionsBtn = li.querySelector('.options-btn');
+
+optionsBtn.addEventListener('click', (e) => {
+  e.stopPropagation();   // DO NOT play the song
+  openSongOptionsPopup(optionsBtn, songIndex);
+
+  
+});
+
 
       li.addEventListener('click', () => {
         usingLibraryQueue = true;
@@ -1397,18 +1423,31 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.querySelectorAll('.library-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const key = btn.dataset.library;
-      openLibraryPlaylist(key);
-    });
+  btn.addEventListener('click', () => {
+    const key = btn.dataset.library;
+
+    // get the image from the library tile
+    const img = btn.querySelector('img').src;
+
+    // animate + swap
+    libraryPlaylistCover.classList.add('pop');
+    libraryPlaylistCover.src = img;
+
+    setTimeout(() => {
+      libraryPlaylistCover.classList.remove('pop');
+    }, 300);
+
+    openLibraryPlaylist(key);
   });
+});
+
 });
 
 
 
 
 // Check if device is desktop
-const IS_DESKTOP = window.innerWidth >= 550;
+const IS_DESKTOP = window.innerWidth >= 550 && window.innerWidth <= 1450 && window.innerHeight <= 800;
 
 
 //resizing cover width if too wide and not tall enough 
@@ -1421,12 +1460,12 @@ function updateCoverSize() {
     nowPlayingImg.style.maxWidth = '350px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 55%)'
+    libraryPlaylist.style.maxHeight = 'calc(100% - 60%)'
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
     playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 46%)'
+    libraryPlaylist.style.maxHeight = 'calc(100% - 52%)'
   }
 }
 
@@ -2260,23 +2299,41 @@ document.addEventListener('click', (e) => {
 
 // --- update active playlist row ---
 function updateActiveSong() {
-  const items = document.querySelectorAll('#playlist li');
-  items.forEach((item, i) => {
+
+  // -------- MAIN PLAYLIST --------
+  const mainItems = document.querySelectorAll('#playlist li');
+  mainItems.forEach((item, i) => {
     item.classList.toggle('active', i === currentSong);
-    if (i === currentSong) {
-      const container = playlistEl; // the scrolling element
-      const offset = 320;   //less is higher & more is lower
 
-      const itemTop = item.offsetTop;
-      const containerHeight = container.clientHeight;
-
-      container.scrollTo({
-        top: itemTop - offset,
+    if (i === currentSong && autoScrollEnabled) {
+      const offset = 320;
+      playlistEl.scrollTo({
+        top: item.offsetTop - offset,
         behavior: 'smooth'
       });
     }
   });
+
+
+  // -------- LIBRARY PLAYLIST --------
+  const libraryItems = document.querySelectorAll('#libraryPlaylist li');
+
+  libraryItems.forEach((item, i) => {
+    const songIndex = currentLibraryQueue[i];
+
+    item.classList.toggle('active', songIndex === currentSong);
+
+    if (songIndex === currentSong && autoScrollEnabled) {
+      const offset = 420;
+      libraryPlaylistEl.scrollTo({
+        top: item.offsetTop - offset,
+        behavior: 'smooth'
+      });
+    }
+  });
+
 }
+
 
 // --- time formatting ---
 function formatTime(seconds) {
@@ -2544,7 +2601,79 @@ function animateCoverChange(newCoverSrc, direction = "next", callback) {
 }
 
 
+//HORIZONTAL SWIPING BUT KINDA ACTS WEIRD SO WE'LL IGNORE THIS FOR NOW
+/*const viewport = document.querySelector('.screen-viewport');
+const track = document.querySelector('.screen-track');
 
+let currentIndex = 1; // start on All Songs
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+let isHorizontalSwipe = false;
+
+const totalScreens = document.querySelectorAll('.screen').length;
+
+function setTranslate(x, animate = false) {
+  track.style.transition = animate ? 'transform 0.45s cubic-bezier(.25,.8,.25,1)' : 'none';
+  track.style.transform = `translateX(${x}px)`;
+}
+
+function goToScreen(index) {
+  currentIndex = Math.max(0, Math.min(index, totalScreens - 1));
+  const offset = -currentIndex * window.innerWidth;
+  setTranslate(offset, true);
+
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  if (currentIndex === 0) navPlaylists.classList.add('active');
+  if (currentIndex === 1) navAll.classList.add('active');
+}
+
+/* ---------- TOUCH EVENTS ---------- */
+
+/*viewport.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+  currentX = startX;
+  isDragging = true;
+  isHorizontalSwipe = false;
+  track.style.transition = 'none';
+}, { passive: true });
+
+viewport.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+
+  const touchX = e.touches[0].clientX;
+  const deltaX = touchX - startX;
+  const deltaY = e.touches[0].clientY - (e.touches[0].clientY);
+
+  // Detect horizontal intent
+  if (!isHorizontalSwipe) {
+    if (Math.abs(deltaX) > 10) {
+      isHorizontalSwipe = true;
+    } else {
+      return;
+    }
+  }
+
+  const baseOffset = -currentIndex * window.innerWidth;
+  setTranslate(baseOffset + deltaX);
+}, { passive: true });
+
+viewport.addEventListener('touchend', (e) => {
+  if (!isDragging) return;
+
+  const deltaX = e.changedTouches[0].clientX - startX;
+  const threshold = window.innerWidth * 0.2;
+
+  if (deltaX > threshold) {
+    goToScreen(currentIndex - 1);
+  } else if (deltaX < -threshold) {
+    goToScreen(currentIndex + 1);
+  } else {
+    goToScreen(currentIndex);
+  }
+
+  isDragging = false;
+});*/
 
 
 
