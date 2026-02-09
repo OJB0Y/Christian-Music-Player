@@ -1244,14 +1244,94 @@ const playlist = [
     cover: "images/Cover of Exitos.jpg",
     hex: "#102088",
     barColor: "#041ec4ff"
-}
+},
+{
+    title: "Salmo 23",//150
+    artist: "Leonel Tuchez",
+    src: "songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3",
+    cover: "images/Cover of Salmo 23 by Leonel Tuchez.jpg",
+    hex: "#102088",
+    barColor: "#041ec4ff"
+},
+{
+    title: "Esta Cayendo",
+    artist: "Jose Luis Reyes",
+    src: "songs/SpotiDownloader.com - Esta Cayendo - Jose Luis Reyes.mp3",
+    cover: "images/Cover of Esta Cayendo by Jose Luis Reyes.jpg",
+    hex: "#102088",
+    barColor: "#041ec4ff"
+},
+{
+    title: "BUENA ONDA",
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3",
+    cover: "images/Gokey.jpg",
+    hex: "#4d372cff",
+    barColor: "#fd7b3aff"
+},
+{
+    title: "TENGO EL DON",
+    artist: "Redimi2/Ander Brock",
+    src: "songs/SpotiDownloader.com - TENGO EL DON - Redimi2.mp3",
+    cover: "images/Gokey.jpg",
+    hex: "#4d372cff",
+    barColor: "#fd7b3aff"
+},
+{
+    title: "Abba",
+    artist: "Redimi2/Distrito Royal/Samantha Kate",
+    src: "songs/SpotiDownloader.com - Abba - Redimi2.mp3",
+    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    hex: "#1b5d9f",
+    barColor: "#f7cd24d8",
+},
+{
+    title: "Bacha Drill",//155
+    artist: "Redimi2/Madiel Lara",
+    src: "songs/SpotiDownloader.com - Bacha Drill - Redimi2.mp3",
+    cover: "images/Cover of Bacha Drill by Redimi2, Madiel Lara.jpg",
+    hex: "#0876EE",
+    barColor: "#fd6937d8"
+},
+{
+    title: "Colores",
+    artist: "Redimi2/Funky/Alex Zurdo",
+    src: "songs/SpotiDownloader.com - Colores - Redimi2.mp3",
+    cover: "images/Cover of Colores by Redimi2, Funky, Alex Zurdo.jpg",
+    hex: "#6E9E9E",
+    barColor: "#ffe96dd8"
+},
+{
+    title: "A Pesar de Mí - Live",
+    artist: "Redimi2/Funky/Alex Zurdo/Indiomar",
+    src: "songs/SpotiDownloader.com - A Pesar de Mí - Live - Redimi2.mp3",
+    cover: "images/Cover of A Pesar de Mí - Live by Redimi2, Funky, Alex Zurdo, Indiomar.jpg",
+    hex: "#E47436",
+    barColor: "#ff9c72d8"
+},
+{
+    title: "Esto Suena Bien",
+    artist: "Redimi2/Alex Zurdo/Oveja Cosmica",
+    src: "songs/SpotiDownloader.com - Esto Suena Bien - Redimi2.mp3",
+    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
+    hex: "#53423c",
+    barColor: "#aa8a72d8"
+},
+{
+    title: "Quita y Pon",//159
+    artist: "Alex Zurdo/Funky/Redimi2/Peter Metivier",
+    src: "songs/SpotiDownloader.com - Quita y Pon (feat. Peter Metivier) - Alex Zurdo.mp3",
+    cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
+    hex: "#402727",
+    barColor: "#fbf5d7d8",
+},
 ];
 
 //playlist order
 const playlistOrder = {
-  Worship: [14, 51, 66, 95, 15, 16, 2, 7, 3, 4, 8, 9, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Worship: [14, 51, 66, 95, 15, 150, 151, 6, 2, 7, 3, 4, 8, 9, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [5, 6, 149, 8, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 29, 30, 31, 48, 64, 65, 75],
-  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124],
+  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124, 152, 153, 154, 155, 156, 157, 158, 159],
   upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6,],
 };
 
