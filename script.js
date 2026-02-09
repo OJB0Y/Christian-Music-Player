@@ -1242,8 +1242,9 @@ const playlist = [
     artist: "Los Milagros de Cristo/Los Voceros de Cristo",
     src: "songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3",
     cover: "images/Cover of Exitos.jpg",
-    hex: "#102088",
-    barColor: "#041ec4ff"
+    hex: "1e233f",
+    barColor: "#041ec4d8",
+    video: "videos/Voceros3.mp4",
 },
 {
     title: "Salmo 23",//150
@@ -1283,7 +1284,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Abba - Redimi2.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
     hex: "#1b5d9f",
-    barColor: "#f7cd24d8",
+    barColor: "#f7cd24ff",
 },
 {
     title: "Bacha Drill",//155
@@ -1291,7 +1292,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Bacha Drill - Redimi2.mp3",
     cover: "images/Cover of Bacha Drill by Redimi2, Madiel Lara.jpg",
     hex: "#0876EE",
-    barColor: "#fd6937d8"
+    barColor: "#fd6937ff"
 },
 {
     title: "Colores",
@@ -1299,7 +1300,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Colores - Redimi2.mp3",
     cover: "images/Cover of Colores by Redimi2, Funky, Alex Zurdo.jpg",
     hex: "#6E9E9E",
-    barColor: "#ffe96dd8"
+    barColor: "#ffe96dff"
 },
 {
     title: "A Pesar de Mí - Live",
@@ -1307,7 +1308,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - A Pesar de Mí - Live - Redimi2.mp3",
     cover: "images/Cover of A Pesar de Mí - Live by Redimi2, Funky, Alex Zurdo, Indiomar.jpg",
     hex: "#E47436",
-    barColor: "#ff9c72d8"
+    barColor: "#ff9c72ff"
 },
 {
     title: "Esto Suena Bien",
@@ -1315,7 +1316,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Esto Suena Bien - Redimi2.mp3",
     cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
     hex: "#53423c",
-    barColor: "#aa8a72d8"
+    barColor: "#aa8a72ff"
 },
 {
     title: "Quita y Pon",//159
@@ -1323,7 +1324,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Quita y Pon (feat. Peter Metivier) - Alex Zurdo.mp3",
     cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
     hex: "#402727",
-    barColor: "#fbf5d7d8",
+    barColor: "#fbf5d7ff",
 },
   {
     title: "Replay",//160
