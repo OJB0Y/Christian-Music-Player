@@ -1242,7 +1242,7 @@ const playlist = [
     artist: "Los Milagros de Cristo/Los Voceros de Cristo",
     src: "songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3",
     cover: "images/Cover of Exitos.jpg",
-    hex: "1e233f",
+    hex: "#1e233f",
     barColor: "#041ec4d7",
     video: "videos/Voceros3.mp4",
 },
