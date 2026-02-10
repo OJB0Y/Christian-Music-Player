@@ -1276,8 +1276,9 @@ const playlist = [
     artist: "Redimi2/Ander Brock",
     src: "songs/SpotiDownloader.com - TENGO EL DON - Redimi2.mp3",
     cover: "images/Gokey.jpg",
-    hex: "#4d372cff",
-    barColor: "#fd7b3aff"
+    hex: "#633c29",
+    barColor: "#fd7b3ad8",
+    video: "videos/Redimi5.mp4",
 },
 {
     title: "Abba",
