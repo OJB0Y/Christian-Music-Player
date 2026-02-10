@@ -881,7 +881,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - El mood - Redimi2.mp3",
     cover: "images/puede.jpg",
     hex: "#293550",
-    barColor: "#b5783ad8",
+    barColor: "#b5783aff",
     video: "videos/Redimi1.mp4",
     libs: ["favorites", "spanish"]
 },
@@ -891,7 +891,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - dIOS - Kim Richards.mp3",
     cover: "images/Cover of dIOS by Kim Richards, Indiomar, Redimi2.jpg",
     hex: "#DA262E",
-    barColor: "#ffb7bbd8",
+    barColor: "#ffb7bbff",
 },
 {
     title: "Flipando",
@@ -899,7 +899,7 @@ const playlist = [
     src: "songs/REDIMI2, NATAN EL PROFETA - FLIPANDO (VIDEO OFICIAL)_1080p.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
     hex: "#1b5d9f",
-    barColor: "#f7cd24d8",
+    barColor: "#f7cd24ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -907,8 +907,9 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
-    hex: "#1b5d9f",
+    hex: "#3b7c60",
     barColor: "#f7cd24d8",
+    video: "videos/Redimi4.mp4",
 },
 {
     title: "CMR4: El Museo",
@@ -924,7 +925,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Gracias Gracias Gracias - Redimi2.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
     hex: "#1b5d9f",
-    barColor: "#f7cd24d8",
+    barColor: "#f7cd24ff",
 },
 {
     title: "El Culpable ft Dariana",
@@ -932,7 +933,7 @@ const playlist = [
     src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
     cover: "images/Cover of El Culpable by Funky, Alex Zurdo, Dariana.jpg",
     hex: "#D03030",
-    barColor: "#fb965fd8",
+    barColor: "#fb965fff",
 },
 {
     title: "INFINITO",
@@ -940,7 +941,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3",
     cover: "images/Cover of INFINITO by Madiel Lara.jpg",
     hex: "#D28432",
-    barColor: "#ffdf89d8",
+    barColor: "#ffdf89ff",
 },
 {
     title: "A Pesar de Mí",//115
@@ -948,7 +949,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3",
     cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
     hex: "#402727",
-    barColor: "#fbf5d7d8",
+    barColor: "#fbf5d7ff",
 },
 {
     title: "365",
@@ -956,7 +957,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - 365 - Dariana.mp3",
     cover: "images/Cover of 365 by Dariana.jpg",
     hex: "#189E76",
-    barColor: "#01f079d8",
+    barColor: "#01f079ff",
 },
 {
     title: "Polaris",
@@ -964,7 +965,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Polaris - Dariana.mp3",
     cover: "images/Cover of Polaris by Dariana.jpg",
     hex: "#189E76",
-    barColor: "#01f079d8",
+    barColor: "#01f079ff",
 },
 {
     title: "Exaltación",
