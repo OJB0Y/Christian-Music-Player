@@ -787,8 +787,8 @@ opacity: 0.33;
   background: rgba(255,255,255,0.08);
 }
 
-#libraryScreen {
-  background: linear-gradient(to bottom, #687fff, #121212);
+#libraryPlaylistScreen {
+  background: linear-gradient(to bottom, #60678f, #121212);
 }
 
 .library-big-controls {
