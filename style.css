@@ -223,14 +223,14 @@ opacity: 0.33;
   margin-left: 5px;
 }
 
-#libraryScreen {
+/*#libraryScreen {
   background: linear-gradient(to bottom, #2c2c2c, #121212);
-}
+}*/
 
 /* MAIN CONTAINER  */
 .music-container {
-  /*padding: 1rem;*/
-  background: linear-gradient(to bottom, #2c2c2c, #121212);
+  /*padding: 1rem;
+  background: linear-gradient(to bottom, #2c2c2c, #121212);*/
 
   box-sizing: border-box;
 
