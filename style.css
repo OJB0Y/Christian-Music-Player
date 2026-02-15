@@ -823,7 +823,7 @@ opacity: 0.33;
   display: flex;
   gap: 13px;
   justify-content: center;
-  margin: 10px 0 0px 0;
+  margin: 10px 0 3px 0;
 }
 
 .library-big-btn svg {
