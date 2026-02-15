@@ -1390,6 +1390,26 @@ let currentLibraryQueue = [];
 let libraryQueueIndex = 0;
 let usingLibraryQueue = false;
 
+//BETA TESTING W.I.P background libraryPlaylistScreen changing
+const libraryPlaylistScreen = document.getElementById("libraryPlaylistScreen");
+const libraryButtons = document.querySelectorAll(".library-btn");
+
+libraryButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const playlistName = button.dataset.library;
+
+    // Get first song index of that playlist
+    const firstSongIndex = playlistOrder[playlistName][0];
+
+    // Get hex from that song
+    const hexColor = songs[firstSongIndex].hex;
+
+    // Apply gradient
+    libraryPlaylistScreen.style.background =
+      `linear-gradient(to bottom, ${hexColor}, #121212)`;
+  });
+});
+
 
 // music timer 
 const timerBtn = document.getElementById('timer');
