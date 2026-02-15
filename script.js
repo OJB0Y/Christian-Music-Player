@@ -1252,19 +1252,19 @@ const playlist = [
     artist: "Leonel Tuchez",
     src: "songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3",
     cover: "images/Cover of Salmo 23 by Leonel Tuchez.jpg",
-    hex: "#102088",
-    barColor: "#041ec4ff"
+    hex: "#9E9698",
+    barColor: "#8fdac3"
 },
 {
     title: "Esta Cayendo",
     artist: "Jose Luis Reyes",
     src: "songs/SpotiDownloader.com - Esta Cayendo - Jose Luis Reyes.mp3",
     cover: "images/Cover of Esta Cayendo by Jose Luis Reyes.jpg",
-    hex: "#102088",
-    barColor: "#041ec4ff"
+    hex: "#5E5759",
+    barColor: "#cfc978"
 },
 {
-    title: "BUENA ONDA",
+    title: "BUENA ONDA",//152
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3",
     cover: "images/Gokey.jpg",
@@ -1340,11 +1340,11 @@ const playlist = [
 
 //playlist order 
 const playlistOrder = {
-  Worship: [14, 51, 66, 95, 15, 150, 151, 16, 2, 7, 3, 4, 8, 9, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Worship: [14, 51, 66, 95, 15, 150, 149, 151, 16, 2, 7, 3, 4, 8, 9, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 5, 6, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  Reggaeton: [107, 109, 110, 113, 108, 119, 120, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124, 160, 152, 153, 154, 155, 156, 157, 158, 159],
+  Reggaeton: [107, 109, 110, 152, 153, 113, 108, 119, 120, 155, 154, 156, 157, 158, 159, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124, 160],
   upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6,],
-  
+  majoYDan: [145, 139, 138, 137, 141, 146, 147, 148, 143, 144],
 };
 
 

@@ -8,7 +8,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background: linear-gradient(to bottom, #4b4363, #000000);
+  background: #121212;
   color: #fff;
 
   display: flex;
@@ -785,6 +785,10 @@ opacity: 0.33;
 
 .option-item:hover {
   background: rgba(255,255,255,0.08);
+}
+
+#libraryScreen {
+  background: linear-gradient(to bottom, #687fff, #121212);
 }
 
 .library-big-controls {
