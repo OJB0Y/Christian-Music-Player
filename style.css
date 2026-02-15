@@ -219,11 +219,19 @@ opacity: 0.33;
   display: none; /* default */
 }
 
+.screen-title {
+  margin-left: 5px;
+}
 
+#libraryScreen {
+  background: linear-gradient(to bottom, #2c2c2c, #121212);
+}
 
 /* MAIN CONTAINER  */
 .music-container {
   /*padding: 1rem;*/
+  background: linear-gradient(to bottom, #2c2c2c, #121212);
+
   box-sizing: border-box;
 
   display: flex;
@@ -789,6 +797,7 @@ opacity: 0.33;
 
 #libraryPlaylistScreen {
   background: linear-gradient(to bottom, #60678f, #121212);
+  transition: background 0.4s ease;
 }
 
 .library-big-controls {
