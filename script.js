@@ -2475,6 +2475,7 @@ audio.addEventListener("play", () => {
   isPlaying = true;
   setPlayIcon(true);
   startVisualizer();
+  bgVideo.play();
 });
 
 
@@ -2489,6 +2490,7 @@ audio.addEventListener("pause", () => {
   isPlaying = false;
   setPlayIcon(false);
   stopVisualizer();
+  bgVideo.pause();
 });
 
 
