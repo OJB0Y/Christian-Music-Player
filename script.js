@@ -1338,7 +1338,6 @@ const playlist = [
   },
 ];
 
-//playlist order 
 const playlistOrder = {
   Worship: [14, 51, 66, 95, 15, 150, 149, 151, 16, 2, 7, 3, 4, 8, 9, 72,10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 5, 6, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
@@ -1347,8 +1346,21 @@ const playlistOrder = {
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144],
 };
 
+const playlistHex = {
+  Worship: "#2F5F87",
+  Voceros: "#D3851C",
+  Reggaeton: "#1b5d9f",
+  upbeat: "#C31307",
+  majoYDan: "#304b3e",
+};
 
-
+const playlistEndHex = {
+  Worship: "#00365B",
+  Voceros: "#5F2B02",
+  Reggaeton: "#02327D",
+  upbeat: "#660000",
+  majoYDan: "#283730",
+};
 
 // --- element refs ---
 const libraryPlaylistCover = document.getElementById('libraryPlaylistCover');
@@ -1395,21 +1407,34 @@ let usingLibraryQueue = false;
 const libraryPlaylistScreen = document.getElementById("libraryPlaylistScreen");
 const libraryButtons = document.querySelectorAll(".library-btn");
 
-libraryButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const playlistName = button.dataset.library;
 
-    // Get first song index of that playlist
-    const firstSongIndex = playlistOrder[playlistName][0];
+document.querySelectorAll('.library-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const key = btn.dataset.library;
 
-    // Get hex from that song
-    const hexColor = songs[firstSongIndex].hex;
+    // Use playlistHex instead of playlist song hex
+    const hex = playlistHex[key];
+    const endHex = playlistEndHex[key];
 
-    // Apply gradient
-    libraryPlaylistScreen.style.background =
-      `linear-gradient(to bottom, ${hexColor}, #121212)`;
+    if (hex) {
+      libraryPlaylistScreen.style.background =
+        `linear-gradient(to bottom, ${hex}, ${endHex}, #121212 57%)`;
+    }
+
+    // Cover animation
+    const img = btn.querySelector('img').src;
+    libraryPlaylistCover.classList.add('pop');
+    libraryPlaylistCover.src = img;
+
+    setTimeout(() => {
+      libraryPlaylistCover.classList.remove('pop');
+    }, 300);
+
+    //Open playlist
+    openLibraryPlaylist(key);
   });
 });
+
 
 
 // music timer 
