@@ -1359,6 +1359,7 @@ const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const cover = document.getElementById('cover');
 const playlistEl = document.getElementById('playlist');
+const video = document.getElementById('bg-video');
 
 const playBtn = document.getElementById('play');
 const playIcon = document.getElementById('play-icon');
@@ -2475,7 +2476,7 @@ audio.addEventListener("play", () => {
   isPlaying = true;
   setPlayIcon(true);
   startVisualizer();
-  bgVideo.play();
+  video.play();
 });
 
 
@@ -2490,7 +2491,7 @@ audio.addEventListener("pause", () => {
   isPlaying = false;
   setPlayIcon(false);
   stopVisualizer();
-  bgVideo.pause();
+  video.pause();
 });
 
 
