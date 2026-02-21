@@ -1248,7 +1248,7 @@ const playlist = [
     video: "videos/Voceros3.mp4",
 },
 {
-    title: "Salmo 23",//150
+    title: "Salmo 23",// 150
     artist: "Leonel Tuchez",
     src: "songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3",
     cover: "images/Cover of Salmo 23 by Leonel Tuchez.jpg",
