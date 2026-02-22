@@ -580,7 +580,7 @@ const playlist = [
 },
 {
     title: "Supe Que Me Amabas",
-    artist: "Marcela Gandera",
+    artist: "Marcela Gandara",
     src: "songs/song7.mp3",
     cover: "images/song7.png",
     hex: "#9B4A3C",
@@ -1336,30 +1336,233 @@ const playlist = [
     hex: "#747474",
     barColor: "#a397bcff"
   },
+  {
+    title: "Exagerado amor",
+    artist: "Redimi2/Evan Craft/Distrito Royal/Camila Sofía",
+    src: "songs/SpotiDownloader.com - Exagerado amor - Redimi2.mp3",
+    cover: "images/puede.jpg",
+    hex: "#6B8681",
+    barColor: "#ac9250ff",
+  },
+  {
+    title: "¿A quién iré?",
+    artist: "Redimi2/Kim Richards/Distrito Royal/Melody Jaine",
+    src: "songs/SpotiDownloader.com - ¿A quién iré_ - Redimi2.mp3",
+    cover: "images/puede.jpg",
+    hex: "#6B8681",
+    barColor: "#ac9250ff",
+  },
+  {
+    title: "Por Siempre",
+    artist: "Redimi2/Ander Bock/Samantha Kate",
+    src: "songs/SpotiDownloader.com - Por Siempre - Redimi2.mp3",
+    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    hex: "#5CA3AC",
+    barColor: "#f85300",
+  },
+  {
+    title: "Jesús viral",
+    artist: "Redimi2/Distrito Royal",
+    src: "songs/SpotiDownloader.com - Jesús viral - Redimi2.mp3",
+    cover: "images/puede.jpg",
+    hex: "#6B8681",
+    barColor: "#ac9250ff",
+  },
+  {
+    title: "Como David", //165
+    artist: "Redimi2/Betsy Jo/Melody Jaine",
+    src: "songs/SpotiDownloader.com - Como David - Redimi2.mp3",
+    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    hex: "#5CA3AC",
+    barColor: "#f85300",
+  },
+  {
+    title: "Alabaré",
+    artist: "Nacho/Redimi2/Alex Zurdo",
+    src: "songs/SpotiDownloader.com - Alabaré - Nacho.mp3",
+    cover: "images/Cover of Alabaré by Nacho, Redimi2, Alex Zurdo.jpg",
+    hex: "#B83018",
+    barColor: "#ffda5f",
+  },
+  {
+    title: "Lo Que Se Va",
+    artist: "Alex Zurdo/Gabriel EMC",
+    src: "songs/SpotiDownloader.com - Lo Que Se Va - Alex Zurdo.mp3",
+    cover: "images/Cover of Lo Que Se Va by Alex Zurdo, Gabriel EMC.jpg",
+    hex: "#9E1010",
+    barColor: "#690000",
+  },
+  {
+    title: "¿Pa' Qué Preguntan? - Remix",
+    artist: "Alex Zurdo/Funky/Almighty/Redimi2",
+    src: "songs/SpotiDownloader.com - ¿Pa' Qué Preguntan_ - Remix - Alex Zurdo.mp3",
+    cover: "images/Cover of ¿Pa' Qué Preguntan_ - Remix by Alex Zurdo, Funky, Almighty, Redimi2.jpg",
+    hex: "#00A6B7",
+    barColor: "#c2ec07",
+  },
+  {
+    title: "De Aquí No Me Voy",
+    artist: "Rescate/Redimi2",
+    src: "songs/SpotiDownloader.com - De Aquí No Me Voy - Rescate.mp3",
+    cover: "images/Cover of De Aquí No Me Voy by Rescate, Redimi2.jpg",
+    hex: "#203040",
+    barColor: "#d3d7ff",
+  },
+  {
+    title: "SIMPLICIDAD", //170
+    artist: "Funky/Vaes",
+    src: "songs/SpotiDownloader.com - SIMPLICIDAD - Funky.mp3",
+    cover: "images/Cover of SIMPLICIDAD by Funky, Vaes.jpg",
+    hex: "#7D9E9E",
+    barColor: "#c7fcfc",
+  },
+  {
+    title: "Correré a Ti",
+    artist: "Funky/Marcela Gandara",
+    src: "songs/SpotiDownloader.com - Correré a Ti - Funky.mp3",
+    cover: "images/Cover of Correré a Ti by Funky, Marcela Gandara.jpg",
+    hex: "#9D0716",
+    barColor: "#ff4a09",
+  },
+  {
+    title: "Cristo Es Necesario",
+    artist: "Danny Gokey/Christine D'Clario",
+    src: "songs/SpotiDownloader.com - Cristo Es Necesario - Danny Gokey.mp3",
+    cover: "images/Cover of Cristo Es Necesario by Danny Gokey, Christine D'Clario.jpg",
+    hex: "#864776",
+    barColor: "#747374",
+  },
+  {
+    title: "Cada mañana",
+    artist: "Sarai Rivera",
+    src: "songs/SpotiDownloader.com - Cada mañana - Sarai Rivera.mp3",
+    cover: "images/Cover of Cada mañana by Sarai Rivera.jpg",
+    hex: "#676664",
+    barColor: "#255d26", 
+  },
+  {
+    title: "Espiritu Santo",
+    artist: "Zulmy Mejia",
+    src: "songs/SpotiDownloader.com - Espiritu Santo - Zulmy Mejia.mp3",
+    cover: "images/zulmy.jpg",
+    hex: "#294579ff",
+    barColor: "#00589fff",
+  },
+  {
+    title: "Sumérgeme", //175
+    artist: "Jesús Adrián Romero",
+    src: "songs/SpotiDownloader.com - Sumérgeme - Jesús Adrián Romero.mp3",
+    cover: "images/Cover of Sumérgeme by Jesús Adrián Romero.jpg",
+    hex: "#2462A2",
+    barColor: "#59a1e9",
+  },
+  {
+    title: "Tu Palabra",
+    artist: "Marcela Gandara",
+    src: "songs/SpotiDownloader.com - Tu Palabra - Marcela Gandara.mp3",
+    cover: "images/song7.png",
+    hex: "#9B4A3C",
+    barColor: "#d74c10ff"
+  },
+  {
+    title: "Creo En Ti",
+    artist: "Julio Melgar",
+    src: "songs/SpotiDownloader.com - Creo En Ti - Julio Melgar.mp3",
+    cover: "images/Cover of Creo En Ti by Julio Melgar.jpg",
+    hex: "#C22D25",
+    barColor: "rgb(242, 98, 91)",
+  },
+  {
+    title: "Levanto Mis Manos",
+    artist: "Samuel Hernández",
+    src: "songs/SpotiDownloader.com - Levanto Mis Manos - Samuel Hernández.mp3",
+    cover: "images/Cover of Levanto Mis Manos by Samuel Hernández.jpg",
+    hex: "#4E5E7E",
+    barColor: "#dbc256",
+  },
+  {
+    title: "No Hay Nadie Como Cristo", //179
+    artist: "Marilú Orantes",
+    src: "songs/SpotiDownloader.com - No Hay Nadie Como Cristo - Marilú Orantes.mp3",
+    cover: "images/Cover of No Hay Nadie Como Cristo by Marilú Orantes.jpg",
+    hex: "#CA3DE9",
+    barColor: "#ff2121",
+  }, // #773830 && #8A8185
+  {
+    title: "Mi triunfo con Jesús", //180
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Mi triunfo con Jesús - Los Voceros de Cristo.mp3",
+    cover: "images/a5.png",
+    hex: "#3A3436",
+    barColor: "#726065ff"
+  },
+  {
+    title: "Hay una Ciudad",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Hay una ciudad - Los Voceros de Cristo.mp3",
+    cover: "images/new3.png",
+    hex: "#582820",
+    barColor: "#941b06ff"
+  },
+  {
+    title: "Cuando hablas tú",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Cuando hablas tú - Los Voceros de Cristo.mp3",
+    cover: "images/Loor.jpg",
+    hex: "#783800",
+    barColor: "#bf5900ff"
+  },
+  {
+    title: "Sinónimo de Amar",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Sinónimo de Amar - Los Voceros de Cristo.mp3",
+    cover: "images/new3.png",
+    hex: "#582820",
+    barColor: "#941b06ff"
+  },
+  {
+    title: "Triunfante hasta el final",//185
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Triunfante hasta el final - Los Voceros de Cristo.mp3",
+    cover: "images/song11.png",
+    hex: "#91190A",
+    barColor: "#d11800ff"
+  },
+  {
+    title: "Sodoma y Gomora",
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - La Destrucción de Sodoma - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of Sodoma y Gomorra by Los Voceros de Cristo.jpg",
+    hex: "#773830",
+    barColor: "#f03d26"
+  },
 ];
 
 const playlistOrder = {
-  Worship: [14, 51, 66, 95, 15, 150, 149, 151, 16, 2, 7, 3, 4, 8, 9, 72,10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
-  Voceros: [149, 5, 6, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  Reggaeton: [107, 109, 110, 152, 153, 113, 108, 119, 120, 155, 154, 156, 157, 158, 159, 111, 112, 114, 115, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 106, 123, 135, 132, 130, 136, 142, 125, 127, 124, 160],
-  upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6,],
+  Worship: [14, 51, 66, 95, 15, 150, 149, 151, 16, 180, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 179, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Voceros: [149, 180, 5, 6, 7, 181, 182, 183, 184, 185, 186, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
+  LockIn: [107, 109, 110, 152, 153, 165, 166, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 156, 157, 158, 159, 111, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 130, 136, 142, 125, 127, 124, 172, 171, 170, 160, 161],
+  MUSIKO: [172, 171, 170, 169, 96, 142, 97, 99, 141, 139, 130],
+  upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 170, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6, 179],
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144],
 };
 
 const playlistHex = {
-  Worship: "#2F5F87",
-  Voceros: "#D3851C",
-  Reggaeton: "#1b5d9f",
+  Worship: "#8494DB",
+  Voceros: "#A81000",
+  LockIn: "#7C9BAB",
+  MUSIKO: "#A81088",
   upbeat: "#C31307",
-  majoYDan: "#304b3e",
+  majoYDan: "#6E5F63",
 };
 
 const playlistEndHex = {
-  Worship: "#00365B",
-  Voceros: "#5F2B02",
-  Reggaeton: "#02327D",
+  Worship: "#282F6D",
+  Voceros: "#670100",
+  LockIn: "#1D3946",
+  MUSIKO: "#5E004A",
   upbeat: "#660000",
-  majoYDan: "#283730",
+  majoYDan: "#2D3B3B",
 };
 
 // --- element refs ---
