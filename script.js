@@ -1557,7 +1557,7 @@ const playlist = [
 const playlistOrder = {
   Worship: [14, 51, 66, 95, 15, 150, 149, 151, 16, 180, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 179, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 6, 7, 181, 182, 183, 184, 185, 186, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [107, 187, 186, 109, 110, 152, 153, 165, 166, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 156, 157, 158, 159, 111, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 130, 136, 142, 125, 127, 124, 172, 171, 170, 160, 161],
+  LockIn: [107, 187, 186, 109, 110, 152, 153, 165, 166, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 156, 157, 158, 159, 111, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 130, 136, 142, 125, 127, 124, 160, 161],
   MUSIKO: [172, 171, 170, 169, 96, 142, 97, 99, 141, 139, 130],
   upbeat: [112, 114, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 170, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 133, 135, 136, 5, 6, 179],
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144],
@@ -1618,11 +1618,27 @@ const visualizer = document.querySelector('.visualizer');
 const libraryPlaylistEl = document.getElementById('libraryPlaylist');
 const libraryTitle = document.getElementById('libraryTitle');
 
+const songRequest = document.getElementById("songRequest");
+const closeRequest = document.getElementById("closeRequest");
+
+function openSongRequest() {
+  songRequest.classList.add("active");
+}
+
+function closeSongRequest() {
+  songRequest.classList.remove("active");
+}
+
+closeRequest.addEventListener("click", closeSongRequest);
+
+requestSongOption.addEventListener("click", () => {
+  openSongRequest();
+});
+
 let currentLibraryQueue = [];
 let libraryQueueIndex = 0;
 let usingLibraryQueue = false;
 
-//BETA TESTING W.I.P background libraryPlaylistScreen changing
 const libraryPlaylistScreen = document.getElementById("libraryPlaylistScreen");
 const libraryButtons = document.querySelectorAll(".library-btn");
 
@@ -1822,7 +1838,7 @@ function updateCoverSize() {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
     playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 52%)'
+    libraryPlaylist.style.maxHeight = 'calc(100% - 53%)'
   }
 }
 
@@ -2781,10 +2797,9 @@ nextBtn.addEventListener('click', () => {
   queueIndex = -1;
 
   // 2) Library playlist has second priority
-  // 2) Library playlist
 if (usingLibraryQueue && currentLibraryQueue.length > 0) {
 
-  // 🔥 LIBRARY SHUFFLE TAKES PRIORITY
+  // LIBRARY SHUFFLE TAKES PRIORITY
   if (shuffle) {
     const nextIndex = getNextLibraryShuffleSong();
     changeSong(nextIndex);
@@ -2964,7 +2979,7 @@ function animateCoverChange(newCoverSrc, direction = "next", callback) {
 /*const viewport = document.querySelector('.screen-viewport');
 const track = document.querySelector('.screen-track');
 
-let currentIndex = 1; // start on All Songs
+let currentIndex = 1; // start on All Songs Screen
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
