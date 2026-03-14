@@ -1635,6 +1635,55 @@ requestSongOption.addEventListener("click", () => {
   openSongRequest();
 });
 
+const optionsBtnMain = document.getElementById("optionsbtn");
+
+optionsBtnMain.addEventListener("click", (e) => {
+  e.stopPropagation();
+  openMainOptionsPopup(optionsBtnMain);
+});
+
+let currentMainOptionsPopup = null;
+
+function openMainOptionsPopup(button) {
+
+  if (currentMainOptionsPopup) {
+    currentMainOptionsPopup.remove();
+    currentMainOptionsPopup = null;
+  }
+
+  const popup = document.createElement("div");
+  popup.className = "song-options-popup";
+
+  popup.innerHTML = `
+    <div class="option-item" id="requestSongBtn">Request New Song</div>
+  `;
+
+  document.body.appendChild(popup);
+
+  const rect = button.getBoundingClientRect();
+  popup.style.top = rect.bottom + window.scrollY + "px";
+  popup.style.left = rect.left - 140 + "px";
+
+  currentMainOptionsPopup = popup;
+
+  // attach request action
+  popup.querySelector("#requestSongBtn").addEventListener("click", () => {
+    closeMainOptionsPopup();
+    openSongRequest();
+  });
+
+  setTimeout(() => {
+    document.addEventListener("click", closeMainOptionsPopup, { once: true });
+  }, 0);
+}
+
+function closeMainOptionsPopup() {
+  if (currentMainOptionsPopup) {
+    currentMainOptionsPopup.remove();
+    currentMainOptionsPopup = null;
+  }
+}
+
 let currentLibraryQueue = [];
 let libraryQueueIndex = 0;
 let usingLibraryQueue = false;

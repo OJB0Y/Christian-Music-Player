@@ -590,6 +590,10 @@ opacity: 0.33;
   position: relative;
 }
 
+.optionItem {
+  display: none;
+}
+
 .songRequestScreen {
   position: absolute;
   left: 0;
