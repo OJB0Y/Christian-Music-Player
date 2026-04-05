@@ -918,6 +918,7 @@ const playlist = [
     cover: "images/Cover of CMR4_ El Museo by Alex Zurdo, Natan El Profeta.jpg",
     hex: "#1F4030",
     barColor: "#dac341d8",
+    video: "videos/AlexZurdo3.mp4",
 },
 {
     title: "Gracias Gracias Gracias",
@@ -1269,7 +1270,8 @@ const playlist = [
     src: "songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3",
     cover: "images/Gokey.jpg",
     hex: "#4d372cff",
-    barColor: "#fd7b3aff"
+    barColor: "#fd7b3aff",
+    video: "videos/Redimi6.mp4",
 },
 {
     title: "TENGO EL DON",
@@ -1302,7 +1304,8 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Colores - Redimi2.mp3",
     cover: "images/Cover of Colores by Redimi2, Funky, Alex Zurdo.jpg",
     hex: "#6E9E9E",
-    barColor: "#ffe96dff"
+    barColor: "#ffe96dff",
+    video: "videos/Redimi7.mp4",
 },
 {
     title: "A Pesar de Mí - Live",
@@ -1327,6 +1330,7 @@ const playlist = [
     cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
     hex: "#402727",
     barColor: "#fbf5d7ff",
+    video: "videos/AlexZurdo1.mp4",
 },
   {
     title: "Replay",//160
@@ -1391,6 +1395,7 @@ const playlist = [
     cover: "images/Cover of Lo Que Se Va by Alex Zurdo, Gabriel EMC.jpg",
     hex: "#9E1010",
     barColor: "#690000",
+    video: "videos/AlexZurdo2.mp4"
   },
   {
     title: "¿Pa' Qué Preguntan? - Remix",
@@ -1583,6 +1588,7 @@ const playlist = [
     cover: "images/Cover of De Buenas (Remix) by Josh Gamez, Musiko, Jay Kalyl, Lizzy Parra, Pauneto.jpg",
     hex: "#203858",
     barColor: "#4a83ce",
+    video: "videos/JoshGamez1.mp4",
   }, 
   {
     title: "Lo Tengo",
@@ -1671,6 +1677,7 @@ const playlist = [
     cover: "images/Cover of ¿Quien te dijo_ by Madiel Lara.jpg",
     hex: "#C98B00",
     barColor: "#fcb400",
+    video: "videos/MadielLara1.mp4",
   }, 
   {
     title: "Dios Nunca Falla",
@@ -1703,6 +1710,7 @@ const playlist = [
     cover: "images/Cover of Día D by Kike Pavón, La Feria Oficial.jpg",
     hex: "#535353",
     barColor: "#919191",
+    video: "videos/KikePavon1.mp4",
   }, 
   {
     title: "Torpe Corazón (ft. Ander Bock)",
@@ -1800,14 +1808,104 @@ const playlist = [
     hex: "#3F97CE",
     barColor: "#77cbff",
   }, 
+  {
+    title: "Como El Águila Real",
+    artist: "Manuel Bonilla",
+    src: "songs/SpotiDownloader.com - Como El Águila Real - Manuel Bonilla.mp3",
+    cover: "images/Cover of Como El Águila Real by Manuel Bonilla.jpg",
+    hex: "#882000",
+    barColor: "#e07757",
+  }, 
+  {
+    title: "Be Alright (Remix)", //220
+    artist: "Evan Craft, KB, Sam Rivera",
+    src: "songs/SpotiDownloader.com - Be Alright - Remix - Evan Craft.mp3",
+    cover: "images/Cover of Be Alright - Remix by Evan Craft, KB, Sam Rivera.jpg",
+    hex: "#535353",
+    barColor: "#a7a7a7",
+    video: "videos/EvanCraft1.mp4",
+  }, 
+  {
+    title: "Ríos de Luz",
+    artist: "Un Corazón, Louie Abrego, Kim Richards, Andy Mineo",
+    src: "songs/SpotiDownloader.com - Ríos de Luz - Un Corazón.mp3",
+    cover: "images/Cover of Ríos de Luz by Un Corazón, Louie Abrego, Kim Richards, Andy Mineo.jpg",
+    hex: "#00AD63",
+    barColor: "#5dffc9",
+    video: "videos/UnCorazon1.mp4",
+  }, 
+  {
+    title: "La Praxis Freestyle",
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - La Praxis Freestyle - Redimi2.mp3",
+    cover: "images/Cover of La Praxis Freestyle by Redimi2.jpg",
+    hex: "#535353",
+    barColor: "#999999",
+  }, 
+  {
+    title: "Quién Contra Mí",
+    artist: "Redimi2, El Leo Pa",
+    src: "songs/SpotiDownloader.com - Quién Contra Mí - Redimi2.mp3",
+    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
+    hex: "#53423c",
+    barColor: "#aa8a72ff"
+  }, 
+  {
+    title: "Bailando",
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - Bailando - Redimi2.mp3",
+    cover: "images/Cover of Bailando by Redimi2.jpg",
+    hex: "#187098",
+    barColor: "#5bb9f4",
+  }, 
+  {
+    title: "Santo", //225
+    artist: "Redimi2, Montesanto",
+    src: "songs/SpotiDownloader.com - Santo - Redimi2.mp3",
+    cover: "images/Cover of Santo by Redimi2, Montesanto.jpg",
+    hex: "#607F90",
+    barColor: "#95ceed",
+  }, 
+  {
+    title: "Aunque No Lo Crean",
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Aunque No Lo Crean - Agustín Amador.mp3",
+    cover: "images/Cover of Aunque No Lo Crean by Agustín Amador.jpg",
+    hex: "#5857A7",
+    barColor: "#aba9f7",
+  }, 
+  {
+    title: "Con Cristo Me Basta",
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Con Cristo Me Basta - Agustin Amador.mp3",
+    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+    hex: "#456426",
+    barColor: "#a6dc71",
+  }, 
+  {
+    title: "Incontable Maravilla",
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Incontable Maravilla - Agustin Amador.mp3",
+    cover: "images/Cover of Incontable Maravilla by Agustin Amador.jpg",
+    hex: "#1F678F",
+    barColor: "#69b9e4",
+  }, 
+  {
+    title: "La Bonanza", //229
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - La Bonanza - Agustin Amador.mp3",
+    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+    hex: "#456426",
+    barColor: "#a6dc71",
+  }, 
 ];
 
 const playlistOrder = {
-  Worship: [14, 51, 66, 95, 15, 150, 149, 151, 218, 16, 180, 83, 84, 85, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
-  Voceros: [149, 180, 5, 6, 7, 181, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [200, 188, 197, 190, 189, 198, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 192, 193, 194, 195, 107, 187, 186, 109, 110, 152, 153, 165, 166, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 156, 157, 158, 159, 111, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
+  Worship: [14, 51, 66, 95, 15, 150, 149, 226, 227, 228, 229, 219, 151, 218, 16, 180, 83, 84, 85, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 227, 228, 229, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
+  LockIn: [222, 111, 109, 152, 153, 166, 156, 224, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
   MUSIKO: [172, 171, 170, 169, 96, 142, 97, 99, 141, 139, 130],
-  upbeat: [112, 114, 213, 206, 133, 140, 139, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 170, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
+  upbeat: [112, 114, 139, 226, 227, 228, 229, 213, 206, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 170, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144],
 };
 
