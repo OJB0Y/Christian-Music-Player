@@ -80,7 +80,7 @@ opacity: 0.33;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,#00000000 1%, #00000000, #000000da 73% /*I SWEAR THIS ISNT ON PURPOSE*/, #000000ef); 
+  background: linear-gradient(to bottom,#0000009e 1%, #00000000, #000000d7 73% /*compromise*/, #000000ef); 
   pointer-events: none; 
   z-index: 0;
 }
