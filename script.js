@@ -1953,6 +1953,7 @@ const searchBar = document.getElementById('search-bar');
 const playlistWrapper = document.querySelector('.playlist-wrapper');
 const togglePlaylistBtn = document.getElementById('toggle-playlist');
 
+const miniPlayer = document.getElementById('mini-player');
 const miniCover = document.getElementById('mini-cover');
 const miniTitle = document.getElementById('mini-title');
 const miniArtist = document.getElementById('mini-artist');
@@ -1966,6 +1967,17 @@ const libraryTitle = document.getElementById('libraryTitle');
 
 const songRequest = document.getElementById("songRequest");
 const closeRequest = document.getElementById("closeRequest");
+
+let miniPlayerActivated = false;
+let currentPlaylist = "all songs";
+let playbackSource = "All Songs";  // what actually triggered playback
+
+
+const playlistLabel = document.getElementById("currentPlaylistLabel");
+
+function updatePlaylistLabel() {
+  playlistLabel.textContent = currentPlaylist;
+}
 
 function openSongRequest() {
   songRequest.classList.add("active");
@@ -2163,6 +2175,8 @@ optionsBtn.addEventListener('click', (e) => {
       li.addEventListener('click', () => {
         usingLibraryQueue = true;
         
+        playbackSource = libKey;
+
         // Find the index of this song in the current library queue
         const songPos = currentLibraryQueue.indexOf(songIndex);
         if (songPos !== -1) {
@@ -2188,7 +2202,7 @@ optionsBtn.addEventListener('click', (e) => {
   // Function to open library playlist
   function openLibraryPlaylist(key) {
     buildLibraryPlaylist(key);
-  }
+}
 
   document.querySelectorAll('.library-btn').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -2456,6 +2470,9 @@ function stopVisualizer() {
 
 
 // umm
+audio.addEventListener('play', () => {
+  miniPlayer.classList.add('visible');
+});
 
 miniPlay.addEventListener('click', e => {
   e.stopPropagation();
@@ -2468,6 +2485,7 @@ miniPause.addEventListener('click', e => {
 });
 
 audio.addEventListener('play', () => {
+  miniPlayer.classList.add('visible');
   miniPlay.style.display = 'none';
   miniPause.style.display = 'block';
 });
@@ -2601,6 +2619,9 @@ const libraryBigShuffle = document.getElementById('libraryBigShuffle');
 libraryBigPlay.addEventListener('click', () => {
   if (!currentLibraryQueue.length) return;
 
+  currentPlaylist = playbackSource;
+  updatePlaylistLabel();
+
   usingLibraryQueue = true;
   shuffle = false;
   setToggleButtonState(shuffleBtn, false);
@@ -2614,6 +2635,9 @@ libraryBigPlay.addEventListener('click', () => {
 
 libraryBigShuffle.addEventListener('click', () => {
   if (!currentLibraryQueue.length) return;
+
+  currentPlaylist = playbackSource;
+  updatePlaylistLabel();
 
   usingLibraryQueue = true;
   shuffle = true;
@@ -2800,6 +2824,15 @@ function changeSong(index, { animate = true, direction = "next", autoPlay = true
 //}
 //queueIndex = -1;
 
+currentPlaylist = playbackSource;
+  updatePlaylistLabel();
+if (usingLibraryQueue && currentLibraryQueue.length) {
+    // keep currentPlaylist as-is (library name already set)
+  } else {
+    currentPlaylist = "All Songs";
+    updatePlaylistLabel();
+  }
+
 // If we're in library mode but clicked a song not in the library queue, exit library mode
   if (usingLibraryQueue && currentLibraryQueue.length > 0) {
     if (!currentLibraryQueue.includes(index)) {
@@ -2918,6 +2951,8 @@ if ('mediaSession' in navigator) {
   navigator.mediaSession.setActionHandler('nexttrack', () => nextBtn.click());
 }
 
+updateActiveSong();
+
 // Build queue from this point forward
   //queue = playlist.slice(index);
   //queueIndex = 0;
@@ -2980,10 +3015,12 @@ function buildPlaylistUI(filterText = "") {
 
       li.addEventListener('click', () => {
   usingLibraryQueue = false;
+
+  playbackSource = "All Songs";
+
   changeSong(index);
   if (shuffle) createShuffleQueue(index);
 });
-
 
       playlistEl.appendChild(li);
     }
@@ -3132,6 +3169,7 @@ audio.addEventListener("play", () => {
   setPlayIcon(true);
   startVisualizer();
   video.play();
+  miniPlayer.classList.add('visible');
 });
 
 
@@ -3452,5 +3490,8 @@ currentSong = 0;
 loadSong(currentSong); // Just load, don't play
 updateActiveSong();
 setPlayIcon(false); // Show play icon (paused state)
+playbackSource = "All Songs";
+currentPlaylist = "All Songs";
+updatePlaylistLabel();
 const videoOverlay = document.getElementById('video-overlay');
 videoOverlay.style.display = 'none';

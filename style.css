@@ -80,9 +80,22 @@ opacity: 0.33;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,#0000009e 1%, #00000000, #000000d7 75% /*compromise*/, #000000ef); 
+  background: linear-gradient(to bottom,#00000000 1%, #00000000, #000000da 73% /*I SWEAR THIS ISNT ON PURPOSE*/, #000000ef); 
   pointer-events: none; 
   z-index: 0;
+}
+
+#currentPlaylistLabel {
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  z-index: 1;
 }
 
 #bg-video {
@@ -159,12 +172,19 @@ opacity: 0.33;
   width: 100%;
   padding: 10px 12px;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255, 0, 0);
   border: none;
   /*border-radius: 12px;*/
 
   color: white;
   cursor: pointer;
+}
+
+/*BRUHHHHH WHY WONT THIS WORK?!??!?!*/
+.mini-player.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
 #mini-cover {
@@ -875,7 +895,7 @@ opacity: 0.33;
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 0px;
   box-shadow: 0 25px 70px rgba(0,0,0,0.6);
   transition: transform .35s ease, opacity .35s ease;
 }
@@ -883,7 +903,8 @@ opacity: 0.33;
 /* buttons row */
 .library-big-buttons-row {
   display: flex;
-  gap: 60px;
+  gap: 15px;
+  margin-left: 70px;
 }
 
 /* pop animation when playlist changes */
@@ -914,9 +935,22 @@ opacity: 0.33;
   height: 36px;/*height: 36px;*/
 }
 
+.library-big-btn-wow {
+  margin-top: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #00000000;
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
 .library-big-btn {
   width: 50px;
-  height: 50px; /*height: 50px;*/
+  height: 50px;
   border-radius: 50%;
   border: none;
   background: #1db954;
@@ -970,7 +1004,7 @@ opacity: 0.33;
   height: 17%;
   display: column;
   justify-content: space-around;
-  background: #00000000;
+  background: linear-gradient(to bottom, #00000000, #121212);
   backdrop-filter: blur(.1px);
   padding: 10px 0;
   z-index: 50;
