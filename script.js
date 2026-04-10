@@ -856,7 +856,8 @@ const playlist = [
     src: "songs/Barak.mp3",
     cover: "images/Barak.jpg",
     hex: "#08373E",
-    barColor: "#91e7f4ff"
+    barColor: "#91e7f4ff",
+  video: "videos/Redimi8.mp4",
 },
 {
     title: "Arde En Mi",//105
