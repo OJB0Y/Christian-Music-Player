@@ -848,7 +848,8 @@ const playlist = [
     src: "songs/Gokey.mp3",
     cover: "images/Gokey.jpg",
     hex: "#4d372cff",
-    barColor: "#fd7b3aff"
+    barColor: "#fd7b3aff",
+    video: "videos/Redimi8.mp4",
 },
 {
     title: "La Casa De Jehová",
@@ -856,8 +857,7 @@ const playlist = [
     src: "songs/Barak.mp3",
     cover: "images/Barak.jpg",
     hex: "#08373E",
-    barColor: "#91e7f4ff",
-  video: "videos/Redimi8.mp4",
+    barColor: "#91e7f4ff"
 },
 {
     title: "Arde En Mi",//105
