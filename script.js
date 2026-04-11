@@ -944,6 +944,7 @@ const playlist = [
     cover: "images/Cover of INFINITO by Madiel Lara.jpg",
     hex: "#D28432",
     barColor: "#ffdf89ff",
+    video: "videos/MadielLara2.mp4",
 },
 {
     title: "A Pesar de Mí",//115
@@ -1695,6 +1696,7 @@ const playlist = [
     cover: "images/Cover of DIOS HA SIDO BUENO by Madiel Lara.jpg",
     hex: "#602018",
     barColor: "#e88930",
+    video: "videos/MadielLara3.mp4",
   }, 
   {
     title: "ABBA PADRE",//205
@@ -1703,6 +1705,7 @@ const playlist = [
     cover: "images/Cover of INFINITO by Madiel Lara.jpg",
     hex: "#D28432",
     barColor: "#ffdf89ff",
+    video: "videos/MadielLara2.mp4",
   }, 
   {
     title: "Día D",
