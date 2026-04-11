@@ -1898,15 +1898,72 @@ const playlist = [
     cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
     hex: "#456426",
     barColor: "#a6dc71",
+  },  
+  {
+    title: "Primero Dios, Vol. 5", //230
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Primero Dios, Vol. 5 - Agustin Amador.mp3",
+    cover: "images/Cover of Primero Dios, Vol. 5 by Agustin Amador.jpg",
+    hex: "#B99241",
+    barColor: "#e2bd71",
+  },  
+  {
+    title: "Herencia en el Cielo",
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Herencia en el Cielo - Agustin Amador.mp3",
+    cover: "images/Cover of Herencia en el Cielo by Agustin Amador.jpg",
+    hex: "#3087D0",
+    barColor: "#6ab7f7",
+  },  
+  {
+    title: "No Vayas a Olvidar",
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - No Vayas a Olvidar - Agustin Amador.mp3",
+    cover: "images/Cover of No Vayas a Olvidar by Agustin Amador.jpg",
+    hex: "#989898",
+    barColor: "#b8c0c6",
+  },  
+  {
+    title: "Mi Pensamiento",
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Mi Pensamiento - Agustin Amador.mp3",
+    cover: "images/Cover of Mi Pensamiento by Agustin Amador.jpg",
+    hex: "#7F000F",
+    barColor: "#af1a2b",
+  },  
+  {
+    title: "Gravy",
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - Gravy - Redimi2.mp3",
+    cover: "images/Cover of Gravy by Redimi2.jpg",
+    hex: "#00A5BD",
+    barColor: "#6cd0dd",
+  },  
+  {
+    title: "Filipenses 1:6 - Extended Version", //235
+    artist: "Redimi2, Almighty",
+    src: "songs/SpotiDownloader.com - Filipenses 1_6 - Extended Version - Redimi2.mp3",
+    cover: "images/Cover of Filipenses 1_6 - Extended Version by Redimi2, Almighty.jpg",
+    hex: "#204049",
+    barColor: "#517d89",
+  },  
+  {
+    title: "Pa'lo",
+    artist: "Alex Zurdo, Funky",
+    src: "songs/SpotiDownloader.com - Pa'lo - Alex Zurdo.mp3",
+    cover: "images/Cover of Pa'lo by Alex Zurdo, Funky.jpg",
+    hex: "#D60808",
+    barColor: "#9ccace",
+    videos: "videos/AlexZurdo4.mp4
   }, 
 ];
 
 const playlistOrder = {
-  Worship: [14, 51, 66, 95, 15, 150, 149, 226, 227, 228, 229, 219, 151, 218, 16, 180, 83, 84, 85, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
-  Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 227, 228, 229, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [222, 111, 109, 152, 153, 166, 156, 224, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
+  Worship: [14, 51, 66, 95, 15, 150, 149, 226, 227, 228, 229, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 233, 232, 231, 230, 227, 228, 229, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
+  LockIn: [236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
   MUSIKO: [172, 171, 170, 169, 96, 142, 97, 99, 141, 139, 130],
-  upbeat: [112, 114, 139, 226, 227, 228, 229, 213, 206, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 170, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
+  upbeat: [112, 114, 139, 226, 233, 232, 227, 228, 229, 213, 206, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 170, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144],
 };
 
