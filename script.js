@@ -1954,7 +1954,7 @@ const playlist = [
     cover: "images/Cover of Pa'lo by Alex Zurdo, Funky.jpg",
     hex: "#D60808",
     barColor: "#9ccace",
-    videos: "videos/AlexZurdo4.mp4",
+    video: "videos/AlexZurdo4.mp4",
   }, 
 ];
 
