@@ -80,7 +80,7 @@ opacity: 0.33;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,#0000001A 1%, #0000001A, #000000d5 77% /*compromise*/, #000000ef); 
+  background: linear-gradient(to bottom,#0000001A 1%, #0000001A, #000000c4 78% /*compromise*/, #000000d6); 
   pointer-events: none; 
   z-index: 0;
 }
