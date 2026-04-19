@@ -2153,7 +2153,6 @@ const miniPlay = document.getElementById('mini-play');
 const miniPause = document.getElementById('mini-pause');
 
 const visualizer = document.querySelector('.visualizer');
-const bar = document.querySelector('.bar');
 
 const libraryPlaylistEl = document.getElementById('libraryPlaylist');
 const libraryTitle = document.getElementById('libraryTitle');
@@ -3073,7 +3072,6 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
 const bgVideo = document.getElementById('bg-video');
 const videoOverlay = document.getElementById('video-overlay');
 const nowPlayingCover = document.getElementById('cover');
-const bar = document.getElementById('bar');
 
 if (song.video) {
   // show video
@@ -3091,7 +3089,6 @@ if (song.video) {
   // fade out cover
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
   nowPlayingCover.style.opacity = '0';
-  bar.style.opacity = '0.1';
 
   // stop visualizer
   visualizer.classList.remove('active');
@@ -3099,7 +3096,6 @@ if (song.video) {
 } else {
   // hide video
   bgVideo.classList.remove('show');
-  bar.style.opacity = '0.33';
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.display = 'none'; // hide overlay
 
