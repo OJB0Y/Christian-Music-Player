@@ -3073,7 +3073,6 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
 const bgVideo = document.getElementById('bg-video');
 const videoOverlay = document.getElementById('video-overlay');
 const nowPlayingCover = document.getElementById('cover');
-const bARRR = document.getElementById('bar');
 
 if (song.video) {
   // show video
@@ -3086,12 +3085,13 @@ if (song.video) {
   bgVideo.load();
   bgVideo.play().catch(() => {});
 
+  visualizer.style.opacity = '0.1';
+
   requestAnimationFrame(() => bgVideo.classList.add('show'));
 
   // fade out cover
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
   nowPlayingCover.style.opacity = '0';
-  bARRR.style.opacity = '0.1';
 
   // stop visualizer
   visualizer.classList.remove('active');
@@ -3099,9 +3099,10 @@ if (song.video) {
 } else {
   // hide video
   bgVideo.classList.remove('show');
-  bARRR.style.opacity = '0.33';
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.display = 'none'; // hide overlay
+
+  visualizer.style.opacity = '0.333';
 
   // fade cover back in
   setTimeout(() => nowPlayingCover.style.opacity = '1', 600);
