@@ -420,7 +420,7 @@ opacity: 0.33;
   margin: 12px 0;
   -webkit-appearance: none;
   height: 5px;
-  background: #555;
+  background: #555555b9; /*was 555*/
   border-radius: 5px;
   outline: none;
 }
@@ -429,7 +429,7 @@ opacity: 0.33;
   -webkit-appearance: none;
   width: 14px;
   height: 14px;
-  background: rgb(255, 255, 255);
+  background: #ffffffd2;
   border-radius: 50%;
   cursor: pointer;
 }
