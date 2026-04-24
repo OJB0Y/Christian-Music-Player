@@ -893,6 +893,7 @@ const playlist = [
     cover: "images/Cover of dIOS by Kim Richards, Indiomar, Redimi2.jpg",
     hex: "#DA262E",
     barColor: "#ffb7bbff",
+    video: "videos/dIOS.mp4",
 },
 {
     title: "Flipando",
