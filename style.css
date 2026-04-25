@@ -420,18 +420,23 @@ opacity: 0.33;
   margin: 12px 0;
   -webkit-appearance: none;
   height: 5px;
-  background: #555555b9; /*was 555*/
   border-radius: 5px;
   outline: none;
+  background: linear-gradient(to right, white 0%, white 0%, #555555b9 /*these two WERE 555, not anymore */0%, #555555b9 100%);
+  transition: background 0.1s linear;
 }
 
 #seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  background: #ffffffd2;
-  border-radius: 50%;
-  cursor: pointer;
+  appearance: none;
+  width: 0px;
+  height: 0px;
+}
+
+#seek-bar::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  border: none;
 }
 
 /* === TIME INFO === */

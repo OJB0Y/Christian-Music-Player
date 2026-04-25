@@ -3090,7 +3090,7 @@ if (song.video) {
 
   requestAnimationFrame(() => bgVideo.classList.add('show'));
 
-  seekBar.style.opacity = 0.5;
+  seekBar.style.opacity = 0.6;
 
   // fade out cover
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
@@ -3361,9 +3361,24 @@ togglePlaylistBtn.addEventListener('click', () => {
 
 
 audio.addEventListener('timeupdate', () => {
-  seekBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
-  currentTimeEl.textContent = formatTime(audio.currentTime);
-  durationEl.textContent = `/ ${formatTime(audio.duration || 0)}`;
+  const progress = (audio.currentTime / audio.duration) * 100 || 0;
+
+  seekBar.value = progress;
+
+  seekBar.style.background = `linear-gradient(
+    to right,
+    white 0%,
+    white ${progress}%,
+    #555 ${progress}%,
+    #555 100%
+  )`;
+});
+
+if (!audio.duration) return;
+
+seekBar.addEventListener("input", () => {
+  const seekTo = (seekBar.value / 100) * audio.duration;
+  audio.currentTime = seekTo;
 });
 
 audio.addEventListener("play", () => {
