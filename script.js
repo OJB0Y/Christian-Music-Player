@@ -1146,7 +1146,8 @@ const playlist = [
     src: "songs/song7 (1).mp3",
     cover: "images/song7 (1).png",
     hex: "#308090",
-    barColor: "#58c22dff"
+    barColor: "#58c22dff",
+    video: "videos/gracias.mp4",
 },
 {
     title: "Es por Fe",//140

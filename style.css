@@ -422,7 +422,7 @@ opacity: 0.33;
   height: 5px;
   border-radius: 5px;
   outline: none;
-  background: linear-gradient(to right, white 0%, white 0%, #555555b9 /*these two WERE 555, not anymore */0%, #555555b9 100%);
+  background: linear-gradient(to right, #ffffffbe 0%, #ffffffbe 0%, #555555b9 /*these two WERE 555, not anymore */0%, #555555b9 100%);
   transition: background 0.1s linear;
 }
 
