@@ -3090,6 +3090,8 @@ if (song.video) {
 
   requestAnimationFrame(() => bgVideo.classList.add('show'));
 
+  seekBar.style.opacity = 0.5;
+
   // fade out cover
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
   nowPlayingCover.style.opacity = '0';
@@ -3102,6 +3104,8 @@ if (song.video) {
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.display = 'none'; // hide overlay
+
+  seekBar.style.opacity = 1;
 
   visualizer.style.opacity = visualizerVisible ? '0.33' : '0';
 
@@ -3382,7 +3386,7 @@ audio.addEventListener("pause", () => {
   isPlaying = false;
   setPlayIcon(false);
   stopVisualizer();
-  video.pause();
+  //video.pause(); so turns out spotify never pauses canvas video, so yeah :I
 });
 
 
