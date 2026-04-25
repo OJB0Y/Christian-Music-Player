@@ -3373,11 +3373,11 @@ audio.addEventListener('timeupdate', () => {
     white ${progress}%,
     #555555b9 ${progress}%,
     #555555b9 100%
-
-    seekBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
-    currentTimeEl.textContent = formatTime(audio.currentTime);
-    durationEl.textContent = `/ ${formatTime(audio.duration || 0)}`;
   )`;
+
+  seekBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+  currentTimeEl.textContent = formatTime(audio.currentTime);
+  durationEl.textContent = `/ ${formatTime(audio.duration || 0)}`;
 });
 
 seekBar.addEventListener("input", () => {
