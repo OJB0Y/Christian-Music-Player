@@ -3361,6 +3361,8 @@ togglePlaylistBtn.addEventListener('click', () => {
 
 
 audio.addEventListener('timeupdate', () => {
+  if (!audio.duration) return;
+  
   const progress = (audio.currentTime / audio.duration) * 100 || 0;
 
   seekBar.value = progress;
@@ -3369,12 +3371,10 @@ audio.addEventListener('timeupdate', () => {
     to right,
     white 0%,
     white ${progress}%,
-    #555 ${progress}%,
-    #555 100%
+    #555555b9 ${progress}%,
+    #555555b9 100%
   )`;
 });
-
-if (!audio.duration) return;
 
 seekBar.addEventListener("input", () => {
   const seekTo = (seekBar.value / 100) * audio.duration;
