@@ -2449,7 +2449,7 @@ function updateCoverSize() {
     nowPlayingImg.style.marginBottom = '1.5rem';
     playerContainer.style.marginTop = '20px';
     libraryPlaylist.style.maxHeight = 'calc(100% - 53%)';
-    coverWrapper.style.marginBottom = '8vh';
+    coverWrapper.style.marginBottom = '7vh';
   }
 }
 
