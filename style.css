@@ -57,17 +57,17 @@ opacity: 0.33;
 
 /* === OPEN PLAYLIST BUTTON === */
 #open-playlist {
+  opacity: 0;
   width: 100%;
-
   height:55px;
   border-radius: 11px;
   gap: 20px 15px;
 
   text-align: left;
 
-  background: #434863;
+  background: #43486300;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background 0.8s cubic-bezier(.4,0,.2,1);
+  transition: background 0.8s cubic-bezier(.4,0,.2,1), opacity 0.1s ease;
   color: rgba(255, 255, 255, 0.7);
 
   border: none;
@@ -303,7 +303,6 @@ opacity: 0.33;
   object-fit: cover;
   border-radius: 11px;
   margin-bottom: 3.7rem;
-  margin-top: 2.5rem;
 
   display: block;
   margin-left: auto;
@@ -312,6 +311,7 @@ opacity: 0.33;
 
 .cover-wrapper {
   width: 100%;
+  margin-bottom: 8vh;
   /*height: 400px;*/
   overflow: hidden;
   position: relative;
@@ -322,7 +322,7 @@ opacity: 0.33;
 }
 
 #cover {
-
+  margin-bottom: 100vh;
   object-fit: cover;
 
   transform: translateX(0);
@@ -407,7 +407,7 @@ opacity: 0.33;
   z-index: 1;
 }
 
-/* default (white) */
+
 #toggle-playlist {
   color: white;
 
@@ -426,18 +426,19 @@ opacity: 0.33;
   outline: none;
   background: linear-gradient(to right, #ffffffbe 0%, #ffffffbe 0%, #555555b9 /*these two WERE 555, not anymore */0%, #555555b9 100%);
   transition: background 0.1s linear;
+  opacity: 0.6;
 }
 
 #seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 0px;
-  height: 0px;
+  width: 10px;
+  height: 10px;
 }
 
 #seek-bar::-moz-range-thumb {
-  width: 0;
-  height: 0;
+  width: 10px;
+  height: 10px;
   border: none;
 }
 

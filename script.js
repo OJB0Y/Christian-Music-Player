@@ -2147,6 +2147,8 @@ const durationEl = document.getElementById('total-duration');
 const searchBar = document.getElementById('search-bar');
 
 const playlistWrapper = document.querySelector('.playlist-wrapper');
+const coverWrapper = document.querySelector('.cover-wrapper');
+const openPlaylistBtn = document.getElementById("open-playlist");
 const togglePlaylistBtn = document.getElementById('toggle-playlist');
 
 const miniPlayer = document.getElementById('mini-player');
@@ -2370,6 +2372,7 @@ optionsBtn.addEventListener('click', (e) => {
 
 
       li.addEventListener('click', () => {
+        openPlaylistBtn.style.opacity = 1;
         usingLibraryQueue = true;
         
         playbackSource = libKey;
@@ -2439,12 +2442,14 @@ function updateCoverSize() {
     nowPlayingImg.style.maxWidth = '350px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 60%)'
+    libraryPlaylist.style.maxHeight = 'calc(100% - 60%)';
+    coverWrapper.style.marginBottom = '5vh';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
     playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 53%)'
+    libraryPlaylist.style.maxHeight = 'calc(100% - 53%)';
+    coverWrapper.style.marginBottom = '8vh';
   }
 }
 
@@ -2669,6 +2674,7 @@ function stopVisualizer() {
 // umm
 audio.addEventListener('play', () => {
   miniPlayer.classList.add('visible');
+  openPlaylistBtn.style.opacity = 1;
 });
 
 miniPlay.addEventListener('click', e => {
@@ -2685,6 +2691,7 @@ audio.addEventListener('play', () => {
   miniPlayer.classList.add('visible');
   miniPlay.style.display = 'none';
   miniPause.style.display = 'block';
+  openPlaylistBtn.style.opacity = 1;
 });
 
 audio.addEventListener('pause', () => {
@@ -3108,7 +3115,7 @@ if (song.video) {
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.display = 'none'; // hide overlay
 
-  seekBar.style.opacity = 0.7;
+  seekBar.style.opacity = 0.6; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
 
   visualizer.style.opacity = visualizerVisible ? '0.33' : '0';
 
@@ -3159,6 +3166,7 @@ if ('mediaSession' in navigator) {
 updateActiveSong();
 
 // Build queue from this point forward
+//old code, whatever you do...DO NOT UNCOMMENT THESE LINES
   //queue = playlist.slice(index);
   //queueIndex = 0;
 
@@ -3219,6 +3227,7 @@ function buildPlaylistUI(filterText = "") {
 
 
       li.addEventListener('click', () => {
+        openPlaylistBtn.style.opacity = 1;
   usingLibraryQueue = false;
 
   playbackSource = "All Songs";
@@ -3588,7 +3597,6 @@ function setPlayIcon(isNowPlaying) {
 
 
 // button code becuase im too lazy to organize anymore
-const openPlaylistBtn = document.getElementById("open-playlist");
 const playlistSheet = document.getElementById("playlist-sheet");
 
 openPlaylistBtn.addEventListener("click", () => {
@@ -3603,6 +3611,7 @@ openPlaylistBtn.addEventListener("click", () => {
 /* close playlist when menu button is pressed */
 togglePlaylistBtn.addEventListener("click", () => {
   playlistSheet.classList.remove("open");
+  openPlaylistBtn.style.opacity = 1;
 });
 
 // CHANGE SONG COVER ANIMATION THINGYMABOB
@@ -3731,7 +3740,7 @@ viewport.addEventListener('touchend', (e) => {
 
 // --- init ---
 queueIndex = -1;
-currentSong = 0;
+currentSong = -1;
 loadSong(currentSong); // Just load, don't play
 updateActiveSong();
 setPlayIcon(false); // Show play icon (paused state)
