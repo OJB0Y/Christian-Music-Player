@@ -1138,7 +1138,8 @@ const playlist = [
     src: "songs/song6 (1).mp3",
     cover: "images/song6 (1).png",
     hex: "#aa6c57ff",
-    barColor: "#c55e47ff"
+    barColor: "#c55e47ff",
+    video: "videos/majoYDan1.mp4"
 },
 {
     title: "Gracias",
@@ -1195,7 +1196,8 @@ const playlist = [
     src: "songs/song13.mp3",
     cover: "images/song13.png",
     hex: "#283830",
-    barColor: "#36a595ff"
+    barColor: "#36a595ff",
+    video: "videos/majoYDan2.mp4"
 },
 {
     title: "Volverás",
