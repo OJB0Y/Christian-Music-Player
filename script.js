@@ -3106,7 +3106,7 @@ if (song.video) {
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.display = 'none'; // hide overlay
 
-  seekBar.style.opacity = 1;
+  seekBar.style.opacity = 0.7;
 
   visualizer.style.opacity = visualizerVisible ? '0.33' : '0';
 
