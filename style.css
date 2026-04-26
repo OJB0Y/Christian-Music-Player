@@ -298,11 +298,12 @@ opacity: 0.33;
 
 .now-playing img {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 11px;
   margin-bottom: 2.5rem;
+  margin-top: 5px;
 
   display: block;
   margin-left: auto;
@@ -359,6 +360,7 @@ opacity: 0.33;
 }
 
 .now-playing h2 {
+  margin-top: 20px;
   margin: 5px 0 2px;
   font-size: clamp(1.35rem, 4vw, 1.6rem);
   font-weight: 700;
