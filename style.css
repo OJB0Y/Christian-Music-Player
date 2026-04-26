@@ -432,6 +432,8 @@ opacity: 0.33;
   -webkit-appearance: none;
   appearance: none;
   opacity: 0;
+  background: transparent;
+  color: transparent;
   width: 10px;
   height: 10px;
 }
@@ -439,6 +441,8 @@ opacity: 0.33;
 #seek-bar::-moz-range-thumb {
   width: 10px;
   height: 10px;
+  background: transparent;
+  color: transparent;
   opacity: 0;
   border: none;
 }
