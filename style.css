@@ -360,7 +360,7 @@ opacity: 0.33;
 }
 
 .now-playing h2 {
-  margin-top: 40px;
+  margin-top: 80px;
   margin: 5px 0 2px;
   font-size: clamp(1.35rem, 4vw, 1.6rem);
   font-weight: 700;
