@@ -311,7 +311,7 @@ opacity: 0.33;
 
 .cover-wrapper {
   width: 100%;
-  margin-bottom: 7vh;
+  margin-bottom: 8vh;
   /*height: 400px;*/
   overflow: hidden;
   position: relative;
@@ -322,7 +322,6 @@ opacity: 0.33;
 }
 
 #cover {
-  margin-bottom: 100vh;
   object-fit: cover;
 
   transform: translateX(0);
@@ -433,14 +432,19 @@ opacity: 0.33;
   -webkit-appearance: none;
   appearance: none;
   opacity: 0;
+  background: transparent;
+  color: transparent;
+  opacity: 0;
   width: 13px;
   height: 13px;
 }
 
 #seek-bar::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  color: transparent;
   opacity: 0;
-  width: 13px;
-  height: 13px;
   border: none;
 }
 
