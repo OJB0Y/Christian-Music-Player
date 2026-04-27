@@ -423,7 +423,7 @@ opacity: 0.33;
   height: 4px;
   border-radius: 5px;
   outline: none;
-  background: linear-gradient(to right, #ffffffbe 0%, #ffffffbe 0%, #555555b9 /*these two WERE 555, not anymore */0%, #555555b9 100%);
+  background: linear-gradient(to right, #ffffffbe 0%, #ffffffbe 0%, #818181d5 /*these two WERE 555, not anymore */0%, #818181d5 100%);
   transition: background 0.1s linear;
   opacity: 0.6;
 }
