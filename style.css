@@ -139,7 +139,7 @@ opacity: 0.33;
 
 /* OPEN */
 #playlist-sheet.open {
-  transform: translateY(0.1px); /* this should stop the top safari bar from changing colors when this happens*/
+  transform: translateY(1px); /* this should stop the top safari bar from changing colors when this happens*/
   pointer-events: auto;
 }
 
