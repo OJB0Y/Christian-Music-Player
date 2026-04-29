@@ -139,7 +139,7 @@ opacity: 0.33;
 
 /* OPEN */
 #playlist-sheet.open {
-  transform: translateY(1px); /* this should stop the top safari bar from changing colors when this happens*/
+  transform: translateY(0px); /*ok for some reason on safari this changes the top white bar permenetanly into whatever colr the background is and doesn't change ever >:((*/
   pointer-events: auto;
 }
 
