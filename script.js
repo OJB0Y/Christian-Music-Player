@@ -1,3 +1,5 @@
+const colorCache = {};
+
 const playlist = [
   {
     title: "Cordero", //0
@@ -2124,16 +2126,12 @@ const playlist = [
     artist: "Y2",
     src: "songs/SpotiDownloader.com - Too Fresh - Y2.mp3",
     cover: "images/Cover of Too Fresh by Y2.jpg",
-    hex: "#6F3007",
-    barColor: "#bf6f3d",
-  }, 
-  {
+  },
+    {
     title: "ラグトレイン",
     artist: "INABAKUMORI",
     src: "songs/SpotiDownloader.com - ラグトレイン - INABAKUMORI.mp3",
     cover: "images/Cover of ラグトレイン by INABAKUMORI.jpg",
-    hex: "#535353",
-    barColor: "#878787",
     video: "videos/INABAKUMORI.mp4",
   },  
   {
@@ -2141,8 +2139,6 @@ const playlist = [
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - DIOS me dio colores - Madiel Lara.mp3",
     cover: "images/Cover of DIOS me dio colores by Madiel Lara.jpg",
-    hex: "#DB5408",
-    barColor: "#ffb187",
     video: "videos/MadielLara4.mp4",
   },  
   {
@@ -2150,24 +2146,53 @@ const playlist = [
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - WORK trabajando y Joseando - Madiel Lara.mp3",
     cover: "images/Cover of WORK trabajando y Joseando by Madiel Lara.jpg",
-    hex: "#8E1803",
-    barColor: "#c4513c",
   },  
   {
     title: "Espera", //259
     artist: "Natan El Profeta, Azaeloh",
     src: "songs/Espera_spotdown.org.mp3",
     cover: "images/Cover of Espera by Natan El Profeta, Azaeloh.jpg",
-    hex: "#385858",
-    barColor: "#629191",
+  },   
+  {
+    title: "Gozo feat. Redimi2 & Gaona", 
+    artist: "Christian Ponce, Redimi2, Gaona",
+    src: "songs/SpotiDownloader.com - Gozo feat. Redimi2 & Gaona - Christian Ponce.mp3",
+    cover: "images/Cover of Gozo feat. Redimi2 & Gaona by Christian Ponce, Redimi2, Gaona.jpg",
+  },   
+  {
+    title: "El Gozo De Dios", 
+    artist: "Tercer Cielo, Redimi2",
+    src: "songs/SpotiDownloader.com - El Gozo De Dios - Tercer Cielo.mp3",
+    cover: "images/Cover of El Gozo De Dios by Tercer Cielo, Redimi2.jpg",
+  },    
+  {
+    title: "Otra Vez", 
+    artist: "Madiel Lara",
+    src: "songs/SpotiDownloader.com - Otra Vez - Madiel Lara.mp3",
+    cover: "images/Cover of Otra Vez by Madiel Lara.jpg",
+    video: "videos/MadielLara5.mp4"
+  },    
+  {
+    title: "Paso a Paso",
+    artist: "Deluz",
+    src: "songs/SpotiDownloader.com - Paso a Paso - Deluz.mp3",
+    cover: "images/Cover of Paso a Paso by Deluz.jpg",
+    video: "videos/DeLuz1.mp4"
+  },     
+  {
+    title: "Gracias a Ti", //264
+    artist: "Soly",
+    src: "songs/SpotiDownloader.com - Gracias a Ti - Soly.mp3",
+    cover: "images/Cover of Gracias a Ti by Soly.jpg",
+    video: "videos/Soly.mp4",
   }, 
 ];
 
 const playlistOrder = {
   Worship: [253, 248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
-  MUSIKO: [239, 240, 170, 112, 114, 204, 139, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
+  LockIn: [264, 263, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
+  MUSIKO: [261, 239, 240, 170, 112, 114, 204, 139, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
 };
@@ -2189,6 +2214,73 @@ const playlistEndHex = {
   SerendipiaRemix: "#650000",
   majoYDan: "#2D3B3B",
 };
+
+//vibrant node, hopefully this works
+async function getSongColors(imageUrl) {
+  if (colorCache[imageUrl]) return colorCache[imageUrl];
+
+  try {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.src = imageUrl;
+
+    await new Promise((resolve, reject) => {
+      img.onload = resolve;
+      img.onerror = reject;
+    });
+
+    const vibrant = new Vibrant(img);
+    const palette = await vibrant.getPalette();
+
+    // Helper function to check if a color is too dark (close to black)
+    function isTooDark(hexColor) {
+      // Convert hex to RGB
+      const r = parseInt(hexColor.slice(1, 3), 16);
+      const g = parseInt(hexColor.slice(3, 5), 16);
+      const b = parseInt(hexColor.slice(5, 7), 16);
+      
+      // Calculate perceived brightness (standard formula)
+      const brightness = (r * 0.299 + g * 0.587 + b * 0.114);
+      
+      // If brightness is below 30 (out of 255), it's too dark
+      return brightness < 30;
+    }
+    
+    // Get the colors from palette
+    let darkColor = palette.DarkVibrant?.getHex() || "#121212";
+    const vibrantColor = palette.Vibrant?.getHex() || "#181a1e";
+    const lightColor = palette.LightVibrant?.getHex() || "#ffffff";
+    const lightMuted = palette.LightMuted?.getHex() || "#ffffff";
+    
+    // If DarkVibrant is too dark (close to black), fall back to Vibrant
+    if (isTooDark(darkColor)) {
+      darkColor = lightColor;
+    }
+
+    const colors = {
+      main: vibrantColor,
+      dark: darkColor,
+      light: lightColor
+    };
+
+    colorCache[imageUrl] = colors;
+    return colors;
+
+  } catch (err) {
+    console.error('Error extracting colors:', err);
+    return {
+      main: "#181a1e",
+      dark: "#121212",
+      light: "#ffffff"
+    };
+  }
+}
+
+function updatePlaylistGradient(main, dark) {
+  const darkColor = dark || "#121212";
+  playlistSheet.style.background = `${main}`;
+  openPlaylistBtn.style.backgroundColor = main;
+}
 
 // --- element refs ---
 const libraryPlaylistCover = document.getElementById('libraryPlaylistCover');
@@ -2936,88 +3028,9 @@ libraryBigShuffle.addEventListener('click', () => {
 
 
 
-function darkenHex(hex, {
-  lightness = 200,   // % to darken (higher = darker)
-  saturation = 0   // % to reduce saturation (positive = less colorful)
-} = {}) {
-  let col = hex.replace("#", "");
-
-  if (col.length === 3) {
-    col = col.split("").map(c => c + c).join("");
-  }
-
-  let r = parseInt(col.substring(0, 2), 16) / 255;
-  let g = parseInt(col.substring(2, 4), 16) / 255;
-  let b = parseInt(col.substring(4, 6), 16) / 255;
-
-  const max = Math.max(r, g, b);
-  const min = Math.min(r, g, b);
-  let h, s, l = (max + min) / 2;
-
-  if (max === min) {
-    h = s = 0;
-  } else {
-    const d = max - min;
-    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-    switch (max) {
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      case b: h = (r - g) / d + 4; break;
-    }
-    h /= 6;
-  }
-
-  // --- artistic controls ---
-  l = Math.max(0, l - lightness / 100);
-  s = Math.max(0, Math.min(1, s - saturation / 100));
-
-  function hue2rgb(p, q, t) {
-    if (t < 0) t += 1;
-    if (t > 1) t -= 1;
-    if (t < 1 / 6) return p + (q - p) * 6 * t;
-    if (t < 1 / 2) return q;
-    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-    return p;
-  }
-
-  let r2, g2, b2;
-
-  if (s === 0) {
-    r2 = g2 = b2 = l;
-  } else {
-    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-    const p = 2 * l - q;
-    r2 = hue2rgb(p, q, h + 1 / 6);
-    g2 = hue2rgb(p, q, h);
-    b2 = hue2rgb(p, q, h - 1 / 6);
-  }
-
-  return `#${[r2, g2, b2]
-    .map(v => Math.round(v * 255).toString(16).padStart(2, "0"))
-    .join("")}`;
-}
 
 
 
-//changing background color
-function updatePlaylistGradient(hexColor) {
-  const playlistSheet = document.getElementById("playlist-sheet");
-  const openPlaylistBtn = document.getElementById("open-playlist");
-
-  const darker = darkenHex(hexColor, {
-  lightness: 25,
-  saturation: 0
-});
-
-
-  // playlist background gradient
-  playlistSheet.style.background =
-    `linear-gradient(to bottom, ${hexColor}, ${darker})`;
-
-  // open-playlist button solid color
-  openPlaylistBtn.style.backgroundColor = hexColor;
-}
 
 
 // --- load & play ---
@@ -3040,11 +3053,12 @@ function loadSong(index) {
   miniCover.src = song.cover;
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
-
-  updatePlaylistGradient(song.hex || "#181a1e");
   updateActiveSong();
 
-  currentBarColor = song.barColor;
+  getSongColors(song.cover).then(colors => {
+  updatePlaylistGradient(colors.dark);
+  currentBarColor = colors.light;
+});
 
 if ('mediaSession' in navigator) {
   navigator.mediaSession.metadata = new MediaMetadata({
@@ -3130,19 +3144,19 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
 
   const song = playlist[index];
 
-  // === IMMEDIATE UI UPDATE (NO DELAYS) ===
+  // IMMEDIATE UI UPDATE (NO DELAYS)
   title.textContent = song.title;
   artist.textContent = song.artist;
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
 
   miniCover.src = song.cover;
-
-  updatePlaylistGradient(song.hex || "#181a1e");
   updateActiveSong();
 
-  // NEW: Update visualizer color immediately
-  currentBarColor = song.barColor;
+  getSongColors(song.cover).then(colors => {
+  updatePlaylistGradient(colors.dark);
+  currentBarColor = colors.light;
+});
 
   // === AUDIO SETUP ===
   audio.src = song.src;
@@ -3158,12 +3172,12 @@ if (song.video) {
   bgVideo.muted = true;   // allow autoplay
   bgVideo.loop = true;    // optional
   bgVideo.style.display = 'block';
-  videoOverlay.style.display = 'block'; // show overlay
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000045 1%, #00000045, #000000c4 78% /*compromise*/, #000000e6)'; 
 
   bgVideo.load();
   bgVideo.play().catch(() => {});
 
-  visualizer.style.opacity = visualizerVisible ? '0.13' : '0';
+  visualizer.style.opacity = visualizerVisible ? '0' : '0';
 
   requestAnimationFrame(() => bgVideo.classList.add('show'));
 
@@ -3180,11 +3194,11 @@ if (song.video) {
   // hide video
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
-  videoOverlay.style.display = 'none'; // hide overlay
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000019, #00000090 78%)';
 
   seekBar.style.opacity = 0.55; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
 
-  visualizer.style.opacity = visualizerVisible ? '0.18' : '0';
+  visualizer.style.opacity = visualizerVisible ? '0.15' : '0';
 
   // fade cover back in
   setTimeout(() => nowPlayingCover.style.opacity = '1', 600);
@@ -3814,5 +3828,3 @@ setPlayIcon(false); // Show play icon (paused state)
 playbackSource = "All Songs";
 currentPlaylist = "All Songs";
 updatePlaylistLabel();
-const videoOverlay = document.getElementById('video-overlay');
-videoOverlay.style.display = 'none';
