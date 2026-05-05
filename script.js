@@ -2215,7 +2215,7 @@ const playlistEndHex = {
   majoYDan: "#2D3B3B",
 };
 
-//vibrant node, hopefully this works
+//vibrant node (UPDATE) works fine, now i need to find which colors are best to use
 async function getSongColors(imageUrl) {
   if (colorCache[imageUrl]) return colorCache[imageUrl];
 
@@ -2250,15 +2250,16 @@ async function getSongColors(imageUrl) {
     let darkColor = palette.DarkVibrant?.getHex() || "#121212";
     const vibrantColor = palette.Vibrant?.getHex() || "#181a1e";
     const lightColor = palette.LightVibrant?.getHex() || "#ffffff";
+    const muted = palette.Muted?.getHex() || "#ffffff";
     const lightMuted = palette.LightMuted?.getHex() || "#ffffff";
     
     // If DarkVibrant is too dark (close to black), fall back to Vibrant
     if (isTooDark(darkColor)) {
-      darkColor = lightColor;
+      darkColor = muted;
     }
 
     const colors = {
-      main: vibrantColor,
+      main: darkColor,
       dark: darkColor,
       light: lightColor
     };
