@@ -2188,7 +2188,7 @@ const playlist = [
   {
     title: "Ofensivo y Escandaloso",//265
     artist: "Redimi2",
-    src: "songs/SpotiDownloader.com -  - Redimi2.mp3",
+    src: "songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3",
     cover: "images/image (6).png",
   },
 ];
