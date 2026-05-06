@@ -2201,7 +2201,7 @@ const playlist = [
     title: "Madre Solo Una",//267
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Madre Solo Una - Agustin Amador.mp3",
-    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",",
+    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
   },
 ];
 
