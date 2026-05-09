@@ -501,8 +501,8 @@ opacity: 0.33;
 
 /* Make the Play/Pause button bigger */
 #play svg {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
 }
 
 #play {

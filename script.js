@@ -3688,18 +3688,14 @@ function setToggleButtonState(button, enabled) {
 shuffleBtn.addEventListener('click', () => {
   shuffle = !shuffle;
   if (shuffle) {
-    repeat = false;
     createShuffleQueue(currentSong);
   }
   setToggleButtonState(shuffleBtn, shuffle);
-  setToggleButtonState(repeatBtn, repeat);
 });
 
 repeatBtn.addEventListener('click', () => {
   repeat = !repeat;
-  if (repeat) shuffle = false;
   setToggleButtonState(repeatBtn, repeat);
-  setToggleButtonState(shuffleBtn, shuffle);
 });
 
 // --- play/pause icon ---
