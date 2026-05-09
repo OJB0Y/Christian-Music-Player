@@ -3214,7 +3214,7 @@ if (song.video) {
   bgVideo.muted = true;   // allow autoplay
   bgVideo.loop = true;    // optional
   bgVideo.style.display = 'block';
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000045 1%, #00000045, #000000c4 78% /*compromise*/, #000000e6)'; 
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000045, #000000c4 78%, #000000e6)'; 
 
   bgVideo.load();
   bgVideo.play().catch(() => {});
@@ -3236,7 +3236,7 @@ if (song.video) {
   // hide video
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000019, #00000090 78%)';
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000012, #00000074 80%)';
 
   seekBar.style.opacity = 0.55; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
 
