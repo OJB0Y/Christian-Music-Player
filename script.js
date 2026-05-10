@@ -1752,8 +1752,6 @@ const playlist = [
     artist: "Redimi2, Miel San Marcos",
     src: "songs/SpotiDownloader.com - Abre los Cielos - Redimi2.mp3",
     cover: "images/image (6).png",
-    hex: "#70776A",
-    barColor: "#d1e65bff"
   }, 
   {
     title: "Suficiente (Remix)",
@@ -2192,12 +2190,55 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3",
     cover: "images/image (6).png",
   }, 
+   
+  {
+    title: "Ofensivo y Escandaloso",//265
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3",
+    cover: "images/image (6).png",
+  }, 
+  {
+    title: "Precioso Regalo",//266
+    artist: "Zulmy Mejia",
+    src: "songs/SpotiDownloader.com - Precioso Regalo - Zulmy Mejia.mp3",
+    cover: "images/zulmy.jpg",
+  }, 
+  {
+    title: "Madre Solo Una",//267
+    artist: "Agustin Amador",
+    src: "songs/SpotiDownloader.com - Madre Solo Una - Agustin Amador.mp3",
+    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+  }, 
+  {
+    title: "Precioso Regalo ft Voceros",//268
+    artist: "Zulmy Mejia, Los Voceros de Cristo",
+    src: "songs/Precioso Regalo_spotdown.org.mp3",
+    cover: "images/Cover of Precioso Regalo by Zulmy Mejia, Los Voceros de Cristo.jpg",
+  }, 
+  {
+    title: "Un Ser Llamado Madre",//269
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Un Ser Llamado Madre - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of Un Ser Llamado Madre by Los Voceros de Cristo.jpg",
+  }, 
+  {
+    title: "Madrecita",//270
+    artist: "Óscar Medina",
+    src: "songs/Madrecita_spotdown.org.mp3",
+    cover: "images/Cover of Madrecita by Óscar Medina.jpg",
+  }, 
+  {
+    title: "Para Ti Mamá",//271
+    artist: "Anita Morán",
+    src: "songs/SpotiDownloader.com - Para Ti Mamá - Anita Morán.mp3",
+    cover: "images/Cover of Para Ti Mamá by Anita Morán.jpg",
+  },
 ];
 
 const playlistOrder = {
-  Worship: [253, 248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Worship: [266, 253, 267, 268, 269, 270, 271, 248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 216, 179, 217, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [264, 263, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161],
+  LockIn: [263, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264],
   MUSIKO: [261, 239, 240, 170, 112, 114, 204, 139, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 139, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
@@ -2221,7 +2262,7 @@ const playlistEndHex = {
   majoYDan: "#2D3B3B",
 };
 
-//vibrant node, hopefully this works
+//vibrant node (UPDATE) works fine, now i need to find which colors are best to use
 async function getSongColors(imageUrl) {
   if (colorCache[imageUrl]) return colorCache[imageUrl];
 
@@ -2257,21 +2298,17 @@ async function getSongColors(imageUrl) {
     const vibrantColor = palette.Vibrant?.getHex() || "#181a1e";
     const lightColor = palette.LightVibrant?.getHex() || "#ffffff";
     const muted = palette.Muted?.getHex() || "#ffffff";
-    const darkMuted = palette.DarkMuted?.getHex() || "#ffffff";
     const lightMuted = palette.LightMuted?.getHex() || "#ffffff";
     
-    //this was when i was using dark vibrant, now i still dont know which one to use
-    //OHHH, what if I also add a tooBright function so that the background is always 'juust right'
-    //i should add it before  tooDark so that if too bright goes to dark vibrant and if dark vibrant is too dark  we go to vibrant
-    //i'll do it once i finish all my ap exams and SUMMER STARTS!!!
-    if (isTooDark(darkMuted)) {
-      darkMuted = muted;
+    // If DarkVibrant is too dark (close to black), fall back to Vibrant
+    if (isTooDark(darkColor)) {
+      darkColor = muted;
     }
 
     const colors = {
-      main: muted,
-      dark: muted,
-      light: lightMuted
+      main: darkColor,
+      dark: darkColor,
+      light: lightColor
     };
 
     colorCache[imageUrl] = colors;
@@ -3183,7 +3220,7 @@ if (song.video) {
   bgVideo.muted = true;   // allow autoplay
   bgVideo.loop = true;    // optional
   bgVideo.style.display = 'block';
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000045 1%, #00000045, #000000c4 78% /*compromise*/, #000000e6)'; 
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000045, #000000c4 78%, #000000e6)'; 
 
   bgVideo.load();
   bgVideo.play().catch(() => {});
@@ -3205,7 +3242,7 @@ if (song.video) {
   // hide video
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000019, #0000006c 78%)';
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000012, #00000074 80%)';
 
   seekBar.style.opacity = 0.55; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
 
@@ -3657,18 +3694,14 @@ function setToggleButtonState(button, enabled) {
 shuffleBtn.addEventListener('click', () => {
   shuffle = !shuffle;
   if (shuffle) {
-    repeat = false;
     createShuffleQueue(currentSong);
   }
   setToggleButtonState(shuffleBtn, shuffle);
-  setToggleButtonState(repeatBtn, repeat);
 });
 
 repeatBtn.addEventListener('click', () => {
   repeat = !repeat;
-  if (repeat) shuffle = false;
   setToggleButtonState(repeatBtn, repeat);
-  setToggleButtonState(shuffleBtn, shuffle);
 });
 
 // --- play/pause icon ---
