@@ -83,7 +83,7 @@ opacity: 0.33;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,#00000012, #00000074 80%); 
+  background: linear-gradient(to bottom,#00000000, #0000005e 80%); 
   pointer-events: none; 
   z-index: 0;
 }
@@ -501,8 +501,8 @@ opacity: 0.33;
 
 /* Make the Play/Pause button bigger */
 #play svg {
-  width: 78px;
-  height: 78px;
+  width: 79px;
+  height: 79px;
 }
 
 #play {
@@ -511,22 +511,6 @@ opacity: 0.33;
 #play {
   /*background: #3b6842;*/
   transition: transform 0.15s ease, background 0.2s;
-}
-
-#play:hover {
-  /*background: #4caf50;*/
-  transform: scale(1.1);
-}
-
-#play:active {
-  transform: scale(1.05);
-}
-
-
-/* Hover + press effects for non-active buttons */
-.icon-btn:hover:not(.mode-active),
-.controls button:hover:not(.mode-active) {
-  transform: translateY(-2px);
 }
 
 .icon-btn:active:not(.mode-active),
@@ -538,7 +522,7 @@ opacity: 0.33;
 .icon-btn.mode-active,
 .controls button.mode-active {
   background: #49f56600;           
-  color: #49f566;               /*color of the button changes but not the bakcground*/
+  color: #49f566;               
   font-weight: bold;
 }
 
