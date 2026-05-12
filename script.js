@@ -2189,14 +2189,7 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3",
     cover: "images/image (6).png",
-  }, 
-   
-  {
-    title: "Ofensivo y Escandaloso",//265
-    artist: "Redimi2",
-    src: "songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3",
-    cover: "images/image (6).png",
-  }, 
+  },
   {
     title: "Precioso Regalo",//266
     artist: "Zulmy Mejia",
