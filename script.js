@@ -2256,6 +2256,12 @@ const playlist = [
     artist: "Mariachi Cristiano Adonai",
     src: "songs/LAS MAÑANITAS - MARIACHI CRISTIANO ADONAI (VIDEO OFICIAL)_64p (mp3cut.net).mp3",
     cover: "images/Cover of Las Mañanitas by Mariachi Cristiano Adonai.jpg",
+  }, 
+  {
+    title: "Las Mañanitas Cristianas (Ranchero)",//277
+    artist: "Emmanuel Vaz",
+    src: "songs/Las Mañanitas Cristianas (Ranchera)_64p.mp3",
+    cover: "images/Screenshot 2026-05-16 1.52.24 PM.png",
   },
 ];
 
@@ -2266,7 +2272,7 @@ const playlistOrder = {
   MUSIKO: [261, 274, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
-  cumpleaños: [275, 276],
+  cumpleaños: [275, 276, 277],
 };
 
 const playlistHex = {
