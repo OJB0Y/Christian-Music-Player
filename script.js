@@ -2244,6 +2244,18 @@ const playlist = [
     artist: "Redimi2, Tercer Cielo",
     src: "songs/SpotiDownloader.com - Yo Seré Tu Sol - Redimi2.mp3",
     cover: "images/Cover of Yo Seré Tu Sol by Redimi2, Tercer Cielo.jpg",
+  }, 
+  {
+    title: "FELIZ CUMPLEAÑOS",//275
+    artist: "Anita Morán",
+    src: "songs/ANITA MORÁN. FELIZ CUMPLEAÑOS_64p.mp3",
+    cover: "images/Screenshot 2026-05-16 12.04.27 PM.png",
+  }, 
+  {
+    title: "LAS MAÑANITAS",//276
+    artist: "Mariachi Cristiano Adonai",
+    src: "songs/LAS MAÑANITAS - MARIACHI CRISTIANO ADONAI (VIDEO OFICIAL)_64p (mp3cut.net).mp3",
+    cover: "images/Cover of Las Mañanitas by Mariachi Cristiano Adonai.jpg",
   },
 ];
 
@@ -2254,6 +2266,7 @@ const playlistOrder = {
   MUSIKO: [261, 274, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
+  cumpleaños: [275, 276],
 };
 
 const playlistHex = {
@@ -2263,6 +2276,7 @@ const playlistHex = {
   MUSIKO: "#A81088",
   SerendipiaRemix : "#D83808",
   majoYDan: "#6E5F63",
+  cumpleaños: "#174f47",
 };
 
 const playlistEndHex = {
@@ -2272,6 +2286,7 @@ const playlistEndHex = {
   MUSIKO: "#5E004A",
   SerendipiaRemix: "#650000",
   majoYDan: "#2D3B3B",
+  cumpleaños: "#013B34",
 };
 
 //vibrant node (UPDATE) works fine, now i need to find which colors are best to use
