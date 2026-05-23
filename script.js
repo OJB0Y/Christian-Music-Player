@@ -1107,8 +1107,7 @@ const playlist = [
     artist: "Un Corazón/Lead/Kim Richards",
     src: "songs/la calle.mp3",
     cover: "images/image (3).png",
-    hex: "#DB3A1D",
-    barColor: "#a236d8ff"
+    video: "videos/UnCorazon3.mp4"
 },
 {
     title: "está bien no estar bien :):",//135
@@ -1693,8 +1692,7 @@ const playlist = [
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - Dios Nunca Falla - Madiel Lara.mp3",
     cover: "images/Cover of Dios Nunca Falla by Madiel Lara.jpg",
-    hex: "#2F3F3F",
-    barColor: "#388989",
+    video: "videos/MadielLara6.mp4"
   }, 
   {
     title: "DIOS HA SIDO BUENO",
@@ -2276,14 +2274,41 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Radikal 60 - Redimi2.mp3",
     cover: "images/puede.jpg",
     video: "videos/Redimi10.mp4"
+  }, 
+  {
+    title: "Acostumbrándome",//280
+    artist: "Vaes",
+    src: "songs/SpotiDownloader.com - Acostumbrándome - Vaes.mp3",
+    cover: "images/Cover of Acostumbrándome by Vaes.jpg",
+    video: "videos/Vaes5.mp4"
+  }, 
+  {
+    title: "Sol en día nublado",//281
+    artist: "Majo y Dan, Vaes",
+    src: "songs/SpotiDownloader.com - Sol en día nublado - Majo y Dan.mp3",
+    cover: "images/Cover of Sol en día nublado by Majo y Dan, Vaes.jpg",
+    video: "videos/majoYDan4.mp4"
+  }, 
+  {
+    title: "La Cumbia del Perdón",//282
+    artist: "",
+    src: "songs/SpotiDownloader.com - La Cumbia del Perdón - Vaes.mp3",
+    cover: "images/Cover of La Cumbia del Perdón by Vaes, Musiko.jpg",
+    video: "videos/Vaes6.mp4"
+  }, 
+  {
+    title: "Dios Te Esta Mirando",//283
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - Dios Te Esta Mirando - Redimi2.mp3",
+    cover: "images/Cover of Dios Te Esta Mirando by Redimi2.jpg",
   },
 ];
 
 const playlistOrder = {
   Worship: [/*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [263, 272, 273, 274, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
-  MUSIKO: [261, 274, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
+  LockIn: [263, 272, 273, 274, 283, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
+  MUSIKO: [261, 274, 280, 281, 282, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
