@@ -462,8 +462,8 @@ opacity: 0.33;
 .controls {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 10px 0 10px;
+  gap: 1rem;
+  margin: 5px 0 5px;
 }
 
 .controls button,
@@ -473,7 +473,7 @@ opacity: 0.33;
   color: white;            
   cursor: pointer;
   transition: transform 0.08s; 
-  padding: 1.5vh;
+  padding: 1.4vh; /* <---CHANGE THIS TO ADD MORE SPACE BETWEEN BUTTONS*/
   border-radius: 100px;
 }
 
