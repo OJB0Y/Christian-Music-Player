@@ -121,7 +121,6 @@ opacity: 0.33;
 
 
 /* === PLAYLIST SHEET === */
-/* CLOSED */
 #playlist-sheet {
   position: fixed;
   inset: 0;
@@ -137,7 +136,6 @@ opacity: 0.33;
 }
 
 
-/* OPEN */
 #playlist-sheet.open {
   transform: translateY(0px); /*ok for some reason on safari this changes the top white bar permenetanly into whatever colr the background is and doesn't change ever >:((*/
   pointer-events: auto;

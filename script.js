@@ -2503,8 +2503,6 @@ const libraryButtons = document.querySelectorAll(".library-btn");
 document.querySelectorAll('.library-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const key = btn.dataset.library;
-
-    // Use playlistHex instead of playlist song hex
     const hex = playlistHex[key];
     const endHex = playlistEndHex[key];
 
@@ -2690,11 +2688,11 @@ function updateCoverSize() {
   const libraryPlaylist = document.querySelector('#libraryPlaylist');
   
   if (IS_DESKTOP) {
-    nowPlayingImg.style.maxWidth = '350px';
+    nowPlayingImg.style.maxWidth = '340px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
     libraryPlaylist.style.maxHeight = 'calc(100% - 60%)';
-    coverWrapper.style.marginBottom = '5vh';
+    coverWrapper.style.marginBottom = '3.5vh';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
