@@ -127,7 +127,7 @@ const playlist = [
     barColor: "#130069ff"
   },
   {
-    title: "Yo Te Esperare",
+    title: "Yo Te Esperare",//15
     artist: "Los Hermanos Reyes",
     src: "songs/Reyes.mp3",
     cover: "images/Hay una ciudad.png",
@@ -821,7 +821,7 @@ const playlist = [
 },
 {
     title: "El Nombre De Jesús",//100
-    artist: "Redimi2/Christine D'Clario",
+    artist: "Redimi2, Christine D'Clario",
     src: "songs/Nombre.mp3",
     cover: "images/image (5).png",
     hex: "#44563a",
@@ -830,7 +830,7 @@ const playlist = [
 },
 {
     title: "Espíritu Santo",
-    artist: "Redimi2/Barak",
+    artist: "Redimi2, Barak",
     src: "songs/Espíritu.mp3",
     cover: "images/image (5).png",
     hex: "#8E8E8E",
@@ -838,7 +838,7 @@ const playlist = [
 },
 {
     title: "Viviré",
-    artist: "Redimi2/Evan Craft",
+    artist: "Redimi2, Evan Craft",
     src: "songs/Viviré.mp3",
     cover: "images/image (6).png",
     hex: "#70776A",
@@ -920,8 +920,6 @@ const playlist = [
     artist: "Alex Zurdo/Natan El Profeta",
     src: "songs/SpotiDownloader.com - CMR4_ El Museo - Alex Zurdo.mp3",
     cover: "images/Cover of CMR4_ El Museo by Alex Zurdo, Natan El Profeta.jpg",
-    hex: "#1F4030",
-    barColor: "#dac341d8",
     video: "videos/AlexZurdo3.mp4",
 },
 {
@@ -929,12 +927,10 @@ const playlist = [
     artist: "Redimi2/Madiel Lara",
     src: "songs/SpotiDownloader.com - Gracias Gracias Gracias - Redimi2.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
-    hex: "#1b5d9f",
-    barColor: "#f7cd24ff",
 },
 {
     title: "El Culpable ft Dariana",
-    artist: "Alex Zurdo/Funky/Dariana",
+    artist: "Alex Zurdo, Funky, Dariana",
     src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
     cover: "images/Cover of El Culpable by Funky, Alex Zurdo, Dariana.jpg",
     hex: "#D03030",
@@ -983,7 +979,7 @@ const playlist = [
 },
 {
     title: "Mi Padre",
-    artist: "Redimi2/Samantha Kate/Distrito Royal",
+    artist: "Redimi2, Samantha Kate, Distrito Royal",
     src: "songs/padre.mp3",
     cover: "images/puede.jpg",
     hex: "#70918b",
@@ -1007,7 +1003,7 @@ const playlist = [
 },
 {
     title: "Gracias",
-    artist: "Redimi2/Marcos Brunet",
+    artist: "Redimi2, Marcos Brunet",
     src: "songs/GraciasR.mp3",
     cover: "images/image (6).png",
     hex: "#6c7565",
@@ -1015,7 +1011,7 @@ const playlist = [
 },
 {
     title: "Be Alright",
-    artist: "Evan Craft/Danny Gokey/Redimi2",
+    artist: "Evan Craft, Danny Gokey, Redimi2",
     src: "songs/Be Alright.mp3",
     cover: "images/alrighty.jpg",
     hex: "#443124",
@@ -1024,7 +1020,7 @@ const playlist = [
 },
 {
     title: "Eres Mi Bendicion",
-    artist: "Funky/Alex Zurdo",
+    artist: "Funky, Alex Zurdo",
     src: "songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3",
     cover: "images/Cover of Eres Mi Bendicion (feat. Alex Zurdo) by Funky, Alex Zurdo.jpg",
     hex: "#484060",
@@ -1083,28 +1079,22 @@ const playlist = [
     artist: "Musiko/Josh Gamez",
     src: "songs/SpotiDownloader.com - Soñe - Musiko.mp3",
     cover: "images/Si Puedes Creer.png",
-    hex: "#C31307",
-    barColor: "#e7c20cff"
 },
 {
     title: "Solo tú",
-    artist: "Un Corazón/Lead/Kim Richards/Louie Abrego",
+    artist: "Un Corazón, Lead, Kim Richards, Louie Abrego",
     src: "songs/Solo tú.mp3",
     cover: "images/image (3).png",
-    hex: "#DB3A1D",
-    barColor: "#a236d8ff"
 },
 {
     title: "Fiesta",
     artist: "Un Corazón/Louie Abrego/Kim Richards/Alex Zurdo",
     src: "songs/Fiesta.mp3",
     cover: "images/song14.png",
-    hex: "#368eb6ff",
-    barColor: "#d488fdff"
 },
 {
     title: "Que lo sepa la calle",
-    artist: "Un Corazón/Lead/Kim Richards",
+    artist: "Un Corazón, Lead, Kim Richards",
     src: "songs/la calle.mp3",
     cover: "images/image (3).png",
     video: "videos/UnCorazon3.mp4"
@@ -1114,41 +1104,31 @@ const playlist = [
     artist: "PRISMA Más Vida/Un Corazón",
     src: "songs/bien.mp3",
     cover: "images/image (4).png",
-    hex: "#9e8b6cff",
-    barColor: "#a2f6d7ff"
 },
 {
     title: "REAL",
     artist: "PRISMA Más Vida/Samu Robles",
     src: "songs/REAL.mp3",
     cover: "images/image (4).png",
-    hex: "#9e8b6cff",
-    barColor: "#a2f6d7ff"
 },
 {
     title: "Gracias (Remix)",
     artist: "Majo y Dan/Musiko",
     src: "songs/G_Remix.mp3",
     cover: "images/G_Remix.jpg",
-    hex: "#727264",
-    barColor: "#a5c255ff"
 },
 {
     title: "Que Pase El Mundo",
     artist: "Majo y Dan",
     src: "songs/song6 (1).mp3",
     cover: "images/song6 (1).png",
-    hex: "#aa6c57ff",
-    barColor: "#c55e47ff",
     video: "videos/majoYDan1.mp4"
 },
 {
     title: "Gracias",
-    artist: "Majo y Dan/Musiko",
+    artist: "Majo y Dan, Musiko",
     src: "songs/song7 (1).mp3",
     cover: "images/song7 (1).png",
-    hex: "#308090",
-    barColor: "#58c22dff",
     video: "videos/gracias.mp4",
 },
 {
@@ -1942,24 +1922,18 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Gravy - Redimi2.mp3",
     cover: "images/Cover of Gravy by Redimi2.jpg",
-    hex: "#00A5BD",
-    barColor: "#6cd0dd",
   },  
   {
     title: "Filipenses 1:6 - Extended Version", //235
     artist: "Redimi2, Almighty",
     src: "songs/SpotiDownloader.com - Filipenses 1_6 - Extended Version - Redimi2.mp3",
     cover: "images/Cover of Filipenses 1_6 - Extended Version by Redimi2, Almighty.jpg",
-    hex: "#204049",
-    barColor: "#517d89",
   },  
   {
     title: "Pa'lo",
     artist: "Alex Zurdo, Funky",
     src: "songs/SpotiDownloader.com - Pa'lo - Alex Zurdo.mp3",
     cover: "images/Cover of Pa'lo by Alex Zurdo, Funky.jpg",
-    hex: "#D60808",
-    barColor: "#9ccace",
     video: "videos/AlexZurdo4.mp4",
   }, 
   {
@@ -1967,8 +1941,6 @@ const playlist = [
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Toda Pasa - Agustin Amador.mp3",
     cover: "images/Cover of Incontable Maravilla by Agustin Amador.jpg",
-    hex: "#1F678F",
-    barColor: "#69b9e4",
   }, 
   {
     title: "Pródigo",
@@ -1980,7 +1952,7 @@ const playlist = [
     video: "videos/UnCorazon2.mp4",
   }, 
   {
-    title: "Hay Un Dios",
+    title: "HAY UN DIOS - REMIX",
     artist: "Seeiji, Vaes",
     src: "songs/SpotiDownloader.com - HAY UN DIOS - REMIX - Seeiji.mp3",
     cover: "images/Cover of HAY UN DIOS - REMIX by Seeiji, Vaes.jpg",
@@ -2105,16 +2077,12 @@ const playlist = [
     artist: "Samuel Adrián",
     src: "songs/SpotiDownloader.com - Virtuosa - Samuel Adrián.mp3",
     cover: "images/Cover of Virtuosa by Samuel Adrián.jpg",
-    hex: "#626262",
-    barColor: "#a3a3a3",
   }, 
   {
     title: "Cicada", //254
     artist: "Good Kid",
     src: "songs/Cicada_spotdown.org.mp3",
     cover: "images/Cover of Cicada by Good Kid.jpg",
-    hex: "#3B7D94",
-    barColor: "#6fb6ce",
     video: "videos/cicada.mp4",
   }, 
   {
@@ -2150,7 +2118,7 @@ const playlist = [
     cover: "images/Cover of Espera by Natan El Profeta, Azaeloh.jpg",
   },   
   {
-    title: "Gozo feat. Redimi2 & Gaona", 
+    title: "Gozo feat. Redimi2 & Gaona", //260
     artist: "Christian Ponce, Redimi2, Gaona",
     src: "songs/SpotiDownloader.com - Gozo feat. Redimi2 & Gaona - Christian Ponce.mp3",
     cover: "images/Cover of Gozo feat. Redimi2 & Gaona by Christian Ponce, Redimi2, Gaona.jpg",
@@ -2291,7 +2259,7 @@ const playlist = [
   }, 
   {
     title: "La Cumbia del Perdón",//282
-    artist: "",
+    artist: "Vaes, Musiko",
     src: "songs/SpotiDownloader.com - La Cumbia del Perdón - Vaes.mp3",
     cover: "images/Cover of La Cumbia del Perdón by Vaes, Musiko.jpg",
     video: "videos/Vaes6.mp4"
@@ -2305,9 +2273,10 @@ const playlist = [
 ];
 
 const playlistOrder = {
+  LikedSongs: [259, 281, 282, 283, 279, 278, /*cristales y dictadorres, */224, /*777, */152, 273, /*parabellum,*/ 196, 109, 272, /*fonda del mar, a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
   Worship: [/*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [263, 272, 273, 274, 283, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
+  LockIn: [263, 272, 273, 274, 102, 283, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
   MUSIKO: [261, 274, 280, 281, 282, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
@@ -2316,6 +2285,7 @@ const playlistOrder = {
 };
 
 const playlistHex = {
+  LikedSongs: "#523CA0",
   Worship: "#8494DB",
   Voceros: "#A81000",
   LockIn: "#7C9BAB",
@@ -2326,6 +2296,7 @@ const playlistHex = {
 };
 
 const playlistEndHex = {
+  LikedSongs: "#2A1E52",
   Worship: "#282F6D",
   Voceros: "#670100",
   LockIn: "#1D3946",
