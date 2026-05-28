@@ -3569,8 +3569,8 @@ audio.addEventListener('timeupdate', () => {
   bottomBar.style.background = `linear-gradient(to right,
     white 0%,
     white ${progress}%,
-    #525252da ${progress}%,
-    #525252da 100%
+    #87878794 ${progress}%,
+    #87878794 100%
   )`;
 
   seekBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
