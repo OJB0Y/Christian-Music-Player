@@ -2379,6 +2379,7 @@ const libraryPlaylistCover = document.getElementById('libraryPlaylistCover');
 
 const audio = document.getElementById('audio');
 const seekBar = document.getElementById('seek-bar');
+const bottomBar = document.getElementById('bottom-seek-bar');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const cover = document.getElementById('cover');
@@ -2408,6 +2409,8 @@ const miniTitle = document.getElementById('mini-title');
 const miniArtist = document.getElementById('mini-artist');
 const miniPlay = document.getElementById('mini-play');
 const miniPause = document.getElementById('mini-pause');
+
+const playlistSheet = document.getElementById("playlist-sheet");
 
 const visualizer = document.querySelector('.visualizer');
 const bar = document.querySelector('.bar');
@@ -2622,6 +2625,7 @@ optionsBtn.addEventListener('click', (e) => {
 
       li.addEventListener('click', () => {
         openPlaylistBtn.style.opacity = 1;
+        bottomBar.style.opacity = 1;
         usingLibraryQueue = true;
         
         playbackSource = libKey;
@@ -2688,7 +2692,7 @@ function updateCoverSize() {
   const libraryPlaylist = document.querySelector('#libraryPlaylist');
   
   if (IS_DESKTOP) {
-    nowPlayingImg.style.maxWidth = '340px';
+    nowPlayingImg.style.maxWidth = '330px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
     libraryPlaylist.style.maxHeight = 'calc(100% - 60%)';
@@ -2924,6 +2928,7 @@ function stopVisualizer() {
 audio.addEventListener('play', () => {
   miniPlayer.classList.add('visible');
   openPlaylistBtn.style.opacity = 1;
+  bottomBar.style.opacity = 1;
 });
 
 miniPlay.addEventListener('click', e => {
@@ -2941,6 +2946,7 @@ audio.addEventListener('play', () => {
   miniPlay.style.display = 'none';
   miniPause.style.display = 'block';
   openPlaylistBtn.style.opacity = 1;
+  bottomBar.style.opacity = 1;
 });
 
 audio.addEventListener('pause', () => {
@@ -3286,7 +3292,7 @@ if (song.video) {
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.background = 'linear-gradient(to bottom, #00000000, #0000005e 80%)';
 
-  seekBar.style.opacity = 0.55; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
+  seekBar.style.opacity = 0.6; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
 
   visualizer.style.opacity = visualizerVisible ? '0.15' : '0';
 
@@ -3399,6 +3405,7 @@ function buildPlaylistUI(filterText = "") {
 
       li.addEventListener('click', () => {
         openPlaylistBtn.style.opacity = 1;
+        bottomBar.style.opacity = 1;
   usingLibraryQueue = false;
 
   playbackSource = "All Songs";
@@ -3549,6 +3556,7 @@ audio.addEventListener('timeupdate', () => {
   const progress = (audio.currentTime / audio.duration) * 100 || 0;
 
   seekBar.value = progress;
+  bottomBar.value = progress;
 
   seekBar.style.background = `linear-gradient(
     to right,
@@ -3558,13 +3566,27 @@ audio.addEventListener('timeupdate', () => {
     #818181b9 100%
   )`;
 
+  bottomBar.style.background = `linear-gradient(to right,
+    white 0%,
+    white ${progress}%,
+    #525252da ${progress}%,
+    #525252da 100%
+  )`;
+
   seekBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+  bottomBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+  
   currentTimeEl.textContent = formatTime(audio.currentTime);
   durationEl.textContent = `/ ${formatTime(audio.duration || 0)}`;
 });
 
 seekBar.addEventListener("input", () => {
   const seekTo = (seekBar.value / 100) * audio.duration;
+  audio.currentTime = seekTo;
+});
+
+bottomBar.addEventListener("input", () => {
+  const seekTo = (bottomBar.value / 100) * audio.duration;
   audio.currentTime = seekTo;
 });
 
@@ -3582,6 +3604,12 @@ seekBar.addEventListener("input", () => {
     audio.currentTime = (seekBar.value / 100) * audio.duration;
   }
 });
+
+bottomBar.addEventListener("input", () => {
+  if (audio.duration) {
+    audio.currentTime = (seekBar.value / 100) * audio.duration; //SHOULD I MATCH TO SEEKBAR VALUE OR BOTTOMBAR VALUE
+  }
+})
 
 
 audio.addEventListener("pause", () => {
@@ -3762,10 +3790,6 @@ function setPlayIcon(isNowPlaying) {
   }
 }
 
-
-// button code becuase im too lazy to organize anymore
-const playlistSheet = document.getElementById("playlist-sheet");
-
 openPlaylistBtn.addEventListener("click", () => {
   // force browser to register closed state before opening
   if (!playlistSheet.classList.contains("open")) {
@@ -3778,7 +3802,6 @@ openPlaylistBtn.addEventListener("click", () => {
 /* close playlist when menu button is pressed */
 togglePlaylistBtn.addEventListener("click", () => {
   playlistSheet.classList.remove("open");
-  openPlaylistBtn.style.opacity = 1;
 });
 
 // CHANGE SONG COVER ANIMATION THINGYMABOB
