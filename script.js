@@ -2339,10 +2339,10 @@ async function getSongColors(imageUrl) {
     
     // Get the colors from palette
     let darkColor = palette.DarkVibrant?.getHex() || "#121212";
-    const vibrantColor = palette.Vibrant?.getHex() || "#181a1e";
-    const lightColor = palette.LightVibrant?.getHex() || "#ffffff";
-    const muted = palette.Muted?.getHex() || "#ffffff";
-    const lightMuted = palette.LightMuted?.getHex() || "#ffffff";
+    const vibrantColor = palette.Vibrant?.getHex() || "#121212";
+    const lightColor = palette.LightVibrant?.getHex() || "#121212";
+    const muted = palette.Muted?.getHex() || "#121212";
+    const lightMuted = palette.LightMuted?.getHex() || "#121212";
     
     // If DarkVibrant is too dark (close to black), fall back to Vibrant
     if (isTooDark(darkColor)) {
