@@ -6,16 +6,12 @@ const playlist = [
     artist: "Manuel Bonilla",
     src: "songs/Cordero.mp3",
     cover: "images/song5.jpg",
-    hex: "#026107ff",
-    barColor: "#009708ff"
   },
   {
     title: "Escucharte Hablar / Dios Ha Sido Bueno",
     artist: "Marcos Witt/Indiomar/Dariana",
     src: "songs/SpotiDownloader.com - Escucharte Hablar _ Dios Ha Sido Bueno - Marcos Witt.mp3",
     cover: "images/Cover of Escucharte Hablar _ Dios Ha Sido Bueno by Marcos Witt, Indiomar, Dariana (1).jpg",
-    hex: "#535353",
-    barColor: "#b8b8b8d8",
     libs: ["favorites", "spanish"]
   },
   {
@@ -23,16 +19,12 @@ const playlist = [
     artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
     cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png",
-    hex: "#939B84",
-    barColor: "#332320ff"
   },
   {
     title: "Que lindo es mi Cristo",
     artist: "Wilson Camey, Los Hermanos Reyes",
     src: "songs/Que lindo es mi Cristo.mp3",
     cover: "images/Que lindo es mi Cristo.png",
-    hex: "#501008",
-    barColor: "#933506ff",
     libs: ["favorites", "spanish"]
   },
   {
@@ -40,16 +32,12 @@ const playlist = [
     artist: "Hermanos Osorio, Francisco Orantes",
     src: "songs/Confía en el Señor - Hermanos Osorio.mp3",
     cover: "images/orantes.png",
-    hex: "#1d3145ff",
-    barColor: "#722606ff"
   },
   {
     title: "Cuando Muera Yo Ft. Los Hermanos Reyes",//5
-    artist: "Los Voceros de Cristo/Los Hermanos Reyes",
+    artist: "Los Voceros de Cristo, Los Hermanos Reyes",
     src: "songs/Cuando Muera Yo.mp3",
     cover: "images/Cuando Muera Yo.png",
-    hex: "#1c1d3a",
-    barColor: "#726065d5",
     video: "videos/Voceros2.mp4",
     libs: ["favorites", "spanish"]
   },
@@ -58,8 +46,6 @@ const playlist = [
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - A Tu Lado en el Cielo - Los Voceros de Cristo.mp3",
     cover: "images/Alvaro.jpg",
-    hex: "#4f300cff",
-    barColor: "#825959d5",
     video: "videos/Voceros1.mp4"
   },
   {
@@ -67,48 +53,36 @@ const playlist = [
     artist: "Duo Hermanos Devia",
     src: "songs/SpotiDownloader.com - Es El Amor - Duo Hermanos Devia.mp3",
     cover: "images/Cover of Es El Amor by Duo Hermanos Devia.jpg",
-    hex: "#a8893c",
-    barColor: "#d67a24"
   },
   {
     title: "Apocalipsis 15:3",//8
     artist: "Los Voceros de Cristo/Armando Trujillo",
     src : "songs/SpotiDownloader.com - Apocalipsis 15_3 - Los Voceros de Cristo.mp3",
     cover: "images/su amor.jpg",
-    hex: "#313831",
-    barColor: "#527052ff"
   },
   {
     title: "Exitos de Recuerdos Ft. Los Hermanos Reyes",
     artist: "Los Milagros de Cristo/Los Hermanos Reyes",
     src: "songs/Exitos.mp3",
     cover: "images/Cover of Exitos.jpg",
-    hex: "#102088",
-    barColor: "#041ec4ff"
   },
   {
     title: "Oh Alma Mía (2024)",//10
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Oh Alma Mía - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
     cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
-    hex: "#609FB6",
-    barColor: "#4bb2d7ff"
   },
   {
     title: "Oh Alma Mía Ft Julio Melgar (2016)",
     artist: "Los Voceros de Cristo, Julio Melgar",
     src: "songs/Oh Alma Mia 2018.mp3",
     cover: "images/new4.png",
-    hex: "#313831",
-    barColor: "#527052ff"
   },
   {
     title: "Oh Alma Mía (2002)",
     artist: "Los Voceros de Cristo",
     src: "songs/a5.mp3",
     cover: "images/a5.png",
-    hex: "#3A3436",
-    barColor: "#726065ff"
   },
   {
     title: "Oh Alma Mía (2000)",
@@ -784,48 +758,37 @@ const playlist = [
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/SpotiDownloader.com - Que bueno es el Señor - Luismi Acosta y Gloria de Dios.mp3",
     cover: "images/new1.png",
-    hex: "#AC6F00",
-    barColor: "#f88400ff"
 },
 {
     title: "Jesús Pt. 2",
     artist: "Lead/Musiko",
     src: "songs/Pt 2.mp3",
     cover: "images/image (2).png",
-    hex: "#84233fff",
-    barColor: "#10ea76ff"
 },
 {
     title: "Lo Que Quieras Tú",
     artist: "La Feria Oficial/Redimi2",
     src: "songs/Quieras.mp3",
     cover: "images/Lo.jpg",
-    hex: "#58827C",
-    barColor: "#16b9c1ff"
+    video: "videos/LaFeria1.mp4"
 },
 {
     title: "Una Locura",
     artist: "Musiko/La Feria Oficial",
     src: "songs/SpotiDownloader.com - Una Locura - Musiko.mp3",
     cover: "images/Si Puedes Creer.png",
-    hex: "#C31307",
-    barColor: "#e7c20cff"
 },
 {
     title: "GOZO",
     artist: "Miel San Marcos/Redimi2",
     src: "songs/GOZO.mp3",
     cover: "images/gozo.jpg",
-    hex: "#b74823ff",
-    barColor: "#efbc12ff"
 },
 {
     title: "El Nombre De Jesús",//100
     artist: "Redimi2, Christine D'Clario",
     src: "songs/Nombre.mp3",
     cover: "images/image (5).png",
-    hex: "#44563a",
-    barColor: "#e4c75258",
     video: "videos/Redimi2.mp4"
 },
 {
@@ -833,24 +796,18 @@ const playlist = [
     artist: "Redimi2, Barak",
     src: "songs/Espíritu.mp3",
     cover: "images/image (5).png",
-    hex: "#8E8E8E",
-    barColor: "#e4c752ff"
 },
 {
     title: "Viviré",
     artist: "Redimi2, Evan Craft",
     src: "songs/Viviré.mp3",
     cover: "images/image (6).png",
-    hex: "#70776A",
-    barColor: "#d1e65bff"
 },
 {
     title: "NO HAY NADA IMPOSIBLE",
     artist: "Redimi2/Danny Gokey",
     src: "songs/Gokey.mp3",
     cover: "images/Gokey.jpg",
-    hex: "#4d372cff",
-    barColor: "#fd7b3aff",
     video: "videos/Redimi8.mp4",
 },
 {
@@ -858,24 +815,18 @@ const playlist = [
     artist: "Redimi2/Barak",
     src: "songs/Barak.mp3",
     cover: "images/Barak.jpg",
-    hex: "#08373E",
-    barColor: "#91e7f4ff"
 },
 {
     title: "Arde En Mi",//105
     artist: "Evan Craft/Redimi2",
     src: "songs/Arde.mp3",
     cover: "images/Arde.jpg",
-    hex: "#16706A",
-    barColor: "#b71c6fff"
 },
 {
     title: "Del Salmo 23",
     artist: "Redimi2/Distrito Royal",
     src: "songs/SpotiDownloader.com - Del Salmo 23 - Redimi2.mp3",
     cover: "images/Cover of Del Salmo 23 by Redimi2, Distrito Royal.jpg",
-    hex: "#716942",
-    barColor: "#6bb791ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -883,8 +834,6 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - El mood - Redimi2.mp3",
     cover: "images/puede.jpg",
-    hex: "#293550",
-    barColor: "#b5783aff",
     video: "videos/Redimi1.mp4",
     libs: ["favorites", "spanish"]
 },
@@ -893,8 +842,6 @@ const playlist = [
     artist: "Kim Richards/Indiomar/Redimi2",
     src: "songs/SpotiDownloader.com - dIOS - Kim Richards.mp3",
     cover: "images/Cover of dIOS by Kim Richards, Indiomar, Redimi2.jpg",
-    hex: "#DA262E",
-    barColor: "#ffb7bbff",
     video: "videos/dIOS.mp4",
 },
 {
@@ -2270,12 +2217,38 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Dios Te Esta Mirando - Redimi2.mp3",
     cover: "images/Cover of Dios Te Esta Mirando by Redimi2.jpg",
   },
+  {
+    title: "Fondo Del Mar", //284
+    artist: "La Feria Oficial",
+    src: "songs/SpotiDownloader.com - Fondo Del Mar - La Feria Oficial.mp3",
+    cover: "images/Cover of Fondo Del Mar by La Feria Oficial.jpg",
+    video: "videos/LaFeria2.mp4",
+  },
+  {
+    title: "Ese Hombre - Si Tienes un Amor - Si el Mundo en Vez de Rosas - En Vivo", //285
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Ese Hombre - Si Tienes un Amor - Si el Mundo en Vez de Rosas - En Vivo - Los Voceros de Cristo.mp3",
+    cover: "images/su amor.jpg",
+  },
+  {
+    title: "Si el Mundo en Vez de Rosas", //286
+    artist: "Los Voceros de Cristo",
+    src: "songs/Si el Mundo en Vez de Rosas_spotdown.org.mp3",
+    cover: "images/Cover of Si el Mundo en Vez de Rosas by Los Voceros de Cristo.jpg",
+  },
+  {
+    title: "En Hora Buena", //287
+    artist: "Alex Zurdo",
+    src: "songs/En Hora Buena_spotdown.org.mp3",
+    cover: "images/Cover of En Hora Buena by Alex Zurdo.jpg",
+    video: "videos/AlexZurdo5.mp4",
+  },
 ];
 
 const playlistOrder = {
-  LikedSongs: [259, 281, 282, 283, 279, 278, /*cristales y dictadorres, */224, /*777, */152, 273, /*parabellum,*/ 196, 109, 272, /*fonda del mar, a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
+  LikedSongs: [287, 286, 285, 284, 259, 281, 282, 283, 279, 278, /*cristales y dictadorres, */224, /*777, */152, 273, /*parabellum,*/ 196, 109, 272, /*fonda del mar, a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
   Worship: [/*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
-  Voceros: [149, 180, 5, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
+  Voceros: [149, 180, 5, 286, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
   LockIn: [263, 272, 273, 274, 102, 283, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
   MUSIKO: [261, 274, 280, 281, 282, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
@@ -2380,6 +2353,7 @@ const libraryPlaylistCover = document.getElementById('libraryPlaylistCover');
 const audio = document.getElementById('audio');
 const seekBar = document.getElementById('seek-bar');
 const bottomBar = document.getElementById('bottom-seek-bar');
+const realBottomBar = document.querySelector('.bottom-bar');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const cover = document.getElementById('cover');
@@ -2697,6 +2671,7 @@ function updateCoverSize() {
     playerContainer.style.marginTop = '0px';
     libraryPlaylist.style.maxHeight = 'calc(100% - 60%)';
     coverWrapper.style.marginBottom = '3.5vh';
+    realBottomBar.style.width = '99.3%';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
@@ -3268,7 +3243,7 @@ if (song.video) {
   bgVideo.muted = true;   // allow autoplay
   bgVideo.loop = true;    // optional
   bgVideo.style.display = 'block';
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000045, #000000c4 78%, #000000e6)'; 
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000026, #000000a5 80%, #000000e6)'; 
 
   bgVideo.load();
   bgVideo.play().catch(() => {});
@@ -3577,7 +3552,7 @@ audio.addEventListener('timeupdate', () => {
   bottomBar.value = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
   
   currentTimeEl.textContent = formatTime(audio.currentTime);
-  durationEl.textContent = `/ ${formatTime(audio.duration || 0)}`;
+  durationEl.textContent = `- ${formatTime(audio.duration || 0)}`;
 });
 
 seekBar.addEventListener("input", () => {
