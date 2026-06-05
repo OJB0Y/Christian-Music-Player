@@ -401,40 +401,30 @@ const playlist = [
     artist: "Julio Elias",
     src: "songs/Tengo Un Dios - Julio Elías.mp3",
     cover: "images/cover1.jpg",
-    hex: "#4d3939ff",
-    barColor: "#751a1aff"
   },
   {
     title: "Agradecimiento",
     artist: "Manuel Bonilla",
     src: "songs/Agradecimiento - Manuel Bonilla.mp3",
     cover: "images/manuel.png",
-    hex: "#726952ff",
-    barColor: "#ad7e06ff"
   },
   {
     title: "Todo el Mundo Busca",
     artist: "Wilson Camey",
     src: "songs/Todo el Mundo Busca - Wilson Camey.mp3",
     cover: "images/wc.png",
-    hex: "#371737",
-    barColor: "#600360ff"
   },
   {
     title: "Tu Fidelidad",//55
     artist: "Marcos Witt/Alex Campos",
     src: "songs/a6.mp3",
     cover: "images/a6.png",
-    hex: "#323c49ff",
-    barColor: "#073979ff"
   },
   {
     title: "Me Dicen Que Me Aman",
     artist: "Jesús Adrián Romero",
     src: "songs/a4.mp3",
     cover: "images/a4.png",
-    hex: "#353933",
-    barColor: "#457a2aff"
   },
   {
     title: "Renuévame",
@@ -471,40 +461,30 @@ const playlist = [
     artist: "Agustin Amador",
     src: "songs/Primero Dios, Vol. 5.mp3",
     cover: "images/cover3.jpg",
-    hex: "#846122",
-    barColor: "#c07d02ff"
   },
   {
     title: "Ahora Soy Feliz",
     artist: "Los Hermanos Reyes",
     src: "songs/song1.mp3",
     cover: "images/song1.jpg",
-    hex: "#383838",
-    barColor: "#676536ff"
   },
   {
     title: "Un Grano de Arena",
     artist: "Manuel Bonilla",
     src: "songs/Un Grano De Arena.mp3",
     cover: "images/Un Grano De Arena.png",
-    hex: "#3D445C",
-    barColor: "#2f458eff"
   },
 { 
     title: "Oh Juventud",
     artist: "Zulmy Mejia",
     src: "songs/Zulmy.mp3",
     cover: "images/zulmy.jpg",
-    hex: "#294579ff",
-    barColor: "#00589fff"
 },
 {
     title: "Cristo por su Iglesia viene",
     artist: "Los Voceros de Cristo",
     src: "songs/Cristo.mp3",
     cover: "images/Cristo.jpg",
-    hex: "#2E3F3F",
-    barColor: "#108787ff"
 },
 {
     title: "Loor a ti mi Dios",//65
@@ -1892,7 +1872,7 @@ const playlist = [
   {
     title: "Pródigo",
     artist: "Un Corazón, Louie Abrego",
-    src: "songs/SpotiDownloader.com - Pródigo - Un Corazón.mp3",
+    src: "songs/Pródigo.mp3",
     cover: "images/Cover of Pródigo by Un Corazón, Louie Abrego.jpg",
     hex: "#62A2AB",
     barColor: "#9ec3c8",
@@ -2243,18 +2223,146 @@ const playlist = [
     cover: "images/Cover of En Hora Buena by Alex Zurdo.jpg",
     video: "videos/AlexZurdo5.mp4",
   },
+  {
+    title: "Dios De Imposibles", 
+    artist: "Un Corazón, Louie Abrego, Kim Richards",
+    src: "songs/SpotiDownloader.com - Dios De Imposibles - Un Corazón.mp3",
+    cover: "images/Cover of Pródigo by Un Corazón, Louie Abrego.jpg",
+  },
+  {
+    title: "Esa Oveja Era Yo", 
+    artist: "Leonel Tuchez",
+    src: "songs/SpotiDownloader.com - Esa Oveja Era Yo - Leonel Tuchez.mp3",
+    cover: "images/Esperando.jpg",
+  },
+  {
+    title: "Enciende Una Luz", //290
+    artist: "Marcos Witt, Un Corazón, Sarai Rivera, Elena Witt-Guerra, Krystal Guerra Witt, TAYA, Montesanto, Miel San Marcos, Waleska Morales, ECCOS, Indiomar",
+    src: "songs/SpotiDownloader.com - Enciende Una Luz - Marcos Witt.mp3",
+    cover: "images/Cover of Enciende Una Luz by Marcos Witt, Un Corazón, Sarai Rivera, Elena Witt-Guerra, Krystal Guerra Witt, TAYA, Montesanto, Miel San Marcos, Waleska Morales, ECCOS, Indiomar.jpg",
+    video: "videos/MarcosWitt2.mp4"
+  },
+  {
+    title: "Gracias", 
+    artist: "Marcos Witt",
+    src: "songs/Gracias.mp3",
+    cover: "images/a6.png",
+  },
+  {
+    title: "Gracias/Tu Fidelidad", 
+    artist: "Marcos Witt, Un Corazón",
+    src: "songs/SpotiDownloader.com - Gracias - Marcos Witt, Un Corazon.mp3",
+    cover: "images/Cover of Gracias _ Tu Fidelidad by Marcos Witt, Un Corazón.jpg",
+    video: "videos/MarcosWitt1.mp4",
+  },
+  {
+    title: "Jesús Sé Mi Guía", 
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Jesús Sé Mi Guía - Los Voceros de Cristo.mp3",
+    cover: "images/Cover of La Biblia dice que el hombre by Los Voceros de Cristo.jpg",
+  },
+  {
+    title: "Los Trigales", 
+    artist: "Los Voceros de Cristo",
+    src: "songs/SpotiDownloader.com - Los Trigales - Los Voceros de Cristo.mp3",
+    cover: "images/song11.png",
+  },
+  {
+    title: "Yo Tengo Fe", //295
+    artist: "Zulmy Mejia",
+    src: "songs/SpotiDownloader.com - Yo Tengo Fe - Zulmy Mejia.mp3",
+    cover: "images/Cover of Yo Tengo Fe by Zulmy Mejia.jpg",
+  },
+  {
+    title: "Edifiquemos", 
+    artist: "Zulmy Mejia",
+    src: "songs/SpotiDownloader.com - Edifiquemos - Zulmy Mejia.mp3",
+    cover: "images/zulmy.jpg",
+  },
+  {
+    title: "Debo Correr", 
+    artist: "Óscar Medina",
+    src: "songs/Debo Correr.mp3",
+    cover: "images/Cover of Debo Correr by Óscar Medina.jpg",
+  },
+  {
+    title: "Dulce Hogar", 
+    artist: "Katty Mazariegos",
+    src: "songs/SpotiDownloader.com - Dulce Hogar - Katty Mazariegos.mp3",
+    cover: "images/Cover of Tren de la Vida by Katty Mazariegos.jpg",
+  },
+  {
+    title: "Deuda", 
+    artist: "Katty Mazariegos",
+    src: "songs/SpotiDownloader.com - Deuda - Katty Mazariegos.mp3",
+    cover: "images/Cover of Deuda by Katty Mazariegos.jpg",
+  },
+  {
+    title: "Tren de la Vida", //300
+    artist: "Katty Mazariegos",
+    src: "songs/SpotiDownloader.com - Tren de la Vida - Katty Mazariegos.mp3",
+    cover: "images/Cover of Tren de la Vida by Katty Mazariegos.jpg",
+  },
+  {
+    title: "Jesús Es Mi Rey Soberano", 
+    artist: "Leonel Tuchez",
+    src: "songs/Jesús Es Mi Rey Soberano.mp3",
+    cover: "images/Esperando.jpg",
+  },
+  {
+    title: "Pensaba En Ti", 
+    artist: "Leonel Tuchez",
+    src: "songs/SpotiDownloader.com - Pensaba En Ti - Leonel Tuchez.mp3",
+    cover: "images/Cover of Salmo 23 by Leonel Tuchez.jpg",
+  },
+  {
+    title: "Jesús Es Mi Rey Soberano", 
+    artist: "Marcos Witt",
+    src: "songs/SpotiDownloader.com - Jesús Es Mi Rey Soberano - Marcos Witt.mp3",
+    cover: "images/Cover of Jesús Es Mi Rey Soberano by Marcos Witt.jpg",
+  },
+  {
+    title: "Tu el Alfarero", 
+    artist: "Ezequiel Williams",
+    src: "songs/SpotiDownloader.com - Tu el Alfarero - Ezequiel Williams.mp3",
+    cover: "images/Cover of Tu el Alfarero by Ezequiel Williams.jpg",
+  },
+  {
+    title: "Ahora Cristiano Soy", //305
+    artist: "Ezequiel Williams",
+    src: "songs/SpotiDownloader.com - Ahora Cristiano Soy - Ezequiel Williams.mp3",
+    cover: "images/Cover of Hoy Te Pido Señor by Ezequiel Williams.jpg",
+  },
+  {
+    title: "Hoy Te Pido Señor", 
+    artist: "Ezequiel Williams",
+    src: "songs/SpotiDownloader.com - Hoy Te Pido Señor - Ezequiel Williams.mp3",
+    cover: "images/Cover of Hoy Te Pido Señor by Ezequiel Williams.jpg",
+  },
+  {
+    title: "Increíble", 
+    artist: "Miel San Marcos, Evan Craft",
+    src: "songs/SpotiDownloader.com - Increíble (feat. Evan Craft) - Miel San Marcos.mp3",
+    cover: "images/Cover of No Hay Lugar Mas Alto (feat. Christine D Clario) by Miel San Marcos, Christine D'Clario.jpg",
+  },
+  {
+    title: "No Hay Lugar Mas Alto (feat. Christine D Clario)", //308
+    artist: "Miel San Marcos, Christine D'Clario",
+    src: "songs/SpotiDownloader.com - No Hay Lugar Mas Alto (feat. Christine D Clario) - Miel San Marcos.mp3",
+    cover: "images/Cover of No Hay Lugar Mas Alto (feat. Christine D Clario) by Miel San Marcos, Christine D'Clario.jpg",
+  },
 ];
 
 const playlistOrder = {
-  LikedSongs: [287, 286, 285, 284, 259, 281, 282, 283, 279, 278, /*cristales y dictadorres, */224, /*777, */152, 273, /*parabellum,*/ 196, 109, 272, /*fonda del mar, a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
-  Worship: [/*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
-  Voceros: [149, 180, 5, 286, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
+  LikedSongs: [307, 301, 297, 294, 293, 286, 287, 286, 285, 284, 259, 281, 282, 283, 279, 278, /*cristales y dictadorres, */224, /*777, */152, 273, /*parabellum,*/ 196, 109, 272, /*fonda del mar, a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
+  Worship: [308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Voceros: [149, 180, 5, 286, 293, 294, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
   LockIn: [263, 272, 273, 274, 102, 283, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
-  MUSIKO: [261, 274, 280, 281, 282, 239, 240, 251, 249, 170, 273, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
+  MUSIKO: [274, 287, 280, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
-  majoYDan: [145, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
+  majoYDan: [145, 281, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
-  //make a playlist for mothers day songs
+  //make a playlist for the mothers day songs
 };
 
 const playlistHex = {
@@ -2325,7 +2433,8 @@ async function getSongColors(imageUrl) {
     const colors = {
       main: darkColor,
       dark: darkColor,
-      light: lightColor
+      light: lightColor,
+      vibrant: vibrantColor
     };
 
     colorCache[imageUrl] = colors;
@@ -2334,7 +2443,7 @@ async function getSongColors(imageUrl) {
   } catch (err) {
     console.error('Error extracting colors:', err);
     return {
-      main: "#181a1e",
+      main: "#121212",
       dark: "#121212",
       light: "#ffffff"
     };
@@ -2394,6 +2503,8 @@ const libraryTitle = document.getElementById('libraryTitle');
 
 const songRequest = document.getElementById("songRequest");
 const closeRequest = document.getElementById("closeRequest");
+
+const lyricsSection = document.querySelector('.lyrics-section');
 
 let miniPlayerActivated = false;
 let currentPlaylist = "all songs";
@@ -2659,7 +2770,7 @@ optionsBtn.addEventListener('click', (e) => {
 const IS_DESKTOP = window.innerWidth >= 550 && window.innerWidth <= 1450 && window.innerHeight <= 800;
 
 
-//resizing cover width if too wide and not tall enough 
+//change the app depending on wide screen or not
 function updateCoverSize() {
   const nowPlayingImg = document.getElementById('cover');
   const playerContainer = document.querySelector('.player');
@@ -2669,14 +2780,14 @@ function updateCoverSize() {
     nowPlayingImg.style.maxWidth = '330px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 60%)';
+    libraryPlaylist.style.maxHeight = 'calc(100% - 58.5%)';
     coverWrapper.style.marginBottom = '3.5vh';
     realBottomBar.style.width = '99.3%';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
     playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 53%)';
+    libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
     coverWrapper.style.marginBottom = '4vh';
   }
 }
@@ -3129,6 +3240,7 @@ function loadSong(index) {
   getSongColors(song.cover).then(colors => {
   updatePlaylistGradient(colors.dark);
   currentBarColor = colors.light;
+  lyricsSection.style.background = colors.vibrant;
 });
 
 if ('mediaSession' in navigator) {
@@ -3227,6 +3339,7 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
   getSongColors(song.cover).then(colors => {
   updatePlaylistGradient(colors.dark);
   currentBarColor = colors.light;
+  lyricsSection.style.background = colors.vibrant;
 });
 
   // === AUDIO SETUP ===
@@ -3235,6 +3348,7 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
   
 const bgVideo = document.getElementById('bg-video');
 const videoOverlay = document.getElementById('video-overlay');
+const bgOverlay = document.getElementById('background-overlay');
 const nowPlayingCover = document.getElementById('cover');
 
 if (song.video) {
@@ -3244,6 +3358,7 @@ if (song.video) {
   bgVideo.loop = true;    // optional
   bgVideo.style.display = 'block';
   videoOverlay.style.background = 'linear-gradient(to bottom, #00000026, #000000a5 80%, #000000e6)'; 
+  bgOverlay.style.background = 'linear-gradient(to bottom, #000000e6, #121212)';
 
   bgVideo.load();
   bgVideo.play().catch(() => {});
@@ -3266,6 +3381,7 @@ if (song.video) {
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
   videoOverlay.style.background = 'linear-gradient(to bottom, #00000000, #0000005e 80%)';
+  bgOverlay.style.background = 'linear-gradient(to bottom, #0000005e, #121212)';
 
   seekBar.style.opacity = 0.6; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
 
