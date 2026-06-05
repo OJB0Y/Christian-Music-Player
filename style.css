@@ -560,7 +560,7 @@ opacity: 0.33;
   gap: 1.5rem;
   margin: 10px 0 10px;
   margin-bottom: 25px;
-  bottom: 20px;
+  bottom: 28px;
 }
 
 .setTimer{
@@ -1019,7 +1019,7 @@ opacity: 0.33;
   height: 350px;
   border-radius: 15px;
   position: relative;
-  bottom: 17px;
+  bottom: 25px;
 }
 
 .lyrics-section h2{
