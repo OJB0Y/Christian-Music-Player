@@ -103,14 +103,14 @@ opacity: 0.33;
 
 #currentPlaylistLabel {
   position: absolute;
-  top: 19px;
+  top: 18px;
   left: 50%;
   transform: translateX(-50%);
   
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  letter-spacing: 1.0px;
+  letter-spacing: 1.2px;
   z-index: 1;
 }
 
