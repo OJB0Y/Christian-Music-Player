@@ -2425,11 +2425,11 @@ async function getSongColors(imageUrl) {
       const brightness = (r * 0.299 + g * 0.587 + b * 0.114);
       
       // If brightness is below 30 (out of 255), it's too dark
-      return brightness < 30;
+      return brightness < 25;
     }
     
     // Get the colors from palette
-    let darkColor = palette.DarkVibrant?.getHex() || "#121212";
+    let darkColor = palette.DarkVibrant?.getHex() || "#000000";
     const vibrantColor = palette.Vibrant?.getHex() || "#121212";
     const lightColor = palette.LightVibrant?.getHex() || "#121212";
     const muted = palette.Muted?.getHex() || "#121212";
@@ -2777,7 +2777,8 @@ optionsBtn.addEventListener('click', (e) => {
 
 
 // Check if device is desktop
-const IS_DESKTOP = window.innerWidth >= 550 && window.innerWidth <= 1450 && window.innerHeight <= 800;
+const IS_DESKTOP = window.innerWidth >= window.innerHeight; 
+//old version of checking window.innerWidth >= 550 && window.innerWidth <= 1450 && window.innerHeight <= 800;
 
 
 //change the app depending on wide screen or not
@@ -3361,7 +3362,7 @@ const videoOverlay = document.getElementById('video-overlay');
 const bgOverlay = document.getElementById('background-overlay');
 const nowPlayingCover = document.getElementById('cover');
 
-if (song.video) {
+if (song.video && !IS_DESKTOP) {
   // show video
   bgVideo.src = song.video;
   bgVideo.muted = true;   // allow autoplay
