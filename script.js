@@ -1365,40 +1365,30 @@ const playlist = [
     artist: "Zulmy Mejia",
     src: "songs/SpotiDownloader.com - Espiritu Santo - Zulmy Mejia.mp3",
     cover: "images/zulmy.jpg",
-    hex: "#294579ff",
-    barColor: "#00589fff",
   },
   {
     title: "Sumérgeme", //175
     artist: "Jesús Adrián Romero",
     src: "songs/SpotiDownloader.com - Sumérgeme - Jesús Adrián Romero.mp3",
     cover: "images/Cover of Sumérgeme by Jesús Adrián Romero.jpg",
-    hex: "#2462A2",
-    barColor: "#59a1e9",
   },
   {
     title: "Tu Palabra",
     artist: "Marcela Gandara",
     src: "songs/SpotiDownloader.com - Tu Palabra - Marcela Gandara.mp3",
     cover: "images/song7.png",
-    hex: "#9B4A3C",
-    barColor: "#d74c10ff"
   },
   {
     title: "Creo En Ti",
     artist: "Julio Melgar",
     src: "songs/SpotiDownloader.com - Creo En Ti - Julio Melgar.mp3",
     cover: "images/Cover of Creo En Ti by Julio Melgar.jpg",
-    hex: "#C22D25",
-    barColor: "rgb(242, 98, 91)",
   },
   {
     title: "Levanto Mis Manos",
     artist: "Samuel Hernández",
     src: "songs/SpotiDownloader.com - Levanto Mis Manos - Samuel Hernández.mp3",
     cover: "images/Cover of Levanto Mis Manos by Samuel Hernández.jpg",
-    hex: "#4E5E7E",
-    barColor: "#dbc256",
   },
   {
     title: "No Hay Nadie Como Cristo", //179
@@ -2361,11 +2351,91 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Cristales y Dictadores - Redimi2.mp3",
     cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
   },
+  {
+    title: "Dame Tus Ojos", //
+    artist: "Marcela Gandera, Jesús Adrián Romero",
+    src: "songs/Dame Tus Ojos_spotdown.org.mp3",
+    cover: "images/song7.png",
+  },
+  {
+    title: "Ven, Te Necesito", //
+    artist: "Lilly Goodman, Jesús Adrián Romero",
+    src: "songs/Ven, Te Necesito_spotdown.org.mp3",
+    cover: "images/Screenshot 2026-07-18 2.32.22 PM.png",
+    video: "videos/Romero1.mp4"
+  },
+  {
+    title: "Tú Estás Aquí (Live)", //
+    artist: "Marcela Gandara, Jesús Adrián Romero",
+    src: "songs/Tú Estás Aquí (Live)_spotdown.org.mp3",
+    cover: "images/Screenshot 2026-07-18 3.08.29 PM.png",
+  },
+  {
+    title: "El Señor Es Mi Rey (feat. Tony Perez)", //
+    artist: "Miel San Marcos, Tony Pérez",
+    src: "songs/El Señor Es Mi Rey (feat. Tony Perez)_spotdown.org.mp3",
+    cover: "images/Cover of El Señor Es Mi Rey (feat. Tony Perez) by Miel San Marcos, Tony Pérez.jpg",
+  },
+  {
+    title: "Que Sería De Mi", //315
+    artist: "Jesús Adrián Romero",
+    src: "songs/Que Sería De Mi_spotdown.org.mp3",
+    cover: "images/Screenshot 2026-07-18 3.03.36 PM.png",
+    video: "videos/Romero2.mp4",
+  },
+  {
+    title: "Jesús Mi Fiel Amigo - Sesión Orgánica", //
+    artist: "Abel Zavala",
+    src: "songs/Jesús Mi Fiel Amigo - Sesión Orgánica_spotdown.org.mp3",
+    cover: "images/Cover of Jesús Mi Fiel Amigo - Sesión Orgánica by Abel Zavala.jpg",
+  },
+  {
+    title: "Jesús Mi Fiel Amigo (En Vivo)", //
+    artist: "Abel Zavala",
+    src: "songs/SpotiDownloader.com - Jesús Mi Fiel Amigo (En Vivo) - Abel Zavala.mp3",
+    cover: "images/Cover of Jesús Mi Fiel Amigo (En Vivo) by Abel Zavala.jpg",
+  },
+  {
+    title: "Con Mis Manos Levantadas", //318
+    artist: "Danilo Montero",
+    src: "songs/SpotiDownloader.com - Con Mis Manos Levantadas - Danilo Montero.mp3",
+    cover: "images/Cover of Con Mis Manos Levantadas by Danilo Montero.jpg",
+  },/*
+  {
+    title: "", //
+    artist: "",
+    src: "songs/",
+    cover: "images/",
+  },
+  {
+    title: "", //
+    artist: "",
+    src: "songs/",
+    cover: "images/",
+  },
+  {
+    title: "", //
+    artist: "",
+    src: "songs/",
+    cover: "images/",
+  },
+  {
+    title: "", //
+    artist: "",
+    src: "songs/",
+    cover: "images/",
+  },
+  {
+    title: "", //
+    artist: "",
+    src: "songs/",
+    cover: "images/",
+  },*/
 ];
 
 const playlistOrder = {
   LikedSongs: [307, 301, 297, 294, 293, 286, 287, 286, 285, 284, 259, 281, 282, 283, 279, 278, 310, 224, /*777, */152, 273, 309, 196, 109, 272, 284, /*a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
-  Worship: [308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Worship: [318, 317, 316, 315, 314, 313, 312, 311, 308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 286, 293, 294, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
   LockIn: [263, 272, 273, 274, 102, 283, 309, 310, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
   MUSIKO: [274, 287, 280, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
