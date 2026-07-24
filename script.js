@@ -2866,7 +2866,7 @@ function updateCoverSize() {
     libraryPlaylist.style.maxHeight = 'calc(100% - 58.5%)';
     coverWrapper.style.marginBottom = '3.5vh';
     realBottomBar.style.width = '99.3%';
-    player.style.transform = 'translateX(3.7%)';
+    player.style.transform = 'translateX(3.75%)';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
@@ -3456,7 +3456,7 @@ if (song.video && !IS_DESKTOP) {
 
   requestAnimationFrame(() => bgVideo.classList.add('show'));
 
-  seekBar.style.opacity = 0.45;
+  seekBar.style.opacity = 0.55;
 
   // fade out cover
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
@@ -3472,7 +3472,7 @@ if (song.video && !IS_DESKTOP) {
   videoOverlay.style.background = 'linear-gradient(to bottom, #00000000, #0000005e 80%)';
   bgOverlay.style.background = 'linear-gradient(to bottom, #0000005e, #121212 20%)';
 
-  seekBar.style.opacity = 0.6; //so it was originially go back to opacity 1, but i later changed my mind and so it stays 0.6 the whole time & i'm too lazy to just erase these two lines of code
+  seekBar.style.opacity = 1;
 
   visualizer.style.opacity = visualizerVisible ? '0.15' : '0';
 

@@ -446,29 +446,26 @@ opacity: 0.33;
   height: 4px;
   border-radius: 5px;
   outline: none;
-  background: linear-gradient(to right, #ffffffbe 0%, #ffffffbe 0%, #818181d5 0%, #818181d5 100%);
-  transition: background 0.1s linear;
-  opacity: 0.6;
+  background: linear-gradient(to right, #ffffff 0%, #ffffff, #818181d5 0%, #818181d5 100%);
+  transition: background 0.01s linear;
+  opacity: 1;
 }
 
 #seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
-  opacity: 1;
-  background: transparent;
-  color: transparent;
-  opacity: 0;
-  width: 35px;
-  height: 13px;
+  transform: translateX(-3px);
+  border-radius: 20px;
+  border: 20px;
+  color: white;
+  background: white;
+  width: 10px;
+  height: 10px;
 }
 
 #seek-bar::-moz-range-thumb {
-  background: transparent;
-  color: transparent;
-  opacity: 1;
-  width: 35px;
-  height: 13px;
-  border: none;
+  color: white;
+  width: 10px;
+  height: 10px;
 }
 
 /* === TIME INFO === */
