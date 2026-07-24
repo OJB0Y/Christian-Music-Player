@@ -1994,24 +1994,24 @@ const playlist = [
     cover: "images/Cover of Virtuosa by Samuel Adrián.jpg",
   }, 
   {
-    title: "Cicada", //254
-    artist: "Good Kid",
-    src: "songs/Cicada_spotdown.org.mp3",
-    cover: "images/Cover of Cicada by Good Kid.jpg",
-    video: "videos/cicada.mp4",
+    title: "La Fiesta", //(Cicada) 254
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - La Fiesta - Redimi2.mp3",
+    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
   }, 
   {
-    title: "Too Fresh", //255
-    artist: "Y2",
-    src: "songs/SpotiDownloader.com - Too Fresh - Y2.mp3",
-    cover: "images/Cover of Too Fresh by Y2.jpg",
+    title: "Locos Como Yo", //(too fresh) 255
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - Locos Como Yo - Redimi2.mp3",
+    cover: "images/Bien.jpg",
+    video: "videos/Redimi12.mp4"
   },
     {
-    title: "ラグトレイン",
-    artist: "INABAKUMORI",
-    src: "songs/SpotiDownloader.com - ラグトレイン - INABAKUMORI.mp3",
-    cover: "images/Cover of ラグトレイン by INABAKUMORI.jpg",
-    video: "videos/INABAKUMORI.mp4",
+    title: "Pa' Loco", //inabakumori 256
+    artist: "Natan El Profeta",
+    src: "songs/SpotiDownloader.com - Pa' Loco - Natan El Profeta.mp3",
+    cover: "images/Cover of Pa' Loco by Natan El Profeta.jpg",
+    video: "videos/NatanElProfeta1.mp4",
   },  
   {
     title: "DIOS me dio colores", //257
@@ -2400,45 +2400,46 @@ const playlist = [
     artist: "Danilo Montero",
     src: "songs/SpotiDownloader.com - Con Mis Manos Levantadas - Danilo Montero.mp3",
     cover: "images/Cover of Con Mis Manos Levantadas by Danilo Montero.jpg",
-  },/*
-  {
-    title: "", //
-    artist: "",
-    src: "songs/",
-    cover: "images/",
   },
   {
-    title: "", //
-    artist: "",
-    src: "songs/",
-    cover: "images/",
+    title: "Reborn", //
+    artist: "Evan Craft, Redimi2",
+    src: "songs/SpotiDownloader.com - Reborn - Evan Craft.mp3",
+    cover: "images/evan.png",
   },
   {
-    title: "", //
-    artist: "",
-    src: "songs/",
-    cover: "images/",
+    title: "EL INCOREGIBLE", //320
+    artist: "Redimi2",
+    src: "songs/SpotiDownloader.com - EL INCORREGIBLE - Redimi2.mp3",
+    cover: "images/Gokey.jpg",
   },
   {
-    title: "", //
-    artist: "",
-    src: "songs/",
-    cover: "images/",
+    title: "Estoy TRANQUILO", //
+    artist: "Madiel Lara",
+    src: "songs/SpotiDownloader.com - Estoy TRANQUILO - Madiel Lara.mp3",
+    cover: "images/Cover of Otra Vez by Madiel Lara.jpg",
+    video: "videos/MadielLara8.mp4"
   },
   {
-    title: "", //
-    artist: "",
-    src: "songs/",
-    cover: "images/",
-  },*/
+    title: "Bendecío", //
+    artist: "Redimi2",
+    src: "songs/Bendecío_spotdown.org.mp3",
+    cover: "images/Bien.jpg",
+  },
+  {
+    title: "Sin Metales", //323
+    artist: "Madiel Lara, AJ Kallejero Ramos, AJ Ramos",
+    src: "songs/SpotiDownloader.com - Sin Metales - Madiel Lara.mp3",
+    cover: "images/Cover of Cristo En La Casa by Madiel Lara, Redimi2.jpg",
+  },
 ];
 
 const playlistOrder = {
   LikedSongs: [307, 301, 297, 294, 293, 286, 287, 286, 285, 284, 259, 281, 282, 283, 279, 278, 310, 224, /*777, */152, 273, 309, 196, 109, 272, 284, /*a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
   Worship: [318, 317, 316, 315, 314, 313, 312, 311, 308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 286, 293, 294, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
-  LockIn: [263, 272, 273, 274, 102, 283, 309, 310, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
-  MUSIKO: [274, 287, 280, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
+  LockIn: [255, 256, 254, 320, 321, 322, 323, 319, 272, 273, 274, 102, 283, 309, 310, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 221, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249],
+  MUSIKO: [274, 287, 319, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 112, 114, 204, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244],
   majoYDan: [145, 281, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
@@ -2538,6 +2539,7 @@ function updatePlaylistGradient(main, dark) {
 
 // --- element refs ---
 const libraryPlaylistCover = document.getElementById('libraryPlaylistCover');
+const player = document.querySelector('.player');
 
 const audio = document.getElementById('audio');
 const seekBar = document.getElementById('seek-bar');
@@ -2864,6 +2866,7 @@ function updateCoverSize() {
     libraryPlaylist.style.maxHeight = 'calc(100% - 58.5%)';
     coverWrapper.style.marginBottom = '3.5vh';
     realBottomBar.style.width = '99.3%';
+    //player.style.transform = 'translateX(5%)';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
