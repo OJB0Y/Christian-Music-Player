@@ -451,6 +451,7 @@ opacity: 0.33;
   opacity: 1;
 }
 
+/*the first thumb actually works*/
 #seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   transform: translateX(-3px);
@@ -458,10 +459,11 @@ opacity: 0.33;
   border: 20px;
   color: white;
   background: white;
-  width: 1px;
+  width: 10px;
   height: 10px;
 }
 
+/*this bottom one doesn't work*/
 #seek-bar::-moz-range-thumb {
   color: white;
   width: 10px;
