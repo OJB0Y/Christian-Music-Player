@@ -3260,28 +3260,11 @@ function getPrevLibraryShuffleSong() {
 
 const libraryBigPlay = document.getElementById('libraryBigPlay');
 const libraryBigShuffle = document.getElementById('libraryBigShuffle');
+let bigShuffle = false;
 
 libraryBigPlay.addEventListener('click', () => {
-  if (!currentLibraryQueue.length) return;
-  openPlaylistBtn.style.opacity = 1;
-  bottomBar.style.opacity = 1;
-
-  currentPlaylist = playbackSource;
-  updatePlaylistLabel();
-
-  usingLibraryQueue = true;
-  shuffle = false;
-  setToggleButtonState(shuffleBtn, false);
-
-  libraryQueueIndex = 0;
-  const firstSongIndex = currentLibraryQueue[0];
-
-  changeSong(firstSongIndex);
-});
-
-
-libraryBigShuffle.addEventListener('click', () => {
-  if (!currentLibraryQueue.length) return;
+  if (bigShuffle) {
+      if (!currentLibraryQueue.length) return;
   openPlaylistBtn.style.opacity = 1;
   bottomBar.style.opacity = 1;
 
@@ -3310,6 +3293,34 @@ libraryBigShuffle.addEventListener('click', () => {
   libraryQueueIndex = currentLibraryQueue.indexOf(firstRandomSong);
 
   changeSong(firstRandomSong);
+  } else {
+  if (!currentLibraryQueue.length) return;
+  openPlaylistBtn.style.opacity = 1;
+  bottomBar.style.opacity = 1;
+
+  currentPlaylist = playbackSource;
+  updatePlaylistLabel();
+
+  usingLibraryQueue = true;
+  shuffle = false;
+  setToggleButtonState(shuffleBtn, false);
+
+  libraryQueueIndex = 0;
+  const firstSongIndex = currentLibraryQueue[0];
+
+  changeSong(firstSongIndex);
+  };
+});
+
+
+libraryBigShuffle.addEventListener('click', () => {
+  if(!bigShuffle) {
+    bigShuffle = true;
+    libraryBigShuffle.style.color = "#49f566";
+  } else {
+    bigShuffle = false;
+    libraryBigShuffle.style.color = "white";
+  };
 });
 
 
