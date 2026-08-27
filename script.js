@@ -2491,6 +2491,33 @@ const playlist = [
     src: "songs/SpotiDownloader.com - De Tal Manera - Jesús Adrián Romero.mp3",
     cover: "images/Cover of De Tal Manera by Jesús Adrián Romero, Abel Zavala.jpg",
   },
+  {
+    title: "Album of the Year #1 Funkateer", //333
+    artist: "Bootsy Collins, Bootdullivan, Myra Washington",
+    src: "songs/SpotiDownloader.com - Album of the Year #1 Funkateer - Bootsy Collins.mp3",
+    cover: "images/Cover of Album of the Year #1 Funkateer by Bootsy Collins, Bootdullivan, Myra Washington.jpg",
+    video: "videos/Bootsy1.mp4",
+  },
+  {
+    title: "Hundo P", //334
+    artist: "Bootsy Collins, Fantaazma, Snoop Dogg",
+    src: "songs/SpotiDownloader.com - Hundo P - Bootsy Collins.mp3",
+    cover: "images/Cover of Album of the Year #1 Funkateer by Bootsy Collins, Bootdullivan, Myra Washington.jpg",
+    video: "videos/Bootsy2.mp4",
+  },
+  {
+    title: "Bubble Pop", //335
+    artist: "Bootsy Collins, Ice Cube, Fantaazma, Brother Nature",
+    src: "songs/SpotiDownloader.com - Bubble Pop - Bootsy Collins.mp3",
+    cover: "images/Cover of Album of the Year #1 Funkateer by Bootsy Collins, Bootdullivan, Myra Washington.jpg",
+    video: "videos/Bootsy2.mp4",
+  },
+  {
+    title: "Jam On", //336
+    artist: "Bootsy Collins, Snoop Dogg, Brandon TAZ Niederaur",
+    src: "songs/Jam On_spotdown.org.mp3",
+    cover: "images/Cover of Jam On by Bootsy Collins, Snoop Dogg, Brandon _TAZ_ Niederauer.jpg",
+  },
 ];
 
 const playlistOrder = {
@@ -2503,7 +2530,7 @@ const playlistOrder = {
   majoYDan: [145, 281, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
   ROADTRIP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 112, 114, 116, 119, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 154, 161, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 187, 188, 199, 201, 202, 203, 204, 205, 206, 208, 210, 212, 213, 215, 216, 217, 218, 219, 225, 226, 227, 228, 229, 230, 231, 232, 233, 237, 238, 239, 240, 241, 242, 245, 246, 247, 248, 249, 251, 252, 257, 263, 264, 268, 272, 274, 281, 282, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 311, 312, 313, 314, 315, 316, 317, 318, 319, 321, 324, 325, 328, 329, 330, 331, 332],
-  LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320],
+  LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320, 333, 334, 335, 336],
   //make a playlist for the mothers day songs
 };
 
@@ -3407,9 +3434,15 @@ function loadSong(index) {
   updateActiveSong();
 
   getSongColors(song.cover).then(colors => {
-  updatePlaylistGradient(colors.dark);
-  currentBarColor = colors.light;
-  lyricsSection.style.background = colors.vibrant;
+  if(IS_DESKTOP){
+    updatePlaylistGradient(colors.light);
+    currentBarColor = colors.light;
+    lyricsSection.style.background = colors.vibrant;
+  } else {
+    updatePlaylistGradient(colors.dark);
+    currentBarColor = colors.light;
+    lyricsSection.style.background = colors.vibrant;
+  };
 });
 
 if ('mediaSession' in navigator) {
@@ -3506,9 +3539,15 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
   updateActiveSong();
 
   getSongColors(song.cover).then(colors => {
-  updatePlaylistGradient(colors.dark);
-  currentBarColor = colors.light;
-  lyricsSection.style.background = colors.vibrant;
+  if(IS_DESKTOP){
+    updatePlaylistGradient(colors.light);
+    currentBarColor = colors.light;
+    lyricsSection.style.background = colors.vibrant;
+  } else {
+    updatePlaylistGradient(colors.dark);
+    currentBarColor = colors.light;
+    lyricsSection.style.background = colors.vibrant;
+  };
 });
 
   // === AUDIO SETUP ===
