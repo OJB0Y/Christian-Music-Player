@@ -2494,22 +2494,22 @@ const playlist = [
   {
     title: "Album of the Year #1 Funkateer", //333
     artist: "Bootsy Collins, Bootdullivan, Myra Washington",
-    src: "songs/SpotiDownloader.com - Album of the Year #1 Funkateer - Bootsy Collins.mp3",
-    cover: "images/Cover of Album of the Year #1 Funkateer by Bootsy Collins, Bootdullivan, Myra Washington.jpg",
+    src: "songs/Album of the year.mp3",
+    cover: "images/Album of the year.jpg",
     video: "videos/Bootsy1.mp4",
   },
   {
     title: "Hundo P", //334
     artist: "Bootsy Collins, Fantaazma, Snoop Dogg",
     src: "songs/SpotiDownloader.com - Hundo P - Bootsy Collins.mp3",
-    cover: "images/Cover of Album of the Year #1 Funkateer by Bootsy Collins, Bootdullivan, Myra Washington.jpg",
+    cover: "images/Album of the year.jpg",
     video: "videos/Bootsy2.mp4",
   },
   {
     title: "Bubble Pop", //335
     artist: "Bootsy Collins, Ice Cube, Fantaazma, Brother Nature",
     src: "songs/SpotiDownloader.com - Bubble Pop - Bootsy Collins.mp3",
-    cover: "images/Cover of Album of the Year #1 Funkateer by Bootsy Collins, Bootdullivan, Myra Washington.jpg",
+    cover: "images/Album of the year.jpg",
     video: "videos/Bootsy2.mp4",
   },
   {
@@ -2956,7 +2956,7 @@ function updateCoverSize() {
   const libraryPlaylist = document.querySelector('#libraryPlaylist');
   
   if (IS_DESKTOP) {
-    nowPlayingImg.style.maxWidth = '330px';
+    nowPlayingImg.style.maxWidth = '320px';
     nowPlayingImg.style.marginBottom = '0.8rem';
     playerContainer.style.marginTop = '0px';
     libraryPlaylist.style.maxHeight = 'calc(100% - 58.5%)';
@@ -2978,7 +2978,7 @@ updateCoverSize();
 // Update on window resize
 window.addEventListener('resize', () => {
   const wasDesktop = IS_DESKTOP;
-  IS_DESKTOP = window.innerWidth >= 768;
+  IS_DESKTOP = window.maxWidth > window.maxHeight;
   
   // Only update if the state changed
   if (wasDesktop !== IS_DESKTOP) {
@@ -3435,7 +3435,7 @@ function loadSong(index) {
 
   getSongColors(song.cover).then(colors => {
   if(IS_DESKTOP){
-    updatePlaylistGradient(colors.light);
+    updatePlaylistGradient(colors.dark);
     currentBarColor = colors.light;
     lyricsSection.style.background = colors.vibrant;
   } else {
@@ -3540,7 +3540,7 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
 
   getSongColors(song.cover).then(colors => {
   if(IS_DESKTOP){
-    updatePlaylistGradient(colors.light);
+    updatePlaylistGradient(colors.dark);
     currentBarColor = colors.light;
     lyricsSection.style.background = colors.vibrant;
   } else {
@@ -3575,7 +3575,7 @@ if (song.video && !IS_DESKTOP) {
 
   requestAnimationFrame(() => bgVideo.classList.add('show'));
 
-  seekBar.style.opacity = 0.55;
+  seekBar.style.opacity = 1;
 
   // fade out cover
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
@@ -3588,7 +3588,7 @@ if (song.video && !IS_DESKTOP) {
   // hide video
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000000, #0000005e 80%)';
+  videoOverlay.style.background = 'linear-gradient(to bottom, #6e6e6e23, #0000005e 80%)';
   bgOverlay.style.background = 'linear-gradient(to bottom, #0000005e, #121212 20%)';
 
   seekBar.style.opacity = 1;

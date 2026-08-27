@@ -85,7 +85,7 @@ opacity: 0.33;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,#00000000, #0000005e 80%); 
+  background: linear-gradient(to bottom,#6e6e6e23, #0000005e 80%); 
   pointer-events: none; 
   z-index: 0;
 }
@@ -374,7 +374,6 @@ opacity: 0.33;
   text-align: left;
   flex: 1;
   overflow: hidden;
-  text-overflow: ellipsis;
   position: relative;
   display: block;
   white-space: nowrap;
@@ -385,6 +384,7 @@ opacity: 0.33;
   margin: 5px 0 2px;
   font-size: clamp(1.45rem, 4vw, 1.6rem);
   font-weight: 700;
+  text-overflow: hidden;
 
 }
 
@@ -393,6 +393,7 @@ opacity: 0.33;
   font-size: clamp(1.0rem, 3vw, 1.1rem);
   color: #b5b4bfec;
   margin-bottom: 10px;
+  text-overflow: ellipsis;
 }
 
 .search-head {
@@ -454,7 +455,7 @@ opacity: 0.33;
 /*the first thumb actually works*/
 #seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  transform: translateX(-3px);
+  box-shadow: none;
   border-radius: 20px;
   border: 20px;
   color: white;
@@ -465,6 +466,7 @@ opacity: 0.33;
 
 /*this bottom one doesn't work*/
 #seek-bar::-moz-range-thumb {
+  box-shadow: none;
   color: white;
   width: 10px;
   height: 10px;
