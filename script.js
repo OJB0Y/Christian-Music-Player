@@ -2641,9 +2641,11 @@ const audio = document.getElementById('audio');
 const seekBar = document.getElementById('seek-bar');
 const bottomBar = document.getElementById('bottom-seek-bar');
 const realBottomBar = document.querySelector('.bottom-bar');
+const titleWrapper = document.querySelector('.title-wrapper');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const cover = document.getElementById('cover');
+const videoCover = document.getElementById('video-cover');
 const playlistEl = document.getElementById('playlist');
 const video = document.getElementById('bg-video');
 
@@ -2694,11 +2696,12 @@ const playlistLabel = document.getElementById("currentPlaylistLabel");
 function updateTitleScroll() {
   // Stop any existing animation first
   title.classList.remove('title-scrolling');
+  title.classList.remove('title-scrolling-video');
   title.style.setProperty('--scroll-distance', '0px');
 
   // Wait for the browser to measure the newly updated title
   requestAnimationFrame(() => {
-    const overflowAmount = title.scrollWidth - title.clientWidth;
+    const overflowAmount = title.scrollWidth - title.parentElement.clientWidth;
 
     // Only animate if the title actually overflows
     if (overflowAmount > 1) {
@@ -2711,6 +2714,31 @@ function updateTitleScroll() {
       void title.offsetWidth;
 
       title.classList.add('title-scrolling');
+    }
+  });
+}
+
+function updateTitleScrollVideo() {
+  // Stop any existing animation first
+  title.classList.remove('title-scrolling');
+  title.classList.remove('title-scrolling-video');
+  title.style.setProperty('--scroll-distance', '0px');
+
+  // Wait for the browser to measure the newly updated title
+  requestAnimationFrame(() => {
+    const overflowAmount = title.scrollWidth - title.parentElement.clientWidth + 85;
+
+    // Only animate if the title actually overflows
+    if (overflowAmount > 1) {
+      title.style.setProperty(
+        '--scroll-distance',
+        `${overflowAmount}px`
+      );
+
+      // Force animation to restart cleanly
+      void title.offsetWidth;
+
+      title.classList.add('title-scrolling-video');
     }
   });
 }
@@ -3450,6 +3478,7 @@ function loadSong(index) {
 
   // Update cover immediately
   cover.src = song.cover;
+  videoCover.src = song.cover;
   
   // Mini player
   miniCover.src = song.cover;
@@ -3558,9 +3587,10 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
   artist.textContent = song.artist;
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
-  updateTitleScroll();
+  //updateTitleScroll();
 
   miniCover.src = song.cover;
+  videoCover.src = song.cover;
   updateActiveSong();
 
   getSongColors(song.cover).then(colors => {
@@ -3623,10 +3653,19 @@ if (song.video && !IS_DESKTOP) {
   //nowPlayingCover.style.transition = 'opacity 0.5s ease';
   nowPlayingCover.style.opacity = '0';
 
+  videoCover.style.opacity = '1';
+  titleWrapper.classList.add('move-left');
+  artist.classList.add('move-left');
+  updateTitleScrollVideo();
+
   // stop visualizer
   visualizer.classList.remove('active');
   stopVisualizer();
 } else {
+  updateTitleScroll();
+  videoCover.style.opacity = '0';
+  titleWrapper.classList.remove('move-left');
+  artist.classList.remove('move-left');
   // hide video
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
@@ -4161,6 +4200,7 @@ function animateCoverChange(newCoverSrc, direction = "next", callback) {
 
     // 3. Change the image while off-screen
     cover.src = newCoverSrc;
+    videoCover.src = newCoverSrc;
 
     // 4. Position new image off-screen on the opposite side
     cover.classList.add(slideInClass);
