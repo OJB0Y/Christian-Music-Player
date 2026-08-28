@@ -3590,8 +3590,25 @@ if (song.video && !IS_DESKTOP) {
   bgVideo.muted = true;   // allow autoplay
   bgVideo.loop = true;    // optional
   bgVideo.style.display = 'block';
-  videoOverlay.style.background = 'linear-gradient(to bottom, #00000026, #000000a5 80%, #000000ed)'; 
-  bgOverlay.style.background = 'linear-gradient(to bottom, #000000ed, #121212 20%)';
+  videoOverlay.style.background = 'linear-gradient(to bottom, #00000026, #000000a5 80%, #121212)'; 
+  bgOverlay.style.background = 'linear-gradient(to bottom, #121212, #121212 20%)';
+
+  bgVideo.onloadedmetadata = () => {
+    const videoWidth = bgVideo.videoWidth;
+    const videoHeight = bgVideo.videoHeight;
+
+    if (videoWidth && videoHeight) {
+        const ratio = videoWidth / videoHeight;
+
+        if (videoWidth < window.innerWidth) {
+            bgVideo.style.width = window.innerWidth + 'px';
+            bgVideo.style.height = (window.innerWidth / ratio) + 'px';
+        } else {
+            bgVideo.style.width = "100%";
+            bgVideo.style.height = "100%";
+        }
+    }
+};
 
   bgVideo.load();
   bgVideo.play().catch(() => {});
@@ -3613,8 +3630,8 @@ if (song.video && !IS_DESKTOP) {
   // hide video
   bgVideo.classList.remove('show');
   setTimeout(() => bgVideo.style.display = 'none', 500);
-  videoOverlay.style.background = 'linear-gradient(to bottom, #6e6e6e23, #0000005e 80%)';
-  bgOverlay.style.background = 'linear-gradient(to bottom, #0000005e, #121212 20%)';
+  videoOverlay.style.background = 'linear-gradient(to bottom,#6e6e6e4a, #0000007a 80%)';
+  bgOverlay.style.background = 'linear-gradient(to bottom, #0000007a, #121212 32%)';
 
   seekBar.style.opacity = 1;
 
