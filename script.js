@@ -2997,7 +2997,8 @@ optionsBtn.addEventListener('click', (e) => {
 
 
 // Check if device is desktop
-const IS_DESKTOP = window.innerWidth >= window.innerHeight; 
+let IS_DESKTOP = window.innerWidth >= window.innerHeight; 
+const ASPECT_RATIO = window.innerWidth / window.innerHeight;
 //old version of checking window.innerWidth >= 550 && window.innerWidth <= 1450 && window.innerHeight <= 800;
 
 
@@ -3015,13 +3016,19 @@ function updateCoverSize() {
     coverWrapper.style.marginBottom = '3.5vh';
     realBottomBar.style.width = '99.3%';
     player.style.transform = 'translateX(3.77%)';
-  } else {
-    nowPlayingImg.style.maxWidth = '400px';
-    nowPlayingImg.style.marginBottom = '1.5rem';
-    playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
-    coverWrapper.style.marginBottom = '4vh';
-  }
+  } else if (ASPECT_RATIO < 1.5) {
+      nowPlayingImg.style.maxWidth = '400px';
+      nowPlayingImg.style.marginBottom = '1.5rem';
+      playerContainer.style.marginTop = '20px';
+      libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
+      coverWrapper.style.marginBottom = '4vh';
+    } else {
+        nowPlayingImg.style.maxWidth = '400px';
+        nowPlayingImg.style.marginBottom = '1.5rem';
+        playerContainer.style.marginTop = '20px';
+        libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
+        coverWrapper.style.marginBottom = '4vh';
+    }
 }
 
 // Initial call
