@@ -2691,6 +2691,30 @@ let playbackSource = "All Songs";  // what actually triggered playback
 
 const playlistLabel = document.getElementById("currentPlaylistLabel");
 
+function updateTitleScroll() {
+  // Stop any existing animation first
+  title.classList.remove('title-scrolling');
+  title.style.setProperty('--scroll-distance', '0px');
+
+  // Wait for the browser to measure the newly updated title
+  requestAnimationFrame(() => {
+    const overflowAmount = title.scrollWidth - title.clientWidth;
+
+    // Only animate if the title actually overflows
+    if (overflowAmount > 1) {
+      title.style.setProperty(
+        '--scroll-distance',
+        `${overflowAmount}px`
+      );
+
+      // Force animation to restart cleanly
+      void title.offsetWidth;
+
+      title.classList.add('title-scrolling');
+    }
+  });
+}
+
 function updatePlaylistLabel() {
   playlistLabel.textContent = currentPlaylist;
 }
@@ -3534,6 +3558,7 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
   artist.textContent = song.artist;
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
+  updateTitleScroll();
 
   miniCover.src = song.cover;
   updateActiveSong();
@@ -4236,3 +4261,4 @@ setPlayIcon(false); // Show play icon (paused state)
 playbackSource = "All Songs";
 currentPlaylist = "All Songs";
 updatePlaylistLabel();
+window.addEventListener('resize', updateTitleScroll);

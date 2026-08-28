@@ -373,7 +373,6 @@ opacity: 0.33;
 .now-playing p {
   text-align: left;
   flex: 1;
-  overflow: hidden;
   position: relative;
   display: block;
   white-space: nowrap;
@@ -384,8 +383,30 @@ opacity: 0.33;
   margin: 5px 0 2px;
   font-size: clamp(1.45rem, 4vw, 1.6rem);
   font-weight: 700;
-  text-overflow: hidden;
 
+  white-space: nowrap;
+
+  --scroll-distance: 0px;
+}
+
+.now-playing h2.title-scrolling {
+  animation: title-marquee 8s ease-in-out infinite;
+}
+
+@keyframes title-marquee {
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+
+  50%,
+  65% {
+    transform: translateX(calc(-1 * var(--scroll-distance)));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .now-playing p {
@@ -393,6 +414,7 @@ opacity: 0.33;
   font-size: clamp(1.0rem, 3vw, 1.1rem);
   color: #b5b4bfec;
   margin-bottom: 10px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
