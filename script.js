@@ -1467,8 +1467,7 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Lara la la la la - Redimi2.mp3",
     cover: "images/Cover of Lara la la la la by Redimi2.jpg",
-    hex: "#979797",
-    barColor: "#c1c1c1",
+    lrc: "LRC files/Lara la la la la - Redimi2.lrc"
   }, 
   {
     title: "Me Corre",
@@ -2587,10 +2586,10 @@ const playlist = [
     cover: "images/puede.jpg",
   },
   {
-    title: "Revolú_spotdown.org.mp3", //348
+    title: "Revolú", //348
     artist: "Redimi2",
     src: "songs/Revolú_spotdown.org.mp3",
-    cover: "images/",
+    cover: "images/Bien.jpg",
   }
 ];
 
