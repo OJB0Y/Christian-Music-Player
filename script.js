@@ -1275,8 +1275,7 @@ const playlist = [
     artist: "Redimi2/Ander Bock/Samantha Kate",
     src: "songs/SpotiDownloader.com - Por Siempre - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
-    hex: "#5CA3AC",
-    barColor: "#f85300",
+    video: "videos/Redimi13.mp4",
   },
   {
     title: "Jesús viral",
@@ -1291,8 +1290,7 @@ const playlist = [
     artist: "Redimi2/Betsy Jo/Melody Jaine",
     src: "songs/SpotiDownloader.com - Como David - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
-    hex: "#5CA3AC",
-    barColor: "#f85300",
+    video: "videos/Redimi14.mp4",
   },
   {
     title: "Alabaré",
@@ -1474,16 +1472,14 @@ const playlist = [
     artist: "Redimi2, Pauneto, Vianca \"The Grace\", Borrero",
     src: "songs/SpotiDownloader.com - Me Corre - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
-    hex: "#5CA3AC",
-    barColor: "#f85300",
+    video: "videos/Redimi14.mp4",
   }, 
   {
     title: "Frontin",//190
     artist: "Redimi2, Niko Eme, Temperamento, Wolandia",
     src: "songs/SpotiDownloader.com - Frontin - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
-    hex: "#5CA3AC",
-    barColor: "#f85300",
+    video: "videos/Redimi14.mp4",
   }, 
   {
     title: "De Buenas (Remix)",
@@ -1507,8 +1503,7 @@ const playlist = [
     artist: "Redimi2, Tomi Perfetti, Lexico Ht, Gedeones, Eva Nova, Fanny Plaza, MR. Yeison, Ada Betsabe, H-Sufia, Indy For, DesXa",
     src: "songs/SpotiDownloader.com - Kings And Queens - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
-    hex: "#5CA3AC",
-    barColor: "#f85300",
+    video: "videos/Redimi14.mp4",
   }, 
   {
     title: "Empírico",
@@ -1539,8 +1534,7 @@ const playlist = [
     artist: "Redimi2, Mireyli Rosa",
     src: "songs/SpotiDownloader.com - Los Jordan - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
-    hex: "#5CA3AC",
-    barColor: "#f85300",
+    video: "videos/Redimi14.mp4",
   }, 
   {
     title: "Alegría",
@@ -2112,6 +2106,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Encontrarte - Majo y Dan.mp3",
     cover: "images/Cover of Encontrarte by Majo y Dan, Madiel Lara.jpg",
     video: "videos/majoYDan3.mp4",
+    lrc: "LRC files/Encontrarte - Majo y Dan, Madiel Lara.lrc",
   }, 
   {
     title: "Aleluya Amen",//273
@@ -2343,6 +2338,7 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Parabellum - Redimi2.mp3",
     cover: "images/Cover of Lara la la la la by Redimi2.jpg",
+    lrc: "LRC files/Lara la la la la - Redimi2.lrc"
   },
   {
     title: "Cristales y Dictadores", //310
@@ -4022,8 +4018,8 @@ audio.addEventListener('timeupdate', () => {
     to right,
     white 0%,
     white ${progress}%,
-    #818181b9 ${progress}%,
-    #818181b9 100%
+    #8181818d ${progress}%,
+    #8181818d 100%
   )`;
 
   bottomBar.style.background = `linear-gradient(to right,
