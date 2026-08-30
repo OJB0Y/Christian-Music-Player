@@ -2571,7 +2571,7 @@ const playlist = [
     artist: "Natan El Profeta, Ander Bock",
     src: "songs/SpotiDownloader.com - Raro - Natan El Profeta.mp3",
     cover: "images/Cover of Raro by Natan El Profeta, Ander Bock.jpg",
-    video: "videos/NatanElProfeta3.jpeg"
+    //video: "videos/NatanElProfeta3.jpeg"
   },
   {
     title: "Imparable", //346
