@@ -1997,7 +1997,8 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Locos Como Yo - Redimi2.mp3",
     cover: "images/Bien.jpg",
-    video: "videos/Redimi12.mp4"
+    video: "videos/Redimi12.mp4",
+    lrc: "LRC files/Locos Como Yo - Redimi2.lrc",
   },
     {
     title: "Pa' Loco", //inabakumori 256
@@ -2338,7 +2339,6 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Parabellum - Redimi2.mp3",
     cover: "images/Cover of Lara la la la la by Redimi2.jpg",
-    lrc: "LRC files/Lara la la la la - Redimi2.lrc"
   },
   {
     title: "Cristales y Dictadores", //310
@@ -2401,6 +2401,7 @@ const playlist = [
     artist: "Evan Craft, Redimi2",
     src: "songs/SpotiDownloader.com - Reborn - Evan Craft.mp3",
     cover: "images/evan.png",
+    lrc: "LRC files/Reborn - Evan Craft, Redimi2.lrc",
   },
   {
     title: "EL INCOREGIBLE", //320
@@ -2586,7 +2587,14 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/Revolú_spotdown.org.mp3",
     cover: "images/Bien.jpg",
-  }
+  },
+  {
+    title: "Qué Maldición", //349
+    artist: "Banda MS de Sergio Lizárraga, Snoop Dogg",
+    src: "songs/SpotiDownloader.com - Qué Maldición - Banda MS de Sergio Lizárraga.mp3",
+    cover: "images/Cover of Qué Maldición by Banda MS de Sergio Lizárraga, Snoop Dogg.jpg",
+    lrc: "LRC files/Qué Maldición - Banda MS de Sergio Lizárraga, Snoop Dogg.lrc",
+  },
 ];
 
 const playlistOrder = {
@@ -2599,7 +2607,7 @@ const playlistOrder = {
   majoYDan: [145, 281, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
   ROADTRIP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 112, 114, 116, 119, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 154, 161, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 187, 188, 199, 201, 202, 203, 204, 205, 206, 208, 210, 212, 213, 215, 216, 217, 218, 219, 225, 226, 227, 228, 229, 230, 231, 232, 233, 237, 238, 239, 240, 241, 242, 245, 246, 247, 248, 249, 251, 252, 257, 263, 264, 268, 272, 274, 281, 282, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 311, 312, 313, 314, 315, 316, 317, 318, 319, 321, 324, 325, 328, 329, 330, 331, 332, 337, 338, 339, 340, 341, 342, 343],
-  LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320, 344, 345, 210, 322, 323, 234, 348, 333, 334, 335, 336],
+  LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320, 344, 345, 210, 322, 323, 234, 348, 349, 333, 334, 335, 336],
   //make a playlist for the mothers day songs
 };
 
@@ -2754,6 +2762,18 @@ const songRequest = document.getElementById("songRequest");
 const closeRequest = document.getElementById("closeRequest");
 
 const lyricsSection = document.querySelector('.lyrics-section');
+const lyricsContent = document.getElementById('lyrics-content');
+const openLyricsBtn = document.getElementById('open-lyrics');
+
+const lyricsScreen = document.getElementById('lyrics-screen');
+const closeLyricsBtn = document.getElementById('close-lyrics');
+const fullLyrics = document.getElementById('full-lyrics');
+const lyricsSongTitle = document.getElementById('lyrics-song-title');
+
+let lyricsRequestId = 0;
+
+let currentLyrics = [];
+let activeLyricIndex = -1;
 
 let miniPlayerActivated = false;
 let currentPlaylist = "all songs";
@@ -2811,6 +2831,297 @@ function updateTitleScrollVideo() {
     }
   });
 }
+
+/* =========================================================
+   LRC LYRICS PREVIEW
+   ========================================================= */
+
+function resetLyricsPreview() {
+  lyricsContent.textContent = "This song has no lyrics...";
+  lyricsSection.classList.remove("lyrics-overflow", "has-lyrics");
+
+  if (openLyricsBtn) {
+    openLyricsBtn.disabled = true;
+    openLyricsBtn.style.opacity = "0.45";
+  }
+
+  currentLyrics = [];
+  activeLyricIndex = -1;
+
+  fullLyrics.innerHTML = "";
+}
+
+
+function parseLRC(lrcText) {
+  const entries = [];
+  const lines = lrcText.split(/\r?\n/);
+
+  for (const line of lines) {
+
+    const timestamps = [
+      ...line.matchAll(
+        /\[(\d{1,3}):(\d{2})(?:\.(\d{1,3}))?\]/g
+      )
+    ];
+
+    if (!timestamps.length) continue;
+
+    const lyricText = line
+      .replace(
+        /\[(\d{1,3}):(\d{2})(?:\.(\d{1,3}))?\]/g,
+        ""
+      )
+      .trim();
+
+    if (!lyricText) continue;
+
+    for (const match of timestamps) {
+
+      const minutes = Number(match[1]);
+      const seconds = Number(match[2]);
+
+      const fraction = match[3] || "";
+
+      const milliseconds = fraction
+        ? Number(fraction.padEnd(3, "0"))
+        : 0;
+
+      entries.push({
+        time:
+          minutes * 60 +
+          seconds +
+          milliseconds / 1000,
+
+        text: lyricText
+      });
+    }
+  }
+
+  return entries.sort((a, b) => a.time - b.time);
+}
+
+
+async function loadLyricsPreview(song) {
+
+  // Every new request gets a unique ID.
+  // This prevents an old song's LRC from replacing
+  // the lyrics of the new song if the user switches quickly.
+  const requestId = ++lyricsRequestId;
+
+  resetLyricsPreview();
+
+  // Song doesn't have an LRC property
+  if (!song || !song.lrc) {
+    return;
+  }
+
+  try {
+
+    const response = await fetch(song.lrc, {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(
+        `Could not load LRC file: ${response.status}`
+      );
+    }
+
+    const lrcText = await response.text();
+
+    const lyrics = parseLRC(lrcText);
+
+    // Only use the first few actual lyric lines
+    const previewLines = lyrics.slice(0, 10);
+
+    // Make sure this is still the current song
+    if (requestId !== lyricsRequestId) {
+      return;
+    }
+
+    if (!previewLines.length) {
+      return;
+    }
+
+    // Put the lyrics into the preview
+    lyricsContent.textContent =
+  previewLines.map(line => line.text).join("\n");
+
+renderFullLyrics(lyrics);
+
+    lyricsSection.classList.add("has-lyrics");
+
+    if (openLyricsBtn) {
+      openLyricsBtn.disabled = false;
+      openLyricsBtn.style.opacity = "1";
+    }
+
+    // Wait until the browser has rendered the text
+    // before checking whether it actually overflows.
+    requestAnimationFrame(() => {
+
+      if (requestId !== lyricsRequestId) {
+        return;
+      }
+
+      const isOverflowing =
+        lyricsContent.scrollHeight >
+        lyricsContent.clientHeight + 1;
+
+      lyricsSection.classList.toggle(
+        "lyrics-overflow",
+        isOverflowing
+      );
+    });
+
+  } catch (error) {
+
+    if (requestId !== lyricsRequestId) {
+      return;
+    }
+
+    console.warn(
+      `Lyrics unavailable for "${song.title}":`,
+      error
+    );
+
+    resetLyricsPreview();
+  }
+}
+
+function renderFullLyrics(lyrics) {
+
+  currentLyrics = lyrics;
+  activeLyricIndex = -1;
+
+  fullLyrics.innerHTML = "";
+
+  lyrics.forEach((line, index) => {
+
+    const lyricLine = document.createElement("div");
+
+    lyricLine.className = "lyrics-line";
+    lyricLine.dataset.index = index;
+
+    lyricLine.textContent = line.text;
+
+    fullLyrics.appendChild(lyricLine);
+  });
+}
+
+/* =========================================================
+   FULL LYRICS SCREEN
+   ========================================================= */
+
+function openLyricsScreen() {
+
+  if (!currentLyrics.length) return;
+
+  const song = playlist[currentSong];
+
+  lyricsSongTitle.textContent = song
+    ? `${song.title} • ${song.artist}`
+    : "Lyrics";
+
+  lyricsScreen.classList.add("lyrics-screen-open");
+
+  // Start at the currently active lyric if possible
+  requestAnimationFrame(() => {
+
+    if (activeLyricIndex >= 0) {
+      scrollToActiveLyric(false);
+    }
+
+  });
+}
+
+
+function closeLyricsScreen() {
+  lyricsScreen.classList.remove("lyrics-screen-open");
+}
+
+
+openLyricsBtn.addEventListener("click", openLyricsScreen);
+
+closeLyricsBtn.addEventListener("click", closeLyricsScreen);
+
+function updateActiveLyric() {
+
+  if (!currentLyrics.length) return;
+
+  const currentTime = audio.currentTime;
+
+  let newIndex = -1;
+
+  for (let i = 0; i < currentLyrics.length; i++) {
+
+    if (currentTime >= currentLyrics[i].time) {
+      newIndex = i;
+    } else {
+      break;
+    }
+  }
+
+  if (newIndex === activeLyricIndex) {
+    return;
+  }
+
+  activeLyricIndex = newIndex;
+
+  document
+    .querySelectorAll(".lyrics-line.active")
+    .forEach(line => {
+      line.classList.remove("active");
+    });
+
+  if (activeLyricIndex >= 0) {
+
+    const activeLine = fullLyrics.querySelector(
+      `.lyrics-line[data-index="${activeLyricIndex}"]`
+    );
+
+    if (activeLine) {
+
+      activeLine.classList.add("active");
+
+      // Only automatically scroll when the active lyric changes.
+      // This means the user can still manually scroll around.
+      if (lyricsScreen.classList.contains("lyrics-screen-open")) {
+        scrollToActiveLyric(true);
+      }
+    }
+  }
+}
+
+
+function scrollToActiveLyric(smooth = true) {
+
+  if (activeLyricIndex < 0) return;
+
+  const activeLine = fullLyrics.querySelector(
+    `.lyrics-line[data-index="${activeLyricIndex}"]`
+  );
+
+  if (!activeLine) return;
+
+  const containerHeight = fullLyrics.clientHeight;
+
+  const lineTop = activeLine.offsetTop;
+
+  const lineHeight = activeLine.offsetHeight;
+
+  const targetScroll =
+    lineTop -
+    containerHeight / 2 +
+    lineHeight / 2;
+
+  fullLyrics.scrollTo({
+    top: Math.max(0, targetScroll),
+    behavior: smooth ? "smooth" : "auto"
+  });
+}
+
+audio.addEventListener("timeupdate", updateActiveLyric);
 
 function updatePlaylistLabel() {
   playlistLabel.textContent = currentPlaylist;
@@ -3543,6 +3854,8 @@ function loadSong(index) {
   
   const song = playlist[index];
 
+  loadLyricsPreview(song);
+
   audio.src = song.src;
 
   audio.load();
@@ -3567,10 +3880,14 @@ function loadSong(index) {
     updatePlaylistGradient(colors.dark);
     currentBarColor = colors.light;
     lyricsSection.style.background = colors.vibrant;
+    lyricsScreen.style.background = colors.vibrant
+    openLyricsBtn.style.color = colors.vibrant;
   } else {
     updatePlaylistGradient(colors.dark);
     currentBarColor = colors.light;
     lyricsSection.style.background = colors.vibrant;
+    lyricsScreen.style.background = colors.vibrant;
+    openLyricsBtn.style.color = colors.vibrant;
   };
 });
 
@@ -3658,6 +3975,8 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
 
   const song = playlist[index];
 
+  loadLyricsPreview(song);
+
   // IMMEDIATE UI UPDATE (NO DELAYS)
   title.textContent = song.title;
   artist.textContent = song.artist;
@@ -3674,10 +3993,14 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
     updatePlaylistGradient(colors.dark);
     currentBarColor = colors.light;
     lyricsSection.style.background = colors.vibrant;
+    lyricsScreen.style.background = colors.vibrant
+    openLyricsBtn.style.color = colors.vibrant;
   } else {
     updatePlaylistGradient(colors.dark);
     currentBarColor = colors.light;
     lyricsSection.style.background = colors.vibrant;
+    lyricsScreen.style.background = colors.vibrant
+    openLyricsBtn.style.color = colors.vibrant;
   };
 });
 
