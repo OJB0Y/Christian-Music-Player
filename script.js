@@ -1049,7 +1049,8 @@ const playlist = [
     artist: "Majo y Dan",
     src: "songs/song6 (1).mp3",
     cover: "images/song6 (1).png",
-    video: "videos/majoYDan1.mp4"
+    video: "videos/majoYDan1.mp4",
+    lrc: "LRC files/Que Pase El Mundo - Majo y Dan.lrc",
 },
 {
     title: "Gracias",
@@ -1057,6 +1058,7 @@ const playlist = [
     src: "songs/song7 (1).mp3",
     cover: "images/song7 (1).png",
     video: "videos/gracias.mp4",
+    lrc: "LRC files/Gracias - Majo y Dan, Musiko.lrc",
 },
 {
     title: "Es por Fe",//140
@@ -1103,9 +1105,8 @@ const playlist = [
     artist: "Majo y Dan",
     src: "songs/song13.mp3",
     cover: "images/song13.png",
-    hex: "#283830",
-    barColor: "#36a595ff",
-    video: "videos/majoYDan2.mp4"
+    video: "videos/majoYDan2.mp4",
+    lrc: "LRC files/Vida Encontré - Majo y Dan.lrc",
 },
 {
     title: "Volverás",
@@ -1592,6 +1593,7 @@ const playlist = [
     hex: "#602018",
     barColor: "#e88930dd",
     video: "videos/MadielLara3.mp4",
+    lrc: "LRC files/DIOS HA SIDO BUENO - Madiel Lara.lrc",
   }, 
   {
     title: "ABBA PADRE",//205
@@ -2165,7 +2167,8 @@ const playlist = [
     artist: "Majo y Dan, Vaes",
     src: "songs/SpotiDownloader.com - Sol en día nublado - Majo y Dan.mp3",
     cover: "images/Cover of Sol en día nublado by Majo y Dan, Vaes.jpg",
-    video: "videos/majoYDan4.mp4"
+    video: "videos/majoYDan4.mp4",
+    lrc: "LRC files/Sol en día nublado - Majo y Dan, Vaes.lrc",
   }, 
   {
     title: "La Cumbia del Perdón",//282
@@ -2408,6 +2411,7 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - EL INCORREGIBLE - Redimi2.mp3",
     cover: "images/Gokey.jpg",
+    lrc: "LRC files/EL INCORREGIBLE - Redimi2.lrc",
   },
   {
     title: "Estoy TRANQUILO", //
@@ -2421,12 +2425,14 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/Bendecío_spotdown.org.mp3",
     cover: "images/Bien.jpg",
+    lrc: "LRC files/Bendecio - Redimi2.lrc"
   },
   {
     title: "Sin Metales", //323
     artist: "Madiel Lara, AJ Kallejero Ramos, AJ Ramos",
     src: "songs/SpotiDownloader.com - Sin Metales - Madiel Lara.mp3",
     cover: "images/Cover of Cristo En La Casa by Madiel Lara, Redimi2.jpg",
+    lrc: "LRC files/Sin Metales - Madiel Lara, AJ Kallejero Ramos, AJ Ramos.lrc",
   },
   {
     title: "La Bondad De Dios", //324
@@ -2507,6 +2513,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Bubble Pop - Bootsy Collins.mp3",
     cover: "images/Album of the year.jpg",
     video: "videos/Bootsy2.mp4",
+    lrc: "LRC files/Bubble Pop - Bootsy Collins, Ice Cube, Fantaazma, Brother Nature.lrc",
   },
   {
     title: "Jam On", //336
@@ -2543,12 +2550,14 @@ const playlist = [
     artist: "Evan Craft",
     src: "songs/SpotiDownloader.com - The Devil Is A Liar - Evan Craft.mp3",
     cover: "images/evan.png",
+    lrc: "LRC files/The Devil Is A Liar - Evan Craft.lrc"
   },
   {
     title: "Siempre Me Encuentras (You Find Me)", //342
     artist: "Evan Craft",
     src: "songs/SpotiDownloader.com - Siempre Me Encuentras (You Find Me) - Evan Craft.mp3",
     cover: "images/evan.png",
+    lrc: "LRC files/Siempre Me Encuentras (You Find Me) - Evan Craft.lrc"
   },
   {
     title: "Vale La Pena", //343
@@ -2587,6 +2596,7 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/Revolú_spotdown.org.mp3",
     cover: "images/Bien.jpg",
+    lrc: "LRC files/Revolú - Redimi2.lrc",
   },
   {
     title: "Qué Maldición", //349
@@ -2991,6 +3001,7 @@ renderFullLyrics(lyrics);
 }
 
 function renderFullLyrics(lyrics) {
+  fullLyrics.classlist.add("full-lyrics-overflow");
 
   currentLyrics = lyrics;
   activeLyricIndex = -1;

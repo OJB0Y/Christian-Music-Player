@@ -1117,7 +1117,7 @@ opacity: 0.33;
 
   text-align: left;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 1.5;
 
   white-space: pre-line;
@@ -1159,9 +1159,7 @@ opacity: 0.33;
   );
 }
 
-/* =========================================================
-   FULL LYRICS SCREEN
-   ========================================================= */
+/* FULL LYRICS SCREEN */
 
 #lyrics-screen {
   position: fixed;
@@ -1203,9 +1201,7 @@ opacity: 0.33;
 }
 
 
-/* =========================================================
-   HEADER
-   ========================================================= */
+/* HEADER */
 
 .lyrics-screen-header {
 
@@ -1293,9 +1289,7 @@ opacity: 0.33;
 }
 
 
-/* =========================================================
-   FULL LYRICS
-   ========================================================= */
+/* FULL LYRICS */
 
 #full-lyrics {
 
@@ -1304,7 +1298,7 @@ opacity: 0.33;
   min-height: 0;
   max-height: 80vh;
 
-  width: 95%;
+  width: 90%;
 
   box-sizing: border-box;
 
@@ -1324,6 +1318,24 @@ opacity: 0.33;
   overscroll-behavior: contain;
 
   scrollbar-width: none;
+}
+
+/* Fade the bottom ONLY when the lyrics
+   actually overflow the preview */
+.full-lyrics.full-lyrics-overflow {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 85%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 85%,
+    transparent 100%
+  );
 }
 
 
