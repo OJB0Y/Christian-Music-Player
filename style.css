@@ -755,22 +755,26 @@ opacity: 0.33;
 
 #timerScreen {
   position: fixed;
-  top: 0;
+  top: 40%; /*MODIFIED*/
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 180%;
   background: rgba(13, 17, 23, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 20px 20px 0 0;
   z-index: 1000;
   flex-direction: column;
-  transform: translateY(2000%);
+
+  display: none;
+  pointer-events: none;
+  transform: translateY(210%);
   transition: transform 0.55s cubic-bezier(.22,1,.36,1);
 }
 
 #timerScreen.open {
   display: flex;
-  transform: translateY(50%);
+  pointer-events: auto;
+  transform: translateY(0); /*MODIFIED*/
 }
 
 .timerContent {
@@ -861,26 +865,30 @@ opacity: 0.33;
   border-radius: 20px;
 
   position: fixed;
-  top: 0;
+  top: 0%; /*MODIFIED*/
   left: 0;
   width: 100%;
-  height: 68%;
+  height: 168%;
   background: rgba(13, 17, 23, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
   flex-direction: column;
+  display: none;
+  pointer-events: none;
 
-  transform: translateY(2000%);
+  transform: translateY(210%); /*MODIFIED*/
   transition: transform 0.55s cubic-bezier(.22,1,.36,1);
 }
 
 #queueScreen.open {
   display: flex;
-  transform: translateY(50%);
+  pointer-events: auto;
+  transform: translateY(23%); /*mODIFIED*/
+  transition: transform 0.55s cubic-bezier(.22,1,.36,1);
 }
 
 #queueScreen.closed {
-  transform: translateY(2000%);
+  transform: translateY(210%); /*MODIFIED*/
   transition: transform 0.55s cubic-bezier(.22,1,.36,1);
 }
 
@@ -1167,7 +1175,7 @@ opacity: 0.33;
   inset: 0;
 
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 
   z-index: 200;
 
@@ -1191,6 +1199,7 @@ opacity: 0.33;
 /* Open state */
 
 #lyrics-screen.lyrics-screen-open {
+  height: 200vh;
   transform: translateY(0);
 
   visibility: visible;
