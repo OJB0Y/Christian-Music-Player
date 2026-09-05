@@ -798,7 +798,7 @@ const playlist = [
 },
 {
     title: "Arde En Mi",//105
-    artist: "Evan Craft/Redimi2",
+    artist: "Evan Craft, Redimi2",
     src: "songs/Arde.mp3",
     cover: "images/Arde.jpg",
 },
@@ -1247,7 +1247,7 @@ const playlist = [
 },
   {
     title: "Replay",//160
-    artist: "Redimi2/Samantha Kate",
+    artist: "Redimi2, Samantha Kate",
     src: "songs/SpotiDownloader.com - Replay - Redimi2.mp3",
     cover: "images/Bien.jpg",
     hex: "#747474",
@@ -1255,7 +1255,7 @@ const playlist = [
   },
   {
     title: "Exagerado amor",
-    artist: "Redimi2/Evan Craft/Distrito Royal/Camila Sofía",
+    artist: "Redimi2, Evan Craft, Distrito Royal, Camila Sofía",
     src: "songs/SpotiDownloader.com - Exagerado amor - Redimi2.mp3",
     cover: "images/puede.jpg",
     hex: "#6B8681",
@@ -1271,7 +1271,7 @@ const playlist = [
   },
   {
     title: "Por Siempre",
-    artist: "Redimi2/Ander Bock/Samantha Kate",
+    artist: "Redimi2, Ander Bock, Samantha Kate",
     src: "songs/SpotiDownloader.com - Por Siempre - Redimi2.mp3",
     cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
     video: "videos/Redimi13.mp4",
@@ -1453,7 +1453,7 @@ const playlist = [
   }, 
   {
     title: "Ama A Dios Y A Tu Vecino",//187
-    artist: "Danny Gokey/Evan Craft/Redimi2",
+    artist: "Danny Gokey, Evan Craft, Redimi2",
     src: "songs/SpotiDownloader.com - Ama A Dios Y A Tu Vecino - Danny Gokey.mp3",
     cover: "images/Cover of Ama A Dios Y A Tu Vecino by Danny Gokey, Evan Craft, Redimi2.jpg",
     hex: "#403038",
@@ -2613,7 +2613,7 @@ const playlist = [
   }, 
   {
     title: "After The Storm (feat. Tyler, The Creator & Bootsy Collins)", //351
-    artist: "Kali Uchis, Tyer, The Creator, Bootsy Collins",
+    artist: "Kali Uchis, Tyler, The Creator, Bootsy Collins",
     src: "songs/After The Storm (feat. Tyler, The Creator & Bootsy Collins)_spotdown.org.mp3",
     cover: "images/Cover of After the Storm - Kali Uchis, Tyer, The Creator, Bootsy Collins.png",
     video: "videos/KaliUchis1.mp4",
@@ -2626,7 +2626,7 @@ const playlistOrder = {
   Worship: [340, 339, 337, 338, 330, 331, 332, 307, 324, 318, 317, 316, 315, 314, 313, 312, 311, 308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 286, 293, 294, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
   LockIn: [350, 348, 347, 346, 326, 327, 255, 256, 254, 320, 321, 322, 323, 319, 272, 273, 274, 102, 283, 309, 310, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249, 284, 328],
-  MUSIKO: [343, 342, 341, 340, 331, 328, 319, 102, 78, 325, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 120, 188, 112, 284, 114, 321, 205, 204, 262, 203, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217, 274, 287, 241, 143, 298, 299, 300],
+  MUSIKO: [343, 105, 342, 341, 340, 331, 328, 319, 102, 78, 325, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 120, 188, 112, 284, 114, 321, 205, 204, 262, 203, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217, 274, 287, 241, 143, 298, 299, 300],
   SerendipiaRemix: [241, 242, 204, 245, 246, 247, 251, 249, 243, 244, 116, 328, 329],
   majoYDan: [145, 281, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
