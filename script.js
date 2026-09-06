@@ -2653,6 +2653,43 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Doggy Dogg World - Snoop Dogg.mp3",
     cover: "images/Cover of Doggy Dogg World by Snoop Dogg, Tha Dogg Pound, The Dramatics.jpg",
     lrc: "LRC files/Doggy Dogg World - Snoop Dogg, Tha Dogg Pound, The Dramatics.lrc",
+  }, 
+  {
+    title: "Hollywood (feat. Snoop Dogg & Jamie Principle)", //357
+    artist: "Gorillaz, Snoop Dogg, Jamie Principle",
+    src: "songs/Hollywood (feat. Snoop Dogg & Jamie Principle)_spotdown.org.mp3",
+    cover: "images/Cover of Hollywood (feat. Snoop Dogg & Jamie Principle) by Gorillaz, Snoop Dogg, Jamie Principle.jpg",
+    video: "videos/Gorillaz1.mp4",
+    lrc: "LRC files/Hollywood (feat. Snoop Dogg & Jamie Principle) - Gorillaz, Snoop Dogg, Jamie Principle.lrc",
+  }, 
+  {
+    title: "Sumthin Like This Night", //358
+    artist: "Snoop Dogg, Gorillaz",
+    src: "songs/SpotiDownloader.com - Sumthin Like This Night - Snoop Dogg.mp3",
+    cover: "images/Cover of Sumthin Like This Night by Snoop Dogg, Gorillaz.jpg",
+    lrc: "LRC files/Sumthin Like This Night - Snoop Dogg, Gorillaz.lrc",
+  }, 
+  {
+    title: "Clint Eastwood", //359
+    artist: "Gorillaz, Del The Funky Homosapien",
+    src: "songs/SpotiDownloader.com - Clint Eastwood - Gorillaz.mp3",
+    cover: "images/Cover of Rock the House by Gorillaz, Del The Funky Homosapien.jpg",
+    lrc: "LRC files/Clint Eastwood - Gorillaz, Del The Funky Homosapien.lrc",
+  }, 
+  {
+    title: "Rock the House", //360
+    artist: "Gorillaz, Del The Funky Homosapien",
+    src: "songs/SpotiDownloader.com - Rock the House - Gorillaz.mp3",
+    cover: "images/Cover of Rock the House by Gorillaz, Del The Funky Homosapien.jpg",
+    lrc: "LRC files/Rock the House - Gorillaz, Del The Funky Homosapien.lrc",
+  }, 
+  {
+    title: "Captain Chicken (feat. Del The Funky Homosapien)", //361
+    artist: "Gorillaz, Del The Funky Homosapien",
+    src: "songs/SpotiDownloader.com - Captain Chicken (feat. Del The Funky Homosapien) - Gorillaz.mp3",
+    cover: "images/Cover of Captain Chicken (feat. Del The Funky Homosapien) by Gorillaz, Del The Funky Homosapien.jpg",
+    video: "videos/Gorillaz2.mp4",
+    lrc: "LRC files/Captain Chicken (feat. Del The Funky Homosapien) - Gorillaz, Del The Funky Homosapien.lrc",
   },
 ];
 
@@ -2666,7 +2703,7 @@ const playlistOrder = {
   majoYDan: [145, 281, 139, 272, 141, 138, 137, 131, 146, 147, 148, 143, 144, 244],
   cumpleaños: [275, 276, 277],
   ROADTRIP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 112, 114, 116, 119, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 154, 161, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 187, 188, 199, 201, 202, 203, 204, 205, 206, 208, 210, 212, 213, 215, 216, 217, 218, 219, 225, 226, 227, 228, 229, 230, 231, 232, 233, 237, 238, 239, 240, 241, 242, 245, 246, 247, 248, 249, 251, 252, 257, 263, 264, 268, 272, 274, 281, 282, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 311, 312, 313, 314, 315, 316, 317, 318, 319, 321, 324, 325, 328, 329, 330, 331, 332, 337, 338, 339, 340, 341, 342, 343],
-  LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320, 344, 345, 210, 322, 323, 234, 348, 163, 197, 326, 327, 350, 351, 349, 333, 334, 335, 336, 352, 353, 354, 355, 356],
+  LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320, 344, 345, 210, 322, 323, 234, 348, 163, 197, 326, 327, 350, 351, 349, 333, 334, 335, 336, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361],
   //make a playlist for the mothers day songs
 };
 
@@ -3459,7 +3496,7 @@ function updateCoverSize() {
     player.style.transform = 'translateX(3.77%)';
   } else if (ASPECT_RATIO < 1.5) {
       nowPlayingImg.style.maxWidth = '400px';
-      nowPlayingImg.style.marginBottom = '1.5rem';
+      nowPlayingImg.style.marginBottom = '1.3rem';
       playerContainer.style.marginTop = '20px';
       libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
       coverWrapper.style.marginBottom = '4vh';
@@ -3469,8 +3506,9 @@ function updateCoverSize() {
         playerContainer.style.marginTop = '20px';
         libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
         coverWrapper.style.marginBottom = '4vh';
-    }
-}
+        player.style.transform = 'translateX(0%)';
+      }
+  }
 
 // Initial call
 updateCoverSize();
