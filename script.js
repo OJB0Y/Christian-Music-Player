@@ -2705,6 +2705,13 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Agradecido - Oasis Ministry.mp3",
     cover: "images/Cover of Agradecido by Oasis Ministry, Madiel Lara.jpg",
     video: "videos/Oasis1.mp4",
+  },
+  {
+    title: "Mi Tío Snoop (feat. Snoop Dogg)", //364
+    artist: "Alemán, Snoop Dogg",
+    src: "songs/SpotiDownloader.com - Mi Tío Snoop (feat. Snoop Dogg) - Alemán.mp3",
+    cover: "images/Cover of Mi Tío Snoop (feat. Snoop Dogg) by Alemán, Snoop Dogg.jpg",
+    lrc: "LRC files/Mi Tío Snoop (feat. Snoop Dogg) - Alemán, Snoop Dogg.lrc",
   },/* 
   {
     title: "", //3##
