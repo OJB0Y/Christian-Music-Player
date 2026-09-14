@@ -3557,7 +3557,7 @@ function updateCoverSize() {
     player.style.transform = 'translateX(0%)';
     player.style.width = '100%';
   }
-  }
+}
 
 // Initial call
 updateCoverSize();
