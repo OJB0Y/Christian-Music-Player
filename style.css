@@ -1305,7 +1305,7 @@ opacity: 0.33;
   flex: 1;
 
   min-height: 0;
-  max-height: 80vh;
+  max-height: 77vh;
 
   width: 90%;
 
@@ -1363,7 +1363,7 @@ opacity: 0.33;
 
   margin: 0 0 24px;
 
-  font-size: clamp(1.35rem, 3.1vw, 2rem);
+  font-size: clamp(1.35rem, 3.1vw, 2.35rem);
 
   line-height: 1.35;
 
