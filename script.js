@@ -121,8 +121,6 @@ const playlist = [
     artist: "Manuel Bonilla",
     src: "songs/song2.mp3",
     cover: "images/song2.jpg",
-    hex: "#942409",
-    barColor: "#df2d00ff"
   },
   {
     title: "En Mi Casa Vive Jesús",
