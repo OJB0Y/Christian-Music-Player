@@ -3596,20 +3596,20 @@ const ASPECT_RATIO = window.innerWidth / window.innerHeight;
 
 //change the app depending on wide screen or not
 function updateCoverSize() {
-  IS_DESKTOP = window.innerWidth >= window.innerHeight; 
+  IS_DESKTOP = window.innerWidth > (window.innerHeight + 200); 
   const nowPlayingImg = document.getElementById('cover');
   const playerContainer = document.querySelector('.player');
   const libraryPlaylist = document.querySelector('#libraryPlaylist');
   
   if (IS_DESKTOP) { //look...i dont even know what happened....
-    nowPlayingImg.style.maxWidth = '315px';
-    nowPlayingImg.style.marginBottom = '1.3rem';
+    nowPlayingImg.style.maxWidth = '52vh';
+    nowPlayingImg.style.marginBottom = '0rem';
     playerContainer.style.marginTop = '0px';
     libraryPlaylist.style.maxHeight = 'calc(100% - 58.5%)';
     coverWrapper.style.marginBottom = '4vh';
     realBottomBar.style.width = '99.3%';
-    player.style.transform = 'translateX(11%)';
-    player.style.width = '88%';
+    player.style.transform = 'translateX(61%)';
+    player.style.width = '50%';
   } else if (ASPECT_RATIO > 2.1 && IS_DESKTOP) { //yeah why did i make these two else if??
     nowPlayingImg.style.maxWidth = '380px';
     nowPlayingImg.style.marginBottom = '1.5rem';
@@ -3873,7 +3873,7 @@ miniPause.addEventListener('click', e => {
 });
 
 audio.addEventListener('playing', () => {
-  document.title = `${playlist[currentSong].title}`;
+  document.title = `${playlist[currentSong].title} • ${playlist[currentSong].artist}`;
 });
 
 audio.addEventListener('play', () => {

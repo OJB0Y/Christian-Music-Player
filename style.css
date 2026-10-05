@@ -555,7 +555,7 @@ opacity: 0.33;
   position: relative;
   justify-content: center;
   gap: 1rem;
-  margin: 5px 0 5px;
+  margin: 0px 0 0px; /*margin top, margin left, margin bottom*/
   bottom: 8px;
 }
 
@@ -566,14 +566,16 @@ opacity: 0.33;
   color: white;            
   cursor: pointer;
   transition: transform 0.08s; 
-  padding: 1.4vh; /* <---CHANGE THIS TO ADD MORE SPACE BETWEEN BUTTONS*/
+  max-width: 50%;
+  padding: 0 4vw; */
+  box-sizing: border-box;
   border-radius: 100px;
 }
 
 /* Make SVG icons bigger without changing button size */
 .icon-btn svg {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   display: block;
 }
 
@@ -594,8 +596,8 @@ opacity: 0.33;
 
 /* Make the Play/Pause button bigger */
 #play svg {
-  width: 79px;
-  height: 79px;
+  width: 83px;
+  height: 83px;
 }
 
 #play {
