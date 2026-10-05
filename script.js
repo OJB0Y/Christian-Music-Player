@@ -3856,7 +3856,6 @@ function stopVisualizer() {
 
 
 
-// umm
 audio.addEventListener('play', () => {
   miniPlayer.classList.add('visible');
   openPlaylistBtn.style.opacity = 1;
@@ -3873,6 +3872,10 @@ miniPause.addEventListener('click', e => {
   audio.pause();
 });
 
+audio.addEventListener('playing', () => {
+  document.title = `${playlist[currentSong].title}`;
+});
+
 audio.addEventListener('play', () => {
   miniPlayer.classList.add('visible');
   miniPlay.style.display = 'none';
@@ -3884,6 +3887,7 @@ audio.addEventListener('play', () => {
 audio.addEventListener('pause', () => {
   miniPlay.style.display = 'block';
   miniPause.style.display = 'none';
+  document.title = "Paused";
 });
 
 queue.forEach((songIndex, i) => {
