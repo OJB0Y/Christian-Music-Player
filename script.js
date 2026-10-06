@@ -3887,7 +3887,7 @@ audio.addEventListener('play', () => {
 audio.addEventListener('pause', () => {
   miniPlay.style.display = 'block';
   miniPause.style.display = 'none';
-  document.title = "Paused";
+  document.title = `Paused - ${playlist[currentSong].title} • ${playlist[currentSong].artist}`;
 });
 
 queue.forEach((songIndex, i) => {

@@ -397,7 +397,7 @@ opacity: 0.33;
 
 .now-playing h2 {
   margin: 5px 0 2px;
-  font-size: clamp(1.45rem, 4vw, 1.6rem);
+  font-size: clamp(1.45rem, 4vw, 1.8rem);
   font-weight: 700;
 
   white-space: nowrap;
@@ -456,7 +456,7 @@ opacity: 0.33;
 .now-playing p {
   width: 100%;
   margin: 0;
-  font-size: clamp(1.0rem, 3vw, 1.1rem);
+  font-size: clamp(1.0rem, 3vw, 1.4rem);
   color: #b5b4bfec;
   margin-bottom: 10px;
   white-space: nowrap;
