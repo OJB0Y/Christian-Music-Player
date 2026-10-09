@@ -2848,7 +2848,7 @@ async function getSongColors(imageUrl) {
       const brightness = (r * 0.299 + g * 0.587 + b * 0.114);
       
       // If brightness is below 30 (out of 255), it's too dark
-      return brightness < 32;
+      return brightness < 30;
     }
 
     function isTooBright(hexColor) {
