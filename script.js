@@ -2980,6 +2980,7 @@ const lyricsScreen = document.getElementById('lyrics-screen');
 const closeLyricsBtn = document.getElementById('close-lyrics');
 const fullLyrics = document.getElementById('full-lyrics');
 const lyricsSongTitle = document.getElementById('lyrics-song-title');
+const favicon = document.getElementById('favicon');
 
 let lyricsRequestId = 0;
 
@@ -3887,7 +3888,7 @@ audio.addEventListener('play', () => {
 audio.addEventListener('pause', () => {
   miniPlay.style.display = 'block';
   miniPause.style.display = 'none';
-  document.title = `Paused - ${playlist[currentSong].title} • ${playlist[currentSong].artist}`;
+  document.title = `Spotify - ${playlist[currentSong].title} • ${playlist[currentSong].artist}`;
 });
 
 queue.forEach((songIndex, i) => {
@@ -4942,6 +4943,8 @@ viewport.addEventListener('touchend', (e) => {
 
 
 // --- init ---
+document.title = "Spotify - Web Player: Music for everyone (please don't sue me)"
+favicon.href = "images/spotify-logo-png-7057.png"; //i know, i can just set it in html, but this is more fun :)
 queueIndex = -1;
 currentSong = -1;
 loadSong(currentSong); // Just load, don't play
