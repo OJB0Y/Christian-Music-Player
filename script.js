@@ -1079,6 +1079,7 @@ const playlist = [
     cover: "images/Cover of Lo Que Pasó Pasó by Musiko, Pedro Pablo Quintero.jpg",
     hex: "#EE3F2F",
     barColor: "#f6beb9",
+    lrc: "LRC files/Lo Que Paso Paso.lrc",
 },
 {
     title: "Laberintos",
@@ -2704,6 +2705,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - Agradecido - Oasis Ministry.mp3",
     cover: "images/Cover of Agradecido by Oasis Ministry, Madiel Lara.jpg",
     video: "videos/Oasis1.mp4",
+    lrc: "LRC files/Agradecido - Oasis Ministry, Madiel Lara.lrc",
   },
   {
     title: "Mi Tío Snoop (feat. Snoop Dogg)", //364
@@ -2717,6 +2719,7 @@ const playlist = [
     artist: "Musiko, Pedro Pablo Quintero, FLEIVA MUSIC",
     src: "songs/SpotiDownloader.com - Bye Bye - Musiko.mp3",
     cover: "images/Cover of Bye Bye by Musiko, Pedro Pablo Quintero, FLEIVA MUSIC.jpg",
+    lrc: "LRC files/Bye Bye - Musiko, Pablo.lrc",
   }, 
   {
     title: "demons", //366
@@ -2763,6 +2766,7 @@ const playlist = [
     src: "songs/SpotiDownloader.com - mi DIOS - Madiel Lara.mp3",
     cover: "images/Cover of mi DIOS by Madiel Lara.jpg",
     video: "videos/MadielLara11.mp4",
+    lrc : "LRC files/mi DIOS - Madiel Lara.lrc",
   }, 
   {
     title: "MOMENTUM", //372
