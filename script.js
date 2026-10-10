@@ -1883,7 +1883,7 @@ const playlist = [
     hex: "#EF6710",
     barColor: "#f9a26c",
     video: "videos/Vaes2.mp4",
-    lrc: "LRC/Serendipia - Remix - Vaes.lrc"
+    lrc: "LRC files/Serendipia - Remix - Vaes.lrc"
   }, 
   {
     title: "Sé que me amas",
