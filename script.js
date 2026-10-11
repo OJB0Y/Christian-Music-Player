@@ -2779,8 +2779,8 @@ const playlist = [
   {
     title: "Soy Peregrino", //373
     artist: "Anita Morán",
-    src: "songs/Soy Peregrino - Anita Morán (Video Oficial) - Anita Morán",
-    cover: "images/Cover of Soy Peregrino by Anita Morán",
+    src: "songs/Soy Peregrino - Anita Morán (Video Oficial) - Anita Morán.mp3",
+    cover: "images/Cover of Soy Peregrino by Anita Morán.jpg",
   },/* 
   {
     title: "", //3##
