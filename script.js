@@ -1,36 +1,132 @@
 const colorCache = {};
 
+function getMp3Art(src) {
+    return `mp3-art-pending:${src}`;
+}
+
+// Stores temporary image URLs so they can be reused and cleaned up.
+const mp3ArtCache = new Map();
+const mp3ArtUrls = new Set();
+
+// Extracts the embedded image from an MP3 and returns a temporary URL.
+function extractMp3Art(src) {
+    const absoluteSrc = new URL(src, document.baseURI).href;
+
+    // Reuse an existing extraction if this song was already processed.
+    if (mp3ArtCache.has(absoluteSrc)) {
+        return mp3ArtCache.get(absoluteSrc);
+    }
+
+    const extraction = new Promise((resolve, reject) => {
+        window.jsmediatags.read(absoluteSrc, {
+            onSuccess: function (result) {
+                const picture = result.tags.picture;
+
+                if (!picture || !picture.data?.length) {
+                    reject(new Error(`No embedded artwork found: ${src}`));
+                    return;
+                }
+
+                const imageBytes = new Uint8Array(picture.data);
+
+                const imageBlob = new Blob([imageBytes], {
+                    type: picture.format || "image/jpeg"
+                });
+
+                const imageUrl = URL.createObjectURL(imageBlob);
+
+                mp3ArtUrls.add(imageUrl);
+                resolve(imageUrl);
+            },
+
+            onError: function (error) {
+                reject(new Error(
+                    `Failed to extract artwork from "${src}": ${
+                        error.info || error.type || "Unknown error"
+                    }`
+                ));
+            }
+        });
+    });
+
+    mp3ArtCache.set(absoluteSrc, extraction);
+
+    // Allow a failed extraction to be retried later.
+    extraction.catch(() => {
+        mp3ArtCache.delete(absoluteSrc);
+    });
+
+    return extraction;
+}
+
+
+// Resolves every pending cover string into its actual image URL.
+async function loadEmbeddedAlbumCovers() {
+    const songs = playlist.filter(song =>
+        typeof song.cover === "string" &&
+        song.cover.startsWith("mp3-art-pending:")
+    );
+
+    // Process four songs at a time to limit simultaneous requests.
+    const concurrency = 4;
+
+    for (let i = 0; i < songs.length; i += concurrency) {
+        const batch = songs.slice(i, i + concurrency);
+
+        await Promise.all(
+            batch.map(async song => {
+                const src = song.cover.slice("mp3-art-pending:".length);
+                song.cover = await extractMp3Art(src);
+            })
+        );
+    }
+
+    console.log(
+        `Loaded embedded artwork for ${songs.length} songs.`
+    );
+}
+
+
+// Release temporary image resources when the page is being unloaded.
+window.addEventListener("pagehide", () => {
+    for (const url of mp3ArtUrls) {
+        URL.revokeObjectURL(url);
+    }
+
+    mp3ArtUrls.clear();
+    mp3ArtCache.clear();
+});
+
 const playlist = [
   {
     title: "Cordero", //0
     artist: "Manuel Bonilla",
     src: "songs/Cordero.mp3",
-    cover: "images/song5.jpg",
+    cover: getMp3Art("songs/Cordero.mp3"),
   },
   {
     title: "Escucharte Hablar / Dios Ha Sido Bueno",
     artist: "Marcos Witt/Indiomar/Dariana",
     src: "songs/SpotiDownloader.com - Escucharte Hablar _ Dios Ha Sido Bueno - Marcos Witt.mp3",
-    cover: "images/Cover of Escucharte Hablar _ Dios Ha Sido Bueno by Marcos Witt, Indiomar, Dariana (1).jpg",
-    libs: ["favorites", "spanish"]
+    cover: getMp3Art("songs/SpotiDownloader.com - Escucharte Hablar _ Dios Ha Sido Bueno - Marcos Witt.mp3"),
   },
   {
     title: "Como Una Flor Ft. Los Hermanos Reyes",
     artist: "Hermanos Osorio, Los Hermanos Reyes",
     src: "songs/Como Una Flor (Versión Los Hermanos Reyes).mp3",
-    cover: "images/Como Una Flor (Versión Los Hermanos Reyes).png",
+    cover: getMp3Art("songs/Como Una Flor (Versión Los Hermanos Reyes).mp3"),
   },
   {
     title: "Que lindo es mi Cristo",
     artist: "Wilson Camey, Los Hermanos Reyes",
     src: "songs/Que lindo es mi Cristo.mp3",
-    cover: "images/Que lindo es mi Cristo.png",
+    cover: getMp3Art("songs/Que lindo es mi Cristo.mp3"),
   },
   {
     title: "Confía En El Señor Ft Francisco Orantes",
     artist: "Hermanos Osorio, Francisco Orantes",
     src: "songs/Confía en el Señor - Hermanos Osorio.mp3",
-    cover: "images/orantes.png",
+    cover: getMp3Art("songs/Confía en el Señor - Hermanos Osorio.mp3"),
   },
   {
     title: "Cuando Muera Yo Ft. Los Hermanos Reyes",//5
@@ -50,7 +146,7 @@ const playlist = [
     title: "Es El Amor",
     artist: "Duo Hermanos Devia",
     src: "songs/SpotiDownloader.com - Es El Amor - Duo Hermanos Devia.mp3",
-    cover: "images/Cover of Es El Amor by Duo Hermanos Devia.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Es El Amor - Duo Hermanos Devia.mp3"),
   },
   {
     title: "Apocalipsis 15:3",//8
@@ -1994,7 +2090,7 @@ const playlist = [
     title: "Locos Como Yo", //(too fresh) 255
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Locos Como Yo - Redimi2.mp3",
-    cover: "images/Bien.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Locos Como Yo - Redimi2.mp3"),
     video: "videos/Redimi12.mp4",
     lrc: "LRC files/Locos Como Yo - Redimi2.lrc",
   },
@@ -2656,7 +2752,7 @@ const playlist = [
     title: "Hollywood (feat. Snoop Dogg & Jamie Principle)", //357
     artist: "Gorillaz, Snoop Dogg, Jamie Principle",
     src: "songs/Hollywood (feat. Snoop Dogg & Jamie Principle)_spotdown.org.mp3",
-    cover: "images/Cover of Hollywood (feat. Snoop Dogg & Jamie Principle) by Gorillaz, Snoop Dogg, Jamie Principle.jpg",
+    cover: getMp3Art("songs/Hollywood (feat. Snoop Dogg & Jamie Principle)_spotdown.org.mp3"),
     video: "videos/Gorillaz1.mp4",
     lrc: "LRC files/Hollywood (feat. Snoop Dogg & Jamie Principle) - Gorillaz, Snoop Dogg, Jamie Principle.lrc",
   }, 
@@ -2664,14 +2760,14 @@ const playlist = [
     title: "Sumthin Like This Night", //358
     artist: "Snoop Dogg, Gorillaz",
     src: "songs/SpotiDownloader.com - Sumthin Like This Night - Snoop Dogg.mp3",
-    cover: "images/Cover of Sumthin Like This Night by Snoop Dogg, Gorillaz.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Sumthin Like This Night - Snoop Dogg.mp3"),
     lrc: "LRC files/Sumthin Like This Night - Snoop Dogg, Gorillaz.lrc",
   }, 
   {
     title: "Clint Eastwood", //359
     artist: "Gorillaz, Del The Funky Homosapien",
     src: "songs/SpotiDownloader.com - Clint Eastwood - Gorillaz.mp3",
-    cover: "images/Cover of Rock the House by Gorillaz, Del The Funky Homosapien.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Clint Eastwood - Gorillaz.mp3"),
     lrc: "LRC files/Clint Eastwood - Gorillaz, Del The Funky Homosapien.lrc",
   }, 
   {
@@ -3648,7 +3744,9 @@ document.addEventListener('DOMContentLoaded', () => {
     libraryBackBtn.addEventListener('click', () => goToScreen(1));
   }
 
-  function buildLibraryPlaylist(libKey) {
+  async function buildLibraryPlaylist(libKey) {
+    await loadEmbeddedAlbumCovers();
+
     libraryPlaylistEl.innerHTML = '';
 
     const order = playlistOrder[libKey];
@@ -4591,7 +4689,6 @@ function buildPlaylistUI(filterText = "") {
 }
 
 // build on load
-buildPlaylistUI();
 
 // hook up search
 searchBar.addEventListener('input', () => {
@@ -5099,14 +5196,23 @@ viewport.addEventListener('touchend', (e) => {
 
 
 // --- init ---
-document.title = "Spotify - Web Player: Music for everyone (please don't sue me)"
-favicon.href = "images/spotify-logo-png-7057.png"; //i know, i can just set it in html, but this is more fun :)
-queueIndex = -1;
-currentSong = -1;
-loadSong(currentSong); // Just load, don't play
-updateActiveSong();
-setPlayIcon(false); // Show play icon (paused state)
-playbackSource = "All Songs";
-currentPlaylist = "All Songs";
-updatePlaylistLabel();
-window.addEventListener('resize', updateTitleScroll);
+async function init() {
+    await loadEmbeddedAlbumCovers();
+    buildPlaylistUI(); 
+    document.title = "Spotify - Web Player: Music for everyone (please don't sue me)"
+    favicon.href = "images/spotify-logo-png-7057.png"; //i know, i can just set it in html, but this is more fun :)
+    queueIndex = -1;
+    currentSong = -1;
+    loadSong(currentSong); // Just load, don't play
+    updateActiveSong();
+    setPlayIcon(false); // Show play icon (paused state)
+    playbackSource = "All Songs";
+    currentPlaylist = "All Songs";
+    updatePlaylistLabel();
+    window.addEventListener('resize', updateTitleScroll); 
+};
+
+init().catch(error => {
+    console.error("Music player initialization failed:", error);
+});
+
