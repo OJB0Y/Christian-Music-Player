@@ -1634,16 +1634,6 @@ opacity: 0.33;
   opacity: 0.85;
 }
 
-
-/* === SCROLLBAR STYLING === */
-#libraryPlaylist::-webkit-scrollbar {
-  width: 6px;
-}
-#libraryPlaylist::-webkit-scrollbar-thumb {
-  background-color: #666;
-  border-radius: 3px;
-}
-
 /* === PLAYLIST ITEMS WITH COVERS === */
 #playlist li {
   display: flex;
@@ -1707,10 +1697,34 @@ opacity: 0.33;
 
 
 /* === SCROLLBAR STYLING === */
+#libraryPlaylist::-webkit-scrollbar {
+  width: 6px;
+}
+#libraryPlaylist::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+}
+
 #playlist::-webkit-scrollbar {
   width: 6px;
 }
 #playlist::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+}
+
+#playlist-sheet::-webkit-scrollbar {
+  width: 00px;
+}
+#playlist-sheet::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+}
+
+.library-grid::-webkit-scrollbar {
+  width: 6px;
+}
+.library-grid::-webkit-scrollbar-thumb {
   background-color: #666;
   border-radius: 3px;
 }

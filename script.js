@@ -2781,6 +2781,18 @@ const playlist = [
     artist: "Anita Morán",
     src: "songs/Soy Peregrino - Anita Morán (Video Oficial) - Anita Morán.mp3",
     cover: "images/Cover of Soy Peregrino by Anita Morán.jpg",
+  }, 
+  {
+    title: "Esa Roca", //374
+    artist: "Anita Morán",
+    src: "songs/Anita Morán Esa Roca - Briseida López.mp3",
+    cover: "images/Cover of Esa Roca by Anita Morán.jpg",
+  }, 
+  {
+    title: "Nos Veremos en la Gloria", //375
+    artist: "Anita Morán",
+    src: "songs/NOS VEREMOS EN LA GLORIA - Anita Morán (VIDEO OFICIAL) - Anita Morán.mp3",
+    cover: "images/Screenshot 2026-05-16 12.04.27 PM.png",
   },/* 
   {
     title: "", //3##
@@ -2794,7 +2806,7 @@ const playlist = [
 
 const playlistOrder = {
   LikedSongs: [322, 323, 321, 320, 328, 327, 326, 307, 301, 297, 294, 293, 286, 287, 286, 285, 284, 259, 281, 282, 283, 279, 278, 310, 224, /*777, */152, 273, 309, 196, 109, 272, 284, /*a ciegas, estoy TRANQUILO, */262, 264, 261, 260, 258, 257, 250, 263, 254, 256, /*en DIOS tengo mas, DIOS nunca abandona, */255, /*promesas*/240, 239, 153, 236, 235, 234, 222, 111, 191, 219, /*rompiendo, */274, 194, 199, /*bye bye, */112, 190, 225, 101, 203, 110, 214, 210, 100, 209, 206, 205, 204, 202, 201, 197, 198, 165, 193, 200, 188, 119, 167, 113, 187, 163, 108, 120, 186, 107, 153, 152, 124, /*la fiesta, */157, 154, 156, 7, 6, 9, 142, 30, 5, 12, 29, /*eterno amor deluz, */2, /*escogido fui de dios 2002, */96, 97, 16, 76, 23, 20, 180, 181, 139, 12, 102, 97, 171, /*que mi fe no falle evan craft*/119, 103, 172, 208, 203, /*solo kim richards*/99, 96, 130, 215, 86, 125 /*<---pentagrama remix*/, 88, 114, 19, 123, 101, 129, 141, 136, 126, 125, 76, 139, 123, 220, /*montana*/115, 221, 134, 132, 138],
-  Worship: [373, 126, 125, 340, 339, 337, 338, 330, 331, 332, 307, 324, 318, 317, 316, 315, 314, 313, 312, 311, 308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
+  Worship: [373, 374, 375, 126, 125, 340, 339, 337, 338, 330, 331, 332, 307, 324, 318, 317, 316, 315, 314, 313, 312, 311, 308, 62, 53, 238, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, /*266, 253, 267, 268, 269, 270, 271, */248, 59, 56, 14, 51, 66, 95, 15, 150, 149, 226, 237, 227, 228, 229, 252, 219, 151, 218, 16, 180, 83, 84, 85, 233, 232, 231, 230, 88, 90, 2, 7, 3, 4, 8, 9, 72, 173, 174, 175, 176, 177, 178, 10, 17, 18, 19, 20, 1, 0, 12, 23, 24, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 38, 40, 41, 44, 46, 49, 50, 54, 55, 57, 61, 63, 70, 71, 73, 74, 81, 91, 92],
   Voceros: [149, 180, 5, 286, 293, 294, 285, 219, 6, 7, 181, 226, 233, 237, 232, 231, 230, 227, 228, 229, 252, 182, 183, 184, 185, 8, 10, 14, 19, 20, 21, 11, 22, 23, 29, 12, 30, 31, 48, 64, 13, 65, 75],
   LockIn: [362, 350, 348, 347, 346, 326, 327, 255, 256, 254, 320, 321, 322, 323, 319, 272, 273, 274, 102, 283, 309, 310, 278, 279, 265, 262, 260, 259, 257, 258, 250, 236, 222, 111, 109, 152, 153, 166, 156, 224, 234, 220, 223, 198, 225, 200, 188, 197, 190, 189, 199, 196, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 191, 214, 235, 192, 193, 194, 195, 107, 187, 186, 110, 165, 119, 120, 155, 169, 167, 115, 108, 168, 113, 154, 157, 158, 159, 112, 114, 116, 100, 101, 103, 102, 96, 131, 97, 99, 118, 163, 106, 164, 123, 135, 162, 132, 215, 134, 133, 130, 136, 142, 125, 127, 124, 160, 83, 84, 85, 86, 87, 88, 161, 264, 239,  251, 249, 284, 328],
   MUSIKO: [366, 367, 368, 369, 371, 365, 142, 363, 343, 105, 342, 341, 340, 331, 328, 319, 102, 78, 325, 307, 281, 282, 239, 240, 251, 249, 170, 139, 272, 120, 188, 112, 284, 114, 321, 205, 204, 262, 203, 226, 233, 232, 227, 228, 229, 213, 206, 238, 288, 133, 140, 141, 145, 146, 130, 131, 126, 124, 125, 127, 187, 171, 172, 128, 129, 98, 99, 103, 123, 83, 84, 85, 86, 87, 88, 77, 79, 132, 215, 134, 133, 135, 136, 5, 6, 179, 216, 217, 274, 287, 241, 143, 298, 299, 300],
@@ -3602,43 +3614,32 @@ optionsBtn.addEventListener('click', (e) => {
 
 // Check if device is desktop
 let IS_DESKTOP = window.innerWidth >= window.innerHeight; 
+let screenWidth = window.innerWidth;
 const ASPECT_RATIO = window.innerWidth / window.innerHeight;
 //old version of checking window.innerWidth >= 550 && window.innerWidth <= 1450 && window.innerHeight <= 800;
 
 
 //change the app depending on wide screen or not
 function updateCoverSize() {
-  IS_DESKTOP = window.innerWidth > (window.innerHeight + 200); 
+  IS_DESKTOP = window.innerWidth > (window.innerHeight + 100); 
+  screenWidth = window.innerWidth;
   const nowPlayingImg = document.getElementById('cover');
   const playerContainer = document.querySelector('.player');
   const libraryPlaylist = document.querySelector('#libraryPlaylist');
   
-  if (IS_DESKTOP) { //look...i dont even know what happened....
-    nowPlayingImg.style.maxWidth = '52vh';
+  if (IS_DESKTOP) {
+    if(screenWidth < 1100) {
+      nowPlayingImg.style.maxWidth = '45vh';
+    } else {
+      nowPlayingImg.style.maxWidth = '52vh';
+    }
     nowPlayingImg.style.marginBottom = '0rem';
     playerContainer.style.marginTop = '0px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 58.5%)';
+    libraryPlaylist.style.maxHeight = 'calc(100% - 58.5vh)';
     coverWrapper.style.marginBottom = '4vh';
     realBottomBar.style.width = '99.3%';
-    player.style.transform = 'translateX(61%)';
-    player.style.width = '50%';
-  } else if (ASPECT_RATIO > 2.1 && IS_DESKTOP) { //yeah why did i make these two else if??
-    nowPlayingImg.style.maxWidth = '380px';
-    nowPlayingImg.style.marginBottom = '1.5rem';
-    playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
-    coverWrapper.style.marginBottom = '4vh';
-    realBottomBar.style.width = '99.3%';
-    player.style.transform = 'translateX(10%)';
-    player.style.width = '90%';
-  } else if (ASPECT_RATIO > 2.1 && !IS_DESKTOP) {
-    nowPlayingImg.style.maxWidth = '400px';
-    nowPlayingImg.style.marginBottom = '1.5rem';
-    playerContainer.style.marginTop = '20px';
-    libraryPlaylist.style.maxHeight = 'calc(100% - 51.5%)';
-    coverWrapper.style.marginBottom = '4vh';
-    player.style.transform = 'translateX(0%)';
-    player.style.width = '100%';
+    player.style.transform = 'translateX(28%)';
+    player.style.width = '70%';
   } else {
     nowPlayingImg.style.maxWidth = '400px';
     nowPlayingImg.style.marginBottom = '1.5rem';
@@ -3657,6 +3658,7 @@ updateCoverSize();
 window.addEventListener('resize', () => {
   const wasDesktop = IS_DESKTOP;
   IS_DESKTOP = window.innerWidth >= window.innerHeight;
+  screenWidth = window.innerWidth;
   
   // Only update if the state changed
   if (wasDesktop !== IS_DESKTOP) {
