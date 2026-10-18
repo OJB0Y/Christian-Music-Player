@@ -97,6 +97,8 @@ window.addEventListener("pagehide", () => {
     mp3ArtCache.clear();
 });
 
+let DARKMODE = true;
+
 const playlist = [
   {
     title: "Cordero", //0
@@ -3069,7 +3071,7 @@ async function getSongColors(imageUrl) {
 
       // Allow different shades of related colors
       // Only correct colors from distinctly different hue families
-      if (hueDistance > 65) {
+      if (hueDistance > 0) {
           // Keep the dark color's hue, but make it subtly brighter
           const newLightness = Math.min(0.72, Math.max(dL + 0.12, 0.30));
 
@@ -3087,14 +3089,11 @@ async function getSongColors(imageUrl) {
     }
     
     // Get the colors from palette
-    const trueVibrantColor =
-      palette.Vibrant?.getHex() || "#121212";
+    const trueVibrantColor = palette.Vibrant?.getHex() || "#121212";
 
-    const originalDarkColor =
-      palette.DarkVibrant?.getHex() || "#121212";
+    const originalDarkColor = palette.DarkVibrant?.getHex() || "#121212";
 
-    const useVibrantInstead =
-      isBlackOrBrown(originalDarkColor);
+    const useVibrantInstead = isBlackOrBrown(originalDarkColor);
 
     let darkColor = useVibrantInstead
       ? trueVibrantColor
@@ -3102,17 +3101,13 @@ async function getSongColors(imageUrl) {
 
     let vibrantColor = trueVibrantColor;
 
-    const lightColor =
-      palette.LightVibrant?.getHex() || "#121212";
+    const lightColor = palette.LightVibrant?.getHex() || "#121212";
 
-    const muted =
-      palette.Muted?.getHex() || "#121212";
+    const muted = palette.Muted?.getHex() || "#121212";
 
-    const lightMuted =
-      palette.LightMuted?.getHex() || "#121212";
+    const lightMuted = palette.LightMuted?.getHex() || "#121212";
 
-    const darkMuted =
-      palette.DarkMuted?.getHex() || "#121212";
+    const darkMuted = palette.DarkMuted?.getHex() || "#121212";
     
       
   // Adjust Vibrant color
@@ -3120,7 +3115,7 @@ async function getSongColors(imageUrl) {
       const [h, s, l] = hexToHsl(vibrantColor);
 
       // Yellow and gold hues: preserve more of their brightness
-      const isYellow = h >= 40 && h <= 70;
+      const isYellow = h >= 30 && h <= 70;
 
       const adjustment = isYellow
           ? -0.05
