@@ -1,0 +1,2 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+#i was having troubles with a zip file and decided to keep this here

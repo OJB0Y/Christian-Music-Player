@@ -134,14 +134,14 @@ const playlist = [
     title: "Cuando Muera Yo Ft. Los Hermanos Reyes",//5
     artist: "Los Voceros de Cristo, Los Hermanos Reyes",
     src: "songs/Cuando Muera Yo.mp3",
-    cover: "images/a5.png",
+    cover: getMp3Art("songs/Cuando Muera Yo.mp3"),
     video: "videos/Voceros2.mp4",
   },
   {
     title: "A Tu Lado en el Cielo",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - A Tu Lado en el Cielo - Los Voceros de Cristo.mp3",
-    cover: "images/Alvaro.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - A Tu Lado en el Cielo - Los Voceros de Cristo.mp3"),
     video: "videos/Voceros1.mp4"
   },
   {
@@ -154,37 +154,37 @@ const playlist = [
     title: "Apocalipsis 15:3",//8
     artist: "Los Voceros de Cristo/Armando Trujillo",
     src : "songs/SpotiDownloader.com - Apocalipsis 15_3 - Los Voceros de Cristo.mp3",
-    cover: "images/su amor.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Apocalipsis 15_3 - Los Voceros de Cristo.mp3"),
   },
   {
     title: "Exitos de Recuerdos Ft. Los Hermanos Reyes",
     artist: "Los Milagros de Cristo/Los Hermanos Reyes",
     src: "songs/Exitos.mp3",
-    cover: "images/Cover of Exitos.jpg",
+    cover: getMp3Art("songs/Exitos.mp3"),
   },
   {
     title: "Oh Alma Mía (2024)",//10
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Oh Alma Mía - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Oh Alma Mía - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3"),
   },
   {
     title: "Oh Alma Mía Ft Julio Melgar (2016)",
     artist: "Los Voceros de Cristo, Julio Melgar",
     src: "songs/Oh Alma Mia 2018.mp3",
-    cover: "images/new4.png",
+    cover: getMp3Art("songs/Oh Alma Mia 2018.mp3"),
   },
   {
     title: "Oh Alma Mía (2002)",
     artist: "Los Voceros de Cristo",
     src: "songs/a5.mp3",
-    cover: "images/a5.png",
+    cover: getMp3Art("songs/a5.mp3"),
   },
   {
     title: "Oh Alma Mía (2000)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Oh alma mía - Los Voceros de Cristo.mp3",
-    cover: "images/Loor.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Oh alma mía - Los Voceros de Cristo.mp3"),
     hex: "#783800",
     barColor: "#bf5900ff"
   },
@@ -192,7 +192,7 @@ const playlist = [
     title: "Escogido Fui de Dios (2025)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Escogido fui de Dios (Nuevos Horizontes) - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of Escogido fui de Dios (Nuevos Horizontes) by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Escogido fui de Dios (Nuevos Horizontes) - Los Voceros de Cristo.mp3"),
     hex: "#8F2727",
     barColor: "#130069ff"
   },
@@ -200,7 +200,7 @@ const playlist = [
     title: "Yo Te Esperare",//15
     artist: "Los Hermanos Reyes",
     src: "songs/Reyes.mp3",
-    cover: "images/Hay una ciudad.png",
+    cover: getMp3Art("songs/Reyes.mp3"),
     hex: "#b09539ff",
     barColor: "#e4b20dff"
   },
@@ -208,7 +208,7 @@ const playlist = [
     title: "Soy Feliz",
     artist: "Los Hermanos Reyes",
     src: "songs/Soy feliz.mp3",
-    cover: "images/He peleado la batalla.png",
+    cover: getMp3Art("songs/Soy feliz.mp3"),
     hex: "#787053ff",
     barColor: "#ac943fff"
   },
@@ -216,13 +216,13 @@ const playlist = [
     title: "La Biblia",
     artist: "Manuel Bonilla",
     src: "songs/song2.mp3",
-    cover: "images/song2.jpg",
+    cover: getMp3Art("songs/song2.mp3"),
   },
   {
     title: "En Mi Casa Vive Jesús",
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/SpotiDownloader.com - En Mi Casa Vive Jesús - Francisco Orantes.mp3",
-    cover: "images/Cover of En Mi Casa Vive Jesús by Francisco Orantes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - En Mi Casa Vive Jesús - Francisco Orantes.mp3"),
     hex: "#628ABF",
     barColor: "#3287f5ff"
   },
@@ -230,7 +230,7 @@ const playlist = [
     title: "Loor a ti mi Dios v2",
     artist: "Los Voceros de Cristo",
     src: "songs/Loor2.mp3",
-    cover: "images/a5.png",
+    cover: getMp3Art("songs/Loor2.mp3"),
     hex: "#3A3436",
     barColor: "#726065ff"
   },
@@ -238,7 +238,7 @@ const playlist = [
     title: "Mi cántaro vacío",//20
     artist: "Los Voceros de Cristo",
     src: "songs/cántaro.mp3",
-    cover: "images/a5.png",
+    cover: getMp3Art("songs/cántaro.mp3"),
     hex: "#3A3436",
     barColor: "#726065ff"
   },
@@ -246,7 +246,7 @@ const playlist = [
     title: "Loor A Ti Mi Dios (2024)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Loor A Ti Mi Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Loor A Ti Mi Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3"),
     hex: "#609FB6",
     barColor: "#31b6e7ff"
   },
@@ -254,7 +254,7 @@ const playlist = [
     title: "Escogido Fui de Dios (2024)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Escogido Fui de Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of Loor A Ti Mi Dios - En Vivo Desde El Salvador by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Escogido Fui de Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3"),
     hex: "#609FB6",
     barColor: "#25b4e8ff"
   },
@@ -262,7 +262,7 @@ const playlist = [
     title: "El volverá", //23
     artist: "Los Voceros de Cristo/Aníbal Marroquín",
     src: "songs/volverá.mp3",
-    cover: "images/new4.png",
+    cover: getMp3Art("songs/volverá.mp3"),
     hex: "#313831",
     barColor: "#527052ff"
   },
@@ -270,7 +270,7 @@ const playlist = [
     title: "Que Feliz Estoy",//24
     artist: "Francisco Orantes",
     src: "songs/SpotiDownloader.com - Que Feliz Estoy - Francisco Orantes.mp3",
-    cover: "images/song10.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Que Feliz Estoy - Francisco Orantes.mp3"),
     hex: "#A16962",
     barColor: "#b84e40ff"
   },
@@ -278,7 +278,7 @@ const playlist = [
     title: "Por Herencia",//25
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/Por Herencia.mp3",
-    cover: "images/Por Herencia.jpg",
+    cover: getMp3Art("songs/Por Herencia.mp3"),
     hex: "#5a240cff",
     barColor: "#992e00ff"
   },
@@ -286,7 +286,7 @@ const playlist = [
     title: "Jesús",//26
     artist: "Francisco Orantes",
     src: "songs/Jesús.mp3",
-    cover: "images/Jesús.jpg",
+    cover: getMp3Art("songs/Jesús.mp3"),
     hex: "#08186C",
     barColor: "#001db0ff"
   },
@@ -294,7 +294,7 @@ const playlist = [
     title: "Necesito De Ti",//27
     artist: "Francisco Orantes",
     src: "songs/Necesito De Ti.mp3",
-    cover: "images/song10.png",
+    cover: getMp3Art("songs/Necesito De Ti.mp3"),
     hex: "#A16962",
     barColor: "#b84e40ff"
   },
@@ -302,7 +302,7 @@ const playlist = [
     title: "Te Necesito",//28
     artist: "Los Hermanos Reyes",
     src: "songs/Te necesito.mp3",
-    cover: "images/Hay una ciudad.png",
+    cover: getMp3Art("songs/Te necesito.mp3"),
     hex: "#bb9b31ff",
     barColor: "#d3a50cff"
   },
@@ -310,7 +310,7 @@ const playlist = [
     title: "Su amor siempre es su amor",//29
     artist: "Los Voceros de Cristo/Ruth E. Gomez",
     src: "songs/su amor.mp3",
-    cover: "images/su amor.jpg",
+    cover: getMp3Art("songs/su amor.mp3"),
     hex: "#313831",
     barColor: "#527052ff"
   },
@@ -318,7 +318,7 @@ const playlist = [
     title: "La Perdida Oveja",//30
     artist: "Los Voceros de Cristo/Leonel Tuchez",
     src: "songs/La perdida oveja.mp3",
-    cover: "images/a5.png",
+    cover: getMp3Art("songs/La perdida oveja.mp3"),
     hex: "#3A3436",
     barColor: "#726065ff"
   },
@@ -326,7 +326,7 @@ const playlist = [
     title: "La Biblia dice que el hombre",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - La Biblia dice que el hombre - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of La Biblia dice que el hombre by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Biblia dice que el hombre - Los Voceros de Cristo.mp3"),
     hex: "#9D8627",
     barColor: "#c39c00ff"
   },
@@ -334,7 +334,7 @@ const playlist = [
     title: "Te Doy Gracias",
     artist: "Los Hermanos Reyes/Leonel Tuchez",
     src: "songs/song27.mp3",
-    cover: "images/song27.png",
+    cover: getMp3Art("songs/song27.mp3"),
     hex: "#383838",
     barColor: "#6b5a3bff"
   },
@@ -342,7 +342,7 @@ const playlist = [
     title: "Nicodemo",
     artist: "Leonel Tuchez",
     src: "songs/Nicodemo.mp3",
-    cover: "images/Esperando.jpg",
+    cover: getMp3Art("songs/Nicodemo.mp3"),
     hex: "#854b6fff",
     barColor: "#be408eff"
   },
@@ -350,7 +350,7 @@ const playlist = [
     title: "Amartesolo a ti Señor",
     artist: "Los Hermanos Reyes",
     src: "songs/Amarte.mp3",
-    cover: "images/Hay un Dios.png",
+    cover: getMp3Art("songs/Amarte.mp3"),
     hex: "#0b2f43ff",
     barColor: "#025988ff"
   },
@@ -358,7 +358,7 @@ const playlist = [
     title: "Que Bueno es El Señor",//35
     artist: "Los Hermanos Reyes",
     src: "songs/Que Bueno es El Señor.mp3",
-    cover: "images/Que Bueno es El Señor.png",
+    cover: getMp3Art("songs/Que Bueno es El Señor.mp3"),
     hex: "#6f2d5cff",
     barColor: "#950e71ff"
   },
@@ -366,7 +366,7 @@ const playlist = [
     title: "He peleado la batalla",
     artist: "Los Hermanos Reyes",
     src: "songs/He peleado la batalla.mp3",
-    cover: "images/He peleado la batalla.png",
+    cover: getMp3Art("songs/He peleado la batalla.mp3"),
     hex: "#787053ff",
     barColor: "#967f2cff"
   },
@@ -374,7 +374,7 @@ const playlist = [
     title: "Si Mi Pueblo Se Humillare",
     artist: "Los Hermanos Reyes",
     src: "songs/pueblo.mp3",
-    cover: "images/Hay un Dios.png",
+    cover: getMp3Art("songs/pueblo.mp3"),
     hex: "#0b2f43ff",
     barColor: "#025c8cff"
   },
@@ -382,7 +382,7 @@ const playlist = [
     title: "Tengo un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Tengo un Dios.mp3",
-    cover: "images/Tengo un Dios.png",
+    cover: getMp3Art("songs/Tengo un Dios.mp3"),
     hex: "#787053ff",
     barColor: "#907926ff"
   },
@@ -390,7 +390,7 @@ const playlist = [
     title: "Hay un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Hay un Dios.mp3",
-    cover: "images/Hay un Dios.png",
+    cover: getMp3Art("songs/Hay un Dios.mp3"),
     hex: "#0b2f43ff",
     barColor: "#005f92ff"
   },
@@ -398,7 +398,7 @@ const playlist = [
     title: "Hay una Ciudad",//40
     artist: "Los Hermanos Reyes",
     src: "songs/Hay una ciudad.mp3",
-    cover: "images/Hay una ciudad.png",
+    cover: getMp3Art("songs/Hay una ciudad.mp3"),
     hex: "#b09539ff",
     barColor: "#e0ac02ff"
   },
@@ -406,7 +406,7 @@ const playlist = [
     title: "Alla en los Olivos",
     artist: "Los Hermanos Reyes",
     src: "songs/Alla en los olivos.mp3",
-    cover: "images/Hay una ciudad.png",
+    cover: getMp3Art("songs/Alla en los olivos.mp3"),
     hex: "#b19433ff",
     barColor: "#e5b003ff"
   },
@@ -414,7 +414,7 @@ const playlist = [
     title: "Como una Flor",
     artist: "Los Hermanos Reyes",
     src: "songs/song19.mp3",
-    cover: "images/song19.png",
+    cover: getMp3Art("songs/song19.mp3"),
     hex: "#383838",
     barColor: "#676536ff"
   },
@@ -422,7 +422,7 @@ const playlist = [
     title: "Como Una Flor - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Como Una Flor - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png",
+    cover: getMp3Art("songs/Como Una Flor - En vivo - Wilson Camey.mp3"),
     hex: "#2F5F87",
     barColor: "#0057c0ff"
   },
@@ -430,7 +430,7 @@ const playlist = [
     title: "Alto Precio - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Alto Precio - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png",
+    cover: getMp3Art("songs/Alto Precio - En vivo - Wilson Camey.mp3"),
     hex: "#2F5F87",
     barColor: "#0057c0ff"
   },
@@ -438,7 +438,7 @@ const playlist = [
     title: "Alto Precio",//45
     artist: "Los Hermanos Reyes",
     src: "songs/Alto Precio.mp3",
-    cover: "images/song27.png",
+    cover: getMp3Art("songs/Alto Precio.mp3"),
     hex: "#383838",
     barColor: "#676536ff"
   },
@@ -446,7 +446,7 @@ const playlist = [
     title: "Que Contento Estoy - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Que Contento Estoy - En vivo - Wilson Camey.mp3",
-    cover: "images/wilson.png",
+    cover: getMp3Art("songs/Que Contento Estoy - En vivo - Wilson Camey.mp3"),
     hex: "#2F5F87",
     barColor: "#0057c0ff"
   },
@@ -454,7 +454,7 @@ const playlist = [
     title: "Contento Estoy",
     artist: "Los Hermanos Reyes",
     src: "songs/Contento Estoy.mp3",
-    cover: "images/song27.png",
+    cover: getMp3Art("songs/Contento Estoy.mp3"),
     hex: "#383838",
     barColor: "#676536ff"
   },
@@ -462,7 +462,7 @@ const playlist = [
     title: "Jesús es mi Refugio",
     artist: "Los Voceros de Cristo",
     src: "songs/Refugio.mp3",
-    cover: "images/new3.png",
+    cover: getMp3Art("songs/Refugio.mp3"),
     hex: "#582820",
     barColor: "#941b06ff"
   },
@@ -470,7 +470,7 @@ const playlist = [
     title: "Vivir Cantado",
     artist: "Julio Elias",
     src: "songs/Julio Elias.mp3",
-    cover: "images/Julio Elias.png",
+    cover: getMp3Art("songs/Julio Elias.mp3"),
     hex: "#8c3d2fff",
     barColor: "#a11901ff"
   },
@@ -478,7 +478,7 @@ const playlist = [
     title: "Buscale",//50
     artist: "Óscar Medina",
     src: "songs/Buscale.mp3",
-    cover: "images/Buscale.jpg",
+    cover: getMp3Art("songs/Buscale.mp3"),
     hex: "#836531",
     barColor: "#b56702ff"
   },
@@ -486,7 +486,7 @@ const playlist = [
     title: "Te Estoy Esperando",
     artist: "Leonel Tuchez",
     src: "songs/Esperando.mp3",
-    cover: "images/Esperando.jpg",
+    cover: getMp3Art("songs/Esperando.mp3"),
     hex: "#854b6fff",
     barColor: "#a90b6dff"
   },
@@ -494,37 +494,37 @@ const playlist = [
     title: "Tengo Un Dios - Julio Elías",
     artist: "Julio Elias",
     src: "songs/Tengo Un Dios - Julio Elías.mp3",
-    cover: "images/cover1.jpg",
+    cover: getMp3Art("songs/Tengo Un Dios - Julio Elías.mp3"),
   },
   {
     title: "Agradecimiento",
     artist: "Manuel Bonilla",
     src: "songs/Agradecimiento - Manuel Bonilla.mp3",
-    cover: "images/manuel.png",
+    cover: getMp3Art("songs/Agradecimiento - Manuel Bonilla.mp3"),
   },
   {
     title: "Todo el Mundo Busca",
     artist: "Wilson Camey",
     src: "songs/Todo el Mundo Busca - Wilson Camey.mp3",
-    cover: "images/wc.png",
+    cover: getMp3Art("songs/Todo el Mundo Busca - Wilson Camey.mp3"),
   },
   {
     title: "Tu Fidelidad",//55
     artist: "Marcos Witt/Alex Campos",
     src: "songs/a6.mp3",
-    cover: "images/a6.png",
+    cover: getMp3Art("songs/a6.mp3"),
   },
   {
     title: "Me Dicen Que Me Aman",
     artist: "Jesús Adrián Romero",
     src: "songs/a4.mp3",
-    cover: "images/a4.png",
+    cover: getMp3Art("songs/a4.mp3"),
   },
   {
     title: "Renuévame",
     artist: "Marcos Witt",
     src: "songs/a2.mp3",
-    cover: "images/a2.png",
+    cover: getMp3Art("songs/a2.mp3"),
     hex: "#0E434A",
     barColor: "#006c7bff"
   },
@@ -532,7 +532,7 @@ const playlist = [
     title: "Quien me podrá separar",
     artist: "Los Hermanos Reyes",
     src: "songs/a3.mp3",
-    cover: "images/a3.png",
+    cover: getMp3Art("songs/a3.mp3"),
     hex: "#17494eff",
     barColor: "#01747eff"
   },
@@ -540,7 +540,7 @@ const playlist = [
     title: "En Paz",
     artist: "Daniel Calveti",
     src: "songs/a1.mp3",
-    cover: "images/a1.png",
+    cover: getMp3Art("songs/a1.mp3"),
     hex: "#616060ff",
     barColor: "#a3a3a3"
   },
@@ -554,37 +554,37 @@ const playlist = [
     title: "Primero Dios, Vol. 5",//60
     artist: "Agustin Amador",
     src: "songs/Primero Dios, Vol. 5.mp3",
-    cover: "images/cover3.jpg",
+    cover: getMp3Art("songs/Primero Dios, Vol. 5.mp3"),
   },
   {
     title: "Ahora Soy Feliz",
     artist: "Los Hermanos Reyes",
     src: "songs/song1.mp3",
-    cover: "images/song1.jpg",
+    cover: getMp3Art("songs/song1.mp3"),
   },
   {
     title: "Un Grano de Arena",
     artist: "Manuel Bonilla",
     src: "songs/Un Grano De Arena.mp3",
-    cover: "images/Un Grano De Arena.png",
+    cover: getMp3Art("songs/Un Grano De Arena.mp3"),
   },
 { 
     title: "Oh Juventud",
     artist: "Zulmy Mejia",
     src: "songs/Zulmy.mp3",
-    cover: "images/zulmy.jpg",
+    cover: getMp3Art("songs/Zulmy.mp3"),
 },
 {
     title: "Cristo por su Iglesia viene",
     artist: "Los Voceros de Cristo",
     src: "songs/Cristo.mp3",
-    cover: "images/Cristo.jpg",
+    cover: getMp3Art("songs/Cristo.mp3"),
 },
 {
     title: "Loor a ti mi Dios",//65
     artist: "Los Voceros de Cristo",
     src: "songs/Loor.mp3",
-    cover: "images/Loor.jpg",
+    cover: getMp3Art("songs/Loor.mp3"),
     hex: "#783800",
     barColor: "#ca5e00ff"
 },
@@ -592,7 +592,7 @@ const playlist = [
     title: "Todos Deben de Saber/Conocer",
     artist: "Los Hermanos Reyes/Manuel Bonilla",
     src: "songs/song28.mp3",
-    cover: "images/song28.png",
+    cover: getMp3Art("songs/song28.mp3"),
     hex: "#968E90",
     barColor: "#c5c55aff"
 },
@@ -600,7 +600,7 @@ const playlist = [
     title: "Esa Roca",//67
     artist: "Francisco Orantes",
     src: "songs/song3.mp3",
-    cover: "images/song3.jpg",
+    cover: getMp3Art("songs/song3.mp3"),
     hex: "#236394ff",
     barColor: "#259423ff"
 },
@@ -608,7 +608,7 @@ const playlist = [
     title: "El Amor de Dios",
     artist: "Manuel Bonilla",
     src: "songs/song4.mp3",
-    cover: "images/song4.jpg",
+    cover: getMp3Art("songs/song4.mp3"),
     hex: "#2F4617",
     barColor: "#447e06ff"
 },
@@ -616,7 +616,7 @@ const playlist = [
     title: "En El Monte Cavalrio",
     artist: "Manuel Bonilla",
     src: "songs/song5.mp3",
-    cover: "images/song5.jpg",
+    cover: getMp3Art("songs/song5.mp3"),
     hex: "#003D03",
     barColor: "#00a108ff"
 },
@@ -624,7 +624,7 @@ const playlist = [
     title: "No Te Voy A Dejar",//70
     artist: "Leonel Tuchez",
     src: "songs/song6.mp3",
-    cover: "images/song6.png",
+    cover: getMp3Art("songs/song6.mp3"),
     hex: "#854b6fff",
     barColor: "#cf1989ff"
 },
@@ -632,7 +632,7 @@ const playlist = [
     title: "Supe Que Me Amabas",
     artist: "Marcela Gandara",
     src: "songs/song7.mp3",
-    cover: "images/song7.png",
+    cover: getMp3Art("songs/song7.mp3"),
     hex: "#9B4A3C",
     barColor: "#d74c10ff"
 },
@@ -640,7 +640,7 @@ const playlist = [
     title: "A Quien Iremos",
     artist: "Los Hermanos Reyes",
     src: "songs/song8.mp3",
-    cover: "images/song8.png",
+    cover: getMp3Art("songs/song8.mp3"),
     hex: "#383838",
     barColor: "#676536ff"
 },
@@ -648,7 +648,7 @@ const playlist = [
     title: "Llegó el Amor",
     artist: "Aníbal Marroquin",
     src: "songs/song9.mp3",
-    cover: "images/song9.png",
+    cover: getMp3Art("songs/song9.mp3"),
     hex: "#7D2708",
     barColor: "#c93601ff"
 },
@@ -656,7 +656,7 @@ const playlist = [
     title: "Confía En El Señor",
     artist: "Francisco Orantes",
     src: "songs/song10.mp3",
-    cover: "images/song10.png",
+    cover: getMp3Art("songs/song10.mp3"),
     hex: "#94625bff",
     barColor: "#bd4232ff"
 },
@@ -664,7 +664,7 @@ const playlist = [
     title: "Escogido fui de Dios",//75
     artist: "Los Voceros de Cristo",
     src: "songs/song11.mp3",
-    cover: "images/song11.png",
+    cover: getMp3Art("songs/song11.mp3"),
     hex: "#91190A",
     barColor: "#d11800ff"
 },
@@ -672,7 +672,7 @@ const playlist = [
     title: "Todo Va a Estar Bien",
     artist: "Redimi2/Evan Craft",
     src: "songs/Bienn.mp3",
-    cover: "images/Bien.jpg",
+    cover: getMp3Art("songs/Bienn.mp3"),
     hex: "#747474",
     barColor: "#a397bcff"
 },
@@ -680,7 +680,7 @@ const playlist = [
     title: "Más Rico Del Mundo",
     artist: "Evan Craft",
     src: "songs/Más_Rico_Del_Mundo.mp3",
-    cover: "images/Más_Rico_Del_Mundo.png",
+    cover: getMp3Art("songs/Más_Rico_Del_Mundo.mp3"),
     hex: "#0083A5",
     barColor: "#00cd8fff"
 },
@@ -688,7 +688,7 @@ const playlist = [
     title: "La Milla Extra",
     artist: "Evan Craft",
     src: "songs/La Milla Extra.mp3",
-    cover: "images/La Milla Extra.png",
+    cover: getMp3Art("songs/La Milla Extra.mp3"),
     hex: "#7E393C",
     barColor: "#aa123dff"
 },
@@ -696,7 +696,7 @@ const playlist = [
     title: "Desesperado",
     artist: "Evan Craft",
     src: "songs/Desesperado.mp3",
-    cover: "images/evan.png",
+    cover: getMp3Art("songs/Desesperado.mp3"),
     hex: "#186B5D",
     barColor: "#01ad91ff",
     libs: ["favorites", "spanish"]
@@ -705,7 +705,7 @@ const playlist = [
     title: "Sueños",//80
     artist: "Un Corazón",
     src: "songs/song14.mp3",
-    cover: "images/suenos.jpg",
+    cover: getMp3Art("songs/song14.mp3"),
     hex: "#504878",
     barColor: "#2204b3ff",
     libs: ["favorites", "spanish"]
@@ -714,7 +714,7 @@ const playlist = [
     title: "¿Cómo Podré Pagarte?",
     artist: "Leonel Tuchez",
     src: "songs/song15.mp3",
-    cover: "images/song15.png",
+    cover: getMp3Art("songs/song15.mp3"),
     hex: "#632D07",
     barColor: "#ca5501ff",
     libs: ["favorites", "spanish"]
@@ -723,7 +723,7 @@ const playlist = [
     title: "Más Que Nunca Ft. Danilo Montero",
     artist: "Un Corazón",
     src: "songs/song16.mp3",
-    cover: "images/song16.png",
+    cover: getMp3Art("songs/song16.mp3"),
     hex: "#464D2E",
     barColor: "#6f881bff",
     libs: ["favorites", "spanish"]
@@ -732,7 +732,7 @@ const playlist = [
     title: "Cuando Te Encontré",
     artist: "Rojo/Strings & Heart",
     src: "songs/Cuando (1).mp3",
-    cover: "images/Cuando.jpg",
+    cover: getMp3Art("songs/Cuando (1).mp3"),
     hex: "#949494",
     barColor: "#94a9d3ff",
     libs: ["favorites", "spanish"]
@@ -741,7 +741,7 @@ const playlist = [
     title: "Eres Todopoderoso",
     artist: "Rojo",
     src: "songs/song12.mp3",
-    cover: "images/song12.png",
+    cover: getMp3Art("songs/song12.mp3"),
     hex: "#680519",
     barColor: "#ad0330ff",
     libs: ["favorites", "spanish"]
@@ -750,7 +750,7 @@ const playlist = [
     title: "Tu Amor Hace Eco En Todo Mi Universo", //85
     artist: "Rojo",
     src: "songs/song17.mp3",
-    cover: "images/song17.png",
+    cover: getMp3Art("songs/song17.mp3"),
     hex: "#727272",
     barColor: "#dbb8b8ff",
     libs: ["favorites", "spanish"]
@@ -759,7 +759,7 @@ const playlist = [
     title: "Es Lo Que Quiero",
     artist: "Emmanuel y Linda",
     src: "songs/Es Lo Que Quiero.mp3",
-    cover: "images/Es Lo Que Quiero.png",
+    cover: getMp3Art("songs/Es Lo Que Quiero.mp3"),
     hex: "#9c3270ff",
     barColor: "#db24a4ff"
 },
@@ -767,7 +767,7 @@ const playlist = [
     title: "Si No Fuera Por Ti",
     artist: "Rojo",
     src: "songs/Si No Fuera Por Ti.mp3",
-    cover: "images/Si No Fuera Por Ti.png",
+    cover: getMp3Art("songs/Si No Fuera Por Ti.mp3"),
     hex: "#959595",
     barColor: "#94a9d3ff"
 },
@@ -775,7 +775,7 @@ const playlist = [
     title: "Siguiéndote Los Pasos",
     artist: "Rojo",
     src: "songs/Pasos.mp3",
-    cover: "images/song17.png",
+    cover: getMp3Art("songs/Pasos.mp3"),
     hex: "#727272",
     barColor: "#dbb8b8ff"
 },
@@ -783,7 +783,7 @@ const playlist = [
     title: "Has Cambiado mi lamento",
     artist: "Los Hermanos Reyes",
     src: "songs/lamento.mp3",
-    cover: "images/lamento.jpg",
+    cover: getMp3Art("songs/lamento.mp3"),
     hex: "#007693",
     barColor: "#00c3eaff"
 },
@@ -791,7 +791,7 @@ const playlist = [
     title: "Deja las Drogas",//90
     artist: "Aníbal Marroquín",
     src: "songs/song22.mp3",
-    cover: "images/song22.png",
+    cover: getMp3Art("songs/song22.mp3"),
     hex: "#740800",
     barColor: "#d40e00ff"
 },
@@ -799,7 +799,7 @@ const playlist = [
     title: "A Luchar Hermano",
     artist: "Aníbal Marroquín",
     src: "songs/song23.mp3",
-    cover: "images/song23.png",
+    cover: getMp3Art("songs/song23.mp3"),
     hex: "#7D2708",
     barColor: "#e23c00ff"
 },
@@ -807,7 +807,7 @@ const playlist = [
     title: "Josué 1: 8 Y 9",
     artist: "Leonel Tuchez",
     src: "songs/song24.mp3",
-    cover: "images/song24.png",
+    cover: getMp3Art("songs/song24.mp3"),
     hex: "#662F08",
     barColor: "#db5b00ff"
 },
@@ -815,7 +815,7 @@ const playlist = [
     title: "Los Que Esperan En Jehová",
     artist: "Manuel Bonilla",
     src: "songs/Esperan.mp3",
-    cover: "images/new5.png",
+    cover: getMp3Art("songs/Esperan.mp3"),
     hex: "#961410",
     barColor: "#d9036eff"
 },
@@ -823,7 +823,7 @@ const playlist = [
     title: "He Peleado la Batalla",
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/Luismi.mp3",
-    cover: "images/new1.png",
+    cover: getMp3Art("songs/Luismi.mp3"),
     hex: "#AC6F00",
     barColor: "#f88400ff"
 },
@@ -831,83 +831,83 @@ const playlist = [
     title: "Que Bueno Es El Señor",//95
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/SpotiDownloader.com - Que bueno es el Señor - Luismi Acosta y Gloria de Dios.mp3",
-    cover: "images/new1.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Que bueno es el Señor - Luismi Acosta y Gloria de Dios.mp3"),
 },
 {
     title: "Jesús Pt. 2",
     artist: "Lead/Musiko",
     src: "songs/Pt 2.mp3",
-    cover: "images/image (2).png",
+    cover: getMp3Art("songs/Pt 2.mp3"),
 },
 {
     title: "Lo Que Quieras Tú",
     artist: "La Feria Oficial/Redimi2",
     src: "songs/Quieras.mp3",
-    cover: "images/Lo.jpg",
+    cover: getMp3Art("songs/Quieras.mp3"),
     video: "videos/LaFeria1.mp4"
 },
 {
     title: "Una Locura",
     artist: "Musiko/La Feria Oficial",
     src: "songs/SpotiDownloader.com - Una Locura - Musiko.mp3",
-    cover: "images/Si Puedes Creer.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Una Locura - Musiko.mp3"),
 },
 {
     title: "GOZO",
     artist: "Miel San Marcos/Redimi2",
     src: "songs/GOZO.mp3",
-    cover: "images/gozo.jpg",
+    cover: getMp3Art("songs/GOZO.mp3"),
 },
 {
     title: "El Nombre De Jesús",//100
     artist: "Redimi2, Christine D'Clario",
     src: "songs/Nombre.mp3",
-    cover: "images/image (5).png",
+    cover: getMp3Art("songs/Nombre.mp3"),
     video: "videos/Redimi2.mp4"
 },
 {
     title: "Espíritu Santo",
     artist: "Redimi2, Barak",
     src: "songs/Espíritu.mp3",
-    cover: "images/image (5).png",
+    cover: getMp3Art("songs/Espíritu.mp3"),
 },
 {
     title: "Viviré",
     artist: "Redimi2, Evan Craft",
     src: "songs/Viviré.mp3",
-    cover: "images/image (6).png",
+    cover: getMp3Art("songs/Viviré.mp3"),
 },
 {
     title: "NO HAY NADA IMPOSIBLE",
     artist: "Redimi2/Danny Gokey",
     src: "songs/Gokey.mp3",
-    cover: "images/Gokey.jpg",
+    cover: getMp3Art("songs/Gokey.mp3"),
     video: "videos/Redimi8.mp4",
 },
 {
     title: "La Casa De Jehová",
     artist: "Redimi2/Barak",
     src: "songs/Barak.mp3",
-    cover: "images/Barak.jpg",
+    cover: getMp3Art("songs/Barak.mp3"),
 },
 {
     title: "Arde En Mi",//105
     artist: "Evan Craft, Redimi2",
     src: "songs/Arde.mp3",
-    cover: "images/Arde.jpg",
+    cover: getMp3Art("songs/Arde.mp3"),
 },
 {
     title: "Del Salmo 23",
     artist: "Redimi2/Distrito Royal",
     src: "songs/SpotiDownloader.com - Del Salmo 23 - Redimi2.mp3",
-    cover: "images/Cover of Del Salmo 23 by Redimi2, Distrito Royal.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Del Salmo 23 - Redimi2.mp3"),
     libs: ["favorites", "spanish"]
 },
 {
     title: "El Mood",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - El mood - Redimi2.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - El mood - Redimi2.mp3"),
     video: "videos/Redimi1.mp4",
     libs: ["favorites", "spanish"]
 },
@@ -915,14 +915,14 @@ const playlist = [
     title: "dIOS",
     artist: "Kim Richards/Indiomar/Redimi2",
     src: "songs/SpotiDownloader.com - dIOS - Kim Richards.mp3",
-    cover: "images/Cover of dIOS by Kim Richards, Indiomar, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - dIOS - Kim Richards.mp3"),
     video: "videos/dIOS.mp4",
 },
 {
     title: "Flipando",
     artist: "Redimi2/Natan El Profeta",
     src: "songs/Flipando.mp3",
-    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    cover: getMp3Art("songs/Flipando.mp3"),
     hex: "#1b5d9f",
     barColor: "#f7cd24ff",
     libs: ["favorites", "spanish"]
@@ -931,7 +931,7 @@ const playlist = [
     title: "Cumbia de Mi Libertad",//110
     artist: "Redimi2",
     src: "songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3",
-    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    cover: getMp3Art("songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3"),
     hex: "#3b7c60",
     barColor: "#f7cd24d8",
     video: "videos/Redimi4.mp4",
@@ -940,20 +940,20 @@ const playlist = [
     title: "CMR4: El Museo",
     artist: "Alex Zurdo/Natan El Profeta",
     src: "songs/SpotiDownloader.com - CMR4_ El Museo - Alex Zurdo.mp3",
-    cover: "images/Cover of CMR4_ El Museo by Alex Zurdo, Natan El Profeta.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - CMR4_ El Museo - Alex Zurdo.mp3"),
     video: "videos/AlexZurdo3.mp4",
 },
 {
     title: "Gracias Gracias Gracias",
     artist: "Redimi2/Madiel Lara",
     src: "songs/SpotiDownloader.com - Gracias Gracias Gracias - Redimi2.mp3",
-    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Gracias Gracias Gracias - Redimi2.mp3"),
 },
 {
     title: "El Culpable ft Dariana",
     artist: "Alex Zurdo, Funky, Dariana",
     src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
-    cover: "images/Cover of El Culpable by Funky, Alex Zurdo, Dariana.jpg",
+    cover: getMp3Art("songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3"),
     hex: "#D03030",
     barColor: "#fb965fff",
 },
@@ -961,7 +961,7 @@ const playlist = [
     title: "INFINITO",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3",
-    cover: "images/Cover of INFINITO by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3"),
     hex: "#D28432",
     barColor: "#ffdf89ff",
     video: "videos/MadielLara2.mp4",
@@ -970,7 +970,7 @@ const playlist = [
     title: "A Pesar de Mí",//115
     artist: "Alex Zurdo/Funky/Redimi2/Un Corazón/Abby Valdez/Indiomar",
     src: "songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3",
-    cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3"),
     hex: "#402727",
     barColor: "#fbf5d7ff",
 },
@@ -978,7 +978,7 @@ const playlist = [
     title: "365",
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - 365 - Dariana.mp3",
-    cover: "images/Cover of 365 by Dariana.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - 365 - Dariana.mp3"),
     hex: "#189E76",
     barColor: "#01f079ff",
 },
@@ -986,7 +986,7 @@ const playlist = [
     title: "Polaris",
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - Polaris - Dariana.mp3",
-    cover: "images/Cover of Polaris by Dariana.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Polaris - Dariana.mp3"),
     hex: "#189E76",
     barColor: "#01f079ff",
 },
@@ -994,7 +994,7 @@ const playlist = [
     title: "Exaltación",
     artist: "Redimi2/Averly Morillo",
     src: "songs/SpotiDownloader.com - Exaltación - Redimi2.mp3",
-    cover: "images/Cover of Exaltación by Redimi2, Averly Morillo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Exaltación - Redimi2.mp3"),
     hex: "#383810",
     barColor: "#f4f447ff"
 },
@@ -1002,7 +1002,7 @@ const playlist = [
     title: "Mi Padre",
     artist: "Redimi2, Samantha Kate, Distrito Royal",
     src: "songs/padre.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/padre.mp3"),
     hex: "#70918b",
     barColor: "#ac9250ff"
 },
@@ -1010,7 +1010,7 @@ const playlist = [
     title: "Mi Dios Puede",//120
     artist: "Redimi2/Sarai Rivera",
     src: "songs/puede.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/puede.mp3"),
     hex: "#6B8681",
     barColor: "#ac9250ff"
 },
@@ -1018,7 +1018,7 @@ const playlist = [
     title: "VUELVO A TI",
     artist: "Redimi2/Betsy Jo",
     src: "songs/VUELVO.mp3",
-    cover: "images/Gokey.jpg",
+    cover: getMp3Art("songs/VUELVO.mp3"),
     hex: "#5c4134",
     barColor: "#fd7b3aff"
 },
@@ -1026,7 +1026,7 @@ const playlist = [
     title: "Gracias",
     artist: "Redimi2, Marcos Brunet",
     src: "songs/GraciasR.mp3",
-    cover: "images/image (6).png",
+    cover: getMp3Art("songs/GraciasR.mp3"),
     hex: "#6c7565",
     barColor: "#d1e65bff"
 },
@@ -1034,7 +1034,7 @@ const playlist = [
     title: "Be Alright",
     artist: "Evan Craft, Danny Gokey, Redimi2",
     src: "songs/Be Alright.mp3",
-    cover: "images/alrighty.jpg",
+    cover: getMp3Art("songs/Be Alright.mp3"),
     hex: "#443124",
     barColor: "#acc508d9",
     video: "videos/Redimi3.mp4"
@@ -1043,7 +1043,7 @@ const playlist = [
     title: "Eres Mi Bendicion",
     artist: "Funky, Alex Zurdo",
     src: "songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3",
-    cover: "images/Cover of Eres Mi Bendicion (feat. Alex Zurdo) by Funky, Alex Zurdo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3"),
     hex: "#484060",
     barColor: "979ec9d9"
 },
@@ -1051,21 +1051,21 @@ const playlist = [
     title: "Pentagrama",//125
     artist: "Alex Zurdo",
     src: "songs/Penta.mp3",
-    cover: "images/Penta.jpg",
+    cover: getMp3Art("songs/Penta.mp3"),
     lrc: "LRC files/Pentagrama - Alex Zurdo.lrc",
 },
 {
     title: "Empezar de Nuevo",
     artist: "Kike Pavón/Funky",
     src: "songs/Empezar.mp3",
-    cover: "images/kiki.png",
+    cover: getMp3Art("songs/Empezar.mp3"),
     lrc: "LRC files/Empezar de Nuevo - Kike Pavón, Funky.lrc",
 },
 {
     title: "Soy Soldado",
     artist: "Alex Campos/Redimi2",
     src: "songs/soldado.mp3",
-    cover: "images/soldado.jpg",
+    cover: getMp3Art("songs/soldado.mp3"),
     hex: "#525252",
     barColor: "#887f9dff"
 },
@@ -1073,7 +1073,7 @@ const playlist = [
     title: "Todo Lo Has Cambiado",
     artist: "Danilo Montero/Su Presencia/Thalles Roberto/Victoria Montero",
     src: "songs/Cambiado.mp3",
-    cover: "images/Cambiado.jpg",
+    cover: getMp3Art("songs/Cambiado.mp3"),
     hex: "#9E1F10",
     barColor: "#7de6f9ff"
 },
@@ -1081,7 +1081,7 @@ const playlist = [
     title: "Cuando Yo Te Conocí",
     artist: "Alex Zurdo",
     src: "songs/Cuando.mp3",
-    cover: "images/Penta.jpg",
+    cover: getMp3Art("songs/Cuando.mp3"),
     hex: "#A81A77",
     barColor: "#1aa8a6ff"
 },
@@ -1089,7 +1089,7 @@ const playlist = [
     title: "Tú Me Llamas (feat. Musiko)",//130
     artist: "Deluz/Musiko",
     src: "songs/llamas.mp3",
-    cover: "images/llamas.jpg",
+    cover: getMp3Art("songs/llamas.mp3"),
     hex: "#64362E",
     barColor: "#de9444ff"
 },
@@ -1097,50 +1097,50 @@ const playlist = [
     title: "Soñe",
     artist: "Musiko/Josh Gamez",
     src: "songs/SpotiDownloader.com - Soñe - Musiko.mp3",
-    cover: "images/Si Puedes Creer.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Soñe - Musiko.mp3"),
 },
 {
     title: "Solo tú",
     artist: "Un Corazón, Lead, Kim Richards, Louie Abrego",
     src: "songs/Solo tú.mp3",
-    cover: "images/image (3).png",
+    cover: getMp3Art("songs/Solo tú.mp3"),
 },
 {
     title: "Fiesta",
     artist: "Un Corazón/Louie Abrego/Kim Richards/Alex Zurdo",
     src: "songs/Fiesta.mp3",
-    cover: "images/song14.png",
+    cover: getMp3Art("songs/Fiesta.mp3"),
 },
 {
     title: "Que lo sepa la calle",
     artist: "Un Corazón, Lead, Kim Richards",
     src: "songs/la calle.mp3",
-    cover: "images/image (3).png",
+    cover: getMp3Art("songs/la calle.mp3"),
     video: "videos/UnCorazon3.mp4"
 },
 {
     title: "está bien no estar bien :):",//135
     artist: "PRISMA Más Vida/Un Corazón",
     src: "songs/bien.mp3",
-    cover: "images/image (4).png",
+    cover: getMp3Art("songs/bien.mp3"),
 },
 {
     title: "REAL",
     artist: "PRISMA Más Vida/Samu Robles",
     src: "songs/REAL.mp3",
-    cover: "images/image (4).png",
+    cover: getMp3Art("songs/REAL.mp3"),
 },
 {
     title: "Gracias (Remix)",
     artist: "Majo y Dan/Musiko",
     src: "songs/G_Remix.mp3",
-    cover: "images/G_Remix.jpg",
+    cover: getMp3Art("songs/G_Remix.mp3"),
 },
 {
     title: "Que Pase El Mundo",
     artist: "Majo y Dan",
     src: "songs/song6 (1).mp3",
-    cover: "images/song6 (1).png",
+    cover: getMp3Art("songs/song6 (1).mp3"),
     video: "videos/majoYDan1.mp4",
     lrc: "LRC files/Que Pase El Mundo - Majo y Dan.lrc",
 },
@@ -1148,7 +1148,7 @@ const playlist = [
     title: "Gracias",
     artist: "Majo y Dan, Musiko",
     src: "songs/song7 (1).mp3",
-    cover: "images/song7 (1).png",
+    cover: getMp3Art("songs/song7 (1).mp3"),
     video: "videos/gracias.mp4",
     lrc: "LRC files/Gracias - Majo y Dan, Musiko.lrc",
 },
@@ -1156,7 +1156,7 @@ const playlist = [
     title: "Es por Fe",//140
     artist: "Generación 12/Musiko/Stefy Espinosa",
     src: "songs/SpotiDownloader.com - Es por Fe - Generación 12.mp3",
-    cover: "images/Cover of Es por Fe by Generación 12, Musiko, Stefy Espinosa.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Es por Fe - Generación 12.mp3"),
     hex: "#77676F",
     barColor: "#eecbddd8",
 },
@@ -1164,7 +1164,7 @@ const playlist = [
     title: "Si Puedes Creer",
     artist: "Musiko/Majo y Dan",
     src: "songs/Si Puedes Creer.mp3",
-    cover: "images/Si Puedes Creer.png",
+    cover: getMp3Art("songs/Si Puedes Creer.mp3"),
     hex: "#C31307",
     barColor: "#e7c20cff"
 },
@@ -1172,7 +1172,7 @@ const playlist = [
     title: "Lo Que Pasó Pasó",
     artist: "Musiko/Pedro Pablo Quintero",
     src: "songs/SpotiDownloader.com - Lo Que Pasó Pasó - Musiko.mp3",
-    cover: "images/Cover of Lo Que Pasó Pasó by Musiko, Pedro Pablo Quintero.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Lo Que Pasó Pasó - Musiko.mp3"),
     hex: "#EE3F2F",
     barColor: "#f6beb9",
     lrc: "LRC files/Lo Que Paso Paso.lrc",
@@ -1181,7 +1181,7 @@ const playlist = [
     title: "Laberintos",
     artist: "La Feria Oficial/Majo y Dan",
     src: "songs/song25.mp3",
-    cover: "images/song25.png",
+    cover: getMp3Art("songs/song25.mp3"),
     hex: "#683037",
     barColor: "#306854ff"
 },
@@ -1189,7 +1189,7 @@ const playlist = [
     title: "El Secreto",
     artist: "Majo y Dan",
     src: "songs/song26.mp3",
-    cover: "images/song26.png",
+    cover: getMp3Art("songs/song26.mp3"),
     hex: "#473F27",
     barColor: "#e7c663ff"
 },
@@ -1197,7 +1197,7 @@ const playlist = [
     title: "Vida Encontré",//145
     artist: "Majo y Dan",
     src: "songs/song13.mp3",
-    cover: "images/song13.png",
+    cover: getMp3Art("songs/song13.mp3"),
     video: "videos/majoYDan2.mp4",
     lrc: "LRC files/Vida Encontré - Majo y Dan.lrc",
 },
@@ -1205,7 +1205,7 @@ const playlist = [
     title: "Volverás",
     artist: "Majo y Dan",
     src: "songs/Volverás.mp3",
-    cover: "images/G_Remix.jpg",
+    cover: getMp3Art("songs/Volverás.mp3"),
     hex: "#727564",
     barColor: "#7a9737ff"
 },
@@ -1213,7 +1213,7 @@ const playlist = [
     title: "Juró Volver",
     artist: "Majo y Dan",
     src: "songs/song10 (1).mp3",
-    cover: "images/song10 (1).png",
+    cover: getMp3Art("songs/song10 (1).mp3"),
     hex: "#1F2D4D",
     barColor: "#3f6dd8ff"
 },
@@ -1221,7 +1221,7 @@ const playlist = [
     title: "no te vas",
     artist: "PRISMA Más Vida/Majo y Dan",
     src: "songs/song9 (1).mp3",
-    cover: "images/song9 (1).png",
+    cover: getMp3Art("songs/song9 (1).mp3"),
     hex: "#36463E",
     barColor: "#56cb7fff"
 },
@@ -1251,7 +1251,7 @@ const playlist = [
     title: "En Las Penas de Mi Alma Ft. Los Voceros de Cristo",//149
     artist: "Los Milagros de Cristo/Los Voceros de Cristo",
     src: "songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3",
-    cover: "images/Cover of Exitos.jpg",
+    cover: getMp3Art("songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3"),
     hex: "#1e233f",
     barColor: "#041ec4d7",
     video: "videos/Voceros3.mp4",
@@ -1260,7 +1260,7 @@ const playlist = [
     title: "Salmo 23",// 150
     artist: "Leonel Tuchez",
     src: "songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3",
-    cover: "images/Cover of Salmo 23 by Leonel Tuchez.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3"),
     hex: "#9E9698",
     barColor: "#8fdac3"
 },
@@ -1268,7 +1268,7 @@ const playlist = [
     title: "Esta Cayendo",
     artist: "Jose Luis Reyes",
     src: "songs/SpotiDownloader.com - Esta Cayendo - Jose Luis Reyes.mp3",
-    cover: "images/Cover of Esta Cayendo by Jose Luis Reyes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Esta Cayendo - Jose Luis Reyes.mp3"),
     hex: "#5E5759",
     barColor: "#cfc978"
 },
@@ -1276,7 +1276,7 @@ const playlist = [
     title: "BUENA ONDA",//152
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3",
-    cover: "images/Gokey.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3"),
     hex: "#4d372cff",
     barColor: "#fd7b3aff",
     video: "videos/Redimi6.mp4",
@@ -1285,7 +1285,7 @@ const playlist = [
     title: "TENGO EL DON",
     artist: "Redimi2/Ander Brock",
     src: "songs/SpotiDownloader.com - TENGO EL DON - Redimi2.mp3",
-    cover: "images/Gokey.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - TENGO EL DON - Redimi2.mp3"),
     hex: "#633c29",
     barColor: "#fd7b3ad8",
     video: "videos/Redimi5.mp4",
@@ -1294,7 +1294,7 @@ const playlist = [
     title: "Abba",
     artist: "Redimi2/Distrito Royal/Samantha Kate",
     src: "songs/SpotiDownloader.com - Abba - Redimi2.mp3",
-    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Abba - Redimi2.mp3"),
     hex: "#1b5d9f",
     barColor: "#f7cd24ff",
 },
@@ -1302,7 +1302,7 @@ const playlist = [
     title: "Bacha Drill",//155
     artist: "Redimi2/Madiel Lara",
     src: "songs/SpotiDownloader.com - Bacha Drill - Redimi2.mp3",
-    cover: "images/Cover of Bacha Drill by Redimi2, Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Bacha Drill - Redimi2.mp3"),
     hex: "#0876EE",
     barColor: "#fd6937ff"
 },
@@ -1310,7 +1310,7 @@ const playlist = [
     title: "Colores",
     artist: "Redimi2/Funky/Alex Zurdo",
     src: "songs/SpotiDownloader.com - Colores - Redimi2.mp3",
-    cover: "images/Cover of Colores by Redimi2, Funky, Alex Zurdo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Colores - Redimi2.mp3"),
     hex: "#6E9E9E",
     barColor: "#ffe96dff",
     video: "videos/Redimi7.mp4",
@@ -1319,7 +1319,7 @@ const playlist = [
     title: "A Pesar de Mí - Live",
     artist: "Redimi2/Funky/Alex Zurdo/Indiomar",
     src: "songs/SpotiDownloader.com - A Pesar de Mí - Live - Redimi2.mp3",
-    cover: "images/Cover of A Pesar de Mí - Live by Redimi2, Funky, Alex Zurdo, Indiomar.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - A Pesar de Mí - Live - Redimi2.mp3"),
     hex: "#E47436",
     barColor: "#ff9c72ff"
 },
@@ -1327,7 +1327,7 @@ const playlist = [
     title: "Esto Suena Bien",
     artist: "Redimi2/Alex Zurdo/Oveja Cosmica",
     src: "songs/SpotiDownloader.com - Esto Suena Bien - Redimi2.mp3",
-    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Esto Suena Bien - Redimi2.mp3"),
     hex: "#53423c",
     barColor: "#aa8a72ff"
 },
@@ -1335,7 +1335,7 @@ const playlist = [
     title: "Quita y Pon",//159
     artist: "Alex Zurdo/Funky/Redimi2/Peter Metivier",
     src: "songs/SpotiDownloader.com - Quita y Pon (feat. Peter Metivier) - Alex Zurdo.mp3",
-    cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Quita y Pon (feat. Peter Metivier) - Alex Zurdo.mp3"),
     hex: "#402727",
     barColor: "#fbf5d7ff",
     video: "videos/AlexZurdo1.mp4",
@@ -1344,7 +1344,7 @@ const playlist = [
     title: "Replay",//160
     artist: "Redimi2, Samantha Kate",
     src: "songs/SpotiDownloader.com - Replay - Redimi2.mp3",
-    cover: "images/Bien.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Replay - Redimi2.mp3"),
     hex: "#747474",
     barColor: "#a397bcff"
   },
@@ -1352,7 +1352,7 @@ const playlist = [
     title: "Exagerado amor",
     artist: "Redimi2, Evan Craft, Distrito Royal, Camila Sofía",
     src: "songs/SpotiDownloader.com - Exagerado amor - Redimi2.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Exagerado amor - Redimi2.mp3"),
     hex: "#6B8681",
     barColor: "#ac9250ff",
   },
@@ -1360,7 +1360,7 @@ const playlist = [
     title: "¿A quién iré?",
     artist: "Redimi2/Kim Richards/Distrito Royal/Melody Jaine",
     src: "songs/SpotiDownloader.com - ¿A quién iré_ - Redimi2.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - ¿A quién iré_ - Redimi2.mp3"),
     hex: "#6B8681",
     barColor: "#ac9250ff",
   },
@@ -1368,14 +1368,14 @@ const playlist = [
     title: "Por Siempre",
     artist: "Redimi2, Ander Bock, Samantha Kate",
     src: "songs/SpotiDownloader.com - Por Siempre - Redimi2.mp3",
-    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Por Siempre - Redimi2.mp3"),
     video: "videos/Redimi13.mp4",
   },
   {
     title: "Jesús viral",
     artist: "Redimi2/Distrito Royal",
     src: "songs/SpotiDownloader.com - Jesús viral - Redimi2.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Jesús viral - Redimi2.mp3"),
     hex: "#6B8681",
     barColor: "#ac9250ff",
   },
@@ -1383,14 +1383,14 @@ const playlist = [
     title: "Como David", //165
     artist: "Redimi2/Betsy Jo/Melody Jaine",
     src: "songs/SpotiDownloader.com - Como David - Redimi2.mp3",
-    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Como David - Redimi2.mp3"),
     video: "videos/Redimi14.mp4",
   },
   {
     title: "Alabaré",
     artist: "Nacho/Redimi2/Alex Zurdo",
     src: "songs/SpotiDownloader.com - Alabaré - Nacho.mp3",
-    cover: "images/Cover of Alabaré by Nacho, Redimi2, Alex Zurdo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Alabaré - Nacho.mp3"),
     hex: "#B83018",
     barColor: "#ffda5f",
   },
@@ -1398,7 +1398,7 @@ const playlist = [
     title: "Lo Que Se Va",
     artist: "Alex Zurdo/Gabriel EMC",
     src: "songs/SpotiDownloader.com - Lo Que Se Va - Alex Zurdo.mp3",
-    cover: "images/Cover of Lo Que Se Va by Alex Zurdo, Gabriel EMC.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Lo Que Se Va - Alex Zurdo.mp3"),
     hex: "#9E1010",
     barColor: "#690000",
     video: "videos/AlexZurdo2.mp4"
@@ -1407,7 +1407,7 @@ const playlist = [
     title: "¿Pa' Qué Preguntan? - Remix",
     artist: "Alex Zurdo/Funky/Almighty/Redimi2",
     src: "songs/SpotiDownloader.com - ¿Pa' Qué Preguntan_ - Remix - Alex Zurdo.mp3",
-    cover: "images/Cover of ¿Pa' Qué Preguntan_ - Remix by Alex Zurdo, Funky, Almighty, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - ¿Pa' Qué Preguntan_ - Remix - Alex Zurdo.mp3"),
     hex: "#00A6B7",
     barColor: "#c2ec07",
   },
@@ -1415,7 +1415,7 @@ const playlist = [
     title: "De Aquí No Me Voy",
     artist: "Rescate/Redimi2",
     src: "songs/SpotiDownloader.com - De Aquí No Me Voy - Rescate.mp3",
-    cover: "images/Cover of De Aquí No Me Voy by Rescate, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - De Aquí No Me Voy - Rescate.mp3"),
     hex: "#203040",
     barColor: "#d3d7ff",
   },
@@ -1423,7 +1423,7 @@ const playlist = [
     title: "SIMPLICIDAD", //170
     artist: "Funky/Vaes",
     src: "songs/SpotiDownloader.com - SIMPLICIDAD - Funky.mp3",
-    cover: "images/Cover of SIMPLICIDAD by Funky, Vaes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - SIMPLICIDAD - Funky.mp3"),
     hex: "#7D9E9E",
     barColor: "#c7fcfc",
     video: "videos/Funky1.mp4"
@@ -1432,7 +1432,7 @@ const playlist = [
     title: "Correré a Ti",
     artist: "Funky/Marcela Gandara",
     src: "songs/SpotiDownloader.com - Correré a Ti - Funky.mp3",
-    cover: "images/Cover of Correré a Ti by Funky, Marcela Gandara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Correré a Ti - Funky.mp3"),
     hex: "#9D0716",
     barColor: "#ff4a09",
   },
@@ -1440,7 +1440,7 @@ const playlist = [
     title: "Cristo Es Necesario",
     artist: "Danny Gokey/Christine D'Clario",
     src: "songs/SpotiDownloader.com - Cristo Es Necesario - Danny Gokey.mp3",
-    cover: "images/Cover of Cristo Es Necesario by Danny Gokey, Christine D'Clario.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Cristo Es Necesario - Danny Gokey.mp3"),
     hex: "#864776",
     barColor: "#747374",
   },
@@ -1448,7 +1448,7 @@ const playlist = [
     title: "Cada mañana",
     artist: "Sarai Rivera",
     src: "songs/SpotiDownloader.com - Cada mañana - Sarai Rivera.mp3",
-    cover: "images/Cover of Cada mañana by Sarai Rivera.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Cada mañana - Sarai Rivera.mp3"),
     hex: "#676664",
     barColor: "#255d26", 
   },
@@ -1456,37 +1456,37 @@ const playlist = [
     title: "Espiritu Santo",
     artist: "Zulmy Mejia",
     src: "songs/SpotiDownloader.com - Espiritu Santo - Zulmy Mejia.mp3",
-    cover: "images/zulmy.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Espiritu Santo - Zulmy Mejia.mp3"),
   },
   {
     title: "Sumérgeme", //175
     artist: "Jesús Adrián Romero",
     src: "songs/SpotiDownloader.com - Sumérgeme - Jesús Adrián Romero.mp3",
-    cover: "images/Cover of Sumérgeme by Jesús Adrián Romero.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Sumérgeme - Jesús Adrián Romero.mp3"),
   },
   {
     title: "Tu Palabra",
     artist: "Marcela Gandara",
     src: "songs/SpotiDownloader.com - Tu Palabra - Marcela Gandara.mp3",
-    cover: "images/song7.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Tu Palabra - Marcela Gandara.mp3"),
   },
   {
     title: "Creo En Ti",
     artist: "Julio Melgar",
     src: "songs/SpotiDownloader.com - Creo En Ti - Julio Melgar.mp3",
-    cover: "images/Cover of Creo En Ti by Julio Melgar.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Creo En Ti - Julio Melgar.mp3"),
   },
   {
     title: "Levanto Mis Manos",
     artist: "Samuel Hernández",
     src: "songs/SpotiDownloader.com - Levanto Mis Manos - Samuel Hernández.mp3",
-    cover: "images/Cover of Levanto Mis Manos by Samuel Hernández.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Levanto Mis Manos - Samuel Hernández.mp3"),
   },
   {
     title: "No Hay Nadie Como Cristo", //179
     artist: "Marilú Orantes",
     src: "songs/SpotiDownloader.com - No Hay Nadie Como Cristo - Marilú Orantes.mp3",
-    cover: "images/Cover of No Hay Nadie Como Cristo by Marilú Orantes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - No Hay Nadie Como Cristo - Marilú Orantes.mp3"),
     hex: "#CA3DE9",
     barColor: "#ff2121",
   }, // #773830 && #8A8185
@@ -1494,7 +1494,7 @@ const playlist = [
     title: "Mi triunfo con Jesús", //180
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Mi triunfo con Jesús - Los Voceros de Cristo.mp3",
-    cover: "images/a5.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Mi triunfo con Jesús - Los Voceros de Cristo.mp3"),
     hex: "#3A3436",
     barColor: "#726065ff"
   },
@@ -1502,7 +1502,7 @@ const playlist = [
     title: "Hay una Ciudad",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Hay una ciudad - Los Voceros de Cristo.mp3",
-    cover: "images/new3.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Hay una ciudad - Los Voceros de Cristo.mp3"),
     hex: "#582820",
     barColor: "#941b06ff"
   },
@@ -1510,7 +1510,7 @@ const playlist = [
     title: "Cuando hablas tú",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Cuando hablas tú - Los Voceros de Cristo.mp3",
-    cover: "images/Loor.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Cuando hablas tú - Los Voceros de Cristo.mp3"),
     hex: "#783800",
     barColor: "#bf5900ff"
   },
@@ -1518,7 +1518,7 @@ const playlist = [
     title: "Sinónimo de Amar",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Sinónimo de Amar - Los Voceros de Cristo.mp3",
-    cover: "images/new3.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Sinónimo de Amar - Los Voceros de Cristo.mp3"),
     hex: "#582820",
     barColor: "#941b06ff"
   },
@@ -1526,7 +1526,7 @@ const playlist = [
     title: "Triunfante hasta el final",//185
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Triunfante hasta el final - Los Voceros de Cristo.mp3",
-    cover: "images/song11.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Triunfante hasta el final - Los Voceros de Cristo.mp3"),
     hex: "#91190A",
     barColor: "#d11800ff"
   },
@@ -1534,7 +1534,7 @@ const playlist = [
     title: "Sodoma y Gomora",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - La Destrucción de Sodoma - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of Sodoma y Gomorra by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Destrucción de Sodoma - Los Voceros de Cristo.mp3"),
     hex: "#773830",
     barColor: "#f03d26"
   },
@@ -1542,7 +1542,7 @@ const playlist = [
     title: "La niña de los ojos de Dios",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - La niña de los ojos de Dios - Redimi2.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La niña de los ojos de Dios - Redimi2.mp3"),
     hex: "#6B8681",
     barColor: "#ac9250ff",
   }, 
@@ -1550,7 +1550,7 @@ const playlist = [
     title: "Ama A Dios Y A Tu Vecino",//187
     artist: "Danny Gokey, Evan Craft, Redimi2",
     src: "songs/SpotiDownloader.com - Ama A Dios Y A Tu Vecino - Danny Gokey.mp3",
-    cover: "images/Cover of Ama A Dios Y A Tu Vecino by Danny Gokey, Evan Craft, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ama A Dios Y A Tu Vecino - Danny Gokey.mp3"),
     hex: "#403038",
     barColor: "#ffc863",
   }, 
@@ -1558,28 +1558,28 @@ const playlist = [
     title: "Lara la la la la",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Lara la la la la - Redimi2.mp3",
-    cover: "images/Cover of Lara la la la la by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Lara la la la la - Redimi2.mp3"),
     lrc: "LRC files/Lara la la la la - Redimi2.lrc"
   }, 
   {
     title: "Me Corre",
     artist: "Redimi2, Pauneto, Vianca \"The Grace\", Borrero",
     src: "songs/SpotiDownloader.com - Me Corre - Redimi2.mp3",
-    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Me Corre - Redimi2.mp3"),
     video: "videos/Redimi14.mp4",
   }, 
   {
     title: "Frontin",//190
     artist: "Redimi2, Niko Eme, Temperamento, Wolandia",
     src: "songs/SpotiDownloader.com - Frontin - Redimi2.mp3",
-    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Frontin - Redimi2.mp3"),
     video: "videos/Redimi14.mp4",
   }, 
   {
     title: "De Buenas (Remix)",
     artist: "Josh Gamez, Musiko, Jay Kalyl, Lizzy Parra, Pauneto",
     src: "songs/SpotiDownloader.com - De Buenas (Remix) - Josh Gamez.mp3",
-    cover: "images/Cover of De Buenas (Remix) by Josh Gamez, Musiko, Jay Kalyl, Lizzy Parra, Pauneto.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - De Buenas (Remix) - Josh Gamez.mp3"),
     hex: "#203858",
     barColor: "#4a83ce",
     video: "videos/JoshGamez1.mp4",
@@ -1588,7 +1588,7 @@ const playlist = [
     title: "Lo Tengo",
     artist: "MR. Yeison, Lizzy Parra, Oveja Cosmica",
     src: "songs/SpotiDownloader.com - Lo Tengo - MR. Yeison.mp3",
-    cover: "images/Cover of Lo Tengo by MR. Yeison, Lizzy Parra, Oveja Cosmica.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Lo Tengo - MR. Yeison.mp3"),
     hex: "#CA2912",
     barColor: "#ce854e",
   }, 
@@ -1596,14 +1596,14 @@ const playlist = [
     title: "Kings And Queens",
     artist: "Redimi2, Tomi Perfetti, Lexico Ht, Gedeones, Eva Nova, Fanny Plaza, MR. Yeison, Ada Betsabe, H-Sufia, Indy For, DesXa",
     src: "songs/SpotiDownloader.com - Kings And Queens - Redimi2.mp3",
-    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Kings And Queens - Redimi2.mp3"),
     video: "videos/Redimi14.mp4",
   }, 
   {
     title: "Empírico",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Empírico - Redimi2.mp3",
-    cover: "images/Cover of Empírico by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Empírico - Redimi2.mp3"),
     hex: "#535353",
     barColor: "#a3a3a3",
   }, 
@@ -1611,7 +1611,7 @@ const playlist = [
     title: "Banco Del Cielo",//195
     artist: "Ander Bock, MR. Yeison, Odanis BSK",
     src: "songs/SpotiDownloader.com - Banco Del Cielo - Ander Bock.mp3",
-    cover: "images/Cover of Banco Del Cielo by Ander Bock, MR. Yeison, Odanis BSK.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Banco Del Cielo - Ander Bock.mp3"),
     hex: "#903008",
     barColor: "#fff82d",
   }, 
@@ -1619,7 +1619,7 @@ const playlist = [
     title: "Por Un Like",
     artist: "Redimi2, Lizzy Parra, Angel Brown",
     src: "songs/SpotiDownloader.com - Por Un Like - Redimi2.mp3",
-    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Por Un Like - Redimi2.mp3"),
     hex: "#53423c",
     barColor: "#aa8a72ff"
   }, 
@@ -1627,14 +1627,14 @@ const playlist = [
     title: "Los Jordan",
     artist: "Redimi2, Mireyli Rosa",
     src: "songs/SpotiDownloader.com - Los Jordan - Redimi2.mp3",
-    cover: "images/Cover of Por Siempre by Redimi2, Ander Bock, Samantha.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Los Jordan - Redimi2.mp3"),
     video: "videos/Redimi14.mp4",
   }, 
   {
     title: "Alegría",
     artist: "Redimi2, Ivan",
     src: "songs/SpotiDownloader.com - Alegría - Redimi2.mp3",
-    cover: "images/Bien.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Alegría - Redimi2.mp3"),
     hex: "#747474",
     barColor: "#a397bcff"
   }, 
@@ -1642,7 +1642,7 @@ const playlist = [
     title: "Luz y Sal (ft. Edward Sanchez)",
     artist: "Funky, Edward Sanchez",
     src: "songs/SpotiDownloader.com - Luz y Sal (feat. Edward Sanchez) - Funky.mp3",
-    cover: "images/Cover of Luz y Sal (feat. Edward Sanchez) by Funky, Edward Sanchez.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Luz y Sal (feat. Edward Sanchez) - Funky.mp3"),
     hex: "#7D9BB2",
     barColor: "#84c7f9",
   }, 
@@ -1650,7 +1650,7 @@ const playlist = [
     title: "El Sanfuanzon",//200
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - El Sanfuanzon - Redimi2.mp3",
-    cover: "images/Cover of Lara la la la la by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - El Sanfuanzon - Redimi2.mp3"),
     hex: "#979797",
     barColor: "#c1c1c1",
   }, 
@@ -1658,7 +1658,7 @@ const playlist = [
     title: "días buenos",
     artist: "Mireyli Rosa, Musiko",
     src: "songs/días buenos_spotdown.org.mp3",
-    cover: "images/Cover of días buenos by Mireyli Rosa, Musiko.jpg",
+    cover: getMp3Art("songs/días buenos_spotdown.org.mp3"),
     hex: "#576FAF",
     barColor: "#87e549",
   }, 
@@ -1666,7 +1666,7 @@ const playlist = [
     title: "¿Quien te dijo?",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - ¿Quien te dijo_ - Madiel Lara.mp3",
-    cover: "images/Cover of ¿Quien te dijo_ by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - ¿Quien te dijo_ - Madiel Lara.mp3"),
     hex: "#C98B00",
     barColor: "#fcb400",
     video: "videos/MadielLara1.mp4",
@@ -1675,14 +1675,14 @@ const playlist = [
     title: "Dios Nunca Falla",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - Dios Nunca Falla - Madiel Lara.mp3",
-    cover: "images/Cover of Dios Nunca Falla by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Dios Nunca Falla - Madiel Lara.mp3"),
     video: "videos/MadielLara6.mp4"
   }, 
   {
     title: "DIOS HA SIDO BUENO",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - DIOS HA SIDO BUENO - Madiel Lara.mp3",
-    cover: "images/Cover of DIOS HA SIDO BUENO by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - DIOS HA SIDO BUENO - Madiel Lara.mp3"),
     hex: "#602018",
     barColor: "#e88930dd",
     video: "videos/MadielLara3.mp4",
@@ -1692,14 +1692,14 @@ const playlist = [
     title: "ABBA PADRE",//205
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - ABBA PADRE - Madiel Lara.mp3",
-    cover: "images/Cover of INFINITO by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - ABBA PADRE - Madiel Lara.mp3"),
     video: "videos/MadielLara7.mp4",
   }, 
   {
     title: "Día D",
     artist: "Kike Pavón, La Feria Oficial",
     src: "songs/SpotiDownloader.com - Día D - Kike Pavón.mp3",
-    cover: "images/Cover of Día D by Kike Pavón, La Feria Oficial.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Día D - Kike Pavón.mp3"),
     hex: "#535353",
     barColor: "#919191",
     video: "videos/KikePavon1.mp4",
@@ -1708,7 +1708,7 @@ const playlist = [
     title: "Torpe Corazón (ft. Ander Bock)",
     artist: "Kike Pavón, Ander Bock",
     src: "songs/SpotiDownloader.com - Torpe Corazón (feat. Ander Bock) - Kike Pavón.mp3",
-    cover: "images/Cover of Torpe Corazón (feat. Ander Bock) by Kike Pavón, Ander Bock.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Torpe Corazón (feat. Ander Bock) - Kike Pavón.mp3"),
     hex: "#582018",
     barColor: "#ffdf2b",
   }, 
@@ -1716,7 +1716,7 @@ const playlist = [
     title: "Una Nueva Cancion",
     artist: "Alex Zurdo, Kike Pavón",
     src: "songs/SpotiDownloader.com - Una Nueva Cancion - Alex Zurdo.mp3",
-    cover: "images/Cover of Una Nueva Cancion by Alex Zurdo, Kike Pavón.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Una Nueva Cancion - Alex Zurdo.mp3"),
     hex: "#870000",
     barColor: "#B40000",
   }, 
@@ -1724,7 +1724,7 @@ const playlist = [
     title: "Ganas De Vivir (Remix)",
     artist: "Kike Pavón, Alex Zurdo, Manny Montes",
     src: "songs/SpotiDownloader.com - Ganas De Vivir (Remix) - Kike Pavón.mp3",
-    cover: "images/Cover of Ganas De Vivir (Remix) by Kike Pavón, Alex Zurdo, Manny Montes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ganas De Vivir (Remix) - Kike Pavón.mp3"),
     hex: "#D15200",
     barColor: "#ff2b2b",
   }, 
@@ -1732,13 +1732,13 @@ const playlist = [
     title: "Abre los Cielos",//210
     artist: "Redimi2, Miel San Marcos",
     src: "songs/SpotiDownloader.com - Abre los Cielos - Redimi2.mp3",
-    cover: "images/image (6).png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Abre los Cielos - Redimi2.mp3"),
   }, 
   {
     title: "Suficiente (Remix)",
     artist: "Musiko, Jay Kalyl, Lizzy Parra, Omy Alka",
     src: "songs/SpotiDownloader.com - Suficiente (Remix) - Musiko.mp3",
-    cover: "images/Cover of Suficiente (Remix) by Musiko, Jay Kalyl, Lizzy Parra, Omy Alka.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Suficiente (Remix) - Musiko.mp3"),
     hex: "#AD1F1F",
     barColor: "#ff2b91",
   }, 
@@ -1746,7 +1746,7 @@ const playlist = [
     title: "Tu Me Llamas (Remix)",
     artist: "Deluz, Alex Campos, Oveja Cosmica, La Reforma, Gilberto Daza",
     src: "songs/SpotiDownloader.com - Tu Me Llamas (Remix) - Deluz.mp3",
-    cover: "images/Cover of Tu Me Llamas (Remix) by Deluz, Alex Campos, Oveja Cosmica, La Reforma, Gilberto Daza.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Tu Me Llamas (Remix) - Deluz.mp3"),
     hex: "#D48600",
     barColor: "#ffb007",
   }, 
@@ -1754,7 +1754,7 @@ const playlist = [
     title: "De Buenas",
     artist: "Josh Gamez, Musiko",
     src: "songs/SpotiDownloader.com - De Buenas - Josh Gamez.mp3",
-    cover: "images/Cover of De Buenas by Josh Gamez, Musiko.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - De Buenas - Josh Gamez.mp3"),
     hex: "#283840",
     barColor: "#4f98bc",
   }, 
@@ -1762,7 +1762,7 @@ const playlist = [
     title: "Acá Entre Nos",//214
     artist: "Alex Zurdo, Funky, Redimi2",
     src: "songs/SpotiDownloader.com - Acá Entre Nos - Alex Zurdo.mp3",
-    cover: "images/Cover of A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) by Alex Zurdo, Funky, Redimi2, Un Corazón, Abby Valdez, Indiomar.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Acá Entre Nos - Alex Zurdo.mp3"),
     hex: "#402727",
     barColor: "#fbf5d7ff",
   }, 
@@ -1770,7 +1770,7 @@ const playlist = [
     title: "Armonía",//215
     artist: "Un Corazón, Lead",
     src: "songs/SpotiDownloader.com - Armonía - Un Corazón.mp3",
-    cover: "images/image (3).png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Armonía - Un Corazón.mp3"),
     hex: "#DB3A1D",
     barColor: "#a236d8ff"
   }, 
@@ -1778,7 +1778,7 @@ const playlist = [
     title: "Dame Dame Dame",
     artist: "Marilú Orantes",
     src: "songs/Dame Dame Dame_320p.mp3",
-    cover: "images/Screenshot 2026-03-18 2.22.39 PM.png",
+    cover: getMp3Art("songs/Dame Dame Dame_320p.mp3"),
     hex: "#D01038",
     barColor: "#ff89eb",
   }, 
@@ -1786,7 +1786,7 @@ const playlist = [
     title: "Los Frutos del Espíritu",
     artist: "Marilú Orantes",
     src: "songs/💖Los Frutos del Espíritu 🕊️ Música Cristiana Para Niños 🪴 Marilú Y Los Niños_320p.mp3",
-    cover: "images/Cover of Los Frutos del Espíritu by Marilú Orantes.jpg",
+    cover: getMp3Art("songs/💖Los Frutos del Espíritu 🕊️ Música Cristiana Para Niños 🪴 Marilú Y Los Niños_320p.mp3"),
     hex: "#1EA4C4",
     barColor: "#42ff61",
   }, 
@@ -1794,7 +1794,7 @@ const playlist = [
     title: "El Agua Cristalina",//218
     artist: "Julio Elias",
     src: "songs/El Agua Cristalina_320p.mp3",
-    cover: "images/Screenshot 2026-03-18 2.29.04 PM.png",
+    cover: getMp3Art("songs/El Agua Cristalina_320p.mp3"),
     hex: "#3F97CE",
     barColor: "#77cbff",
   }, 
@@ -1802,7 +1802,7 @@ const playlist = [
     title: "Como El Águila Real",
     artist: "Manuel Bonilla",
     src: "songs/SpotiDownloader.com - Como El Águila Real - Manuel Bonilla.mp3",
-    cover: "images/Cover of Como El Águila Real by Manuel Bonilla.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Como El Águila Real - Manuel Bonilla.mp3"),
     hex: "#882000",
     barColor: "#e07757",
   }, 
@@ -1810,7 +1810,7 @@ const playlist = [
     title: "Be Alright (Remix)", //220
     artist: "Evan Craft, KB, Sam Rivera",
     src: "songs/SpotiDownloader.com - Be Alright - Remix - Evan Craft.mp3",
-    cover: "images/Cover of Be Alright - Remix by Evan Craft, KB, Sam Rivera.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Be Alright - Remix - Evan Craft.mp3"),
     hex: "#535353",
     barColor: "#a7a7a7",
     video: "videos/EvanCraft1.mp4",
@@ -1819,7 +1819,7 @@ const playlist = [
     title: "Ríos de Luz",
     artist: "Un Corazón, Louie Abrego, Kim Richards, Andy Mineo",
     src: "songs/SpotiDownloader.com - Ríos de Luz - Un Corazón.mp3",
-    cover: "images/Cover of Ríos de Luz by Un Corazón, Louie Abrego, Kim Richards, Andy Mineo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ríos de Luz - Un Corazón.mp3"),
     hex: "#00AD63",
     barColor: "#5dffc9",
     video: "videos/UnCorazon1.mp4",
@@ -1828,7 +1828,7 @@ const playlist = [
     title: "La Praxis Freestyle",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - La Praxis Freestyle - Redimi2.mp3",
-    cover: "images/Cover of La Praxis Freestyle by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Praxis Freestyle - Redimi2.mp3"),
     hex: "#535353",
     barColor: "#999999",
   }, 
@@ -1836,7 +1836,7 @@ const playlist = [
     title: "Quién Contra Mí",
     artist: "Redimi2, El Leo Pa",
     src: "songs/SpotiDownloader.com - Quién Contra Mí - Redimi2.mp3",
-    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Quién Contra Mí - Redimi2.mp3"),
     hex: "#53423c",
     barColor: "#aa8a72ff"
   }, 
@@ -1844,7 +1844,7 @@ const playlist = [
     title: "Bailando",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Bailando - Redimi2.mp3",
-    cover: "images/Cover of Bailando by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Bailando - Redimi2.mp3"),
     hex: "#187098",
     barColor: "#5bb9f4",
   }, 
@@ -1852,7 +1852,7 @@ const playlist = [
     title: "Santo", //225
     artist: "Redimi2, Montesanto",
     src: "songs/SpotiDownloader.com - Santo - Redimi2.mp3",
-    cover: "images/Cover of Santo by Redimi2, Montesanto.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Santo - Redimi2.mp3"),
     hex: "#607F90",
     barColor: "#95ceed",
   }, 
@@ -1860,7 +1860,7 @@ const playlist = [
     title: "Aunque No Lo Crean",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Aunque No Lo Crean - Agustín Amador.mp3",
-    cover: "images/Cover of Aunque No Lo Crean by Agustín Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Aunque No Lo Crean - Agustín Amador.mp3"),
     hex: "#5857A7",
     barColor: "#aba9f7",
   }, 
@@ -1868,7 +1868,7 @@ const playlist = [
     title: "Con Cristo Me Basta",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Con Cristo Me Basta - Agustin Amador.mp3",
-    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Con Cristo Me Basta - Agustin Amador.mp3"),
     hex: "#456426",
     barColor: "#a6dc71",
   }, 
@@ -1876,7 +1876,7 @@ const playlist = [
     title: "Incontable Maravilla",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Incontable Maravilla - Agustin Amador.mp3",
-    cover: "images/Cover of Incontable Maravilla by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Incontable Maravilla - Agustin Amador.mp3"),
     hex: "#1F678F",
     barColor: "#69b9e4",
   }, 
@@ -1884,7 +1884,7 @@ const playlist = [
     title: "La Bonanza", //229
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - La Bonanza - Agustin Amador.mp3",
-    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Bonanza - Agustin Amador.mp3"),
     hex: "#456426",
     barColor: "#a6dc71",
   },  
@@ -1892,7 +1892,7 @@ const playlist = [
     title: "Primero Dios, Vol. 5", //230
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Primero Dios, Vol. 5 - Agustin Amador.mp3",
-    cover: "images/Cover of Primero Dios, Vol. 5 by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Primero Dios, Vol. 5 - Agustin Amador.mp3"),
     hex: "#B99241",
     barColor: "#e2bd71",
   },  
@@ -1900,7 +1900,7 @@ const playlist = [
     title: "Herencia en el Cielo",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Herencia en el Cielo - Agustin Amador.mp3",
-    cover: "images/Cover of Herencia en el Cielo by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Herencia en el Cielo - Agustin Amador.mp3"),
     hex: "#3087D0",
     barColor: "#6ab7f7",
   },  
@@ -1908,7 +1908,7 @@ const playlist = [
     title: "No Vayas a Olvidar",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - No Vayas a Olvidar - Agustin Amador.mp3",
-    cover: "images/Cover of No Vayas a Olvidar by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - No Vayas a Olvidar - Agustin Amador.mp3"),
     hex: "#989898",
     barColor: "#b8c0c6",
   },  
@@ -1916,7 +1916,7 @@ const playlist = [
     title: "Mi Pensamiento",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Mi Pensamiento - Agustin Amador.mp3",
-    cover: "images/Cover of Mi Pensamiento by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Mi Pensamiento - Agustin Amador.mp3"),
     hex: "#7F000F",
     barColor: "#af1a2b",
   },  
@@ -1924,32 +1924,32 @@ const playlist = [
     title: "Gravy",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Gravy - Redimi2.mp3",
-    cover: "images/Cover of Gravy by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Gravy - Redimi2.mp3"),
   },  
   {
     title: "Filipenses 1:6 - Extended Version", //235
     artist: "Redimi2, Almighty",
     src: "songs/SpotiDownloader.com - Filipenses 1_6 - Extended Version - Redimi2.mp3",
-    cover: "images/Cover of Filipenses 1_6 - Extended Version by Redimi2, Almighty.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Filipenses 1_6 - Extended Version - Redimi2.mp3"),
   },  
   {
     title: "Pa'lo",
     artist: "Alex Zurdo, Funky",
     src: "songs/SpotiDownloader.com - Pa'lo - Alex Zurdo.mp3",
-    cover: "images/Cover of Pa'lo by Alex Zurdo, Funky.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Pa'lo - Alex Zurdo.mp3"),
     video: "videos/AlexZurdo4.mp4",
   }, 
   {
     title: "Todo Pasa",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Toda Pasa - Agustin Amador.mp3",
-    cover: "images/Cover of Incontable Maravilla by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Toda Pasa - Agustin Amador.mp3"),
   }, 
   {
     title: "Pródigo",
     artist: "Un Corazón, Louie Abrego",
     src: "songs/Pródigo.mp3",
-    cover: "images/Cover of Pródigo by Un Corazón, Louie Abrego.jpg",
+    cover: getMp3Art("songs/Pródigo.mp3"),
     hex: "#62A2AB",
     barColor: "#9ec3c8",
     video: "videos/UnCorazon2.mp4",
@@ -1958,7 +1958,7 @@ const playlist = [
     title: "HAY UN DIOS - REMIX",
     artist: "Seeiji, Vaes",
     src: "songs/SpotiDownloader.com - HAY UN DIOS - REMIX - Seeiji.mp3",
-    cover: "images/Cover of HAY UN DIOS - REMIX by Seeiji, Vaes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - HAY UN DIOS - REMIX - Seeiji.mp3"),
     hex: "#F76800",
     barColor: "#ffaa6d",
     video: "videos/Seeji1.mp4",
@@ -1967,7 +1967,7 @@ const playlist = [
     title: "Serendipia", //240
     artist: "Vaes, Kike Pavón",
     src: "songs/SpotiDownloader.com - serendipia - Vaes.mp3",
-    cover: "images/Cover of serendipia by Vaes, Kike Pavón.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - serendipia - Vaes.mp3"),
     hex: "#BF4737",
     barColor: "#f38b7d",
     video: "videos/Vaes1.mp4",
@@ -1976,7 +1976,7 @@ const playlist = [
     title: "Serendipia - Remix",
     artist: "Vaes, Kike Pavón, Madiel Lara, Rubinsky Rbk, Dariana",
     src: "songs/SpotiDownloader.com - Serendipia - Remix - Vaes.mp3",
-    cover: "images/Cover of Serendipia - Remix by Vaes, Kike Pavón, Madiel Lara, Rubinsky Rbk, Dariana.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Serendipia - Remix - Vaes.mp3"),
     hex: "#EF6710",
     barColor: "#f9a26c",
     video: "videos/Vaes2.mp4",
@@ -1986,7 +1986,7 @@ const playlist = [
     title: "Sé que me amas",
     artist: "David Hernandez",
     src: "songs/SpotiDownloader.com - Sé que me amas - David Hernandez.mp3",
-    cover: "images/Cover of Sé que me amas by David Hernandez.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Sé que me amas - David Hernandez.mp3"),
     hex: "#F56D2E",
     barColor: "#ff996a",
     video: "videos/DavidHernandez1.mp4",
@@ -1995,7 +1995,7 @@ const playlist = [
     title: "Tardes Juntos",
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - Tardes Juntos - Dariana.mp3",
-    cover: "images/Cover of Tardes Juntos by Dariana (1).jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Tardes Juntos - Dariana.mp3"),
     hex: "#8C93D2",
     barColor: "#afb7ff",
   }, 
@@ -2003,7 +2003,7 @@ const playlist = [
     title: "Un día a la vez",
     artist: "Majo y Dan",
     src: "songs/SpotiDownloader.com - Un día a la vez - Majo y Dan.mp3",
-    cover: "images/Cover of Un día a la vez by Majo y Dan.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Un día a la vez - Majo y Dan.mp3"),
     hex: "#004860",
     barColor: "#398ca8",
   }, 
@@ -2011,7 +2011,7 @@ const playlist = [
     title: "Latido De Mi Pecho", //245
     artist: "Zomoz, Dariana, Samu Robles, LUISFER, Silvia Jimenez",
     src: "songs/SpotiDownloader.com - Latido De Mi Pecho - Zomoz.mp3",
-    cover: "images/Cover of Latido De Mi Pecho by Zomoz, Dariana, Samu Robles, LUISFER, Silvia Jimenez.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Latido De Mi Pecho - Zomoz.mp3"),
     hex: "#103888",
     barColor: "#6f9aef",
     video: "videos/Zomoz1.mp4",
@@ -2020,7 +2020,7 @@ const playlist = [
     title: "Tranquilo",
     artist: "Zomoz, Silvia Jimenez, Samu Robles, LUISFER, Dariana",
     src: "songs/SpotiDownloader.com - Tranquilo - Zomoz.mp3",
-    cover: "images/Cover of Tranquilo by Zomoz, Silvia Jimenez, Samu Robles, LUISFER, Dariana.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Tranquilo - Zomoz.mp3"),
     hex: "#EA7300",
     barColor: "#f89f57",
     video: "videos/Zomoz2.mp4",
@@ -2029,7 +2029,7 @@ const playlist = [
     title: "Como tu a mi",
     artist: "Josh Gamez",
     src: "songs/SpotiDownloader.com - Como tu a mi - Josh Gamez.mp3",
-    cover: "images/Cover of Como tu a mi by Josh Gamez.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Como tu a mi - Josh Gamez.mp3"),
     hex: "#9F9396",
     barColor: "#c1c2cc",
     video: "videos/JoshGamez2.mp4",
@@ -2038,7 +2038,7 @@ const playlist = [
     title: "El Señor es mi pastor",
     artist: "Danilo Montero",
     src: "songs/SpotiDownloader.com - El Señor es mi pastor - Danilo Montero.mp3",
-    cover: "images/Cover of El Señor es mi pastor by Danilo Montero.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - El Señor es mi pastor - Danilo Montero.mp3"),
     hex: "#E96A92",
     barColor: "#e398b0",
   }, 
@@ -2046,7 +2046,7 @@ const playlist = [
     title: "Fuerzas Pa'",
     artist: "Vaes",
     src: "songs/SpotiDownloader.com - Fuerzas Pa' - Vaes.mp3",
-    cover: "images/Cover of Fuerzas Pa' by Vaes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Fuerzas Pa' - Vaes.mp3"),
     hex: "#EE5757",
     barColor: "#e68585",
     video: "videos/Vaes3.mp4",
@@ -2055,7 +2055,7 @@ const playlist = [
     title: "Cristo En La Casa", //250
     artist: "Madiel Lara, Redimi2",
     src: "songs/SpotiDownloader.com - Cristo En La Casa - Madiel Lara.mp3",
-    cover: "images/Cover of Cristo En La Casa by Madiel Lara, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Cristo En La Casa - Madiel Lara.mp3"),
     hex: "#8C060A",
     barColor: "#b83755",
   }, 
@@ -2063,7 +2063,7 @@ const playlist = [
     title: "Asi Es Tu Amor",
     artist: "Vaes",
     src: "songs/SpotiDownloader.com - Asi Es Tu Amor - Vaes.mp3",
-    cover: "images/Cover of Asi Es Tu Amor by Vaes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Asi Es Tu Amor - Vaes.mp3"),
     hex: "#B05010",
     barColor: "#d18552",
     video: "videos/Vaes4.mp4",
@@ -2072,7 +2072,7 @@ const playlist = [
     title: "Solo a Dios",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Solo a Dios - Agustin Amador.mp3",
-    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Solo a Dios - Agustin Amador.mp3"),
     hex: "#456426",
     barColor: "#a6dc71",
   }, 
@@ -2080,13 +2080,13 @@ const playlist = [
     title: "Virtuosa",
     artist: "Samuel Adrián",
     src: "songs/SpotiDownloader.com - Virtuosa - Samuel Adrián.mp3",
-    cover: "images/Cover of Virtuosa by Samuel Adrián.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Virtuosa - Samuel Adrián.mp3"),
   }, 
   {
     title: "La Fiesta", //(Cicada) 254
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - La Fiesta - Redimi2.mp3",
-    cover: "images/Cover of Esto Suena Bien by Redimi2, Alexis Velez, Oveja Cosmica.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Fiesta - Redimi2.mp3"),
   }, 
   {
     title: "Locos Como Yo", //(too fresh) 255
@@ -2100,108 +2100,108 @@ const playlist = [
     title: "Pa' Loco", //inabakumori 256
     artist: "Natan El Profeta",
     src: "songs/SpotiDownloader.com - Pa' Loco - Natan El Profeta.mp3",
-    cover: "images/Cover of Pa' Loco by Natan El Profeta.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Pa' Loco - Natan El Profeta.mp3"),
     video: "videos/NatanElProfeta1.mp4",
   },  
   {
     title: "DIOS me dio colores", //257
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - DIOS me dio colores - Madiel Lara.mp3",
-    cover: "images/Cover of DIOS me dio colores by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - DIOS me dio colores - Madiel Lara.mp3"),
     video: "videos/MadielLara4.mp4",
   },  
   {
     title: "WORK trabajando y Joseando",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - WORK trabajando y Joseando - Madiel Lara.mp3",
-    cover: "images/Cover of WORK trabajando y Joseando by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - WORK trabajando y Joseando - Madiel Lara.mp3"),
   },  
   {
     title: "Espera", //259
     artist: "Natan El Profeta, Azaeloh",
     src: "songs/Espera_spotdown.org.mp3",
-    cover: "images/Cover of Espera by Natan El Profeta, Azaeloh.jpg",
+    cover: getMp3Art("songs/Espera_spotdown.org.mp3"),
   },   
   {
     title: "Gozo feat. Redimi2 & Gaona", //260
     artist: "Christian Ponce, Redimi2, Gaona",
     src: "songs/SpotiDownloader.com - Gozo feat. Redimi2 & Gaona - Christian Ponce.mp3",
-    cover: "images/Cover of Gozo feat. Redimi2 & Gaona by Christian Ponce, Redimi2, Gaona.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Gozo feat. Redimi2 & Gaona - Christian Ponce.mp3"),
   },   
   {
     title: "El Gozo De Dios", 
     artist: "Tercer Cielo, Redimi2",
     src: "songs/SpotiDownloader.com - El Gozo De Dios - Tercer Cielo.mp3",
-    cover: "images/Cover of El Gozo De Dios by Tercer Cielo, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - El Gozo De Dios - Tercer Cielo.mp3"),
   },    
   {
     title: "Otra Vez", 
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - Otra Vez - Madiel Lara.mp3",
-    cover: "images/Cover of Otra Vez by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Otra Vez - Madiel Lara.mp3"),
     video: "videos/MadielLara5.mp4"
   },    
   {
     title: "Paso a Paso",
     artist: "Deluz",
     src: "songs/SpotiDownloader.com - Paso a Paso - Deluz.mp3",
-    cover: "images/Cover of Paso a Paso by Deluz.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Paso a Paso - Deluz.mp3"),
     video: "videos/DeLuz1.mp4"
   },     
   {
     title: "Gracias a Ti", //264
     artist: "Soly",
     src: "songs/SpotiDownloader.com - Gracias a Ti - Soly.mp3",
-    cover: "images/Cover of Gracias a Ti by Soly.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Gracias a Ti - Soly.mp3"),
     video: "videos/Soly.mp4",
   },     
   {
     title: "Ofensivo y Escandaloso", //265
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3",
-    cover: "images/image (6).png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ofensivo y Escandaloso - Redimi2.mp3"),
   },
   {
     title: "Precioso Regalo",//266
     artist: "Zulmy Mejia",
     src: "songs/SpotiDownloader.com - Precioso Regalo - Zulmy Mejia.mp3",
-    cover: "images/zulmy.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Precioso Regalo - Zulmy Mejia.mp3"),
   }, 
   {
     title: "Madre Solo Una",//267
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Madre Solo Una - Agustin Amador.mp3",
-    cover: "images/Cover of Con Cristo Me Basta by Agustin Amador.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Madre Solo Una - Agustin Amador.mp3"),
   }, 
   {
     title: "Precioso Regalo ft Voceros",//268
     artist: "Zulmy Mejia, Los Voceros de Cristo",
     src: "songs/Precioso Regalo_spotdown.org.mp3",
-    cover: "images/Cover of Precioso Regalo by Zulmy Mejia, Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/Precioso Regalo_spotdown.org.mp3"),
   }, 
   {
     title: "Un Ser Llamado Madre",//269
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Un Ser Llamado Madre - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of Un Ser Llamado Madre by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Un Ser Llamado Madre - Los Voceros de Cristo.mp3"),
   }, 
   {
     title: "Madrecita",//270
     artist: "Óscar Medina",
     src: "songs/Madrecita_spotdown.org.mp3",
-    cover: "images/Cover of Madrecita by Óscar Medina.jpg",
+    cover: getMp3Art("songs/Madrecita_spotdown.org.mp3"),
   }, 
   {
     title: "Para Ti Mamá",//271
     artist: "Anita Morán",
     src: "songs/SpotiDownloader.com - Para Ti Mamá - Anita Morán.mp3",
-    cover: "images/Cover of Para Ti Mamá by Anita Morán.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Para Ti Mamá - Anita Morán.mp3"),
   }, 
   {
     title: "Encontrarte",//272
     artist: "Majo y Dan, Madiel Lara",
     src: "songs/SpotiDownloader.com - Encontrarte - Majo y Dan.mp3",
-    cover: "images/Cover of Encontrarte by Majo y Dan, Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Encontrarte - Majo y Dan.mp3"),
     video: "videos/majoYDan3.mp4",
     lrc: "LRC files/Encontrarte - Majo y Dan, Madiel Lara.lrc",
   }, 
@@ -2209,58 +2209,58 @@ const playlist = [
     title: "Aleluya Amen",//273
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Aleluya Amen - Redimi2.mp3",
-    cover: "images/image (5).png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Aleluya Amen - Redimi2.mp3"),
   }, 
   {
     title: "Yo Seré Tu Solo",//274
     artist: "Redimi2, Tercer Cielo",
     src: "songs/SpotiDownloader.com - Yo Seré Tu Sol - Redimi2.mp3",
-    cover: "images/Cover of Yo Seré Tu Sol by Redimi2, Tercer Cielo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Yo Seré Tu Sol - Redimi2.mp3"),
   }, 
   {
     title: "FELIZ CUMPLEAÑOS",//275
     artist: "Anita Morán",
     src: "songs/ANITA MORÁN. FELIZ CUMPLEAÑOS_64p.mp3",
-    cover: "images/Screenshot 2026-05-16 12.04.27 PM.png",
+    cover: getMp3Art("songs/ANITA MORÁN. FELIZ CUMPLEAÑOS_64p.mp3"),
   }, 
   {
     title: "LAS MAÑANITAS",//276
     artist: "Mariachi Cristiano Adonai",
     src: "songs/LAS MAÑANITAS - MARIACHI CRISTIANO ADONAI (VIDEO OFICIAL)_64p (mp3cut.net).mp3",
-    cover: "images/Cover of Las Mañanitas by Mariachi Cristiano Adonai.jpg",
+    cover: getMp3Art("songs/LAS MAÑANITAS - MARIACHI CRISTIANO ADONAI (VIDEO OFICIAL)_64p (mp3cut.net).mp3"),
   }, 
   {
     title: "Las Mañanitas Cristianas (Ranchero)",//277
     artist: "Emmanuel Vaz",
     src: "songs/Las Mañanitas Cristianas (Ranchera)_64p.mp3",
-    cover: "images/Screenshot 2026-05-16 1.52.24 PM.png",
+    cover: getMp3Art("songs/Las Mañanitas Cristianas (Ranchera)_64p.mp3"),
   }, 
   {
     title: "NCB 20A",//278
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - NCB 20A - Redimi2.mp3",
-    cover: "images/Cover of NCB 20A by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - NCB 20A - Redimi2.mp3"),
     video: "videos/Redimi9.mp4"
   }, 
   {
     title: "Radikal 60",//279
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Radikal 60 - Redimi2.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Radikal 60 - Redimi2.mp3"),
     video: "videos/Redimi10.mp4"
   }, 
   {
     title: "Acostumbrándome",//280
     artist: "Vaes",
     src: "songs/SpotiDownloader.com - Acostumbrándome - Vaes.mp3",
-    cover: "images/Cover of Acostumbrándome by Vaes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Acostumbrándome - Vaes.mp3"),
     video: "videos/Vaes5.mp4"
   }, 
   {
     title: "Sol en día nublado",//281
     artist: "Majo y Dan, Vaes",
     src: "songs/SpotiDownloader.com - Sol en día nublado - Majo y Dan.mp3",
-    cover: "images/Cover of Sol en día nublado by Majo y Dan, Vaes.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Sol en día nublado - Majo y Dan.mp3"),
     video: "videos/majoYDan4.mp4",
     lrc: "LRC files/Sol en día nublado - Majo y Dan, Vaes.lrc",
   }, 
@@ -2268,344 +2268,344 @@ const playlist = [
     title: "La Cumbia del Perdón",//282
     artist: "Vaes, Musiko",
     src: "songs/SpotiDownloader.com - La Cumbia del Perdón - Vaes.mp3",
-    cover: "images/Cover of La Cumbia del Perdón by Vaes, Musiko.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Cumbia del Perdón - Vaes.mp3"),
     video: "videos/Vaes6.mp4"
   }, 
   {
     title: "Dios Te Esta Mirando",//283
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Dios Te Esta Mirando - Redimi2.mp3",
-    cover: "images/Cover of Dios Te Esta Mirando by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Dios Te Esta Mirando - Redimi2.mp3"),
   },
   {
     title: "Fondo Del Mar", //284
     artist: "La Feria Oficial",
     src: "songs/SpotiDownloader.com - Fondo Del Mar - La Feria Oficial.mp3",
-    cover: "images/Cover of Fondo Del Mar by La Feria Oficial.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Fondo Del Mar - La Feria Oficial.mp3"),
     video: "videos/LaFeria2.mp4",
   },
   {
     title: "Ese Hombre - Si Tienes un Amor - Si el Mundo en Vez de Rosas - En Vivo", //285
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Ese Hombre - Si Tienes un Amor - Si el Mundo en Vez de Rosas - En Vivo - Los Voceros de Cristo.mp3",
-    cover: "images/su amor.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ese Hombre - Si Tienes un Amor - Si el Mundo en Vez de Rosas - En Vivo - Los Voceros de Cristo.mp3"),
   },
   {
     title: "Si el Mundo en Vez de Rosas", //286
     artist: "Los Voceros de Cristo",
     src: "songs/Si el Mundo en Vez de Rosas_spotdown.org.mp3",
-    cover: "images/Cover of Si el Mundo en Vez de Rosas by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/Si el Mundo en Vez de Rosas_spotdown.org.mp3"),
   },
   {
     title: "En Hora Buena", //287
     artist: "Alex Zurdo",
     src: "songs/En Hora Buena_spotdown.org.mp3",
-    cover: "images/Cover of En Hora Buena by Alex Zurdo.jpg",
+    cover: getMp3Art("songs/En Hora Buena_spotdown.org.mp3"),
     video: "videos/AlexZurdo5.mp4",
   },
   {
     title: "Dios De Imposibles", 
     artist: "Un Corazón, Louie Abrego, Kim Richards",
     src: "songs/SpotiDownloader.com - Dios De Imposibles - Un Corazón.mp3",
-    cover: "images/Cover of Pródigo by Un Corazón, Louie Abrego.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Dios De Imposibles - Un Corazón.mp3"),
   },
   {
     title: "Esa Oveja Era Yo", 
     artist: "Leonel Tuchez",
     src: "songs/SpotiDownloader.com - Esa Oveja Era Yo - Leonel Tuchez.mp3",
-    cover: "images/Esperando.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Esa Oveja Era Yo - Leonel Tuchez.mp3"),
   },
   {
     title: "Enciende Una Luz", //290
     artist: "Marcos Witt, Un Corazón, Sarai Rivera, Elena Witt-Guerra, Krystal Guerra Witt, TAYA, Montesanto, Miel San Marcos, Waleska Morales, ECCOS, Indiomar",
     src: "songs/SpotiDownloader.com - Enciende Una Luz - Marcos Witt.mp3",
-    cover: "images/Cover of Enciende Una Luz by Marcos Witt, Un Corazón, Sarai Rivera, Elena Witt-Guerra, Krystal Guerra Witt, TAYA, Montesanto, Miel San Marcos, Waleska Morales, ECCOS, Indiomar.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Enciende Una Luz - Marcos Witt.mp3"),
     video: "videos/MarcosWitt2.mp4"
   },
   {
     title: "Gracias", 
     artist: "Marcos Witt",
     src: "songs/Gracias.mp3",
-    cover: "images/a6.png",
+    cover: getMp3Art("songs/Gracias.mp3"),
   },
   {
     title: "Gracias/Tu Fidelidad", 
     artist: "Marcos Witt, Un Corazón",
     src: "songs/SpotiDownloader.com - Gracias - Marcos Witt, Un Corazon.mp3",
-    cover: "images/Cover of Gracias _ Tu Fidelidad by Marcos Witt, Un Corazón.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Gracias - Marcos Witt, Un Corazon.mp3"),
     video: "videos/MarcosWitt1.mp4",
   },
   {
     title: "Jesús Sé Mi Guía", 
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Jesús Sé Mi Guía - Los Voceros de Cristo.mp3",
-    cover: "images/Cover of La Biblia dice que el hombre by Los Voceros de Cristo.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Jesús Sé Mi Guía - Los Voceros de Cristo.mp3"),
   },
   {
     title: "Los Trigales", 
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Los Trigales - Los Voceros de Cristo.mp3",
-    cover: "images/song11.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Los Trigales - Los Voceros de Cristo.mp3"),
   },
   {
     title: "Yo Tengo Fe", //295
     artist: "Zulmy Mejia",
     src: "songs/SpotiDownloader.com - Yo Tengo Fe - Zulmy Mejia.mp3",
-    cover: "images/Cover of Yo Tengo Fe by Zulmy Mejia.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Yo Tengo Fe - Zulmy Mejia.mp3"),
   },
   {
     title: "Edifiquemos", 
     artist: "Zulmy Mejia",
     src: "songs/SpotiDownloader.com - Edifiquemos - Zulmy Mejia.mp3",
-    cover: "images/zulmy.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Edifiquemos - Zulmy Mejia.mp3"),
   },
   {
     title: "Debo Correr", 
     artist: "Óscar Medina",
     src: "songs/Debo Correr.mp3",
-    cover: "images/Cover of Debo Correr by Óscar Medina.jpg",
+    cover: getMp3Art("songs/Debo Correr.mp3"),
   },
   {
     title: "Dulce Hogar", 
     artist: "Katty Mazariegos",
     src: "songs/SpotiDownloader.com - Dulce Hogar - Katty Mazariegos.mp3",
-    cover: "images/Cover of Tren de la Vida by Katty Mazariegos.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Dulce Hogar - Katty Mazariegos.mp3"),
   },
   {
     title: "Deuda", 
     artist: "Katty Mazariegos",
     src: "songs/SpotiDownloader.com - Deuda - Katty Mazariegos.mp3",
-    cover: "images/Cover of Deuda by Katty Mazariegos.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Deuda - Katty Mazariegos.mp3"),
   },
   {
     title: "Tren de la Vida", //300
     artist: "Katty Mazariegos",
     src: "songs/SpotiDownloader.com - Tren de la Vida - Katty Mazariegos.mp3",
-    cover: "images/Cover of Tren de la Vida by Katty Mazariegos.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Tren de la Vida - Katty Mazariegos.mp3"),
   },
   {
     title: "Jesús Es Mi Rey Soberano", 
     artist: "Leonel Tuchez",
     src: "songs/Jesús Es Mi Rey Soberano.mp3",
-    cover: "images/Esperando.jpg",
+    cover: getMp3Art("songs/Jesús Es Mi Rey Soberano.mp3"),
   },
   {
     title: "Pensaba En Ti", 
     artist: "Leonel Tuchez",
     src: "songs/SpotiDownloader.com - Pensaba En Ti - Leonel Tuchez.mp3",
-    cover: "images/Cover of Salmo 23 by Leonel Tuchez.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Pensaba En Ti - Leonel Tuchez.mp3"),
   },
   {
     title: "Jesús Es Mi Rey Soberano", 
     artist: "Marcos Witt",
     src: "songs/SpotiDownloader.com - Jesús Es Mi Rey Soberano - Marcos Witt.mp3",
-    cover: "images/Cover of Jesús Es Mi Rey Soberano by Marcos Witt.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Jesús Es Mi Rey Soberano - Marcos Witt.mp3"),
   },
   {
     title: "Tu el Alfarero", 
     artist: "Ezequiel Williams",
     src: "songs/SpotiDownloader.com - Tu el Alfarero - Ezequiel Williams.mp3",
-    cover: "images/Cover of Tu el Alfarero by Ezequiel Williams.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Tu el Alfarero - Ezequiel Williams.mp3"),
   },
   {
     title: "Ahora Cristiano Soy", //305
     artist: "Ezequiel Williams",
     src: "songs/SpotiDownloader.com - Ahora Cristiano Soy - Ezequiel Williams.mp3",
-    cover: "images/Cover of Hoy Te Pido Señor by Ezequiel Williams.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ahora Cristiano Soy - Ezequiel Williams.mp3"),
   },
   {
     title: "Hoy Te Pido Señor", 
     artist: "Ezequiel Williams",
     src: "songs/SpotiDownloader.com - Hoy Te Pido Señor - Ezequiel Williams.mp3",
-    cover: "images/Cover of Hoy Te Pido Señor by Ezequiel Williams.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Hoy Te Pido Señor - Ezequiel Williams.mp3"),
   },
   {
     title: "Increíble", 
     artist: "Miel San Marcos, Evan Craft",
     src: "songs/SpotiDownloader.com - Increíble (feat. Evan Craft) - Miel San Marcos.mp3",
-    cover: "images/Cover of No Hay Lugar Mas Alto (feat. Christine D Clario) by Miel San Marcos, Christine D'Clario.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Increíble (feat. Evan Craft) - Miel San Marcos.mp3"),
   },
   {
     title: "No Hay Lugar Mas Alto (feat. Christine D Clario)", //308
     artist: "Miel San Marcos, Christine D'Clario",
     src: "songs/SpotiDownloader.com - No Hay Lugar Mas Alto (feat. Christine D Clario) - Miel San Marcos.mp3",
-    cover: "images/Cover of No Hay Lugar Mas Alto (feat. Christine D Clario) by Miel San Marcos, Christine D'Clario.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - No Hay Lugar Mas Alto (feat. Christine D Clario) - Miel San Marcos.mp3"),
   },
   {
     title: "Parabellum", //309
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Parabellum - Redimi2.mp3",
-    cover: "images/Cover of Lara la la la la by Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Parabellum - Redimi2.mp3"),
   },
   {
     title: "Cristales y Dictadores", //310
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Cristales y Dictadores - Redimi2.mp3",
-    cover: "images/Cover of Flipando by Redimi2, Natan El Profeta.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Cristales y Dictadores - Redimi2.mp3"),
   },
   {
     title: "Dame Tus Ojos", //
     artist: "Marcela Gandera, Jesús Adrián Romero",
     src: "songs/Dame Tus Ojos_spotdown.org.mp3",
-    cover: "images/song7.png",
+    cover: getMp3Art("songs/Dame Tus Ojos_spotdown.org.mp3"),
   },
   {
     title: "Ven, Te Necesito", //
     artist: "Lilly Goodman, Jesús Adrián Romero",
     src: "songs/Ven, Te Necesito_spotdown.org.mp3",
-    cover: "images/Screenshot 2026-07-18 2.32.22 PM.png",
+    cover: getMp3Art("songs/Ven, Te Necesito_spotdown.org.mp3"),
     video: "videos/Romero1.mp4"
   },
   {
     title: "Tú Estás Aquí (Live)", //
     artist: "Marcela Gandara, Jesús Adrián Romero",
     src: "songs/Tú Estás Aquí (Live)_spotdown.org.mp3",
-    cover: "images/Screenshot 2026-07-18 3.08.29 PM.png",
+    cover: getMp3Art("songs/Tú Estás Aquí (Live)_spotdown.org.mp3"),
   },
   {
     title: "El Señor Es Mi Rey (feat. Tony Perez)", //
     artist: "Miel San Marcos, Tony Pérez",
     src: "songs/El Señor Es Mi Rey (feat. Tony Perez)_spotdown.org.mp3",
-    cover: "images/Cover of El Señor Es Mi Rey (feat. Tony Perez) by Miel San Marcos, Tony Pérez.jpg",
+    cover: getMp3Art("songs/El Señor Es Mi Rey (feat. Tony Perez)_spotdown.org.mp3"),
   },
   {
     title: "Que Sería De Mi", //315
     artist: "Jesús Adrián Romero",
     src: "songs/Que Sería De Mi_spotdown.org.mp3",
-    cover: "images/Screenshot 2026-07-18 3.03.36 PM.png",
+    cover: getMp3Art("songs/Que Sería De Mi_spotdown.org.mp3"),
     video: "videos/Romero2.mp4",
   },
   {
     title: "Jesús Mi Fiel Amigo - Sesión Orgánica", //
     artist: "Abel Zavala",
     src: "songs/Jesús Mi Fiel Amigo - Sesión Orgánica_spotdown.org.mp3",
-    cover: "images/Cover of Jesús Mi Fiel Amigo - Sesión Orgánica by Abel Zavala.jpg",
+    cover: getMp3Art("songs/Jesús Mi Fiel Amigo - Sesión Orgánica_spotdown.org.mp3"),
   },
   {
     title: "Jesús Mi Fiel Amigo (En Vivo)", //
     artist: "Abel Zavala",
     src: "songs/SpotiDownloader.com - Jesús Mi Fiel Amigo (En Vivo) - Abel Zavala.mp3",
-    cover: "images/Cover of Jesús Mi Fiel Amigo (En Vivo) by Abel Zavala.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Jesús Mi Fiel Amigo (En Vivo) - Abel Zavala.mp3"),
   },
   {
     title: "Con Mis Manos Levantadas", //318
     artist: "Danilo Montero",
     src: "songs/SpotiDownloader.com - Con Mis Manos Levantadas - Danilo Montero.mp3",
-    cover: "images/Cover of Con Mis Manos Levantadas by Danilo Montero.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Con Mis Manos Levantadas - Danilo Montero.mp3"),
   },
   {
     title: "Reborn", //
     artist: "Evan Craft, Redimi2",
     src: "songs/SpotiDownloader.com - Reborn - Evan Craft.mp3",
-    cover: "images/evan.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Reborn - Evan Craft.mp3"),
     lrc: "LRC files/Reborn - Evan Craft, Redimi2.lrc",
   },
   {
     title: "EL INCOREGIBLE", //320
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - EL INCORREGIBLE - Redimi2.mp3",
-    cover: "images/Gokey.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - EL INCORREGIBLE - Redimi2.mp3"),
     lrc: "LRC files/EL INCORREGIBLE - Redimi2.lrc",
   },
   {
     title: "Estoy TRANQUILO", //
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - Estoy TRANQUILO - Madiel Lara.mp3",
-    cover: "images/Cover of Otra Vez by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Estoy TRANQUILO - Madiel Lara.mp3"),
     video: "videos/MadielLara8.mp4"
   },
   {
     title: "Bendecío", //
     artist: "Redimi2",
     src: "songs/Bendecío_spotdown.org.mp3",
-    cover: "images/Bien.jpg",
+    cover: getMp3Art("songs/Bendecío_spotdown.org.mp3"),
     lrc: "LRC files/Bendecio - Redimi2.lrc"
   },
   {
     title: "Sin Metales", //323
     artist: "Madiel Lara, AJ Kallejero Ramos, AJ Ramos",
     src: "songs/SpotiDownloader.com - Sin Metales - Madiel Lara.mp3",
-    cover: "images/Cover of Cristo En La Casa by Madiel Lara, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Sin Metales - Madiel Lara.mp3"),
     lrc: "LRC files/Sin Metales - Madiel Lara, AJ Kallejero Ramos, AJ Ramos.lrc",
   },
   {
     title: "La Bondad De Dios", //324
     artist: "Evan Craft, Elena Witt-Guerra",
     src: "songs/SpotiDownloader.com - La Bondad De Dios - Evan Craft.mp3",
-    cover: "images/Cover of La Bondad De Dios by Evan Craft, Elena Witt-Guerra.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - La Bondad De Dios - Evan Craft.mp3"),
   },
   {
     title: "Que Mi Fe No Falle", //325
     artist: "Evan Craft",
     src: "songs/SpotiDownloader.com - Que Mi Fe No Falle - Evan Craft.mp3",
-    cover: "images/Más_Rico_Del_Mundo.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Que Mi Fe No Falle - Evan Craft.mp3"),
     video: "videos/EvanCraft2.mp4",
   },
   {
     title: "Lo Que Traigo Es Flow", //326
     artist: "Funky",
     src: "songs/Lo Que Traigo Es Flow_spotdown.org.mp3",
-    cover: "images/Cover of Lo Que Traigo Es Flow by Funky.jpg",
+    cover: getMp3Art("songs/Lo Que Traigo Es Flow_spotdown.org.mp3"),
     video: "videos/Funky2.mp4",
   },
   {
     title: "Ay Dio Mio", //327
     artist: "Natan El Profeta, Madiel lara",
     src: "songs/SpotiDownloader.com - Ay Dio Mio - Remix - Natan El Profeta.mp3",
-    cover: "images/Cover of Ay Dio Mio - Remix by Natan El Profeta, Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Ay Dio Mio - Remix - Natan El Profeta.mp3"),
     video: "videos/NatanElProfeta2.mp4",
   },
   {
     title: "Nube", //328
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - Nube - Dariana.mp3",
-    cover: "images/Cover of Nube by Dariana.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Nube - Dariana.mp3"),
     video: "videos/Dariana.mp4",
   },
   {
     title: "Grito", //329
     artist: "Lead, Dariana",
     src: "songs/SpotiDownloader.com - Grito - Lead.mp3",
-    cover: "images/Cover of Grito by Lead, Dariana.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Grito - Lead.mp3"),
     video: "videos/Lead1.mp4",
   },
   {
     title: "Lámpara Es, La Biblia", //330
     artist: "Manuel Bonilla",
     src: "songs/Manuel Bonilla - Lámpara Es, La Biblia (Álbum Un Cántico Nuevo).mp3",
-    cover: "images/Cover of Lámpara Es _ La Biblia by Manuel Bonilla.jpg",
+    cover: getMp3Art("songs/Manuel Bonilla - Lámpara Es, La Biblia (Álbum Un Cántico Nuevo).mp3"),
   },
   {
     title: "La Biblia", //331
     artist: "Agustin Amador",
     src: "songs/La Biblia.mp3",
-    cover: "images/Cover of Incontable Maravilla by Agustin Amador.jpg",
+    cover: getMp3Art("songs/La Biblia.mp3"),
   },
   {
     title: "De Tal Manera", //332
     artist: "Jesús Adrián Romero",
     src: "songs/SpotiDownloader.com - De Tal Manera - Jesús Adrián Romero.mp3",
-    cover: "images/Cover of De Tal Manera by Jesús Adrián Romero, Abel Zavala.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - De Tal Manera - Jesús Adrián Romero.mp3"),
   },
   {
     title: "Album of the Year #1 Funkateer", //333
     artist: "Bootsy Collins, Bootdullivan, Myra Washington",
     src: "songs/Album of the year.mp3",
-    cover: "images/Album of the year.jpg",
+    cover: getMp3Art("songs/Album of the year.mp3"),
     video: "videos/Bootsy1.mp4",
   },
   {
     title: "Hundo P", //334
     artist: "Bootsy Collins, Fantaazma, Snoop Dogg",
     src: "songs/SpotiDownloader.com - Hundo P - Bootsy Collins.mp3",
-    cover: "images/Album of the year.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Hundo P - Bootsy Collins.mp3"),
     video: "videos/Bootsy2.mp4",
   },
   {
     title: "Bubble Pop", //335
     artist: "Bootsy Collins, Ice Cube, Fantaazma, Brother Nature",
     src: "songs/SpotiDownloader.com - Bubble Pop - Bootsy Collins.mp3",
-    cover: "images/Album of the year.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Bubble Pop - Bootsy Collins.mp3"),
     video: "videos/Bootsy2.mp4",
     lrc: "LRC files/Bubble Pop - Bootsy Collins, Ice Cube, Fantaazma, Brother Nature.lrc",
   },
@@ -2613,90 +2613,90 @@ const playlist = [
     title: "Jam On", //336
     artist: "Bootsy Collins, Snoop Dogg, Brandon TAZ Niederaur",
     src: "songs/Jam On_spotdown.org.mp3",
-    cover: "images/Cover of Jam On by Bootsy Collins, Snoop Dogg, Brandon _TAZ_ Niederauer.jpg",
+    cover: getMp3Art("songs/Jam On_spotdown.org.mp3"),
   },
   {
     title: "Clamaré", //337
     artist: "Francisco Orantes, Veronica Leal",
     src: "songs/SpotiDownloader.com - Clamaré - Francisco Orantes.mp3",
-    cover: "images/Cover of Clamaré by Francisco Orantes, Veronica Leal.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Clamaré - Francisco Orantes.mp3"),
   },
   {
     title: "Hoy Soy Feliz", //338
     artist: "Francisco Orantes, Veronica Leal",
     src: "songs/Hoy Soy Feliz  Francisco Orantes.mp3",
-    cover: "images/Screenshot 2026-08-28 11.39.46 PM.png",
+    cover: getMp3Art("songs/Hoy Soy Feliz  Francisco Orantes.mp3"),
   },
   {
     title: "Eran 100 Ovejas (Visión Pastoral)", //339
     artist: "Francisco Orantes, Paulino Bernal",
     src: "songs/Eran 100 Ovejas (Visión Pastoral) Francisco Orantes ft Paulino Bernal.mp3",
-    cover: "images/Screenshot 2026-08-28 11.39.46 PM.png",
+    cover: getMp3Art("songs/Eran 100 Ovejas (Visión Pastoral) Francisco Orantes ft Paulino Bernal.mp3"),
   },
   {
     title: "Alaba", //340
     artist: "Evan Craft, Intimidad Worship",
     src: "songs/Alaba_spotdown.mp3",
-    cover: "images/Cover of La Bondad De Dios by Evan Craft, Elena Witt-Guerra.jpg",
+    cover: getMp3Art("songs/Alaba_spotdown.mp3"),
   },
   {
     title: "The Devil Is A Liar", //341
     artist: "Evan Craft",
     src: "songs/SpotiDownloader.com - The Devil Is A Liar - Evan Craft.mp3",
-    cover: "images/evan.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - The Devil Is A Liar - Evan Craft.mp3"),
     lrc: "LRC files/The Devil Is A Liar - Evan Craft.lrc"
   },
   {
     title: "Siempre Me Encuentras (You Find Me)", //342
     artist: "Evan Craft",
     src: "songs/SpotiDownloader.com - Siempre Me Encuentras (You Find Me) - Evan Craft.mp3",
-    cover: "images/evan.png",
+    cover: getMp3Art("songs/SpotiDownloader.com - Siempre Me Encuentras (You Find Me) - Evan Craft.mp3"),
     lrc: "LRC files/Siempre Me Encuentras (You Find Me) - Evan Craft.lrc"
   },
   {
     title: "Vale La Pena", //343
     artist: "Mike Muñoz, Evan Craft",
     src: "songs/SpotiDownloader.com - Vale La Pena - Mike Muñoz.mp3",
-    cover: "images/Cover of Vale La Pena by Mike Muñoz, Evan Craft.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Vale La Pena - Mike Muñoz.mp3"),
     video: "videos/EvanCraft3.mp4",
   },
   {
     title: "Mi Fe", //344
     artist: "Natan El Profeta",
     src: "songs/SpotiDownloader.com - Mi Fe - Natan El Profeta.mp3",
-    cover: "images/Cover of Pa' Loco by Natan El Profeta.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Mi Fe - Natan El Profeta.mp3"),
   },
   {
     title: "Raro", //345
     artist: "Natan El Profeta, Ander Bock",
     src: "songs/SpotiDownloader.com - Raro - Natan El Profeta.mp3",
-    cover: "images/Cover of Raro by Natan El Profeta, Ander Bock.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Raro - Natan El Profeta.mp3"),
     //video: "videos/NatanElProfeta3.jpeg"
   },
   {
     title: "Imparable", //346
     artist: "Redimi2",
     src: "songs/Imparable_spotdown.org.mp3",
-    cover: "images/image (5).png",
+    cover: getMp3Art("songs/Imparable_spotdown.org.mp3"),
   },
   {
     title: "Tengo que danzar", //347
     artist: "Redimi2, Miel San Marcos",
     src: "songs/Tengo que danzar_spotdown.org.mp3",
-    cover: "images/puede.jpg",
+    cover: getMp3Art("songs/Tengo que danzar_spotdown.org.mp3"),
   },
   {
     title: "Revolú", //348
     artist: "Redimi2",
     src: "songs/Revolú_spotdown.org.mp3",
-    cover: "images/Bien.jpg",
+    cover: getMp3Art("songs/Revolú_spotdown.org.mp3"),
     lrc: "LRC files/Revolú - Redimi2.lrc",
   },
   {
     title: "Qué Maldición", //349
     artist: "Banda MS de Sergio Lizárraga, Snoop Dogg",
     src: "songs/SpotiDownloader.com - Qué Maldición - Banda MS de Sergio Lizárraga.mp3",
-    cover: "images/Cover of Qué Maldición by Banda MS de Sergio Lizárraga, Snoop Dogg.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Qué Maldición - Banda MS de Sergio Lizárraga.mp3"),
     video: "videos/SnoopDogg1.mp4",
     lrc: "LRC files/Qué Maldición - Banda MS de Sergio Lizárraga, Snoop Dogg.lrc",
   },
@@ -2704,14 +2704,14 @@ const playlist = [
     title: "Yo Soy Así", //350
     artist: "Funky, Redimi2",
     src: "songs/SpotiDownloader.com - Yo Soy Así - Funky.mp3",
-    cover: "images/Cover of Yo Soy Así by Funky, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Yo Soy Así - Funky.mp3"),
     lrc: "LRC files/Yo Soy Así - Funky, Redimi2.lrc",
   }, 
   {
     title: "After The Storm (feat. Tyler, The Creator & Bootsy Collins)", //351
     artist: "Kali Uchis, Tyler, The Creator, Bootsy Collins",
     src: "songs/After The Storm (feat. Tyler, The Creator & Bootsy Collins)_spotdown.org.mp3",
-    cover: "images/Cover of After the Storm - Kali Uchis, Tyer, The Creator, Bootsy Collins.png",
+    cover: getMp3Art("songs/After The Storm (feat. Tyler, The Creator & Bootsy Collins)_spotdown.org.mp3"),
     video: "videos/KaliUchis1.mp4",
     lrc: "LRC files/After The Storm (feat. Tyler, The Creator & Bootsy Collins) - Kali Uchis, Tyler, The Creator, Bootsy Collins.lrc",
   }, 
@@ -2719,35 +2719,35 @@ const playlist = [
     title: "Hit Da Pavement", //352
     artist: "7 Days Of Funk, DāM-FunK, Snoop Dogg",
     src: "songs/SpotiDownloader.com - Hit Da Pavement - 7 Days Of Funk.mp3",
-    cover: "images/Cover of Hit Da Pavement by 7 Days Of Funk, DāM-FunK, Snoop Dogg.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Hit Da Pavement - 7 Days Of Funk.mp3"),
     lrc: "LRC files/Hit Da Pavement - 7 Days Of Funk, DāM-FunK, Snoop Dogg.lrc",
   }, 
   {
     title: "Still D.R.E", //353
     artist: "Dr. Dre, Snoop Dogg",
     src: "songs/SpotiDownloader.com - Still D.R.E. - Dr. Dre.mp3",
-    cover: "images/Cover of Still D.R.E. by Dr. Dre, Snoop Dogg.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Still D.R.E. - Dr. Dre.mp3"),
     lrc: "LRC files/Still D.R.E. - Dr. Dre, Snoop Dogg.lrc",
   }, 
   {
     title: "The Next Episode", //354
     artist: "Dr. Dre, Snoop Dogg",
     src: "songs/SpotiDownloader.com - The Next Episode - Dr. Dre.mp3",
-    cover: "images/Cover of Still D.R.E. by Dr. Dre, Snoop Dogg.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - The Next Episode - Dr. Dre.mp3"),
     lrc: "LRC files/The Next Episode - Dr. Dre, Snoop Dogg.lrc",
   }, 
   {
     title: "Gin and Juice", //355
     artist: "Snoop Dogg, Tha Dogg Pound, The Dramatics",
     src: "songs/SpotiDownloader.com - Gin and Juice - Snoop Dogg.mp3",
-    cover: "images/Cover of Doggy Dogg World by Snoop Dogg, Tha Dogg Pound, The Dramatics.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Gin and Juice - Snoop Dogg.mp3"),
     lrc: "LRC files/Gin and Juice - Snoop Dogg.lrc",
   }, 
   {
     title: "Doggy Dogg World", //356
     artist: "Snoop Dogg, Tha Dogg Pound, The Dramatics",
     src: "songs/SpotiDownloader.com - Doggy Dogg World - Snoop Dogg.mp3",
-    cover: "images/Cover of Doggy Dogg World by Snoop Dogg, Tha Dogg Pound, The Dramatics.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Doggy Dogg World - Snoop Dogg.mp3"),
     lrc: "LRC files/Doggy Dogg World - Snoop Dogg, Tha Dogg Pound, The Dramatics.lrc",
   }, 
   {
@@ -2776,14 +2776,14 @@ const playlist = [
     title: "Rock the House", //360
     artist: "Gorillaz, Del The Funky Homosapien",
     src: "songs/SpotiDownloader.com - Rock the House - Gorillaz.mp3",
-    cover: "images/Cover of Rock the House by Gorillaz, Del The Funky Homosapien.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Rock the House - Gorillaz.mp3"),
     lrc: "LRC files/Rock the House - Gorillaz, Del The Funky Homosapien.lrc",
   }, 
   {
     title: "Captain Chicken (feat. Del The Funky Homosapien)", //361
     artist: "Gorillaz, Del The Funky Homosapien",
     src: "songs/SpotiDownloader.com - Captain Chicken (feat. Del The Funky Homosapien) - Gorillaz.mp3",
-    cover: "images/Cover of Captain Chicken (feat. Del The Funky Homosapien) by Gorillaz, Del The Funky Homosapien.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Captain Chicken (feat. Del The Funky Homosapien) - Gorillaz.mp3"),
     video: "videos/Gorillaz2.mp4",
     lrc: "LRC files/Captain Chicken (feat. Del The Funky Homosapien) - Gorillaz, Del The Funky Homosapien.lrc",
   }, 
@@ -2791,7 +2791,7 @@ const playlist = [
     title: "Rico", //362
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - Rico - Madiel Lara.mp3",
-    cover: "images/Cover of Cristo En La Casa by Madiel Lara, Redimi2.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Rico - Madiel Lara.mp3"),
     video: "videos/MadielLara10.mp4",
     lrc: "LRC files/Rico - Madiel Lara.lrc",
   }, 
@@ -2799,7 +2799,7 @@ const playlist = [
     title: "Agradecido", //363
     artist: "Oasis Ministry, Madiel Lara",
     src: "songs/SpotiDownloader.com - Agradecido - Oasis Ministry.mp3",
-    cover: "images/Cover of Agradecido by Oasis Ministry, Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Agradecido - Oasis Ministry.mp3"),
     video: "videos/Oasis1.mp4",
     lrc: "LRC files/Agradecido - Oasis Ministry, Madiel Lara.lrc",
   },
@@ -2807,21 +2807,21 @@ const playlist = [
     title: "Mi Tío Snoop (feat. Snoop Dogg)", //364
     artist: "Alemán, Snoop Dogg",
     src: "songs/SpotiDownloader.com - Mi Tío Snoop (feat. Snoop Dogg) - Alemán.mp3",
-    cover: "images/Cover of Mi Tío Snoop (feat. Snoop Dogg) by Alemán, Snoop Dogg.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Mi Tío Snoop (feat. Snoop Dogg) - Alemán.mp3"),
     lrc: "LRC files/Mi Tío Snoop (feat. Snoop Dogg) - Alemán, Snoop Dogg.lrc",
   },
   {
     title: "Bye Bye", //365
     artist: "Musiko, Pedro Pablo Quintero, FLEIVA MUSIC",
     src: "songs/SpotiDownloader.com - Bye Bye - Musiko.mp3",
-    cover: "images/Cover of Bye Bye by Musiko, Pedro Pablo Quintero, FLEIVA MUSIC.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Bye Bye - Musiko.mp3"),
     lrc: "LRC files/Bye Bye - Musiko, Pablo.lrc",
   }, 
   {
     title: "demons", //366
     artist: "Josiah Queen",
     src: "songs/SpotiDownloader.com - demons - Josiah Queen.mp3",
-    cover: "images/Cover of demons by Josiah Queen.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - demons - Josiah Queen.mp3"),
     video: "videos/JosiahQueen1.mp4",
     lrc: "LRC files/demons - Josiah Queen.lrc",
   }, 
@@ -2829,7 +2829,7 @@ const playlist = [
     title: "Dusty Bibles", //367
     artist: "Josiah Queen",
     src: "songs/SpotiDownloader.com - Dusty Bibles - Josiah Queen.mp3",
-    cover: "images/Cover of Dusty Bibles by Josiah Queen.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Dusty Bibles - Josiah Queen.mp3"),
     video: "videos/JosiahQueen2.mp4",
     lrc: "LRC files/Dusty Bibles - Josiah Queen.lrc",
   }, 
@@ -2837,7 +2837,7 @@ const playlist = [
     title: "Can't Steal My Joy (feat. Brandon Lake)", //368
     artist: "Josiah Queen, Brandon Lake",
     src: "songs/Can't Steal My Joy (feat. Brandon Lake)_spotdown.org.mp3",
-    cover: "images/Cover of Can't Steal My Joy (feat. Brandon Lake) by Josiah Queen, Brandon Lake.jpg",
+    cover: getMp3Art("songs/Can't Steal My Joy (feat. Brandon Lake)_spotdown.org.mp3"),
     video: "videos/JosiahQueen3.mp4",
     lrc: "LRC files/Can't Steal My Joy (feat. Brandon Lake) - Josiah Queen, Brandon Lake.lrc",
   },  
@@ -2845,7 +2845,7 @@ const playlist = [
     title: "Watch Your Mouth", //369
     artist: "Josiah Queen",
     src: "songs/SpotiDownloader.com - Watch Your Mouth - Josiah Queen.mp3",
-    cover: "images/Cover of Dusty Bibles by Josiah Queen.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - Watch Your Mouth - Josiah Queen.mp3"),
     video: "videos/JosiahQueen4.mp4",
     lrc: "LRC files/Watch Your Mouth - Josiah Queen.lrc",
   },  
@@ -2853,14 +2853,14 @@ const playlist = [
     title: "Pastor Sigue Luchando (Pista Karaoke)", //370
     artist: "Salmista Wilmer Medina Flores",
     src: "songs/Wilmer Medina Flores - Pastor Sigue Luchando (Pista Karaoke).mp3",
-    cover: "images/Cover of Pastor Sigue Luchando by Salmista Wilmer Medina Flores.jpg",
+    cover: getMp3Art("songs/Wilmer Medina Flores - Pastor Sigue Luchando (Pista Karaoke).mp3"),
     lrc: "LRC files/Pastor Sigue Luchando.lrc",
   }, 
   {
     title: "mi DIOS", //371
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - mi DIOS - Madiel Lara.mp3",
-    cover: "images/Cover of mi DIOS by Madiel Lara.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - mi DIOS - Madiel Lara.mp3"),
     video: "videos/MadielLara11.mp4",
     lrc : "LRC files/mi DIOS - Madiel Lara.lrc",
   }, 
@@ -2868,7 +2868,7 @@ const playlist = [
     title: "MOMENTUM", //372
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - MOMENTUM - Redimi2.mp3",
-    cover: "images/Gokey.jpg",
+    cover: getMp3Art("songs/SpotiDownloader.com - MOMENTUM - Redimi2.mp3"),
     video: "videos/Redimi15.mp4",
     lrc: "LRC files/MOMENTUM - Redimi2.lrc",
   },
@@ -2876,19 +2876,19 @@ const playlist = [
     title: "Soy Peregrino", //373
     artist: "Anita Morán",
     src: "songs/Soy Peregrino - Anita Morán (Video Oficial) - Anita Morán.mp3",
-    cover: "images/Cover of Soy Peregrino by Anita Morán.jpg",
+    cover: getMp3Art("songs/Soy Peregrino - Anita Morán (Video Oficial) - Anita Morán.mp3"),
   }, 
   {
     title: "Esa Roca", //374
     artist: "Anita Morán",
     src: "songs/Anita Morán Esa Roca - Briseida López.mp3",
-    cover: "images/Cover of Esa Roca by Anita Morán.jpg",
+    cover: getMp3Art("songs/Anita Morán Esa Roca - Briseida López.mp3"),
   }, 
   {
     title: "Nos Veremos en la Gloria", //375
     artist: "Anita Morán",
     src: "songs/NOS VEREMOS EN LA GLORIA - Anita Morán (VIDEO OFICIAL) - Anita Morán.mp3",
-    cover: "images/Screenshot 2026-05-16 12.04.27 PM.png",
+    cover: getMp3Art("songs/NOS VEREMOS EN LA GLORIA - Anita Morán (VIDEO OFICIAL) - Anita Morán.mp3"),
   },/* 
   {
     title: "", //3##
@@ -5192,22 +5192,22 @@ viewport.addEventListener('touchend', (e) => {
 
 // --- init ---
 async function init() {
-    await loadEmbeddedAlbumCovers();
-    buildPlaylistUI(); 
-    document.title = "Spotify - Web Player: Music for everyone (please don't sue me)"
-    favicon.href = "images/spotify-logo-png-7057.png"; //i know, i can just set it in html, but this is more fun :)
-    queueIndex = -1;
-    currentSong = -1;
-    loadSong(currentSong); // Just load, don't play
-    updateActiveSong();
-    setPlayIcon(false); // Show play icon (paused state)
-    playbackSource = "All Songs";
-    currentPlaylist = "All Songs";
-    updatePlaylistLabel();
-    window.addEventListener('resize', updateTitleScroll); 
+  await loadEmbeddedAlbumCovers();
+  buildPlaylistUI(); 
+  document.title = "Spotify - Web Player: Music for everyone (please don't sue me)"
+  favicon.href = "images/spotify-logo-png-7057.png"; //i know, i can just set it in html, but this is more fun :)
+  queueIndex = -1;
+  currentSong = -1;
+  loadSong(currentSong); // Just load, don't play
+  updateActiveSong();
+  setPlayIcon(false); // Show play icon (paused state)
+  playbackSource = "All Songs";
+  currentPlaylist = "All Songs";
+  updatePlaylistLabel();
+  window.addEventListener('resize', updateTitleScroll); 
 };
 
 init().catch(error => {
-    console.error("Music player initialization failed:", error);
+  console.error("Music player initialization failed:", error);
 });
 
