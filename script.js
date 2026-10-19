@@ -2581,6 +2581,138 @@ const playlist = [
     artist: "Anita Morán",
     src: "songs/NOS VEREMOS EN LA GLORIA - Anita Morán (VIDEO OFICIAL) - Anita Morán.mp3",
     cover: getMp3Art("songs/NOS VEREMOS EN LA GLORIA - Anita Morán (VIDEO OFICIAL) - Anita Morán.mp3"),
+  },
+  {
+    title: "Cracker Island (feat. Thundercat)", //376
+    artist: "Gorillaz, Thundercat",
+    src: "songs/Gorillaz, Thundercat - Cracker Island (feat. Thundercat) (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, Thundercat - Cracker Island (feat. Thundercat) (SPOTISAVER).mp3"),
+  },
+  {
+    title: "DARE (feat. Shaun Ryder & Roses Gabor)", //377
+    artist: "Gorillaz, Shaun Ryder, Roses Gabor",
+    src: "songs/Gorillaz, Shaun Ryder, Roses Gabor - DARE (feat. Shaun Ryder & Roses Gabor) (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, Shaun Ryder, Roses Gabor - DARE (feat. Shaun Ryder & Roses Gabor) (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Nuthin' But A G Thang", //378
+    artist: "Dr. Dre, Snoop Dogg",
+    src: "songs/Dr. Dre, Snoop Dogg - Nuthin' But A G Thang (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Dr. Dre, Snoop Dogg - Nuthin' But A G Thang (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Feel Good Inc.", //379
+    artist: "Gorillaz, De La Soul",
+    src: "songs/Gorillaz, De La Soul - Feel Good Inc. (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, De La Soul - Feel Good Inc. (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Love It or Hate It", //380
+    artist: "The Game, Snoop Dogg, Sela V",
+    src: "songs/The Game, Snoop Dogg, Sela V - Love It or Hate It (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/The Game, Snoop Dogg, Sela V - Love It or Hate It (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Get out Your Ear's Way", //381
+    artist: "Lachy Doley, Bootsy Collins",
+    src: "songs/Lachy Doley, Bootsy Collins - Get out Your Ear's Way (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Lachy Doley, Bootsy Collins - Get out Your Ear's Way (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Toyz N Da Hood", //382
+    artist: "Snoop Dogg, Bootsy Collins",
+    src: "songs/Snoop Dogg, Bootsy Collins - Toyz N Da Hood (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Snoop Dogg, Bootsy Collins - Toyz N Da Hood (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Can I Get A Flicc Witchu", //383
+    artist: "Snoop Dogg, Bootsy Collins",
+    src: "songs/Snoop Dogg, Bootsy Collins - Can I Get A Flicc Witchu (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Snoop Dogg, Bootsy Collins - Can I Get A Flicc Witchu (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Love Gangsta", //384
+    artist: "Bootsy Collins, Colin Rich, Dazz",
+    src: "songs/Bootsy Collins, Colin Rich, Dazz - Love Gangsta (feat. Snoop Dogg, Dazz & Colin Rich) (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Bootsy Collins, Colin Rich, Dazz - Love Gangsta (feat. Snoop Dogg, Dazz & Colin Rich) (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Drop It Like It's Hot", //385
+    artist: "Snoop Dogg, Pharrell Williams",
+    src: "songs/Snoop Dogg, Pharrell Williams - Drop It Like It's Hot (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Snoop Dogg, Pharrell Williams - Drop It Like It's Hot (SPOTISAVER).mp3"),
+  },
+  {
+    title: "On Melancholy Hill", //386
+    artist: "Gorillaz",
+    src: "songs/Gorillaz - On Melancholy Hill (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz - On Melancholy Hill (SPOTISAVER).mp3"),
+  },
+  {
+    title: "She's My Collar (feat. Kali Uchis)", //387
+    artist: "Gorillaz, Kali Uchis",
+    src: "songs/Gorillaz, Kali Uchis - She's My Collar (feat. Kali Uchis) (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, Kali Uchis - She's My Collar (feat. Kali Uchis) (SPOTISAVER).mp3"),
+  },
+  {
+    title: "19-2000", //388
+    artist: "Gorillaz, Miho Hatori, Tina Weymouth",
+    src: "songs/Gorillaz, Miho Hatori, Tina Weymouth - 19-2000 (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, Miho Hatori, Tina Weymouth - 19-2000 (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Tranz", //389
+    artist: "Gorillaz",
+    src: "songs/Gorillaz - Tranz (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz - Tranz (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Snoop Will Make You Dance", //390
+    artist: "Snoop Dogg",
+    src: "songs/Snoop Dogg - Snoop Will Make You Dance (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Snoop Dogg - Snoop Will Make You Dance (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Snoop D.O. Double G", //391
+    artist: "Snoop Dogg",
+    src: "songs/Snoop Dogg - Snoop D.O. Double G (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Snoop Dogg - Snoop D.O. Double G (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Me N The Boyz", //392
+    artist: "Kurupt, DJ Battlecat, Snoop Dogg",
+    src: "songs/Kurupt, DJ Battlecat, Snoop Dogg - Me N The Boyz (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Kurupt, DJ Battlecat, Snoop Dogg - Me N The Boyz (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Pac-Man (feat. ScHoolboy Q)", //393
+    artist: "Gorillaz, ScHoolboy Q",
+    src: "songs/Gorillaz, ScHoolboy Q - Pac-Man (feat. ScHoolboy Q) (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, ScHoolboy Q - Pac-Man (feat. ScHoolboy Q) (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Strange Timez (feat. Robert Smith)", //394
+    artist: "Gorillaz, Robert Smith",
+    src: "songs/Gorillaz, Robert Smith - Strange Timez (feat. Robert Smith) (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz, Robert Smith - Strange Timez (feat. Robert Smith) (SPOTISAVER).mp3"),
+  },
+  {
+    title: "Just A Baby Boy", //395
+    artist: "Snoop Dogg, Tyrese, Mr. Tan",
+    src: "songs/Snoop Dogg - Just A Baby Boy (Official Music Video) ft. Tyrese, Mr. Tan - SnoopDoggVEVO.mp3",
+    cover: getMp3Art("songs/Snoop Dogg - Just A Baby Boy (Official Music Video) ft. Tyrese, Mr. Tan - SnoopDoggVEVO.mp3"),
+  },
+  {
+    title: "DARE", //396
+    artist: "Gorillaz",
+    src: "songs/Gorillaz - DARE (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz - DARE (SPOTISAVER).mp3"),
+  },
+  {
+    title: "El Mañana", //397
+    artist: "Gorillaz",
+    src: "songs/Gorillaz - El Mañana (SPOTISAVER).mp3",
+    cover: getMp3Art("songs/Gorillaz - El Mañana (SPOTISAVER).mp3"),
   },/* 
   {
     title: "", //3##
@@ -2603,6 +2735,7 @@ const playlistOrder = {
   cumpleaños: [275, 276, 277],
   ROADTRIP: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 112, 114, 116, 119, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 154, 161, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 187, 188, 199, 201, 202, 203, 204, 205, 206, 208, 210, 212, 213, 215, 216, 217, 218, 219, 225, 226, 227, 228, 229, 230, 231, 232, 233, 237, 238, 239, 240, 241, 242, 245, 246, 247, 248, 249, 251, 252, 257, 263, 264, 268, 272, 274, 281, 282, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 311, 312, 313, 314, 315, 316, 317, 318, 319, 321, 324, 325, 328, 329, 330, 331, 332, 337, 338, 339, 340, 341, 342, 343, 366, 367, 368, 369, 371],
   LocosComoYo :[255, 256, 265, 309, 198, 310, 283, 279, 278, 155, 224, 152, 153, 254, 120, 260, 320, 344, 345, 210, 322, 323, 234, 348, 362, 163, 197, 326, 327, 350, 372, 351, 349, 333, 334, 335, 336, 352, 353, 354, 355, 356, 364, 357, 358, 359, 360, 361],
+  absolutePlaylist : [352, 353, 376, 377, 378, 379, 354, 351, 336, 395, 380, 334, 335, 381, 355, 359, 360, 361, 358, 382, 383, 384, 385, 386, 387, 388, 389, 397, 396, 390, 391, 392, 393, 394],
   //make a playlist for the mothers day songs
 };
 
@@ -2617,6 +2750,7 @@ const playlistHex = {
   cumpleaños: "#174f47",
   ROADTRIP: "#515151",
   LocosComoYo: "#8F9787",
+  absolutePlaylist: "#CF3030",
 };
 
 const playlistEndHex = {
@@ -2630,6 +2764,7 @@ const playlistEndHex = {
   cumpleaños: "#013B34",
   ROADTRIP: "#353535",
   LocosComoYo: "#32382C",
+  absolutePlaylist: "#660000",
 };
 
 async function getSongColors(imageUrl) {
@@ -4895,4 +5030,3 @@ async function init() {
 init().catch(error => {
   console.error("Music player initialization failed:", error);
 });
-
