@@ -185,32 +185,24 @@ const playlist = [
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Oh alma mía - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Oh alma mía - Los Voceros de Cristo.mp3"),
-    hex: "#783800",
-    barColor: "#bf5900ff"
   },
   {
     title: "Escogido Fui de Dios (2025)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Escogido fui de Dios (Nuevos Horizontes) - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Escogido fui de Dios (Nuevos Horizontes) - Los Voceros de Cristo.mp3"),
-    hex: "#8F2727",
-    barColor: "#130069ff"
   },
   {
     title: "Yo Te Esperare",//15
     artist: "Los Hermanos Reyes",
     src: "songs/Reyes.mp3",
     cover: getMp3Art("songs/Reyes.mp3"),
-    hex: "#b09539ff",
-    barColor: "#e4b20dff"
   },
   {
     title: "Soy Feliz",
     artist: "Los Hermanos Reyes",
     src: "songs/Soy feliz.mp3",
     cover: getMp3Art("songs/Soy feliz.mp3"),
-    hex: "#787053ff",
-    barColor: "#ac943fff"
   },
   {
     title: "La Biblia",
@@ -223,272 +215,204 @@ const playlist = [
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/SpotiDownloader.com - En Mi Casa Vive Jesús - Francisco Orantes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - En Mi Casa Vive Jesús - Francisco Orantes.mp3"),
-    hex: "#628ABF",
-    barColor: "#3287f5ff"
   },
   {
     title: "Loor a ti mi Dios v2",
     artist: "Los Voceros de Cristo",
     src: "songs/Loor2.mp3",
     cover: getMp3Art("songs/Loor2.mp3"),
-    hex: "#3A3436",
-    barColor: "#726065ff"
   },
   {
     title: "Mi cántaro vacío",//20
     artist: "Los Voceros de Cristo",
     src: "songs/cántaro.mp3",
     cover: getMp3Art("songs/cántaro.mp3"),
-    hex: "#3A3436",
-    barColor: "#726065ff"
   },
   {
     title: "Loor A Ti Mi Dios (2024)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Loor A Ti Mi Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Loor A Ti Mi Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3"),
-    hex: "#609FB6",
-    barColor: "#31b6e7ff"
   },
   {
     title: "Escogido Fui de Dios (2024)",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Escogido Fui de Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Escogido Fui de Dios - En Vivo Desde El Salvador - Los Voceros de Cristo.mp3"),
-    hex: "#609FB6",
-    barColor: "#25b4e8ff"
   },
   {
     title: "El volverá", //23
     artist: "Los Voceros de Cristo/Aníbal Marroquín",
     src: "songs/volverá.mp3",
     cover: getMp3Art("songs/volverá.mp3"),
-    hex: "#313831",
-    barColor: "#527052ff"
   },
   {
     title: "Que Feliz Estoy",//24
     artist: "Francisco Orantes",
     src: "songs/SpotiDownloader.com - Que Feliz Estoy - Francisco Orantes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Que Feliz Estoy - Francisco Orantes.mp3"),
-    hex: "#A16962",
-    barColor: "#b84e40ff"
   },
   {
     title: "Por Herencia",//25
     artist: "Francisco Orantes/Marilú Orantes",
     src: "songs/Por Herencia.mp3",
     cover: getMp3Art("songs/Por Herencia.mp3"),
-    hex: "#5a240cff",
-    barColor: "#992e00ff"
   },
   {
     title: "Jesús",//26
     artist: "Francisco Orantes",
     src: "songs/Jesús.mp3",
     cover: getMp3Art("songs/Jesús.mp3"),
-    hex: "#08186C",
-    barColor: "#001db0ff"
   },
   {
     title: "Necesito De Ti",//27
     artist: "Francisco Orantes",
     src: "songs/Necesito De Ti.mp3",
     cover: getMp3Art("songs/Necesito De Ti.mp3"),
-    hex: "#A16962",
-    barColor: "#b84e40ff"
   },
   {
     title: "Te Necesito",//28
     artist: "Los Hermanos Reyes",
     src: "songs/Te necesito.mp3",
     cover: getMp3Art("songs/Te necesito.mp3"),
-    hex: "#bb9b31ff",
-    barColor: "#d3a50cff"
   },
   {
     title: "Su amor siempre es su amor",//29
     artist: "Los Voceros de Cristo/Ruth E. Gomez",
     src: "songs/su amor.mp3",
     cover: getMp3Art("songs/su amor.mp3"),
-    hex: "#313831",
-    barColor: "#527052ff"
   },
   {
     title: "La Perdida Oveja",//30
     artist: "Los Voceros de Cristo/Leonel Tuchez",
     src: "songs/La perdida oveja.mp3",
     cover: getMp3Art("songs/La perdida oveja.mp3"),
-    hex: "#3A3436",
-    barColor: "#726065ff"
   },
   {
     title: "La Biblia dice que el hombre",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - La Biblia dice que el hombre - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - La Biblia dice que el hombre - Los Voceros de Cristo.mp3"),
-    hex: "#9D8627",
-    barColor: "#c39c00ff"
   },
   {
     title: "Te Doy Gracias",
     artist: "Los Hermanos Reyes/Leonel Tuchez",
     src: "songs/song27.mp3",
     cover: getMp3Art("songs/song27.mp3"),
-    hex: "#383838",
-    barColor: "#6b5a3bff"
   },
   {
     title: "Nicodemo",
     artist: "Leonel Tuchez",
     src: "songs/Nicodemo.mp3",
     cover: getMp3Art("songs/Nicodemo.mp3"),
-    hex: "#854b6fff",
-    barColor: "#be408eff"
   },
   {
     title: "Amartesolo a ti Señor",
     artist: "Los Hermanos Reyes",
     src: "songs/Amarte.mp3",
     cover: getMp3Art("songs/Amarte.mp3"),
-    hex: "#0b2f43ff",
-    barColor: "#025988ff"
   },
   {
     title: "Que Bueno es El Señor",//35
     artist: "Los Hermanos Reyes",
     src: "songs/Que Bueno es El Señor.mp3",
     cover: getMp3Art("songs/Que Bueno es El Señor.mp3"),
-    hex: "#6f2d5cff",
-    barColor: "#950e71ff"
   },
   {
     title: "He peleado la batalla",
     artist: "Los Hermanos Reyes",
     src: "songs/He peleado la batalla.mp3",
     cover: getMp3Art("songs/He peleado la batalla.mp3"),
-    hex: "#787053ff",
-    barColor: "#967f2cff"
   },
   {
     title: "Si Mi Pueblo Se Humillare",
     artist: "Los Hermanos Reyes",
     src: "songs/pueblo.mp3",
     cover: getMp3Art("songs/pueblo.mp3"),
-    hex: "#0b2f43ff",
-    barColor: "#025c8cff"
   },
   {
     title: "Tengo un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Tengo un Dios.mp3",
     cover: getMp3Art("songs/Tengo un Dios.mp3"),
-    hex: "#787053ff",
-    barColor: "#907926ff"
   },
   {
     title: "Hay un Dios",
     artist: "Los Hermanos Reyes",
     src: "songs/Hay un Dios.mp3",
     cover: getMp3Art("songs/Hay un Dios.mp3"),
-    hex: "#0b2f43ff",
-    barColor: "#005f92ff"
   },
   {
     title: "Hay una Ciudad",//40
     artist: "Los Hermanos Reyes",
     src: "songs/Hay una ciudad.mp3",
     cover: getMp3Art("songs/Hay una ciudad.mp3"),
-    hex: "#b09539ff",
-    barColor: "#e0ac02ff"
   },
   {
     title: "Alla en los Olivos",
     artist: "Los Hermanos Reyes",
     src: "songs/Alla en los olivos.mp3",
     cover: getMp3Art("songs/Alla en los olivos.mp3"),
-    hex: "#b19433ff",
-    barColor: "#e5b003ff"
   },
   {
     title: "Como una Flor",
     artist: "Los Hermanos Reyes",
     src: "songs/song19.mp3",
     cover: getMp3Art("songs/song19.mp3"),
-    hex: "#383838",
-    barColor: "#676536ff"
   },
   {
     title: "Como Una Flor - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Como Una Flor - En vivo - Wilson Camey.mp3",
     cover: getMp3Art("songs/Como Una Flor - En vivo - Wilson Camey.mp3"),
-    hex: "#2F5F87",
-    barColor: "#0057c0ff"
   },
   {
     title: "Alto Precio - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Alto Precio - En vivo - Wilson Camey.mp3",
     cover: getMp3Art("songs/Alto Precio - En vivo - Wilson Camey.mp3"),
-    hex: "#2F5F87",
-    barColor: "#0057c0ff"
   },
   {
     title: "Alto Precio",//45
     artist: "Los Hermanos Reyes",
     src: "songs/Alto Precio.mp3",
     cover: getMp3Art("songs/Alto Precio.mp3"),
-    hex: "#383838",
-    barColor: "#676536ff"
   },
   {
     title: "Que Contento Estoy - (EN VIVO)",
     artist: "Wilson Camey/Los Hermanos Reyes",
     src: "songs/Que Contento Estoy - En vivo - Wilson Camey.mp3",
     cover: getMp3Art("songs/Que Contento Estoy - En vivo - Wilson Camey.mp3"),
-    hex: "#2F5F87",
-    barColor: "#0057c0ff"
   },
   {
     title: "Contento Estoy",
     artist: "Los Hermanos Reyes",
     src: "songs/Contento Estoy.mp3",
     cover: getMp3Art("songs/Contento Estoy.mp3"),
-    hex: "#383838",
-    barColor: "#676536ff"
   },
   {
     title: "Jesús es mi Refugio",
     artist: "Los Voceros de Cristo",
     src: "songs/Refugio.mp3",
     cover: getMp3Art("songs/Refugio.mp3"),
-    hex: "#582820",
-    barColor: "#941b06ff"
   },
   {
     title: "Vivir Cantado",
     artist: "Julio Elias",
     src: "songs/Julio Elias.mp3",
     cover: getMp3Art("songs/Julio Elias.mp3"),
-    hex: "#8c3d2fff",
-    barColor: "#a11901ff"
   },
   {
     title: "Buscale",//50
     artist: "Óscar Medina",
     src: "songs/Buscale.mp3",
     cover: getMp3Art("songs/Buscale.mp3"),
-    hex: "#836531",
-    barColor: "#b56702ff"
   },
   {
     title: "Te Estoy Esperando",
     artist: "Leonel Tuchez",
     src: "songs/Esperando.mp3",
     cover: getMp3Art("songs/Esperando.mp3"),
-    hex: "#854b6fff",
-    barColor: "#a90b6dff"
   },
   {
     title: "Tengo Un Dios - Julio Elías",
@@ -525,24 +449,18 @@ const playlist = [
     artist: "Marcos Witt",
     src: "songs/a2.mp3",
     cover: getMp3Art("songs/a2.mp3"),
-    hex: "#0E434A",
-    barColor: "#006c7bff"
   },
   {
     title: "Quien me podrá separar",
     artist: "Los Hermanos Reyes",
     src: "songs/a3.mp3",
     cover: getMp3Art("songs/a3.mp3"),
-    hex: "#17494eff",
-    barColor: "#01747eff"
   },
   {
     title: "En Paz",
     artist: "Daniel Calveti",
     src: "songs/a1.mp3",
     cover: getMp3Art("songs/a1.mp3"),
-    hex: "#616060ff",
-    barColor: "#a3a3a3"
   },
 /*  {
     title: "Prometí aceptar tu palabra",
@@ -585,120 +503,90 @@ const playlist = [
     artist: "Los Voceros de Cristo",
     src: "songs/Loor.mp3",
     cover: getMp3Art("songs/Loor.mp3"),
-    hex: "#783800",
-    barColor: "#ca5e00ff"
 },
 {
     title: "Todos Deben de Saber/Conocer",
     artist: "Los Hermanos Reyes/Manuel Bonilla",
     src: "songs/song28.mp3",
     cover: getMp3Art("songs/song28.mp3"),
-    hex: "#968E90",
-    barColor: "#c5c55aff"
 },
 {
     title: "Esa Roca",//67
     artist: "Francisco Orantes",
     src: "songs/song3.mp3",
     cover: getMp3Art("songs/song3.mp3"),
-    hex: "#236394ff",
-    barColor: "#259423ff"
 },
 {
     title: "El Amor de Dios",
     artist: "Manuel Bonilla",
     src: "songs/song4.mp3",
     cover: getMp3Art("songs/song4.mp3"),
-    hex: "#2F4617",
-    barColor: "#447e06ff"
 },
 {
     title: "En El Monte Cavalrio",
     artist: "Manuel Bonilla",
     src: "songs/song5.mp3",
     cover: getMp3Art("songs/song5.mp3"),
-    hex: "#003D03",
-    barColor: "#00a108ff"
 },
 {
     title: "No Te Voy A Dejar",//70
     artist: "Leonel Tuchez",
     src: "songs/song6.mp3",
     cover: getMp3Art("songs/song6.mp3"),
-    hex: "#854b6fff",
-    barColor: "#cf1989ff"
 },
 {
     title: "Supe Que Me Amabas",
     artist: "Marcela Gandara",
     src: "songs/song7.mp3",
     cover: getMp3Art("songs/song7.mp3"),
-    hex: "#9B4A3C",
-    barColor: "#d74c10ff"
 },
 {
     title: "A Quien Iremos",
     artist: "Los Hermanos Reyes",
     src: "songs/song8.mp3",
     cover: getMp3Art("songs/song8.mp3"),
-    hex: "#383838",
-    barColor: "#676536ff"
 },
 {
     title: "Llegó el Amor",
     artist: "Aníbal Marroquin",
     src: "songs/song9.mp3",
     cover: getMp3Art("songs/song9.mp3"),
-    hex: "#7D2708",
-    barColor: "#c93601ff"
 },
 {
     title: "Confía En El Señor",
     artist: "Francisco Orantes",
     src: "songs/song10.mp3",
     cover: getMp3Art("songs/song10.mp3"),
-    hex: "#94625bff",
-    barColor: "#bd4232ff"
 },
 {
     title: "Escogido fui de Dios",//75
     artist: "Los Voceros de Cristo",
     src: "songs/song11.mp3",
     cover: getMp3Art("songs/song11.mp3"),
-    hex: "#91190A",
-    barColor: "#d11800ff"
 },
 {
     title: "Todo Va a Estar Bien",
     artist: "Redimi2/Evan Craft",
     src: "songs/Bienn.mp3",
     cover: getMp3Art("songs/Bienn.mp3"),
-    hex: "#747474",
-    barColor: "#a397bcff"
 },
 {
     title: "Más Rico Del Mundo",
     artist: "Evan Craft",
     src: "songs/Más_Rico_Del_Mundo.mp3",
     cover: getMp3Art("songs/Más_Rico_Del_Mundo.mp3"),
-    hex: "#0083A5",
-    barColor: "#00cd8fff"
 },
 {
     title: "La Milla Extra",
     artist: "Evan Craft",
     src: "songs/La Milla Extra.mp3",
     cover: getMp3Art("songs/La Milla Extra.mp3"),
-    hex: "#7E393C",
-    barColor: "#aa123dff"
 },
 {
     title: "Desesperado",
     artist: "Evan Craft",
     src: "songs/Desesperado.mp3",
     cover: getMp3Art("songs/Desesperado.mp3"),
-    hex: "#186B5D",
-    barColor: "#01ad91ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -706,8 +594,6 @@ const playlist = [
     artist: "Un Corazón",
     src: "songs/song14.mp3",
     cover: getMp3Art("songs/song14.mp3"),
-    hex: "#504878",
-    barColor: "#2204b3ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -715,8 +601,6 @@ const playlist = [
     artist: "Leonel Tuchez",
     src: "songs/song15.mp3",
     cover: getMp3Art("songs/song15.mp3"),
-    hex: "#632D07",
-    barColor: "#ca5501ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -724,8 +608,6 @@ const playlist = [
     artist: "Un Corazón",
     src: "songs/song16.mp3",
     cover: getMp3Art("songs/song16.mp3"),
-    hex: "#464D2E",
-    barColor: "#6f881bff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -733,8 +615,6 @@ const playlist = [
     artist: "Rojo/Strings & Heart",
     src: "songs/Cuando (1).mp3",
     cover: getMp3Art("songs/Cuando (1).mp3"),
-    hex: "#949494",
-    barColor: "#94a9d3ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -742,8 +622,6 @@ const playlist = [
     artist: "Rojo",
     src: "songs/song12.mp3",
     cover: getMp3Art("songs/song12.mp3"),
-    hex: "#680519",
-    barColor: "#ad0330ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -751,8 +629,6 @@ const playlist = [
     artist: "Rojo",
     src: "songs/song17.mp3",
     cover: getMp3Art("songs/song17.mp3"),
-    hex: "#727272",
-    barColor: "#dbb8b8ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -760,72 +636,54 @@ const playlist = [
     artist: "Emmanuel y Linda",
     src: "songs/Es Lo Que Quiero.mp3",
     cover: getMp3Art("songs/Es Lo Que Quiero.mp3"),
-    hex: "#9c3270ff",
-    barColor: "#db24a4ff"
 },
 {
     title: "Si No Fuera Por Ti",
     artist: "Rojo",
     src: "songs/Si No Fuera Por Ti.mp3",
     cover: getMp3Art("songs/Si No Fuera Por Ti.mp3"),
-    hex: "#959595",
-    barColor: "#94a9d3ff"
 },
 {
     title: "Siguiéndote Los Pasos",
     artist: "Rojo",
     src: "songs/Pasos.mp3",
     cover: getMp3Art("songs/Pasos.mp3"),
-    hex: "#727272",
-    barColor: "#dbb8b8ff"
 },
 {
     title: "Has Cambiado mi lamento",
     artist: "Los Hermanos Reyes",
     src: "songs/lamento.mp3",
     cover: getMp3Art("songs/lamento.mp3"),
-    hex: "#007693",
-    barColor: "#00c3eaff"
 },
 {
     title: "Deja las Drogas",//90
     artist: "Aníbal Marroquín",
     src: "songs/song22.mp3",
     cover: getMp3Art("songs/song22.mp3"),
-    hex: "#740800",
-    barColor: "#d40e00ff"
 },
 {
     title: "A Luchar Hermano",
     artist: "Aníbal Marroquín",
     src: "songs/song23.mp3",
     cover: getMp3Art("songs/song23.mp3"),
-    hex: "#7D2708",
-    barColor: "#e23c00ff"
 },
 {
     title: "Josué 1: 8 Y 9",
     artist: "Leonel Tuchez",
     src: "songs/song24.mp3",
     cover: getMp3Art("songs/song24.mp3"),
-    hex: "#662F08",
-    barColor: "#db5b00ff"
 },
 {
     title: "Los Que Esperan En Jehová",
     artist: "Manuel Bonilla",
     src: "songs/Esperan.mp3",
     cover: getMp3Art("songs/Esperan.mp3"),
-    hex: "#961410",
-    barColor: "#d9036eff"
 },
 {
     title: "He Peleado la Batalla",
     artist: "Luismi Acosta y Gloria de Dios",
     src: "songs/Luismi.mp3",
     cover: getMp3Art("songs/Luismi.mp3"),
-    hex: "#AC6F00",
-    barColor: "#f88400ff"
 },
 {
     title: "Que Bueno Es El Señor",//95
@@ -923,8 +781,6 @@ const playlist = [
     artist: "Redimi2/Natan El Profeta",
     src: "songs/Flipando.mp3",
     cover: getMp3Art("songs/Flipando.mp3"),
-    hex: "#1b5d9f",
-    barColor: "#f7cd24ff",
     libs: ["favorites", "spanish"]
 },
 {
@@ -932,8 +788,6 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3",
     cover: getMp3Art("songs/Redimi2 - Cumbia de Mi Libertad (video oficial)_320p.mp3"),
-    hex: "#3b7c60",
-    barColor: "#f7cd24d8",
     video: "videos/Redimi4.mp4",
 },
 {
@@ -954,16 +808,12 @@ const playlist = [
     artist: "Alex Zurdo, Funky, Dariana",
     src: "songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3",
     cover: getMp3Art("songs/El Culpable - Alex Zurdo, Funky ft. Dariana (Video Oficial)_320p.mp3"),
-    hex: "#D03030",
-    barColor: "#fb965fff",
 },
 {
     title: "INFINITO",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - INFINITO - Madiel Lara.mp3"),
-    hex: "#D28432",
-    barColor: "#ffdf89ff",
     video: "videos/MadielLara2.mp4",
 },
 {
@@ -971,72 +821,54 @@ const playlist = [
     artist: "Alex Zurdo/Funky/Redimi2/Un Corazón/Abby Valdez/Indiomar",
     src: "songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - A Pesar de Mí (feat. Un Corazón, Abby Valdez, Indiomar) - Alex Zurdo.mp3"),
-    hex: "#402727",
-    barColor: "#fbf5d7ff",
 },
 {
     title: "365",
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - 365 - Dariana.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - 365 - Dariana.mp3"),
-    hex: "#189E76",
-    barColor: "#01f079ff",
 },
 {
     title: "Polaris",
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - Polaris - Dariana.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Polaris - Dariana.mp3"),
-    hex: "#189E76",
-    barColor: "#01f079ff",
 },
 {
     title: "Exaltación",
     artist: "Redimi2/Averly Morillo",
     src: "songs/SpotiDownloader.com - Exaltación - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Exaltación - Redimi2.mp3"),
-    hex: "#383810",
-    barColor: "#f4f447ff"
 },
 {
     title: "Mi Padre",
     artist: "Redimi2, Samantha Kate, Distrito Royal",
     src: "songs/padre.mp3",
     cover: getMp3Art("songs/padre.mp3"),
-    hex: "#70918b",
-    barColor: "#ac9250ff"
 },
 {
     title: "Mi Dios Puede",//120
     artist: "Redimi2/Sarai Rivera",
     src: "songs/puede.mp3",
     cover: getMp3Art("songs/puede.mp3"),
-    hex: "#6B8681",
-    barColor: "#ac9250ff"
 },
 {
     title: "VUELVO A TI",
     artist: "Redimi2/Betsy Jo",
     src: "songs/VUELVO.mp3",
     cover: getMp3Art("songs/VUELVO.mp3"),
-    hex: "#5c4134",
-    barColor: "#fd7b3aff"
 },
 {
     title: "Gracias",
     artist: "Redimi2, Marcos Brunet",
     src: "songs/GraciasR.mp3",
     cover: getMp3Art("songs/GraciasR.mp3"),
-    hex: "#6c7565",
-    barColor: "#d1e65bff"
 },
 {
     title: "Be Alright",
     artist: "Evan Craft, Danny Gokey, Redimi2",
     src: "songs/Be Alright.mp3",
     cover: getMp3Art("songs/Be Alright.mp3"),
-    hex: "#443124",
-    barColor: "#acc508d9",
     video: "videos/Redimi3.mp4"
 },
 {
@@ -1044,8 +876,6 @@ const playlist = [
     artist: "Funky, Alex Zurdo",
     src: "songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Eres Mi Bendicion (feat. Alex Zurdo) - Funky.mp3"),
-    hex: "#484060",
-    barColor: "979ec9d9"
 },
 {
     title: "Pentagrama",//125
@@ -1066,32 +896,24 @@ const playlist = [
     artist: "Alex Campos/Redimi2",
     src: "songs/soldado.mp3",
     cover: getMp3Art("songs/soldado.mp3"),
-    hex: "#525252",
-    barColor: "#887f9dff"
 },
 {
     title: "Todo Lo Has Cambiado",
     artist: "Danilo Montero/Su Presencia/Thalles Roberto/Victoria Montero",
     src: "songs/Cambiado.mp3",
     cover: getMp3Art("songs/Cambiado.mp3"),
-    hex: "#9E1F10",
-    barColor: "#7de6f9ff"
 },
 {
     title: "Cuando Yo Te Conocí",
     artist: "Alex Zurdo",
     src: "songs/Cuando.mp3",
     cover: getMp3Art("songs/Cuando.mp3"),
-    hex: "#A81A77",
-    barColor: "#1aa8a6ff"
 },
 {
     title: "Tú Me Llamas (feat. Musiko)",//130
     artist: "Deluz/Musiko",
     src: "songs/llamas.mp3",
     cover: getMp3Art("songs/llamas.mp3"),
-    hex: "#64362E",
-    barColor: "#de9444ff"
 },
 {
     title: "Soñe",
@@ -1157,24 +979,18 @@ const playlist = [
     artist: "Generación 12/Musiko/Stefy Espinosa",
     src: "songs/SpotiDownloader.com - Es por Fe - Generación 12.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Es por Fe - Generación 12.mp3"),
-    hex: "#77676F",
-    barColor: "#eecbddd8",
 },
 {
     title: "Si Puedes Creer",
     artist: "Musiko/Majo y Dan",
     src: "songs/Si Puedes Creer.mp3",
     cover: getMp3Art("songs/Si Puedes Creer.mp3"),
-    hex: "#C31307",
-    barColor: "#e7c20cff"
 },
 {
     title: "Lo Que Pasó Pasó",
     artist: "Musiko/Pedro Pablo Quintero",
     src: "songs/SpotiDownloader.com - Lo Que Pasó Pasó - Musiko.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Lo Que Pasó Pasó - Musiko.mp3"),
-    hex: "#EE3F2F",
-    barColor: "#f6beb9",
     lrc: "LRC files/Lo Que Paso Paso.lrc",
 },
 {
@@ -1182,16 +998,12 @@ const playlist = [
     artist: "La Feria Oficial/Majo y Dan",
     src: "songs/song25.mp3",
     cover: getMp3Art("songs/song25.mp3"),
-    hex: "#683037",
-    barColor: "#306854ff"
 },
 {
     title: "El Secreto",
     artist: "Majo y Dan",
     src: "songs/song26.mp3",
     cover: getMp3Art("songs/song26.mp3"),
-    hex: "#473F27",
-    barColor: "#e7c663ff"
 },
 {
     title: "Vida Encontré",//145
@@ -1206,24 +1018,18 @@ const playlist = [
     artist: "Majo y Dan",
     src: "songs/Volverás.mp3",
     cover: getMp3Art("songs/Volverás.mp3"),
-    hex: "#727564",
-    barColor: "#7a9737ff"
 },
 {
     title: "Juró Volver",
     artist: "Majo y Dan",
     src: "songs/song10 (1).mp3",
     cover: getMp3Art("songs/song10 (1).mp3"),
-    hex: "#1F2D4D",
-    barColor: "#3f6dd8ff"
 },
 {
     title: "no te vas",
     artist: "PRISMA Más Vida/Majo y Dan",
     src: "songs/song9 (1).mp3",
     cover: getMp3Art("songs/song9 (1).mp3"),
-    hex: "#36463E",
-    barColor: "#56cb7fff"
 },
   /*CHRISTMAS SONGS
   {
@@ -1231,29 +1037,24 @@ const playlist = [
     artist: "Un Corazón",
     src: "songs/nacido.mp3",
     cover: "images/nacido.jpg",
-    hex: "#367DBA"
   },
   {
     title: "Gloria en las Alturas",
     artist: "Jonathan & Sarah Jerez",
     src: "songs/gloria.mp3",
     cover: "images/gloria.jpg",
-    hex: "#88979F"
   },
   {
     title: "Medley Navideño",
     artist: "Los Hermanos Osorio, Evelyn Edith GT",
     src: "songs/medley.mp3",
     cover: "images/medley.png",
-    hex: "#1a3c14ff"
   },*/
 {
     title: "En Las Penas de Mi Alma Ft. Los Voceros de Cristo",//149
     artist: "Los Milagros de Cristo/Los Voceros de Cristo",
     src: "songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3",
     cover: getMp3Art("songs/Los Milagros de Cristo ft. Los Voceros de Cristo - En Las Penas de Mi Alma - 35 Años (En Vivo)_320p.mp3"),
-    hex: "#1e233f",
-    barColor: "#041ec4d7",
     video: "videos/Voceros3.mp4",
 },
 {
@@ -1261,24 +1062,18 @@ const playlist = [
     artist: "Leonel Tuchez",
     src: "songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Salmo 23 - Leonel Tuchez.mp3"),
-    hex: "#9E9698",
-    barColor: "#8fdac3"
 },
 {
     title: "Esta Cayendo",
     artist: "Jose Luis Reyes",
     src: "songs/SpotiDownloader.com - Esta Cayendo - Jose Luis Reyes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Esta Cayendo - Jose Luis Reyes.mp3"),
-    hex: "#5E5759",
-    barColor: "#cfc978"
 },
 {
     title: "BUENA ONDA",//152
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - BUENA ONDA - Redimi2.mp3"),
-    hex: "#4d372cff",
-    barColor: "#fd7b3aff",
     video: "videos/Redimi6.mp4",
 },
 {
@@ -1286,8 +1081,6 @@ const playlist = [
     artist: "Redimi2/Ander Brock",
     src: "songs/SpotiDownloader.com - TENGO EL DON - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - TENGO EL DON - Redimi2.mp3"),
-    hex: "#633c29",
-    barColor: "#fd7b3ad8",
     video: "videos/Redimi5.mp4",
 },
 {
@@ -1295,24 +1088,18 @@ const playlist = [
     artist: "Redimi2/Distrito Royal/Samantha Kate",
     src: "songs/SpotiDownloader.com - Abba - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Abba - Redimi2.mp3"),
-    hex: "#1b5d9f",
-    barColor: "#f7cd24ff",
 },
 {
     title: "Bacha Drill",//155
     artist: "Redimi2/Madiel Lara",
     src: "songs/SpotiDownloader.com - Bacha Drill - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Bacha Drill - Redimi2.mp3"),
-    hex: "#0876EE",
-    barColor: "#fd6937ff"
 },
 {
     title: "Colores",
     artist: "Redimi2/Funky/Alex Zurdo",
     src: "songs/SpotiDownloader.com - Colores - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Colores - Redimi2.mp3"),
-    hex: "#6E9E9E",
-    barColor: "#ffe96dff",
     video: "videos/Redimi7.mp4",
 },
 {
@@ -1320,24 +1107,18 @@ const playlist = [
     artist: "Redimi2/Funky/Alex Zurdo/Indiomar",
     src: "songs/SpotiDownloader.com - A Pesar de Mí - Live - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - A Pesar de Mí - Live - Redimi2.mp3"),
-    hex: "#E47436",
-    barColor: "#ff9c72ff"
 },
 {
     title: "Esto Suena Bien",
     artist: "Redimi2/Alex Zurdo/Oveja Cosmica",
     src: "songs/SpotiDownloader.com - Esto Suena Bien - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Esto Suena Bien - Redimi2.mp3"),
-    hex: "#53423c",
-    barColor: "#aa8a72ff"
 },
 {
     title: "Quita y Pon",//159
     artist: "Alex Zurdo/Funky/Redimi2/Peter Metivier",
     src: "songs/SpotiDownloader.com - Quita y Pon (feat. Peter Metivier) - Alex Zurdo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Quita y Pon (feat. Peter Metivier) - Alex Zurdo.mp3"),
-    hex: "#402727",
-    barColor: "#fbf5d7ff",
     video: "videos/AlexZurdo1.mp4",
 },
   {
@@ -1345,24 +1126,18 @@ const playlist = [
     artist: "Redimi2, Samantha Kate",
     src: "songs/SpotiDownloader.com - Replay - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Replay - Redimi2.mp3"),
-    hex: "#747474",
-    barColor: "#a397bcff"
   },
   {
     title: "Exagerado amor",
     artist: "Redimi2, Evan Craft, Distrito Royal, Camila Sofía",
     src: "songs/SpotiDownloader.com - Exagerado amor - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Exagerado amor - Redimi2.mp3"),
-    hex: "#6B8681",
-    barColor: "#ac9250ff",
   },
   {
     title: "¿A quién iré?",
     artist: "Redimi2/Kim Richards/Distrito Royal/Melody Jaine",
     src: "songs/SpotiDownloader.com - ¿A quién iré_ - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - ¿A quién iré_ - Redimi2.mp3"),
-    hex: "#6B8681",
-    barColor: "#ac9250ff",
   },
   {
     title: "Por Siempre",
@@ -1376,8 +1151,6 @@ const playlist = [
     artist: "Redimi2/Distrito Royal",
     src: "songs/SpotiDownloader.com - Jesús viral - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Jesús viral - Redimi2.mp3"),
-    hex: "#6B8681",
-    barColor: "#ac9250ff",
   },
   {
     title: "Como David", //165
@@ -1391,16 +1164,12 @@ const playlist = [
     artist: "Nacho/Redimi2/Alex Zurdo",
     src: "songs/SpotiDownloader.com - Alabaré - Nacho.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Alabaré - Nacho.mp3"),
-    hex: "#B83018",
-    barColor: "#ffda5f",
   },
   {
     title: "Lo Que Se Va",
     artist: "Alex Zurdo/Gabriel EMC",
     src: "songs/SpotiDownloader.com - Lo Que Se Va - Alex Zurdo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Lo Que Se Va - Alex Zurdo.mp3"),
-    hex: "#9E1010",
-    barColor: "#690000",
     video: "videos/AlexZurdo2.mp4"
   },
   {
@@ -1408,24 +1177,18 @@ const playlist = [
     artist: "Alex Zurdo/Funky/Almighty/Redimi2",
     src: "songs/SpotiDownloader.com - ¿Pa' Qué Preguntan_ - Remix - Alex Zurdo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - ¿Pa' Qué Preguntan_ - Remix - Alex Zurdo.mp3"),
-    hex: "#00A6B7",
-    barColor: "#c2ec07",
   },
   {
     title: "De Aquí No Me Voy",
     artist: "Rescate/Redimi2",
     src: "songs/SpotiDownloader.com - De Aquí No Me Voy - Rescate.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - De Aquí No Me Voy - Rescate.mp3"),
-    hex: "#203040",
-    barColor: "#d3d7ff",
   },
   {
     title: "SIMPLICIDAD", //170
     artist: "Funky/Vaes",
     src: "songs/SpotiDownloader.com - SIMPLICIDAD - Funky.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - SIMPLICIDAD - Funky.mp3"),
-    hex: "#7D9E9E",
-    barColor: "#c7fcfc",
     video: "videos/Funky1.mp4"
   },
   {
@@ -1433,24 +1196,18 @@ const playlist = [
     artist: "Funky/Marcela Gandara",
     src: "songs/SpotiDownloader.com - Correré a Ti - Funky.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Correré a Ti - Funky.mp3"),
-    hex: "#9D0716",
-    barColor: "#ff4a09",
   },
   {
     title: "Cristo Es Necesario",
     artist: "Danny Gokey/Christine D'Clario",
     src: "songs/SpotiDownloader.com - Cristo Es Necesario - Danny Gokey.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Cristo Es Necesario - Danny Gokey.mp3"),
-    hex: "#864776",
-    barColor: "#747374",
   },
   {
     title: "Cada mañana",
     artist: "Sarai Rivera",
     src: "songs/SpotiDownloader.com - Cada mañana - Sarai Rivera.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Cada mañana - Sarai Rivera.mp3"),
-    hex: "#676664",
-    barColor: "#255d26", 
   },
   {
     title: "Espiritu Santo",
@@ -1487,72 +1244,54 @@ const playlist = [
     artist: "Marilú Orantes",
     src: "songs/SpotiDownloader.com - No Hay Nadie Como Cristo - Marilú Orantes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - No Hay Nadie Como Cristo - Marilú Orantes.mp3"),
-    hex: "#CA3DE9",
-    barColor: "#ff2121",
   }, // #773830 && #8A8185
   {
     title: "Mi triunfo con Jesús", //180
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Mi triunfo con Jesús - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Mi triunfo con Jesús - Los Voceros de Cristo.mp3"),
-    hex: "#3A3436",
-    barColor: "#726065ff"
   },
   {
     title: "Hay una Ciudad",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Hay una ciudad - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Hay una ciudad - Los Voceros de Cristo.mp3"),
-    hex: "#582820",
-    barColor: "#941b06ff"
   },
   {
     title: "Cuando hablas tú",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Cuando hablas tú - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Cuando hablas tú - Los Voceros de Cristo.mp3"),
-    hex: "#783800",
-    barColor: "#bf5900ff"
   },
   {
     title: "Sinónimo de Amar",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Sinónimo de Amar - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Sinónimo de Amar - Los Voceros de Cristo.mp3"),
-    hex: "#582820",
-    barColor: "#941b06ff"
   },
   {
     title: "Triunfante hasta el final",//185
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - Triunfante hasta el final - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Triunfante hasta el final - Los Voceros de Cristo.mp3"),
-    hex: "#91190A",
-    barColor: "#d11800ff"
   },
   {
     title: "Sodoma y Gomora",
     artist: "Los Voceros de Cristo",
     src: "songs/SpotiDownloader.com - La Destrucción de Sodoma - Los Voceros de Cristo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - La Destrucción de Sodoma - Los Voceros de Cristo.mp3"),
-    hex: "#773830",
-    barColor: "#f03d26"
   },
   {
     title: "La niña de los ojos de Dios",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - La niña de los ojos de Dios - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - La niña de los ojos de Dios - Redimi2.mp3"),
-    hex: "#6B8681",
-    barColor: "#ac9250ff",
   }, 
   {
     title: "Ama A Dios Y A Tu Vecino",//187
     artist: "Danny Gokey, Evan Craft, Redimi2",
     src: "songs/SpotiDownloader.com - Ama A Dios Y A Tu Vecino - Danny Gokey.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Ama A Dios Y A Tu Vecino - Danny Gokey.mp3"),
-    hex: "#403038",
-    barColor: "#ffc863",
   }, 
   {
     title: "Lara la la la la",
@@ -1580,8 +1319,6 @@ const playlist = [
     artist: "Josh Gamez, Musiko, Jay Kalyl, Lizzy Parra, Pauneto",
     src: "songs/SpotiDownloader.com - De Buenas (Remix) - Josh Gamez.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - De Buenas (Remix) - Josh Gamez.mp3"),
-    hex: "#203858",
-    barColor: "#4a83ce",
     video: "videos/JoshGamez1.mp4",
   }, 
   {
@@ -1589,8 +1326,6 @@ const playlist = [
     artist: "MR. Yeison, Lizzy Parra, Oveja Cosmica",
     src: "songs/SpotiDownloader.com - Lo Tengo - MR. Yeison.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Lo Tengo - MR. Yeison.mp3"),
-    hex: "#CA2912",
-    barColor: "#ce854e",
   }, 
   {
     title: "Kings And Queens",
@@ -1604,24 +1339,18 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Empírico - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Empírico - Redimi2.mp3"),
-    hex: "#535353",
-    barColor: "#a3a3a3",
   }, 
   {
     title: "Banco Del Cielo",//195
     artist: "Ander Bock, MR. Yeison, Odanis BSK",
     src: "songs/SpotiDownloader.com - Banco Del Cielo - Ander Bock.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Banco Del Cielo - Ander Bock.mp3"),
-    hex: "#903008",
-    barColor: "#fff82d",
   }, 
   {
     title: "Por Un Like",
     artist: "Redimi2, Lizzy Parra, Angel Brown",
     src: "songs/SpotiDownloader.com - Por Un Like - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Por Un Like - Redimi2.mp3"),
-    hex: "#53423c",
-    barColor: "#aa8a72ff"
   }, 
   {
     title: "Los Jordan",
@@ -1635,40 +1364,30 @@ const playlist = [
     artist: "Redimi2, Ivan",
     src: "songs/SpotiDownloader.com - Alegría - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Alegría - Redimi2.mp3"),
-    hex: "#747474",
-    barColor: "#a397bcff"
   }, 
   {
     title: "Luz y Sal (ft. Edward Sanchez)",
     artist: "Funky, Edward Sanchez",
     src: "songs/SpotiDownloader.com - Luz y Sal (feat. Edward Sanchez) - Funky.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Luz y Sal (feat. Edward Sanchez) - Funky.mp3"),
-    hex: "#7D9BB2",
-    barColor: "#84c7f9",
   }, 
   {
     title: "El Sanfuanzon",//200
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - El Sanfuanzon - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - El Sanfuanzon - Redimi2.mp3"),
-    hex: "#979797",
-    barColor: "#c1c1c1",
   }, 
   {
     title: "días buenos",
     artist: "Mireyli Rosa, Musiko",
     src: "songs/días buenos_spotdown.org.mp3",
     cover: getMp3Art("songs/días buenos_spotdown.org.mp3"),
-    hex: "#576FAF",
-    barColor: "#87e549",
   }, 
   {
     title: "¿Quien te dijo?",
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - ¿Quien te dijo_ - Madiel Lara.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - ¿Quien te dijo_ - Madiel Lara.mp3"),
-    hex: "#C98B00",
-    barColor: "#fcb400",
     video: "videos/MadielLara1.mp4",
   }, 
   {
@@ -1683,8 +1402,6 @@ const playlist = [
     artist: "Madiel Lara",
     src: "songs/SpotiDownloader.com - DIOS HA SIDO BUENO - Madiel Lara.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - DIOS HA SIDO BUENO - Madiel Lara.mp3"),
-    hex: "#602018",
-    barColor: "#e88930dd",
     video: "videos/MadielLara3.mp4",
     lrc: "LRC files/DIOS HA SIDO BUENO - Madiel Lara.lrc",
   }, 
@@ -1700,8 +1417,6 @@ const playlist = [
     artist: "Kike Pavón, La Feria Oficial",
     src: "songs/SpotiDownloader.com - Día D - Kike Pavón.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Día D - Kike Pavón.mp3"),
-    hex: "#535353",
-    barColor: "#919191",
     video: "videos/KikePavon1.mp4",
   }, 
   {
@@ -1709,24 +1424,18 @@ const playlist = [
     artist: "Kike Pavón, Ander Bock",
     src: "songs/SpotiDownloader.com - Torpe Corazón (feat. Ander Bock) - Kike Pavón.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Torpe Corazón (feat. Ander Bock) - Kike Pavón.mp3"),
-    hex: "#582018",
-    barColor: "#ffdf2b",
   }, 
   {
     title: "Una Nueva Cancion",
     artist: "Alex Zurdo, Kike Pavón",
     src: "songs/SpotiDownloader.com - Una Nueva Cancion - Alex Zurdo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Una Nueva Cancion - Alex Zurdo.mp3"),
-    hex: "#870000",
-    barColor: "#B40000",
   }, 
   {
     title: "Ganas De Vivir (Remix)",
     artist: "Kike Pavón, Alex Zurdo, Manny Montes",
     src: "songs/SpotiDownloader.com - Ganas De Vivir (Remix) - Kike Pavón.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Ganas De Vivir (Remix) - Kike Pavón.mp3"),
-    hex: "#D15200",
-    barColor: "#ff2b2b",
   }, 
   {
     title: "Abre los Cielos",//210
@@ -1739,80 +1448,60 @@ const playlist = [
     artist: "Musiko, Jay Kalyl, Lizzy Parra, Omy Alka",
     src: "songs/SpotiDownloader.com - Suficiente (Remix) - Musiko.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Suficiente (Remix) - Musiko.mp3"),
-    hex: "#AD1F1F",
-    barColor: "#ff2b91",
   }, 
   {
     title: "Tu Me Llamas (Remix)",
     artist: "Deluz, Alex Campos, Oveja Cosmica, La Reforma, Gilberto Daza",
     src: "songs/SpotiDownloader.com - Tu Me Llamas (Remix) - Deluz.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Tu Me Llamas (Remix) - Deluz.mp3"),
-    hex: "#D48600",
-    barColor: "#ffb007",
   }, 
   {
     title: "De Buenas",
     artist: "Josh Gamez, Musiko",
     src: "songs/SpotiDownloader.com - De Buenas - Josh Gamez.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - De Buenas - Josh Gamez.mp3"),
-    hex: "#283840",
-    barColor: "#4f98bc",
   }, 
   {
     title: "Acá Entre Nos",//214
     artist: "Alex Zurdo, Funky, Redimi2",
     src: "songs/SpotiDownloader.com - Acá Entre Nos - Alex Zurdo.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Acá Entre Nos - Alex Zurdo.mp3"),
-    hex: "#402727",
-    barColor: "#fbf5d7ff",
   }, 
   {
     title: "Armonía",//215
     artist: "Un Corazón, Lead",
     src: "songs/SpotiDownloader.com - Armonía - Un Corazón.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Armonía - Un Corazón.mp3"),
-    hex: "#DB3A1D",
-    barColor: "#a236d8ff"
   }, 
   {
     title: "Dame Dame Dame",
     artist: "Marilú Orantes",
     src: "songs/Dame Dame Dame_320p.mp3",
     cover: getMp3Art("songs/Dame Dame Dame_320p.mp3"),
-    hex: "#D01038",
-    barColor: "#ff89eb",
   }, 
   {
     title: "Los Frutos del Espíritu",
     artist: "Marilú Orantes",
     src: "songs/💖Los Frutos del Espíritu 🕊️ Música Cristiana Para Niños 🪴 Marilú Y Los Niños_320p.mp3",
     cover: getMp3Art("songs/💖Los Frutos del Espíritu 🕊️ Música Cristiana Para Niños 🪴 Marilú Y Los Niños_320p.mp3"),
-    hex: "#1EA4C4",
-    barColor: "#42ff61",
   }, 
   {
     title: "El Agua Cristalina",//218
     artist: "Julio Elias",
     src: "songs/El Agua Cristalina_320p.mp3",
     cover: getMp3Art("songs/El Agua Cristalina_320p.mp3"),
-    hex: "#3F97CE",
-    barColor: "#77cbff",
   }, 
   {
     title: "Como El Águila Real",
     artist: "Manuel Bonilla",
     src: "songs/SpotiDownloader.com - Como El Águila Real - Manuel Bonilla.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Como El Águila Real - Manuel Bonilla.mp3"),
-    hex: "#882000",
-    barColor: "#e07757",
   }, 
   {
     title: "Be Alright (Remix)", //220
     artist: "Evan Craft, KB, Sam Rivera",
     src: "songs/SpotiDownloader.com - Be Alright - Remix - Evan Craft.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Be Alright - Remix - Evan Craft.mp3"),
-    hex: "#535353",
-    barColor: "#a7a7a7",
     video: "videos/EvanCraft1.mp4",
   }, 
   {
@@ -1820,8 +1509,6 @@ const playlist = [
     artist: "Un Corazón, Louie Abrego, Kim Richards, Andy Mineo",
     src: "songs/SpotiDownloader.com - Ríos de Luz - Un Corazón.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Ríos de Luz - Un Corazón.mp3"),
-    hex: "#00AD63",
-    barColor: "#5dffc9",
     video: "videos/UnCorazon1.mp4",
   }, 
   {
@@ -1829,96 +1516,72 @@ const playlist = [
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - La Praxis Freestyle - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - La Praxis Freestyle - Redimi2.mp3"),
-    hex: "#535353",
-    barColor: "#999999",
   }, 
   {
     title: "Quién Contra Mí",
     artist: "Redimi2, El Leo Pa",
     src: "songs/SpotiDownloader.com - Quién Contra Mí - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Quién Contra Mí - Redimi2.mp3"),
-    hex: "#53423c",
-    barColor: "#aa8a72ff"
   }, 
   {
     title: "Bailando",
     artist: "Redimi2",
     src: "songs/SpotiDownloader.com - Bailando - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Bailando - Redimi2.mp3"),
-    hex: "#187098",
-    barColor: "#5bb9f4",
   }, 
   {
     title: "Santo", //225
     artist: "Redimi2, Montesanto",
     src: "songs/SpotiDownloader.com - Santo - Redimi2.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Santo - Redimi2.mp3"),
-    hex: "#607F90",
-    barColor: "#95ceed",
   }, 
   {
     title: "Aunque No Lo Crean",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Aunque No Lo Crean - Agustín Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Aunque No Lo Crean - Agustín Amador.mp3"),
-    hex: "#5857A7",
-    barColor: "#aba9f7",
   }, 
   {
     title: "Con Cristo Me Basta",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Con Cristo Me Basta - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Con Cristo Me Basta - Agustin Amador.mp3"),
-    hex: "#456426",
-    barColor: "#a6dc71",
   }, 
   {
     title: "Incontable Maravilla",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Incontable Maravilla - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Incontable Maravilla - Agustin Amador.mp3"),
-    hex: "#1F678F",
-    barColor: "#69b9e4",
   }, 
   {
     title: "La Bonanza", //229
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - La Bonanza - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - La Bonanza - Agustin Amador.mp3"),
-    hex: "#456426",
-    barColor: "#a6dc71",
   },  
   {
     title: "Primero Dios, Vol. 5", //230
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Primero Dios, Vol. 5 - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Primero Dios, Vol. 5 - Agustin Amador.mp3"),
-    hex: "#B99241",
-    barColor: "#e2bd71",
   },  
   {
     title: "Herencia en el Cielo",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Herencia en el Cielo - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Herencia en el Cielo - Agustin Amador.mp3"),
-    hex: "#3087D0",
-    barColor: "#6ab7f7",
   },  
   {
     title: "No Vayas a Olvidar",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - No Vayas a Olvidar - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - No Vayas a Olvidar - Agustin Amador.mp3"),
-    hex: "#989898",
-    barColor: "#b8c0c6",
   },  
   {
     title: "Mi Pensamiento",
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Mi Pensamiento - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Mi Pensamiento - Agustin Amador.mp3"),
-    hex: "#7F000F",
-    barColor: "#af1a2b",
   },  
   {
     title: "Gravy",
@@ -1950,8 +1613,6 @@ const playlist = [
     artist: "Un Corazón, Louie Abrego",
     src: "songs/Pródigo.mp3",
     cover: getMp3Art("songs/Pródigo.mp3"),
-    hex: "#62A2AB",
-    barColor: "#9ec3c8",
     video: "videos/UnCorazon2.mp4",
   }, 
   {
@@ -1959,8 +1620,6 @@ const playlist = [
     artist: "Seeiji, Vaes",
     src: "songs/SpotiDownloader.com - HAY UN DIOS - REMIX - Seeiji.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - HAY UN DIOS - REMIX - Seeiji.mp3"),
-    hex: "#F76800",
-    barColor: "#ffaa6d",
     video: "videos/Seeji1.mp4",
   }, 
   {
@@ -1968,8 +1627,6 @@ const playlist = [
     artist: "Vaes, Kike Pavón",
     src: "songs/SpotiDownloader.com - serendipia - Vaes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - serendipia - Vaes.mp3"),
-    hex: "#BF4737",
-    barColor: "#f38b7d",
     video: "videos/Vaes1.mp4",
   }, 
   {
@@ -1977,8 +1634,6 @@ const playlist = [
     artist: "Vaes, Kike Pavón, Madiel Lara, Rubinsky Rbk, Dariana",
     src: "songs/SpotiDownloader.com - Serendipia - Remix - Vaes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Serendipia - Remix - Vaes.mp3"),
-    hex: "#EF6710",
-    barColor: "#f9a26c",
     video: "videos/Vaes2.mp4",
     lrc: "LRC files/Serendipia - Remix - Vaes.lrc"
   }, 
@@ -1987,8 +1642,6 @@ const playlist = [
     artist: "David Hernandez",
     src: "songs/SpotiDownloader.com - Sé que me amas - David Hernandez.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Sé que me amas - David Hernandez.mp3"),
-    hex: "#F56D2E",
-    barColor: "#ff996a",
     video: "videos/DavidHernandez1.mp4",
   }, 
   {
@@ -1996,24 +1649,18 @@ const playlist = [
     artist: "Dariana",
     src: "songs/SpotiDownloader.com - Tardes Juntos - Dariana.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Tardes Juntos - Dariana.mp3"),
-    hex: "#8C93D2",
-    barColor: "#afb7ff",
   }, 
   {
     title: "Un día a la vez",
     artist: "Majo y Dan",
     src: "songs/SpotiDownloader.com - Un día a la vez - Majo y Dan.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Un día a la vez - Majo y Dan.mp3"),
-    hex: "#004860",
-    barColor: "#398ca8",
   }, 
   {
     title: "Latido De Mi Pecho", //245
     artist: "Zomoz, Dariana, Samu Robles, LUISFER, Silvia Jimenez",
     src: "songs/SpotiDownloader.com - Latido De Mi Pecho - Zomoz.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Latido De Mi Pecho - Zomoz.mp3"),
-    hex: "#103888",
-    barColor: "#6f9aef",
     video: "videos/Zomoz1.mp4",
   }, 
   {
@@ -2021,8 +1668,6 @@ const playlist = [
     artist: "Zomoz, Silvia Jimenez, Samu Robles, LUISFER, Dariana",
     src: "songs/SpotiDownloader.com - Tranquilo - Zomoz.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Tranquilo - Zomoz.mp3"),
-    hex: "#EA7300",
-    barColor: "#f89f57",
     video: "videos/Zomoz2.mp4",
   }, 
   {
@@ -2030,8 +1675,6 @@ const playlist = [
     artist: "Josh Gamez",
     src: "songs/SpotiDownloader.com - Como tu a mi - Josh Gamez.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Como tu a mi - Josh Gamez.mp3"),
-    hex: "#9F9396",
-    barColor: "#c1c2cc",
     video: "videos/JoshGamez2.mp4",
   }, 
   {
@@ -2039,16 +1682,12 @@ const playlist = [
     artist: "Danilo Montero",
     src: "songs/SpotiDownloader.com - El Señor es mi pastor - Danilo Montero.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - El Señor es mi pastor - Danilo Montero.mp3"),
-    hex: "#E96A92",
-    barColor: "#e398b0",
   }, 
   {
     title: "Fuerzas Pa'",
     artist: "Vaes",
     src: "songs/SpotiDownloader.com - Fuerzas Pa' - Vaes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Fuerzas Pa' - Vaes.mp3"),
-    hex: "#EE5757",
-    barColor: "#e68585",
     video: "videos/Vaes3.mp4",
   }, 
   {
@@ -2056,16 +1695,12 @@ const playlist = [
     artist: "Madiel Lara, Redimi2",
     src: "songs/SpotiDownloader.com - Cristo En La Casa - Madiel Lara.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Cristo En La Casa - Madiel Lara.mp3"),
-    hex: "#8C060A",
-    barColor: "#b83755",
   }, 
   {
     title: "Asi Es Tu Amor",
     artist: "Vaes",
     src: "songs/SpotiDownloader.com - Asi Es Tu Amor - Vaes.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Asi Es Tu Amor - Vaes.mp3"),
-    hex: "#B05010",
-    barColor: "#d18552",
     video: "videos/Vaes4.mp4",
   }, 
   {
@@ -2073,8 +1708,6 @@ const playlist = [
     artist: "Agustin Amador",
     src: "songs/SpotiDownloader.com - Solo a Dios - Agustin Amador.mp3",
     cover: getMp3Art("songs/SpotiDownloader.com - Solo a Dios - Agustin Amador.mp3"),
-    hex: "#456426",
-    barColor: "#a6dc71",
   }, 
   {
     title: "Virtuosa",
