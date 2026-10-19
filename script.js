@@ -60,31 +60,90 @@ function extractMp3Art(src) {
 }
 
 
-// Resolves every pending cover string into its actual image URL.
-async function loadEmbeddedAlbumCovers() {
-    const songs = playlist.filter(song =>
+// Ensures artwork is extracted only when a song needs it.
+async function ensureMp3Art(song) {
+    // Artwork has already been extracted.
+    if (
         typeof song.cover === "string" &&
-        song.cover.startsWith("mp3-art-pending:")
-    );
-
-    // Process four songs at a time to limit simultaneous requests.
-    const concurrency = 4;
-
-    for (let i = 0; i < songs.length; i += concurrency) {
-        const batch = songs.slice(i, i + concurrency);
-
-        await Promise.all(
-            batch.map(async song => {
-                const src = song.cover.slice("mp3-art-pending:".length);
-                song.cover = await extractMp3Art(src);
-            })
-        );
+        song.cover.startsWith("blob:")
+    ) {
+        return song.cover;
     }
 
-    console.log(
-        `Loaded embedded artwork for ${songs.length} songs.`
-    );
+    // This song uses our embedded-art extraction system.
+    if (
+        typeof song.cover !== "string" ||
+        !song.cover.startsWith("mp3-art-pending:")
+    ) {
+        return song.cover;
+    }
+
+    const src = song.cover.slice("mp3-art-pending:".length);
+
+    try {
+        const imageUrl = await extractMp3Art(src);
+
+        // Save the result directly on the song.
+        song.cover = imageUrl;
+
+        return imageUrl;
+    } catch (error) {
+        console.error(
+            `Could not load artwork for "${song.title}":`,
+            error
+        );
+
+        return null;
+    }
 }
+
+
+// Loads a song's artwork into an image element on demand.
+async function setSongCover(img, song) {
+    if (!img || !song) return;
+
+    // Track which song this image element currently represents.
+    const requestedSrc = song.src;
+    img.dataset.mp3ArtSource = requestedSrc;
+
+    const imageUrl = await ensureMp3Art(song);
+
+    if (!imageUrl) return;
+
+    // Prevent an older request from overwriting a newer song's cover.
+    if (img.dataset.mp3ArtSource !== requestedSrc) return;
+
+    img.src = imageUrl;
+}
+
+
+function updateMediaSessionMetadata(song) {
+    if (!('mediaSession' in navigator)) return;
+
+    ensureMp3Art(song).then(imageUrl => {
+        // Ignore failed extraction or an outdated song request.
+        if (!imageUrl || playlist[currentSong] !== song) return;
+
+        navigator.mediaSession.metadata = new MediaMetadata({
+            title: song.title,
+            artist: song.artist,
+            artwork: [
+                { src: imageUrl, sizes: '96x96' },
+                { src: imageUrl, sizes: '128x128' },
+                { src: imageUrl, sizes: '192x192' },
+                { src: imageUrl, sizes: '256x256' },
+                { src: imageUrl, sizes: '384x384' },
+                { src: imageUrl, sizes: '512x512' }
+            ]
+        });
+    }).catch(error => {
+        console.error(
+            `Could not update media metadata for "${song.title}":`,
+            error
+        );
+    });
+}
+
 
 
 // Release temporary image resources when the page is being unloaded.
@@ -2704,7 +2763,7 @@ async function getSongColors(imageUrl) {
 
       // Allow different shades of related colors
       // Only correct colors from distinctly different hue families
-      if (hueDistance > 0) {
+      if (hueDistance > 5) {
           // Keep the dark color's hue, but make it subtly brighter
           const newLightness = Math.min(0.72, Math.max(dL + 0.12, 0.30));
 
@@ -3373,8 +3432,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function buildLibraryPlaylist(libKey) {
-    await loadEmbeddedAlbumCovers();
-
     libraryPlaylistEl.innerHTML = '';
 
     const order = playlistOrder[libKey];
@@ -3399,27 +3456,28 @@ document.addEventListener('DOMContentLoaded', () => {
       li.className = 'library-playlist-item';
 
       li.innerHTML = `
-  <img src="${song.cover}" class="libraryPlaylist-cover" loading="lazy">
+        <img class="libraryPlaylist-cover" loading="lazy">
 
-  <div class="libraryPlaylist-text">
-    <div class="libraryPlaylist-title">${song.title}</div>
-    <div class="libraryPlaylist-artist">${song.artist}</div>
-  </div>
+        <div class="libraryPlaylist-text">
+          <div class="libraryPlaylist-title">${song.title}</div>
+          <div class="libraryPlaylist-artist">${song.artist}</div>
+        </div>
 
-  <button class="options-btn">
-    <svg viewBox="0 0 16 16" fill="#ffffff">
-      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-    </svg>
-  </button>
-`;
+        <button class="options-btn">
+          <svg viewBox="0 0 16 16" fill="#ffffff">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg>
+        </button>
+      `;
 
-const optionsBtn = li.querySelector('.options-btn');
+      const songCoverImg = li.querySelector('.libraryPlaylist-cover');
+      setSongCover(songCoverImg, song);
 
-optionsBtn.addEventListener('click', (e) => {
-  e.stopPropagation();   // DO NOT play the song
-  openSongOptionsPopup(optionsBtn, songIndex);
+      const optionsBtn = li.querySelector('.options-btn');
 
-  
+      optionsBtn.addEventListener('click', (e) => {
+        e.stopPropagation();   // DO NOT play the song
+        openSongOptionsPopup(optionsBtn, songIndex);
 });
 
 
@@ -3564,12 +3622,16 @@ function renderQueueUI() {
   const currentItem = document.createElement('div');
   currentItem.className = 'queue-item active-queue-song';
   currentItem.innerHTML = `
-    <img src="${playlist[currentSong].cover}" class="queue-cover">
+    <img class="queue-cover">
     <div class="queue-text">
       <div>${playlist[currentSong].title} (Now Playing)</div>
       <div>${playlist[currentSong].artist}</div>
     </div>
   `;
+  setSongCover(
+    currentItem.querySelector('.queue-cover'),
+    playlist[currentSong]
+  );
   queueList.appendChild(currentItem);
   
   // Show queue items
@@ -3579,12 +3641,14 @@ function renderQueueUI() {
     const item = document.createElement('div');
     item.className = 'queue-item';
     item.innerHTML = `
-      <img src="${song.cover}" class="queue-cover">
+      <img class="queue-cover">
       <div class="queue-text">
         <div>${song.title}</div>
         <div>${song.artist}</div>
       </div>
     `;
+
+    setSongCover(item.querySelector('.queue-cover'), song);
     
     item.addEventListener('click', () => {
       // Play this song from queue
@@ -3784,12 +3848,14 @@ queue.forEach((songIndex, i) => {
   }
 
   item.innerHTML = `
-    <img src="${song.cover}" class="queue-cover">
+    <img class="queue-cover">
     <div class="queue-text">
       <div>${song.title}</div>
       <div>${song.artist}</div>
     </div>
   `;
+
+  setSongCover(item.querySelector('.queue-cover'), song);
 
   item.addEventListener('click', () => {
     queueIndex = i;
@@ -3797,7 +3863,7 @@ queue.forEach((songIndex, i) => {
     renderQueueUI();
   });
 
-  queueContent.appendChild(item);
+  queueContent.appendChild(item); //not sure if this is even used at all
 });
 
 
@@ -3979,46 +4045,38 @@ function loadSong(index) {
   artist.textContent = song.artist;
   openPlaylistBtn.style.opacity = 1;
 
-  // Update cover immediately
-  cover.src = song.cover;
-  videoCover.src = song.cover;
-  
-  // Mini player
-  miniCover.src = song.cover;
+  //load embedded artwork on demand
+  setSongCover(cover, song);
+  setSongCover(videoCover, song);
+  setSongCover(miniCover, song);
+
+  //update mini player
   miniTitle.textContent = song.title;
   miniArtist.textContent = song.artist;
   updateActiveSong();
 
-  getSongColors(song.cover).then(colors => {
-  if(IS_DESKTOP){
-    updatePlaylistGradient(colors.dark);
-    currentBarColor = colors.light;
-    lyricsSection.style.background = colors.vibrant;
-    lyricsScreen.style.background = colors.vibrant
-    openLyricsBtn.style.color = colors.vibrant;
-  } else {
-    updatePlaylistGradient(colors.dark);
-    currentBarColor = colors.light;
-    lyricsSection.style.background = colors.vibrant;
-    lyricsScreen.style.background = colors.vibrant;
-    openLyricsBtn.style.color = colors.vibrant;
-  };
-});
+  ensureMp3Art(song).then(imageUrl => {
+    if (!imageUrl) return;
 
-if ('mediaSession' in navigator) {
-  navigator.mediaSession.metadata = new MediaMetadata({
-    title: song.title,
-    artist: song.artist,
-    artwork: [
-      { src: song.cover, sizes: '96x96', type: 'image/jpeg' },
-      { src: song.cover, sizes: '128x128', type: 'image/jpeg' },
-      { src: song.cover, sizes: '192x192', type: 'image/jpeg' },
-      { src: song.cover, sizes: '256x256', type: 'image/jpeg' },
-      { src: song.cover, sizes: '384x384', type: 'image/jpeg' },
-      { src: song.cover, sizes: '512x512', type: 'image/jpeg' }
-    ]
+    return getSongColors(imageUrl).then(colors => {
+      if(IS_DESKTOP){
+        updatePlaylistGradient(colors.dark);
+        currentBarColor = colors.light;
+        lyricsSection.style.background = colors.vibrant;
+        lyricsScreen.style.background = colors.vibrant
+        openLyricsBtn.style.color = colors.vibrant;
+      } else {
+        updatePlaylistGradient(colors.dark);
+        currentBarColor = colors.light;
+        lyricsSection.style.background = colors.vibrant;
+        lyricsScreen.style.background = colors.vibrant;
+        openLyricsBtn.style.color = colors.vibrant;
+      };
+    });
   });
 
+if ('mediaSession' in navigator) {
+  updateMediaSessionMetadata(song);
   // Enable playback controls on lock screen
   navigator.mediaSession.setActionHandler('play', () => audio.play());
   navigator.mediaSession.setActionHandler('pause', () => audio.pause());
@@ -4098,29 +4156,33 @@ if (usingLibraryQueue && currentLibraryQueue.length) {
   miniArtist.textContent = song.artist;
   //updateTitleScroll();
 
-  miniCover.src = song.cover;
-  videoCover.src = song.cover;
+  setSongCover(miniCover, song);
+  setSongCover(videoCover, song);
   updateActiveSong();
 
-  getSongColors(song.cover).then(colors => {
-  if(IS_DESKTOP){
-    updatePlaylistGradient(colors.dark);
-    currentBarColor = colors.light;
-    lyricsSection.style.background = colors.vibrant;
-    lyricsScreen.style.background = colors.vibrant
-    openLyricsBtn.style.color = colors.vibrant;
-  } else {
-    updatePlaylistGradient(colors.dark);
-    currentBarColor = colors.light;
-    lyricsSection.style.background = colors.vibrant;
-    lyricsScreen.style.background = colors.vibrant
-    openLyricsBtn.style.color = colors.vibrant;
-  };
-});
+  ensureMp3Art(song).then(imageUrl => {
+    if (!imageUrl) return;
 
-  // === AUDIO SETUP ===
-  audio.src = song.src;
-  audio.load();
+    return getSongColors(imageUrl).then(colors => {
+      if(IS_DESKTOP){
+        updatePlaylistGradient(colors.dark);
+        currentBarColor = colors.light;
+        lyricsSection.style.background = colors.vibrant;
+        lyricsScreen.style.background = colors.vibrant
+        openLyricsBtn.style.color = colors.vibrant;
+      } else {
+        updatePlaylistGradient(colors.dark);
+        currentBarColor = colors.light;
+        lyricsSection.style.background = colors.vibrant;
+        lyricsScreen.style.background = colors.vibrant
+        openLyricsBtn.style.color = colors.vibrant;
+      };
+    });
+  });
+
+// === AUDIO SETUP ===
+audio.src = song.src;
+audio.load();
   
 const bgVideo = document.getElementById('bg-video');
 const videoOverlay = document.getElementById('video-overlay');
@@ -4195,8 +4257,14 @@ if (song.video && !IS_DESKTOP) {
   setTimeout(() => nowPlayingCover.style.opacity = '1', 600);
 
   // animate cover if needed
-  if (animate) animateCoverChange(song.cover, direction);
-  else cover.src = song.cover;
+  if (animate) {
+    ensureMp3Art(song).then(imageUrl => {
+      if (!imageUrl) return;
+      animateCoverChange(imageUrl, direction);
+    });
+  } else {
+    setSongCover(cover, song);
+  }
 
   // start visualizer
   startVisualizer();
@@ -4208,43 +4276,25 @@ if (song.video && !IS_DESKTOP) {
     audio.play().catch(() => {});
   }
 
-    if (animate) {
-    animateCoverChange(song.cover, direction);
+  if (animate) {
+    ensureMp3Art(song).then(imageUrl => {
+      if (!imageUrl) return;
+      animateCoverChange(imageUrl, direction);
+    });
   } else {
-    cover.src = song.cover;
+    setSongCover(cover, song);
   }
 
-if ('mediaSession' in navigator) {
-  navigator.mediaSession.metadata = new MediaMetadata({
-    title: song.title,
-    artist: song.artist,
-    artwork: [
-      { src: song.cover, sizes: '96x96', type: 'image/jpeg' },
-      { src: song.cover, sizes: '128x128', type: 'image/jpeg' },
-      { src: song.cover, sizes: '192x192', type: 'image/jpeg' },
-      { src: song.cover, sizes: '256x256', type: 'image/jpeg' },
-      { src: song.cover, sizes: '384x384', type: 'image/jpeg' },
-      { src: song.cover, sizes: '512x512', type: 'image/jpeg' }
-    ]
-  });
+  if ('mediaSession' in navigator) {
+    updateMediaSessionMetadata(song);
+    // Enable playback controls on lock screen
+    navigator.mediaSession.setActionHandler('play', () => audio.play());
+    navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+    navigator.mediaSession.setActionHandler('previoustrack', () => prevBtn.click());
+    navigator.mediaSession.setActionHandler('nexttrack', () => nextBtn.click());
+  }
 
-  // Enable playback controls on lock screen
-  navigator.mediaSession.setActionHandler('play', () => audio.play());
-  navigator.mediaSession.setActionHandler('pause', () => audio.pause());
-  navigator.mediaSession.setActionHandler('previoustrack', () => prevBtn.click());
-  navigator.mediaSession.setActionHandler('nexttrack', () => nextBtn.click());
-}
-
-updateActiveSong();
-
-// Build queue from this point forward
-//old code, whatever you do...DO NOT UNCOMMENT THESE LINES
-  //queue = playlist.slice(index);
-  //queueIndex = 0;
-
-  //loadSong(queue[queueIndex]);
-  //audio.play();
-
+  updateActiveSong();
 }
 
 function playSong(index) {
@@ -4275,7 +4325,7 @@ function buildPlaylistUI(filterText = "") {
        li.classList.add('playlist-item');
 
       li.innerHTML = `
-      <img src="${song.cover}" class="playlist-cover" loading="lazy">
+      <img class="playlist-cover" loading="lazy">
   
       <div class="playlist-text">
       <div class="playlist-title">${song.title}</div> 
@@ -4288,6 +4338,9 @@ function buildPlaylistUI(filterText = "") {
       </svg>
       </button>
       `;
+
+      const songCoverImg = li.querySelector('.playlist-cover');
+      setSongCover(songCoverImg, song);
 
       const optionsBtn = li.querySelector('.options-btn');
 
@@ -4825,7 +4878,6 @@ viewport.addEventListener('touchend', (e) => {
 
 // --- init ---
 async function init() {
-  await loadEmbeddedAlbumCovers();
   buildPlaylistUI(); 
   document.title = "Spotify - Web Player: Music for everyone (please don't sue me)"
   favicon.href = "images/spotify-logo-png-7057.png"; //i know, i can just set it in html, but this is more fun :)
